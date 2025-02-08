@@ -9,6 +9,7 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
 El control de movimiento, también llamado control de posicionamiento servo, consite en el proceso de mover una carga en un sistema mecánico.
 
 💡**Ejemplo 1:** Un ejemplo antiguo de control de movimiento es el telar Jacquard (1801). Este telar automatizado, desarrollado por Joseph Marie Jacquard, utilizaba tarjetas perforadas para controlar el movimiento de los hilos en la fabricación de textiles con patrones complejos.
+
 <div align="center">
   <img src="SI.png" alt="Figura de prueba" width="400">
   <p><b>Figura 1.</b> Figura de prueba</p>
@@ -34,6 +35,8 @@ El control de movimiento, también llamado control de posicionamiento servo, con
 
 ## ¿Qué se controla?:
 
+El control de movimiento puede regular posición, velocidad, torque y aceleración. Dependiendo de la aplicación, se pueden controlar las cuatro variables, solo tres, dos o una.
+
 >🔑 *Posición:* Determina la ubicación exacta de un objeto en el espacio. Se controla para asegurar que un mecanismo llegue a un punto específico con precisión.
 >
 >🔑 *Velocidad:* Regula la rapidez con la que un objeto se mueve de un punto a otro. Es crucial para evitar vibraciones y mejorar la eficiencia del proceso.
@@ -41,6 +44,21 @@ El control de movimiento, también llamado control de posicionamiento servo, con
 >🔑 *Torque:* Es la fuerza de giro aplicada a un eje o motor. Controlarlo permite garantizar que un sistema pueda mover cargas sin sobrecargas o fallos mecánicos.
 >
 >🔑 *Acerleración:* Es la variación de la velocidad en el tiempo. Se controla para evitar movimientos bruscos y reducir el desgaste de los componentes.
+
+💡**Ejemplo 2:** Controlando las 4 variables (posición, velocidad, torque y aceleración)
+
+Robot Industrial de Soldadura (Ejemplo: FANUC Arc Mate 100iC)
+
+<div align="center">
+  <img src="SI.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 1.</b> Figura de prueba</p>
+</div>
+
+**Posición:** El brazo robótico debe moverse con precisión milimétrica para soldar en el punto exacto.
+**Velocidad:** Se ajusta para evitar sobrecalentamiento o defectos en la soldadura.
+**Torque:** Se controla para aplicar la presión adecuada en la unión de las piezas.
+**Aceleración:** Se regula para evitar movimientos bruscos que puedan afectar la calidad de la soldadura.
+
 
 
 ## 3. Subsecciones
