@@ -32,8 +32,13 @@ El control de movimiento, también llamado control de posicionamiento servo, con
   - Se desplazaban y giraban para indicar el siguiente patrón de tejido.
   - Funcionaban como un sistema de control programable mecánico.
 
+## ¿Qué se controla?:
 
->🔑 *Control de movimiento:* El control de movimiento es una rama de la automatización que se dedica a manejar de forma adecuada la posición, velocidad o fuerza de las máquinas. Su objetivo es operar de manera precisa y eficiente, garantizando que los sistemas mecánicos realicen movimientos controlados según las necesidades específicas de cada aplicación
+>🔑 *Posición:*Determina la ubicación exacta de un objeto en el espacio. Se controla para asegurar que un mecanismo llegue a un punto específico con precisión.
+>🔑 *Velocidad:*Regula la rapidez con la que un objeto se mueve de un punto a otro. Es crucial para evitar vibraciones y mejorar la eficiencia del proceso.
+>🔑 *Torque:*Es la fuerza de giro aplicada a un eje o motor. Controlarlo permite garantizar que un sistema pueda mover cargas sin sobrecargas o fallos mecánicos.
+>🔑 *Acerleración:*Es la variación de la velocidad en el tiempo. Se controla para evitar movimientos bruscos y reducir el desgaste de los componentes.
+
 
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
