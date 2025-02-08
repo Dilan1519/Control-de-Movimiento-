@@ -40,6 +40,11 @@ Figura 1. Figura de prueba
 
 Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.
 
+<div align="center">
+  <img src="Causales.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 1.</b> Figura de prueba</p>
+</div>
+
 ## 7. Tablas
 En caso de necesitar la inclusión de tablas para organizar información se recomienda el uso de la herramienta del siguiente enlace https://www.tablesgenerator.com/markdown_tables , la cual permite organizar la información dentro de la tabla y genera el código markdown automáticamente:
 
