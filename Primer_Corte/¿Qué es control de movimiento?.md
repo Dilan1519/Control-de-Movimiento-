@@ -78,7 +78,7 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 💡**Ejemplo 4:** Controlando 2 variables (posición y velocidad)
 
 <div align="center">
-  <img src="CNC de fresado Haas VF-2.jpeg" alt="Figura de prueba" width="400">
+  <img src="Cinta transportadora con parada automática ConveyLinx.avif" alt="Figura de prueba" width="400">
   <p><b>Figura 3.</b> Cinta transportadora con parada automática ConveyLinx </p>
 </div>
 
