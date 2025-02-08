@@ -60,6 +60,23 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 
 **Aceleración:** Se regula para evitar movimientos bruscos que puedan afectar la calidad de la soldadura.
 
+💡**Ejemplo 3:** Controlando 3 variables (posición, velocidad y torque)
+
+<div align="center">
+  <img src="FANUC Arc Mate 100iC.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 3.</b> CNC de fresado Haas VF-2 </p>
+</div>
+
+**Posición:** La herramienta debe ubicarse exactamente en la coordenada correcta para realizar cortes precisos.
+
+**Velocidad:** La velocidad de corte se ajusta según el material para evitar sobrecalentamiento o desgaste prematuro.
+
+**Torque:** Se regula para asegurar la fuerza suficiente en el mecanizado sin dañar la pieza.
+
+**Aceleración:** No se controla la aceleración directamente, ya que no es crítica para este proceso.
+
+
+
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
 ### 3.1. Título de subsecciones
