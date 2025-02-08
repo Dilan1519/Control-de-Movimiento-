@@ -38,7 +38,7 @@ Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las
 
 💡**Ejemplo 2:**
 
-![Figura de prueba](Joseph_Marue_Telar_Jacquard.jpg)
+![Figura de prueba](descarga.jpg)
 
 Figura 1. Figura de prueba
 
