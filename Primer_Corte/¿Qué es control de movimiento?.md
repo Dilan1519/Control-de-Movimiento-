@@ -52,13 +52,13 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
   <p><b>Figura 2.</b> Robot  FANUC Arc Mate 100iC </p>
 </div>
 
--**Posición:** El brazo robótico debe moverse con precisión milimétrica para soldar en el punto exacto.
+- **Posición:** El brazo robótico debe moverse con precisión milimétrica para soldar en el punto exacto.
 
--**Velocidad:** Se ajusta para evitar sobrecalentamiento o defectos en la soldadura.
+- **Velocidad:** Se ajusta para evitar sobrecalentamiento o defectos en la soldadura.
 
--**Torque:** Se controla para aplicar la presión adecuada en la unión de las piezas.
+- **Torque:** Se controla para aplicar la presión adecuada en la unión de las piezas.
 
--**Aceleración:** Se regula para evitar movimientos bruscos que puedan afectar la calidad de la soldadura.
+- **Aceleración:** Se regula para evitar movimientos bruscos que puedan afectar la calidad de la soldadura.
 
 💡**Ejemplo 3:** Controlando 3 variables (posición, velocidad y torque)
 
@@ -67,13 +67,13 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
   <p><b>Figura 3.</b> CNC de fresado Haas VF-2 </p>
 </div>
 
--**Posición:** La herramienta debe ubicarse exactamente en la coordenada correcta para realizar cortes precisos.
+- **Posición:** La herramienta debe ubicarse exactamente en la coordenada correcta para realizar cortes precisos.
 
--**Velocidad:** La velocidad de corte se ajusta según el material para evitar sobrecalentamiento o desgaste prematuro.
+- **Velocidad:** La velocidad de corte se ajusta según el material para evitar sobrecalentamiento o desgaste prematuro.
 
--**Torque:** Se regula para asegurar la fuerza suficiente en el mecanizado sin dañar la pieza.
+- **Torque:** Se regula para asegurar la fuerza suficiente en el mecanizado sin dañar la pieza.
 
--**Aceleración:** No se controla la aceleración directamente, ya que no es crítica para este proceso.
+- **Aceleración:** No se controla la aceleración directamente, ya que no es crítica para este proceso.
 
 💡**Ejemplo 4:** Controlando 2 variables (posición y velocidad)
 
@@ -82,13 +82,13 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
   <p><b>Figura 3.</b> Cinta transportadora con parada automática ConveyLinx </p>
 </div>
 
--**Posición:** Se detiene exactamente en el punto donde debe descargarse un producto.
+- **Posición:** Se detiene exactamente en el punto donde debe descargarse un producto.
 
--**Velocidad:** Se ajusta para sincronizarse con otras máquinas de la línea de producción.
+- **Velocidad:** Se ajusta para sincronizarse con otras máquinas de la línea de producción.
 
--**Torque:** No se controla el torque, porque la carga es liviana y no se requiere fuerza específica.
+- **Torque:** No se controla el torque, porque la carga es liviana y no se requiere fuerza específica.
 
--**Aceleración:** No se controla la aceleración, ya que no es relevante en este tipo de movimiento
+- **Aceleración:** No se controla la aceleración, ya que no es relevante en este tipo de movimiento
 
 
 ## 3. Subsecciones
