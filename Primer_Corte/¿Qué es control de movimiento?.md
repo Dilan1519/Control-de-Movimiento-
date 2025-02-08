@@ -4,7 +4,7 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
 
 ## Indice
 
-## ¿En qué consiste?
+## 1. ¿En qué consiste?
 💡**Ejemplo 1:** Un ejemplo antiguo de control de movimiento es el telar Jacquard (1801). Este telar automatizado, desarrollado por Joseph Marie Jacquard, utilizaba tarjetas perforadas para controlar el movimiento de los hilos en la fabricación de textiles con patrones complejos.
 <div align="center">
   <img src="SI.png" alt="Figura de prueba" width="400">
@@ -12,16 +12,20 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
 </div>
 
 - **Movimiento de elevación de los hilos de urdimbre**  
-  Se levantaban ciertos hilos según el patrón dictado por las tarjetas perforadas. Este movimiento era clave para formar el diseño del tejido.
+  Se levantaban ciertos hilos según el patrón dictado por las tarjetas perforadas.
+  Este movimiento era clave para formar el diseño del tejido.
 
 - **Movimiento del peine o batán**  
-  Después de entrelazar los hilos, el peine golpeaba la trama para compactar el tejido. Garantizaba que el tejido tuviera una estructura firme y uniforme.
+  Después de entrelazar los hilos, el peine golpeaba la trama para compactar el tejido.
+  Garantizaba que el tejido tuviera una estructura firme y uniforme.
 
 - **Movimiento de avance de la tela**  
-  A medida que se tejía, la tela se iba enrollando automáticamente. Permitía la producción continua sin intervención manual.
+  A medida que se tejía, la tela se iba enrollando automáticamente.
+  Permitía la producción continua sin intervención manual.
 
 - **Movimiento de las tarjetas perforadas**  
-  Se desplazaban y giraban para indicar el siguiente patrón de tejido. Funcionaban como un sistema de control programable mecánico.
+  Se desplazaban y giraban para indicar el siguiente patrón de tejido.
+  Funcionaban como un sistema de control programable mecánico.
 
 
 >🔑 *Control de movimiento:* El control de movimiento es una rama de la automatización que se dedica a manejar de forma adecuada la posición, velocidad o fuerza de las máquinas. Su objetivo es operar de manera precisa y eficiente, garantizando que los sistemas mecánicos realicen movimientos controlados según las necesidades específicas de cada aplicación
