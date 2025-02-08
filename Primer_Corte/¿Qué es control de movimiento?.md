@@ -32,14 +32,14 @@ Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las
 * Después escribimos, dentro de los corchetes, el texto alternativo. Este es opcional y solo entra en acción cuando no se puede cargar la imagen correctamente.
 * Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya sea una url o una ubicación dentro de algun folder local). Se recomienda poner las imágenes en una carpeta que se llame imágenes dentro del repositorio github para que no tengan problemas al cargar las imágenes.
 
-💡**Ejemplo 2:**
+
 
 ![Figura de prueba](Causales.png)
 
 Figura 1. Figura de prueba
 
 Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.
-
+💡**Ejemplo 2:**
 <div align="center">
   <img src="Causales.png" alt="Figura de prueba" width="400">
   <p><b>Figura 1.</b> Figura de prueba</p>
