@@ -53,11 +53,12 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 </div>
 
 **Posición:** El brazo robótico debe moverse con precisión milimétrica para soldar en el punto exacto.
+
 **Velocidad:** Se ajusta para evitar sobrecalentamiento o defectos en la soldadura.
+
 **Torque:** Se controla para aplicar la presión adecuada en la unión de las piezas.
+
 **Aceleración:** Se regula para evitar movimientos bruscos que puedan afectar la calidad de la soldadura.
-
-
 
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
