@@ -10,7 +10,10 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
   <img src="Joseph_Marue_Telar_Jacquard.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 1.</b> Figura de prueba</p>
 </div>
-
+<div align="center">
+  <img src="Causales.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 1.</b> Figura de prueba</p>
+</div>
 >🔑 *Control de movimiento:* El control de movimiento es una rama de la automatización que se dedica a manejar de forma adecuada la posición, velocidad o fuerza de las máquinas. Su objetivo es operar de manera precisa y eficiente, garantizando que los sistemas mecánicos realicen movimientos controlados según las necesidades específicas de cada aplicación
 
 ## 3. Subsecciones
