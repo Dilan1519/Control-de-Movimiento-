@@ -7,7 +7,7 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
 ## ¿En qué consiste?
 💡**Ejemplo 1:** Un ejemplo antiguo de control de movimiento es el telar Jacquard (1801). Este telar automatizado, desarrollado por Joseph Marie Jacquard, utilizaba tarjetas perforadas para controlar el movimiento de los hilos en la fabricación de textiles con patrones complejos.
 <div align="center">
-  <img src="Joseph_Marue_Telar_Jacquard.jpg" alt="Figura de prueba" width="900">
+  <img src="SI.png" alt="Figura de prueba" width="900">
   <p><b>Figura 1.</b> Figura de prueba</p>
 </div>
 
