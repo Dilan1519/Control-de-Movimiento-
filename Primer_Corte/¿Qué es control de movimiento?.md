@@ -16,8 +16,8 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
   - Este movimiento era clave para formar el diseño del tejido.
 
 - **Movimiento del peine o batán**  
- - Después de entrelazar los hilos, el peine golpeaba la trama para compactar el tejido.
- - Garantizaba que el tejido tuviera una estructura firme y uniforme.
+  - Después de entrelazar los hilos, el peine golpeaba la trama para compactar el tejido.
+  - Garantizaba que el tejido tuviera una estructura firme y uniforme.
 
 - **Movimiento de avance de la tela**  
   - A medida que se tejía, la tela se iba enrollando automáticamente.
