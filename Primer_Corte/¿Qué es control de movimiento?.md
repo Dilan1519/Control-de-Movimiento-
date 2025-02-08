@@ -90,6 +90,21 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 
 - **Aceleración:** No se controla la aceleración, ya que no es relevante en este tipo de movimiento
 
+💡**Ejemplo 5:** Controlando solo 1 variable (torque)
+
+<div align="center">
+  <img src="Bosch GSR 18V-EC.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 3.</b> Cinta transportadora con parada automática ConveyLinx </p>
+</div>
+
+- **Posición:** No se controla la posición, porque no necesita ubicarse en coordenadas exactas.
+
+- **Velocidad:** No se controla la velocidad, ya que funciona a una velocidad fija o ajustable manualmente.
+
+- **Torque:** Se regula para apretar los tornillos con la fuerza exacta sin dañar la pieza.
+
+- **Aceleración:** No se controla la aceleración, porque el usuario decide la rapidez del movimiento.
+
 
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
