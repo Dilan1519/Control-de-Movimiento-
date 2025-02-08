@@ -63,7 +63,7 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 💡**Ejemplo 3:** Controlando 3 variables (posición, velocidad y torque)
 
 <div align="center">
-  <img src="CNC de fresado Haas VF-2.jprg" alt="Figura de prueba" width="400">
+  <img src="CNC de fresado Haas VF-2.jpeg" alt="Figura de prueba" width="400">
   <p><b>Figura 3.</b> CNC de fresado Haas VF-2 </p>
 </div>
 
