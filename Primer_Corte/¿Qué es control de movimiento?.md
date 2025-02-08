@@ -47,11 +47,9 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 
 💡**Ejemplo 2:** Controlando las 4 variables (posición, velocidad, torque y aceleración)
 
-Robot Industrial de Soldadura (Ejemplo: FANUC Arc Mate 100iC)
-
 <div align="center">
   <img src="FANUC Arc Mate 100iC.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Figura de prueba</p>
+  <p><b>Figura 2.</b> Robot  FANUC Arc Mate 100iC </p>
 </div>
 
 **Posición:** El brazo robótico debe moverse con precisión milimétrica para soldar en el punto exacto.
