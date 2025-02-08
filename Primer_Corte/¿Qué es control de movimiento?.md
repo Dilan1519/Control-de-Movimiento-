@@ -50,7 +50,7 @@ El control de movimiento puede regular posici√≥n, velocidad, torque y aceleraci√
 Robot Industrial de Soldadura (Ejemplo: FANUC Arc Mate 100iC)
 
 <div align="center">
-  <img src="SI.png" alt="Figura de prueba" width="400">
+  <img src="FANUC Arc Mate 100iC.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 1.</b> Figura de prueba</p>
 </div>
 
