@@ -75,6 +75,20 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 
 **Aceleración:** No se controla la aceleración directamente, ya que no es crítica para este proceso.
 
+💡**Ejemplo 4:** Controlando 2 variables (posición y velocidad)
+
+<div align="center">
+  <img src="CNC de fresado Haas VF-2.jpeg" alt="Figura de prueba" width="400">
+  <p><b>Figura 3.</b> Cinta transportadora con parada automática ConveyLinx </p>
+</div>
+
+**Posición:** Se detiene exactamente en el punto donde debe descargarse un producto.
+
+**Velocidad:** Se ajusta para sincronizarse con otras máquinas de la línea de producción.
+
+**Torque:** No se controla el torque, porque la carga es liviana y no se requiere fuerza específica.
+
+**Aceleración:** No se controla la aceleración, ya que no es relevante en este tipo de movimiento
 
 
 ## 3. Subsecciones
