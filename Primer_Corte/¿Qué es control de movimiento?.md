@@ -11,6 +11,19 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
   <p><b>Figura 1.</b> Figura de prueba</p>
 </div>
 
+- **Movimiento de elevación de los hilos de urdimbre**  
+  Se levantaban ciertos hilos según el patrón dictado por las tarjetas perforadas. Este movimiento era clave para formar el diseño del tejido.
+
+- **Movimiento del peine o batán**  
+  Después de entrelazar los hilos, el peine golpeaba la trama para compactar el tejido. Garantizaba que el tejido tuviera una estructura firme y uniforme.
+
+- **Movimiento de avance de la tela**  
+  A medida que se tejía, la tela se iba enrollando automáticamente. Permitía la producción continua sin intervención manual.
+
+- **Movimiento de las tarjetas perforadas**  
+  Se desplazaban y giraban para indicar el siguiente patrón de tejido. Funcionaban como un sistema de control programable mecánico.
+
+
 >🔑 *Control de movimiento:* El control de movimiento es una rama de la automatización que se dedica a manejar de forma adecuada la posición, velocidad o fuerza de las máquinas. Su objetivo es operar de manera precisa y eficiente, garantizando que los sistemas mecánicos realicen movimientos controlados según las necesidades específicas de cada aplicación
 
 ## 3. Subsecciones
