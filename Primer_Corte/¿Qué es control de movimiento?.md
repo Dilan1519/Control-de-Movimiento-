@@ -34,7 +34,7 @@ Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las
 
 💡**Ejemplo 2:**
 
-![Figura de prueba](causales.png)
+![Figura de prueba](Causales.png)
 
 Figura 1. Figura de prueba
 
