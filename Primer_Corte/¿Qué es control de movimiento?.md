@@ -138,7 +138,7 @@ El control de movimiento no siempre fue electrónico. Antes de los motores y sen
 
 ## 5.1. Primeros Métodos de Control Mecánico  
 
-### 🔹 El Mundo Antiguo: Primeras Máquinas Autónomas  
+### El Mundo Antiguo: Primeras Máquinas Autónomas  
 
 #### Herón de Alejandría (Siglo I d.C.)  
 - Inventó **puertas automáticas** en templos usando contrapesos.  
