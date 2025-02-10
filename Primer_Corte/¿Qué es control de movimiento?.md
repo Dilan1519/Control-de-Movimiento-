@@ -32,8 +32,8 @@ El control de movimiento, también llamado control de posicionamiento servo, con
 - **Movimiento de las tarjetas perforadas:**  
   - Se desplazaban y giraban para indicar el siguiente patrón de tejido.
   - Funcionaban como un sistema de control programable mecánico.
+  
 ## 2. ¿En qué industria se usa?:
-# **Industrias y Aplicaciones del Control de Movimiento**
 
 A continuación, se muestra una tabla con las industrias donde se usa el control de movimiento, los tipos de máquinas que emplean esta tecnología, los países donde es más común y los beneficios clave en cada sector.
 
