@@ -132,11 +132,11 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 
 - **Aceleración:** No se controla la aceleración, porque el usuario decide la rapidez del movimiento.
 
-# ¿Cómos se hacia antes del control?
+# 5. ¿Cómos se hacia antes del control?
 
 El control de movimiento no siempre fue electrónico. Antes de los motores y sensores modernos, los ingenieros usaban mecanismos mecánicos avanzados para lograr precisión y automatización.  
 
-## 1. Primeros Métodos de Control Mecánico  
+## 5.1. Primeros Métodos de Control Mecánico  
 
 ### 🔹 El Mundo Antiguo: Primeras Máquinas Autónomas  
 
@@ -149,7 +149,7 @@ El control de movimiento no siempre fue electrónico. Antes de los motores y sen
 - Creó mecanismos de engranajes y poleas para automatizar procesos.  
 
 
-## 2. Revolución Industrial: La Era del Control Mecánico  
+## 5.2. Revolución Industrial: La Era del Control Mecánico  
 
 ### 🌍 **Países Pioneros en la Automatización Mecánica**  
 | País | Industria Destacada |
@@ -163,7 +163,7 @@ El control de movimiento no siempre fue electrónico. Antes de los motores y sen
 - **Innovación:** Regulador centrífugo para mantener estable la velocidad de las máquinas de vapor.  
 - **Impacto:** Primer sistema de **retroalimentación mecánica**.  
 
-## 3. ¿Cómo Funcionaban Sin Control Electrónico?  
+## 5.3. ¿Cómo Funcionaban Sin Control Electrónico?  
 
 | Mecanismo | Función | Ejemplo |
 |-----------|---------|---------|
@@ -172,7 +172,7 @@ El control de movimiento no siempre fue electrónico. Antes de los motores y sen
 | **Mecanismos de frenado y relojes de control** | Regular procesos en intervalos de tiempo | Molinos de viento |
 | **Sistemas de tarjetas perforadas** | Programar secuencias automáticas | Máquinas textiles |
 
-## 4. Desventajas de los Métodos Antiguos  
+## 5.4. Desventajas de los Métodos Antiguos  
 
 ❌ **Poca flexibilidad**: Modificar una máquina requería reconstruir todo el sistema.  
 ❌ **Errores por desgaste**: Engranajes y levas perdían precisión con el tiempo.  
