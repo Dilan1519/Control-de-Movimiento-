@@ -132,4 +132,61 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 
 - **Aceleración:** No se controla la aceleración, porque el usuario decide la rapidez del movimiento.
 
+# ⏳ Historia del Control de Movimiento  
+
+El control de movimiento no siempre fue electrónico. Antes de los motores y sensores modernos, los ingenieros usaban mecanismos mecánicos avanzados para lograr precisión y automatización.  
+
+## 🏛️ 1. Primeros Métodos de Control Mecánico  
+
+### 🔹 El Mundo Antiguo: Primeras Máquinas Autónomas  
+
+#### ⚙️ Herón de Alejandría (Siglo I d.C.)  
+- Inventó **puertas automáticas** en templos usando contrapesos.  
+- Creó la **eolípila**, un dispositivo a vapor que anticipó las máquinas de vapor.  
+
+#### 🔧 Los Autómatas Islámicos (Siglos IX - XIII)  
+- **Al-Jazari** diseñó relojes automáticos y sistemas de bombeo de agua.  
+- Creó mecanismos de engranajes y poleas para automatizar procesos.  
+
+<details>
+  <summary>📷 Ver Ejemplo</summary>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Jacquard.loom.cards.jpg" width="400">
+  <p>🔺 Telar Jacquard, un precursor del control automatizado.</p>
+</details>
+
+## ⚙️ 2. Revolución Industrial: La Era del Control Mecánico  
+
+### 🌍 **Países Pioneros en la Automatización Mecánica**  
+| País | Industria Destacada |
+|------|--------------------|
+| 🇬🇧 Reino Unido | Máquinas de vapor y telares |
+| 🇫🇷 Francia | Industria textil y relojería |
+| 🇩🇪 Alemania | Metalurgia y manufactura |
+
+### 🏭 Ejemplo: **El Telar de Jacquard (1804)**  
+- **Inventor:** Joseph Marie Jacquard (Francia).  
+- **Innovación:** Tarjetas perforadas para controlar el patrón del tejido.  
+- **Impacto:** Primera máquina en programarse sin intervención humana directa.  
+
+### 🚂 Ejemplo: **Regulador de Watt (1788)**  
+- **Inventor:** James Watt (Inglaterra).  
+- **Innovación:** Regulador centrífugo para mantener estable la velocidad de las máquinas de vapor.  
+- **Impacto:** Primer sistema de **retroalimentación mecánica**.  
+
+## 🔩 3. ¿Cómo Funcionaban Sin Control Electrónico?  
+
+| Mecanismo | Función | Ejemplo |
+|-----------|---------|---------|
+| **Engranajes y ruedas de levas** | Generar movimientos repetitivos | Telares mecánicos |
+| **Cajas de cambio y árboles de transmisión** | Transmitir energía a varias máquinas | Fundiciones de acero |
+| **Mecanismos de frenado y relojes de control** | Regular procesos en intervalos de tiempo | Molinos de viento |
+| **Sistemas de tarjetas perforadas** | Programar secuencias automáticas | Máquinas textiles |
+
+## ⚠️ 4. Desventajas de los Métodos Antiguos  
+
+❌ **Poca flexibilidad**: Modificar una máquina requería reconstruir todo el sistema.  
+❌ **Errores por desgaste**: Engranajes y levas perdían precisión con el tiempo.  
+❌ **Altos costos de mantenimiento**: Reemplazar piezas dañadas era caro.  
+❌ **Dependencia del operador**: Se necesitaban trabajadores para supervisar.  
+
 
