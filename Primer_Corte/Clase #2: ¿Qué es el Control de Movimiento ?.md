@@ -187,24 +187,32 @@ El control de movimiento no siempre fue electrónico. Antes de los motores y sen
 
 ### **Países Pioneros en la Automatización Mecánica**  
 
-<p align="center">
-
-| País        | Industria Destacada              |
-|------------|----------------------------------|
-| Reino Unido | Máquinas de vapor y telares     |
-| Francia     | Industria textil y relojería    |
-| Alemania    | Metalurgia y manufactura        |
-
-</p>
-
-
-### Ejemplo: **Regulador de Watt (1788)**  
-- **Inventor:** James Watt (Inglaterra).  
-- **Innovación:** Regulador centrífugo para mantener estable la velocidad de las máquinas de vapor.  
-- **Impacto:** Primer sistema de **retroalimentación mecánica**.  
-
+<div align="center">
+  <table>
+    <tr>
+      <th>País</th>
+      <th>Industria Destacada</th>
+    </tr>
+    <tr>
+      <td>Reino Unido</td>
+      <td>Máquinas de vapor y telares</td>
+    </tr>
+    <tr>
+      <td>Francia</td>
+      <td>Industria textil y relojería</td>
+    </tr>
+    <tr>
+      <td>Alemania</td>
+      <td>Metalurgia y manufactura</td>
+    </tr>
+  </table>
+ 
+</div>
+ 
 ## 5.3. ¿Cómo Funcionaban Sin Control Electrónico?  
 
+<div align="center">
+ 
 | Mecanismo | Función | Ejemplo |
 |-----------|---------|---------|
 | **Engranajes y ruedas de levas** | Generar movimientos repetitivos | Telares mecánicos |
@@ -212,6 +220,7 @@ El control de movimiento no siempre fue electrónico. Antes de los motores y sen
 | **Mecanismos de frenado y relojes de control** | Regular procesos en intervalos de tiempo | Molinos de viento |
 | **Sistemas de tarjetas perforadas** | Programar secuencias automáticas | Máquinas textiles |
 
+</div>
 
 ## 5.4. Desventajas de los Métodos Antiguos  
 
