@@ -1,3 +1,8 @@
+<div align="center">
+  <img src="Primer_Corte/Im%C3%A1genes/CNC-de-fresado-Haas-VF-2.jpg alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Robot FANUC Arc Mate 100iC</p>
+</div>
+
 # ¿QUÉ ES EL MOVIMIENTO DE CONTROL?
 
 El control de movimiento es una disciplina de la ingeniería que regula y coordina el desplazamiento de objetos mediante actuadores, sensores y algoritmos de control. Su aplicación es esencial en sectores como la manufactura, la robótica y la automatización de procesos. Es fundamental para garantizar precisión, eficiencia y optimización en sistemas industriales, mejorando la productividad y reduciendo errores. Su desarrollo ha permitido la evolución de máquinas inteligentes capaces de realizar operaciones con alta exactitud, impulsando la modernización y el avance tecnológico en diversas industrias.
