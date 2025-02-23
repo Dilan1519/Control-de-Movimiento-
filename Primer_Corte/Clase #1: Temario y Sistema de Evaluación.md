@@ -64,6 +64,10 @@
 
 </div>
 
+> **Nota:** Esta tabla muestra los porcentajes asignados a cada corte.  
+> Es posible que haya cambios en el tercer corte, donde se presentarán laboratorios atrasados del segundo corte.
+
+
 ## Bibliografía
 
 [**Industrial Motion Control, Primera Edición**](https://www.amazon.com/Industrial-Motion-Control-Controller-Applications/dp/1118350812)  
