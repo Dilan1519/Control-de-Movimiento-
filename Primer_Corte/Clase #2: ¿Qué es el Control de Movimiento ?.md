@@ -3,7 +3,6 @@
 El control de movimiento es una disciplina de la ingeniería que regula y coordina el desplazamiento de objetos mediante actuadores, sensores y algoritmos de control. Su aplicación es esencial en sectores como la manufactura, la robótica y la automatización de procesos. Es fundamental para garantizar precisión, eficiencia y optimización en sistemas industriales, mejorando la productividad y reduciendo errores. Su desarrollo ha permitido la evolución de máquinas inteligentes capaces de realizar operaciones con alta exactitud, impulsando la modernización y el avance tecnológico en diversas industrias.
 
 ## Índice
-## Índice
  [1. ¿En qué consiste?](#1-en-qué-consiste)
  
  [2. ¿En qué industria se usa?](#2-en-qué-industria-se-usa)
