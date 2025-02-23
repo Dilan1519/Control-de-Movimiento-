@@ -75,7 +75,7 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 💡**Ejemplo 2:** Controlando las 4 variables (posición, velocidad, torque y aceleración)
 
 <div align="center">
-  <img src="FANUC Arc Mate 100iC.jpg" alt="Figura de prueba" width="400">
+  <img src="CNC-de-fresado-Haas-VF-2.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Robot  FANUC Arc Mate 100iC </p>
 </div>
 
