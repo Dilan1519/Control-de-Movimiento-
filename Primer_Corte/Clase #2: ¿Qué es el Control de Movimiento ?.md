@@ -191,7 +191,8 @@ El control de movimiento no siempre fue electrónico. Antes de los motores y sen
 | **Cajas de cambio y árboles de transmisión** | Transmitir energía a varias máquinas | Fundiciones de acero |
 | **Mecanismos de frenado y relojes de control** | Regular procesos en intervalos de tiempo | Molinos de viento |
 | **Sistemas de tarjetas perforadas** | Programar secuencias automáticas | Máquinas textiles |
-![Figura de prueba](https://github.com/Dilan1519/Control-de-Movimiento-/blob/main/Primer_Corte/Im%C3%A1genes/CNC-de-fresado-Haas-VF-2.jpg)
+
+
 ## 5.4. Desventajas de los Métodos Antiguos  
 
 ❌ **Poca flexibilidad**: Modificar una máquina requería reconstruir todo el sistema.  
