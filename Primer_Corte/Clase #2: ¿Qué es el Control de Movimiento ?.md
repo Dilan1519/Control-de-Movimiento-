@@ -11,7 +11,7 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
 
  [4. ¿Qué se controla?](#4-qué-se-controla)
  
- [5. ¿Cómo se hacia antes del control?](#5-cómo-se-hcia-antes-del-control)
+ [5. ¿Cómo se hacia antes del control?](#5-cómo-se-hacia-antes-del-control)
 
 ## 1. ¿En qué consiste?
 
