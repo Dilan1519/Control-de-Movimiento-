@@ -23,6 +23,7 @@
 
 | **Primer Corte** | **%** | **Actividad** | **Segundo Corte** | **%** | **Actividad** | **Tercer Corte** | **%** | **Actividad** |
 |-----------------|----|-------------|-----------------|----|-------------|-----------------|----|-------------|
+| **%** |**Actividad** | **%** |**Actividad** | **%** |**Actividad** |
 | 1️⃣ | 50 | Laboratorios | 1️⃣ | 50 | Laboratorios | 1️⃣ | 50 | Laboratorios |
 | 2️⃣ | 30 | Tareas (Simsacape) | 2️⃣ | 30 | Tareas (Simsacape) | 2️⃣ | 30 | Tareas (Simsacape) |
 | 3️⃣ | 20 | Apuntes | 3️⃣ | 20 | Apuntes | 3️⃣ | 20 | Apuntes |
