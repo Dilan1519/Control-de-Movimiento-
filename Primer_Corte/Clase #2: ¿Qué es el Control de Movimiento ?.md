@@ -179,18 +179,24 @@ El control de movimiento no siempre fue electrónico. Antes de los motores y sen
 - Al-Jazari Creó mecanismos de engranajes y poleas para automatizar procesos.
 
 <div align="center">
-  <img src="Imágenes/Clase%20%232/Herón de Alejandría eolípila.gif" alt="Figura de prueba" width="400">
+  <img src="Imágenes/Clase%20%232/Al-Jazari Creó mecanismos de engranajes y poleas para automatizar procesos.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 3.</b> Herón de Alejandría eolípila </p>
 </div>
 
 ## 5.2. Revolución Industrial: La Era del Control Mecánico  
 
 ### **Países Pioneros en la Automatización Mecánica**  
-| País | Industria Destacada |
-|------|--------------------|
-| 🇬🇧 Reino Unido | Máquinas de vapor y telares |
-| 🇫🇷 Francia | Industria textil y relojería |
-| 🇩🇪 Alemania | Metalurgia y manufactura |
+
+<p align="center">
+
+| País        | Industria Destacada              |
+|------------|----------------------------------|
+| Reino Unido | Máquinas de vapor y telares     |
+| Francia     | Industria textil y relojería    |
+| Alemania    | Metalurgia y manufactura        |
+
+</p>
+
 
 ### Ejemplo: **Regulador de Watt (1788)**  
 - **Inventor:** James Watt (Inglaterra).  
