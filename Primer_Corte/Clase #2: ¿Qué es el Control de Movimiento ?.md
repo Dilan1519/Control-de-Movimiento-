@@ -75,9 +75,10 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 💡**Ejemplo 2:** Controlando las 4 variables (posición, velocidad, torque y aceleración)
 
 <div align="center">
-  <img src="CNC-de-fresado-Haas-VF-2.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Robot  FANUC Arc Mate 100iC </p>
+  <img src="imágenes/CNC-de-fresado-Haas-VF-2.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Robot FANUC Arc Mate 100iC</p>
 </div>
+
 
 - **Posición:** El brazo robótico debe moverse con precisión milimétrica para soldar en el punto exacto.
 
