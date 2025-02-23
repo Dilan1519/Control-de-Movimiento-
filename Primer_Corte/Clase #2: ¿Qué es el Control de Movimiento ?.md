@@ -141,7 +141,7 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 
 <div align="center">
   <img src="Imágenes/Clase%20%232/Bosch GSR 18V-EC.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 3.</b> Bosch GSR 18V-EC. </p>
+  <p><b>Figura 3.</b> Bosch GSR 18V-EC </p>
 </div>
 
 - **Posición:** No se controla la posición, porque no necesita ubicarse en coordenadas exactas.
@@ -161,12 +161,27 @@ El control de movimiento no siempre fue electrónico. Antes de los motores y sen
 ### El Mundo Antiguo: Primeras Máquinas Autónomas  
 
 #### Herón de Alejandría (Siglo I d.C.)  
-- Inventó **puertas automáticas** en templos usando contrapesos.  
-- Creó la **eolípila**, un dispositivo a vapor que anticipó las máquinas de vapor.  
+- Inventó **puertas automáticas** en templos usando contrapesos.
+
+<div align="center">
+  <img src="Imágenes/Clase%20%232/Herón de Alejandría Puertas Automaticas.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 3.</b> Herón de Alejandría Puertas Automaticas </p>
+</div>
+
+- Creó la **eolípila**, un dispositivo a vapor que anticipó las máquinas de vapor.
+
+<div align="center">
+  <img src="Imágenes/Clase%20%232/Herón de Alejandría eolípila.gif" alt="Figura de prueba" width="400">
+  <p><b>Figura 3.</b> Herón de Alejandría eolípila </p>
+</div>
 
 #### Los Autómatas Islámicos (Siglos IX - XIII)  
-- **Al-Jazari** diseñó relojes automáticos y sistemas de bombeo de agua.  
-- Creó mecanismos de engranajes y poleas para automatizar procesos.  
+- Al-Jazari Creó mecanismos de engranajes y poleas para automatizar procesos.
+
+<div align="center">
+  <img src="Imágenes/Clase%20%232/Herón de Alejandría eolípila.gif" alt="Figura de prueba" width="400">
+  <p><b>Figura 3.</b> Herón de Alejandría eolípila </p>
+</div>
 
 ## 5.2. Revolución Industrial: La Era del Control Mecánico  
 
