@@ -123,7 +123,7 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 💡**Ejemplo 4:** Controlando 2 variables (posición y velocidad)
 
 <div align="center">
-  <img src="Cinta transportadora con parada automática ConveyLinx.avif" alt="Figura de prueba" width="400">
+  <img src="Imágenes/Cinta transportadora con parada automática ConveyLinx.avif" alt="Figura de prueba" width="400">
   <p><b>Figura 3.</b>Cinta transportadora con parada automática ConveyLinx </p>
 </div>
 
@@ -138,8 +138,8 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 💡**Ejemplo 5:** Controlando solo 1 variable (torque)
 
 <div align="center">
-  <img src="Bosch GSR 18V-EC.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 3.</b> Bosch GSR 18V-EC.jpg </p>
+  <img src="Imágenes/Bosch GSR 18V-EC.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 3.</b> Bosch GSR 18V-EC. </p>
 </div>
 
 - **Posición:** No se controla la posición, porque no necesita ubicarse en coordenadas exactas.
