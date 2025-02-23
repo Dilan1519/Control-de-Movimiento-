@@ -66,7 +66,7 @@
 
 ## Bibliografía
 
-[**Industrial Motion Control, Primera Edición**](https://www.amazon.com/dp/ISBN)  
+[**Industrial Motion Control, Primera Edición**](https://www.amazon.com/Industrial-Motion-Control-Controller-Applications/dp/1118350812)  
 [**Manuales ABB**](https://global.abb/)  
 [**Manuales Yaskawa**](https://www.yaskawa.com/)  
 [**Manuales SEW**](https://www.sew-eurodrive.es/)  
