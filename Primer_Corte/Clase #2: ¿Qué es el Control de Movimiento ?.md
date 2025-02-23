@@ -5,7 +5,7 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
 ## Índice
 1. [¿En qué consiste?](#en-que-consiste)
 2. [¿En qué industria se usa?:](#calificacion)
-3. [Ejes de Movimiento:](Ejes_de_Movimiento)
+3. [Ejes de Movimiento:](Ejes-de-Movimiento)
 
 ## 1. ¿En qué consiste?:
 
