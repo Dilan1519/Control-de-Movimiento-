@@ -3,26 +3,11 @@
 El control de movimiento es una disciplina de la ingeniería que regula y coordina el desplazamiento de objetos mediante actuadores, sensores y algoritmos de control. Su aplicación es esencial en sectores como la manufactura, la robótica y la automatización de procesos. Es fundamental para garantizar precisión, eficiencia y optimización en sistemas industriales, mejorando la productividad y reduciendo errores. Su desarrollo ha permitido la evolución de máquinas inteligentes capaces de realizar operaciones con alta exactitud, impulsando la modernización y el avance tecnológico en diversas industrias.
 
 ## Índice
-1. [1. ¿En qué consiste?](#1-en-qué-consiste)
-2. [2. ¿En qué industria se usa?](#2-en-qué-industria-se-usa)
-3. [3. Ejes de Movimiento](#3-ejes-de-movimiento)
+[1. ¿En qué consiste?](#1-en-qué-consiste)
+[2. ¿En qué industria se usa?](#2-en-qué-industria-se-usa)
+[3. Ejes de Movimiento](#3-ejes-de-movimiento)
 
 ## 1. ¿En qué consiste?
-
-## 2. ¿En qué industria se usa?
-
-## 3. Ejes de Movimiento
-
-
-
-## 1. ¿En qué consiste?
-
-## 2. ¿En qué industria se usa?
-
-## 3. Ejes de Movimiento
-
-
-## 1. ¿En qué consiste?:
 
 El control de movimiento, también llamado control de posicionamiento servo, consite en el proceso de mover una carga en un sistema mecánico.
 
@@ -33,7 +18,7 @@ El control de movimiento, también llamado control de posicionamiento servo, con
   <p><b>Figura 1.</b> Figura de prueba</p>
 </div>
 
-## Movimientos del telar Jacquard:
+## Movimientos del telar Jacquard
 
 - **Movimiento de elevación de los hilos de urdimbre:**  
   - Se levantaban ciertos hilos según el patrón dictado por las tarjetas perforadas.
@@ -51,7 +36,7 @@ El control de movimiento, también llamado control de posicionamiento servo, con
   - Se desplazaban y giraban para indicar el siguiente patrón de tejido.
   - Funcionaban como un sistema de control programable mecánico.
   
-## 2. ¿En qué industria se usa?:
+## 2. ¿En qué industria se usa?
 
 A continuación, se muestra una tabla con las industrias donde se usa el control de movimiento, los tipos de máquinas que emplean esta tecnología, los países donde es más común y los beneficios clave en cada sector.
 
@@ -66,7 +51,7 @@ A continuación, se muestra una tabla con las industrias donde se usa el control
 
 > **Nota:** Esta tabla presenta solo algunos ejemplos de aplicaciones y países donde el control de movimiento es clave en la industria.
 
-## 3. Ejes de Movimiento:
+## 3. Ejes de Movimiento
 Cada movimiento generado por un actuador en un sistema de control se denomina **eje de movimiento (axis)**. Un sistema puede tener múltiples ejes, y su sincronización es esencial para realizar tareas complejas con precisión y eficiencia.
 
 ## Tipos de Ejes de Movimiento
