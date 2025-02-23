@@ -7,6 +7,18 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
 2. [¿En qué industria se usa?:](#calificacion)
 3. [Ejes de Movimiento:](Ejes-de-Movimiento)
 
+4. ## Índice
+1. [¿En qué consiste?](#en-que-consiste)
+2. [¿En qué industria se usa?](#en-que-industria-se-usa)
+3. [Ejes de Movimiento](#ejes-de-movimiento)
+
+## 1. ¿En qué consiste?
+
+## 2. ¿En qué industria se usa?
+
+## 3. Ejes de Movimiento
+
+
 ## 1. ¿En qué consiste?:
 
 El control de movimiento, también llamado control de posicionamiento servo, consite en el proceso de mover una carga en un sistema mecánico.
