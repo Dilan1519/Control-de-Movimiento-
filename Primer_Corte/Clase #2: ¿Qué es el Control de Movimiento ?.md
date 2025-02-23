@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="CNC-de-fresado-Haas-VF-2.jpg" alt="Figura de prueba" width="400">
+  <img src="Imágenes/CNC-de-fresado-Haas-VF-2.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Robot FANUC Arc Mate 100iC</p>
 </div>
 
