@@ -108,8 +108,8 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 💡**Ejemplo 3:** Controlando 3 variables (posición, velocidad y torque)
 
 <div align="center">
-  <img src="CNC de fresado Haas VF-2.jpeg" alt="Figura de prueba" width="400">
-  <p><b>Figura 3.</b> CNC de fresado Haas VF-2 </p>
+  <img src="Imágenes/Fresadora HAAS VF-2.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 3.</b> Fresadora HAAS VF-2 </p>
 </div>
 
 - **Posición:** La herramienta debe ubicarse exactamente en la coordenada correcta para realizar cortes precisos.
@@ -124,7 +124,7 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 
 <div align="center">
   <img src="Cinta transportadora con parada automática ConveyLinx.avif" alt="Figura de prueba" width="400">
-  <p><b>Figura 3.</b> Cinta transportadora con parada automática ConveyLinx </p>
+  <p><b>Figura 3.</b>Cinta transportadora con parada automática ConveyLinx </p>
 </div>
 
 - **Posición:** Se detiene exactamente en el punto donde debe descargarse un producto.
@@ -139,7 +139,7 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 
 <div align="center">
   <img src="Bosch GSR 18V-EC.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 3.</b> Cinta transportadora con parada automática ConveyLinx </p>
+  <p><b>Figura 3.</b> Bosch GSR 18V-EC.jpg </p>
 </div>
 
 - **Posición:** No se controla la posición, porque no necesita ubicarse en coordenadas exactas.
