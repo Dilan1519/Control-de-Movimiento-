@@ -9,7 +9,7 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
  
  [3. Ejes de Movimiento](#3-ejes-de-movimiento)
 
- [4. Ejes de Movimiento](#4-qué-se-controla)
+ [4. ¿Qué se controla?](#4-qué-se-controla)
 
 ## 1. ¿En qué consiste?
 
