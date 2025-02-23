@@ -9,6 +9,8 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
  
  [3. Ejes de Movimiento](#3-ejes-de-movimiento)
 
+ [4. Ejes de Movimiento](#4-qué-se-controla)
+
 ## 1. ¿En qué consiste?
 
 El control de movimiento, también llamado control de posicionamiento servo, consite en el proceso de mover una carga en un sistema mecánico.
@@ -58,18 +60,24 @@ A continuación, se muestra una tabla con las industrias donde se usa el control
 > **Nota:** Esta tabla presenta solo algunos ejemplos de aplicaciones y países donde el control de movimiento es clave en la industria.
 
 ## 3. Ejes de Movimiento
+
 Cada movimiento generado por un actuador en un sistema de control se denomina **eje de movimiento (axis)**. Un sistema puede tener múltiples ejes, y su sincronización es esencial para realizar tareas complejas con precisión y eficiencia.
 
 ## Tipos de Ejes de Movimiento
-
+<div align="center">
+ 
 | Tipo de Eje         | Descripción | Ejemplo |
 |--------------------|-------------|---------|
 | **Eje Lineal** | Movimiento en línea recta a lo largo de un solo eje (X, Y o Z). | Un torno CNC mueve el cortador en el eje X para dar forma a la pieza. |
 | **Eje Rotacional** | Movimiento giratorio alrededor de un eje fijo. | Un brazo robótico de ensamblaje rota en el eje Z para ajustar una pieza. |
 | **Ejes Coordinados** | Múltiples ejes que trabajan en sincronización para realizar una tarea. | En una impresora, el cartucho de tinta se mueve en el eje X, mientras que el rodillo mueve el papel en el eje Y. |
-| 🤖 **Ejes Interpolados** | Movimiento combinado de varios ejes para generar trayectorias complejas. | Un robot industrial realiza movimientos curvos en 3D con interpolación de sus ejes. |
+| **Ejes Interpolados** | Movimiento combinado de varios ejes para generar trayectorias complejas. | Un robot industrial realiza movimientos curvos en 3D con interpolación de sus ejes. |
+ 
+</div>
 
-## 4. ¿Qué se controla?:
+> **Nota:** Esta tabla da una pequeña explicación de los tipos de ejes de movimiento.
+
+## 4. ¿Qué se controla?
 
 El control de movimiento puede regular posición, velocidad, torque y aceleración. Dependiendo de la aplicación, se pueden controlar las cuatro variables, solo tres, dos o una.
 
