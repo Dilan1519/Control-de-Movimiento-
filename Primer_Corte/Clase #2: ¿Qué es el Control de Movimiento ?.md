@@ -17,7 +17,7 @@ El control de movimiento, también llamado control de posicionamiento servo, con
 
 <div align="center">
   <img src="Imágenes/Telar Jacquard (1801).jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Figura de prueba</p>
+  <p><b>Figura 1.</b> Telar Jacquard (1801) </p>
 </div>
 
 ## Movimientos del telar Jacquard
