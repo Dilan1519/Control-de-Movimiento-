@@ -22,17 +22,6 @@
 
 <div align="center">
 
-| Primer |        Corte       | Segundo |        Corte       | Tercer |        Corte       |
-|:------:|:------------------:|:-------:|:------------------:|:------:|:------------------:|
-|    %   |      Actividad     |    %    |      Actividad     |    %   |      Actividad     |
-|   50   |    Laboratorios    |   50    |    Laboratorios    |   50   |    Laboratorios    |
-|   30   | Tareas (Simsacape) |   30    | Tareas (Simsacape) |   30   | Tareas (Simsacape) |
-|   20   |       Apuntes      |   20    |       Apuntes      |   20   |       Apuntes      |
-
-</div>
-
-<div align="center">
-
 <table>
   <tr>
     <th colspan="2">Primer Corte</th>
@@ -75,9 +64,11 @@
 
 </div>
 
-
-
-
-
 ## Bibliografía
-Aquí va la bibliografía utilizada.
+
+[**Industrial Motion Control, Primera Edición**](https://www.amazon.com/dp/ISBN)  
+[**Manuales ABB**](https://global.abb/)  
+[**Manuales Yaskawa**](https://www.yaskawa.com/)  
+[**Manuales SEW**](https://www.sew-eurodrive.es/)  
+
+
