@@ -168,10 +168,9 @@ El control de movimiento no siempre fue electrónico. Antes de los motores y sen
 - **Al-Jazari** diseñó relojes automáticos y sistemas de bombeo de agua.  
 - Creó mecanismos de engranajes y poleas para automatizar procesos.  
 
-
 ## 5.2. Revolución Industrial: La Era del Control Mecánico  
 
-### 🌍 **Países Pioneros en la Automatización Mecánica**  
+### **Países Pioneros en la Automatización Mecánica**  
 | País | Industria Destacada |
 |------|--------------------|
 | 🇬🇧 Reino Unido | Máquinas de vapor y telares |
