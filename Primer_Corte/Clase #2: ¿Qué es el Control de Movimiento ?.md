@@ -10,6 +10,8 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
  [3. Ejes de Movimiento](#3-ejes-de-movimiento)
 
  [4. ¿Qué se controla?](#4-qué-se-controla)
+ 
+ [5. ¿Cómo se hacia antes del control?](#5-cómo-se-hcia-antes-del-control)
 
 ## 1. ¿En qué consiste?
 
@@ -18,7 +20,7 @@ El control de movimiento, también llamado control de posicionamiento servo, con
 💡**Ejemplo 1:** Un ejemplo antiguo de control de movimiento es el telar Jacquard (1801). Este telar automatizado, desarrollado por Joseph Marie Jacquard, utilizaba tarjetas perforadas para controlar el movimiento de los hilos en la fabricación de textiles con patrones complejos.
 
 <div align="center">
-  <img src="Imágenes/Clase#2/Telar Jacquard (1801).jpg" alt="Figura de prueba" width="400">
+  <img src="Imágenes/Clase%20%232/Telar Jacquard (1801).jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 1.</b> Telar Jacquard (1801) </p>
 </div>
 
@@ -92,7 +94,7 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 💡**Ejemplo 2:** Controlando las 4 variables (posición, velocidad, torque y aceleración)
 
 <div align="center">
-  <img src="Imágenes/Robot FANUC Arc Mate 100iC.png" alt="Figura de prueba" width="400">
+  <img src="Imágenes/Clase%20%232/Robot FANUC Arc Mate 100iC.png" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Robot FANUC Arc Mate 100iC</p>
 </div>
 
@@ -108,7 +110,7 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 💡**Ejemplo 3:** Controlando 3 variables (posición, velocidad y torque)
 
 <div align="center">
-  <img src="Imágenes/Fresadora HAAS VF-2.jpg" alt="Figura de prueba" width="400">
+  <img src="Imágenes/Clase%20%232/Fresadora HAAS VF-2.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 3.</b> Fresadora HAAS VF-2 </p>
 </div>
 
@@ -123,7 +125,7 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 💡**Ejemplo 4:** Controlando 2 variables (posición y velocidad)
 
 <div align="center">
-  <img src="Imágenes/Cinta transportadora con parada automática ConveyLinx.avif" alt="Figura de prueba" width="400">
+  <img src="Imágenes/Clase%20%232/Cinta transportadora con parada automática ConveyLinx.avif" alt="Figura de prueba" width="400">
   <p><b>Figura 3.</b>Cinta transportadora con parada automática ConveyLinx </p>
 </div>
 
@@ -138,7 +140,7 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 💡**Ejemplo 5:** Controlando solo 1 variable (torque)
 
 <div align="center">
-  <img src="Imágenes/Bosch GSR 18V-EC.jpg" alt="Figura de prueba" width="400">
+  <img src="Imágenes/Clase%20%232/Bosch GSR 18V-EC.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 3.</b> Bosch GSR 18V-EC. </p>
 </div>
 
@@ -150,7 +152,7 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 
 - **Aceleración:** No se controla la aceleración, porque el usuario decide la rapidez del movimiento.
 
-# 5. ¿Cómos se hacia antes del control?
+# 5. ¿Cómo se hacia antes del control?
 
 El control de movimiento no siempre fue electrónico. Antes de los motores y sensores modernos, los ingenieros usaban mecanismos mecánicos avanzados para lograr precisión y automatización.  
 
