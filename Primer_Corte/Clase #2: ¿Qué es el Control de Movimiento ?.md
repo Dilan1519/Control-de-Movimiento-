@@ -18,7 +18,7 @@ El control de movimiento, también llamado control de posicionamiento servo, con
 💡**Ejemplo 1:** Un ejemplo antiguo de control de movimiento es el telar Jacquard (1801). Este telar automatizado, desarrollado por Joseph Marie Jacquard, utilizaba tarjetas perforadas para controlar el movimiento de los hilos en la fabricación de textiles con patrones complejos.
 
 <div align="center">
-  <img src="Imágenes/Telar Jacquard (1801).jpg" alt="Figura de prueba" width="400">
+  <img src="Imágenes/Clase#2/Telar Jacquard (1801).jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 1.</b> Telar Jacquard (1801) </p>
 </div>
 
