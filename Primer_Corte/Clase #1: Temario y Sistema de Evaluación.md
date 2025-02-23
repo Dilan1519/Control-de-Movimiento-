@@ -21,12 +21,13 @@
 ## Calificación
 <div align="center">
 
-|     **Primer Corte**     | **Segundo Corte**        | **Tercer Corte**         |
-|--------------------------|--------------------------|--------------------------|
-| **%** |**Actividad**     | **%** |**Actividad**     | **%** |**Actividad**     |
-|  50 | Laboratorios       | 50 | Laboratorios        | 50 | Laboratorios          | 
-|  30 | Tareas (Simsacape) | 30 | Tareas (Simsacape)  |30 | Tareas (Simsacape)    |
-|  20 | Apuntes            |  20 | Apuntes            |  20 | Apuntes |
+| **Primer Corte**    | **Segundo Corte**   | **Tercer Corte**    |
+|---------------------|--------------------|---------------------|
+| **%** | **Actividad** | **%** | **Actividad** | **%** | **Actividad** |
+| 50   | Laboratorios  | 50   | Laboratorios  | 50   | Laboratorios  |
+| 30   | Tareas (Simsacape) | 30   | Tareas (Simsacape) | 30   | Tareas (Simsacape) |
+| 20   | Apuntes       | 20   | Apuntes       | 20   | Apuntes       |
+
 
 </div>
 
