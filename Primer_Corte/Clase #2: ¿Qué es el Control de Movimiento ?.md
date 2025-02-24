@@ -19,9 +19,9 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
 
  [8. Ejercicio ](#8-Ejercicio)
 
- [9. Solución ](#9-Solucion)
+ [9. Solución](#9-Solucion)
 
- [10. Bibliografía  ](#10-Bibliografia)
+ [10. Bibliografía](#10-Bibliografia)
 
 
 ## 1. ¿En qué consiste?
@@ -363,11 +363,11 @@ Finalmente, la posición es el objetivo final, pero necesita de los otros dos ni
   - **Actuadores**  
   - **Mecanismos de transmisión**  
   - **Sensores**
-  - 
+
 **●** Explica el funcionamiento del sistema en pasos detallados.  
 **●** Propón una mejora en el sistema. 
 
-## 9. Solución
+# 9. Solución
 
 ## Impresora 3D  
 
