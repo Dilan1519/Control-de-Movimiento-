@@ -311,36 +311,35 @@ Finalmente, la posición es el objetivo final, pero necesita de los otros dos ni
   <p><b>Figura 3.</b> Control de cascada </p>
 </div>
 
-# ⚙️ Niveles de Control en un Sistema de Movimiento  
+## **Control de Posición (Nivel más alto)**  
+- **● Referencia (Setpoint):**  
+  - La posición deseada (ejemplo: destino del GPS o posición final del auto).  
 
-## Control de Posición (Nivel más alto)  
-🔹 **Referencia (Setpoint):**  
-- La posición deseada (ejemplo: destino del GPS o posición final del auto).  
+- **● Retroalimentación (Feedback):**  
+  - Sensor de posición: GPS, encoder de ruedas, sensores de odometría (LIDAR o cámaras en autos autónomos).  
 
-🔹 **Retroalimentación (Feedback):**  
-- Sensor de posición: GPS, encoder de ruedas, sensores de odometría (LIDAR o cámaras en autos autónomos).  
+- **● Señal de control:**  
+  - Genera un setpoint de velocidad para el siguiente nivel.  
 
-🔹 **Señal de control:**  
-- Genera un setpoint de velocidad para el siguiente nivel.  
+## **Control de Velocidad (Nivel intermedio)**  
+- **● Referencia (Setpoint):**  
+  - La velocidad deseada (por ejemplo, 60 km/h en un control de crucero).  
 
-## 2Control de Velocidad (Nivel intermedio)  
-🔹 **Referencia (Setpoint):**  
-- La velocidad deseada (por ejemplo, 5 km/h).  
+- **● Retroalimentación (Feedback):**  
+  - Sensor de velocidad: Encoder en ruedas, velocímetro, radar de control adaptativo.  
 
-🔹 **Retroalimentación (Feedback):**  
-- Sensor de velocidad: Encoder en ruedas, velocímetro, radar de control adaptativo.  
+- **● Señal de control:**  
+  - Genera un setpoint de torque para el siguiente nivel.  
 
-🔹 **Señal de control:**  
-- Genera un setpoint de torque para el siguiente nivel.  
+## **Control de Torque (Nivel más bajo)**  
+- **● Referencia (Setpoint):**  
+  - El torque requerido por el motor para mantener la velocidad.  
 
-## 3️⃣ Control de Torque (Nivel más bajo)  
-🔹 **Referencia (Setpoint):**  
-- El torque requerido por el motor para mantener la velocidad.  
+- **● Retroalimentación (Feedback):**  
+  - Sensor de corriente del motor eléctrico o sensor de presión en motores de combustión.  
 
-🔹 **Retroalimentación (Feedback):**  
-- Sensor de corriente del motor eléctrico o sensor de presión en motores de combustión.  
+- **● Señal de control:**  
+  - **PWM** (Modulación por Ancho de Pulso) controla la energía enviada al motor eléctrico.  
+  - En motores de combustión, la señal es el control del acelerador o la inyección de combustible.  
 
-🔹 **Señal de control:**  
-- **PWM** (Modulación por Ancho de Pulso) controla la energía enviada al motor eléctrico.  
-- En motores de combustión, la señal es el control del acelerador o la inyección de combustible.  
 
