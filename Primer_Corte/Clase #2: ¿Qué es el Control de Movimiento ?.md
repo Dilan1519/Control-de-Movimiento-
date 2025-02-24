@@ -13,6 +13,8 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
  
  [5. ¿Cómo se hacia antes del control?](#5-cómo-se-hacia-antes-del-control)
 
+ [6. ¿Componentes?](#5-cómo-se-hacia-antes-del-control)
+
 ## 1. ¿En qué consiste?
 
 El control de movimiento, también llamado control de posicionamiento servo, consite en el proceso de mover una carga en un sistema mecánico.
@@ -185,8 +187,6 @@ El control de movimiento no siempre fue electrónico. Antes de los motores y sen
 
 ## 5.2. Revolución Industrial: La Era del Control Mecánico  
 
-### **Países Pioneros en la Automatización Mecánica**  
-
 <div align="center">
   <table>
     <tr>
@@ -208,8 +208,10 @@ El control de movimiento no siempre fue electrónico. Antes de los motores y sen
   </table>
  
 </div>
- 
-## 5.3. ¿Cómo Funcionaban Sin Control Electrónico?  
+
+ > **Nota:** Países Pioneros en la Automatización Mecánica.
+
+## 5.3. ¿Cómo Funcionaban Sin Control?  
 
 <div align="center">
  
@@ -222,11 +224,13 @@ El control de movimiento no siempre fue electrónico. Antes de los motores y sen
 
 </div>
 
+> **Nota:** Esta tabla da a conconer como funcionaba antes sin control
+
 ## 5.4. Desventajas de los Métodos Antiguos  
 
-❌ **Poca flexibilidad**: Modificar una máquina requería reconstruir todo el sistema.  
-❌ **Errores por desgaste**: Engranajes y levas perdían precisión con el tiempo.  
-❌ **Altos costos de mantenimiento**: Reemplazar piezas dañadas era caro.  
-❌ **Dependencia del operador**: Se necesitaban trabajadores para supervisar.  
+**Poca flexibilidad**: Modificar una máquina requería reconstruir todo el sistema.  
+**Errores por desgaste**: Engranajes y levas perdían precisión con el tiempo.  
+**Altos costos de mantenimiento**: Reemplazar piezas dañadas era caro.  
+**Dependencia del operador**: Se necesitaban trabajadores para supervisar.  
 
-
+# 6. Componentes
