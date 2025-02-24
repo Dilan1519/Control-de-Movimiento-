@@ -348,3 +348,18 @@ Finalmente, la posición es el objetivo final, pero necesita de los otros dos ni
 
 ## Configuración de un Sistema de Control de Movimiento
 
+## **Instrucciones**  
+
+- **●** Selecciona un sistema en el que se aplique el control de movimiento.  
+- **●** Identifica y describe los componentes del sistema:  
+  - **HMI (Interfaz Humano-Máquina)**  
+  - **Controladores**  
+  - **Drivers**  
+  - **Actuadores**  
+  - **Mecanismos de transmisión**  
+  - **Sensores**  
+- **●** Dibuja un diagrama de bloques donde se muestre la interacción entre los componentes.  
+- **●** Explica el funcionamiento del sistema en pasos detallados.  
+- **●** Propón una mejora en el sistema. 
+
+
