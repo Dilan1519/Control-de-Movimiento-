@@ -19,7 +19,10 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
 
  [8. Ejercicio ](#8-Ejercicio)
 
- [9. Solución ](#8-Solucion)
+ [9. Solución ](#9-Solucion)
+
+ [10. Bibliografía  ](#10-Bibliografia)
+
 
 ## 1. ¿En qué consiste?
 
@@ -360,8 +363,7 @@ Finalmente, la posición es el objetivo final, pero necesita de los otros dos ni
   - **Actuadores**  
   - **Mecanismos de transmisión**  
   - **Sensores**
-
-**●** Dibuja un diagrama de bloques donde se muestre la interacción entre los componentes.  
+  - 
 **●** Explica el funcionamiento del sistema en pasos detallados.  
 **●** Propón una mejora en el sistema. 
 
@@ -399,3 +401,26 @@ Finalmente, la posición es el objetivo final, pero necesita de los otros dos ni
 ## Mejora Propuesta
 
 Agregar un sensor de flujo de filamento para detectar atascos o falta de material.
+
+# 10. Bibliografía  
+
+[1] Siciliano, B., & Khatib, O. (2016). *Springer Handbook of Robotics*. Springer.  
+    Explica los principios del control de movimiento en robótica y automatización.  
+
+[2] Nof, S. Y. (2009). *Springer Handbook of Automation*. Springer.  
+    Cubre sistemas de automatización, incluyendo control de motores y sensores.  
+
+[3] Gibson, I., Rosen, D. W., & Stucker, B. (2021). *Additive Manufacturing Technologies*. Springer.  
+    Libro clave sobre impresión 3D y control de movimiento en fabricación aditiva.  
+
+[4] Chua, C. K., & Leong, K. F. (2017). *3D Printing and Additive Manufacturing: Principles and Applications*. World Scientific.  
+    Explica los sistemas de impresión 3D, componentes y control de movimiento.  
+
+[5] Documentation of Marlin Firmware (2024). *Marlin 3D Printer Firmware*.  
+    Documentación oficial del firmware Marlin, usado en muchas impresoras 3D.  
+    Disponible en: [https://marlinfw.org/](https://marlinfw.org/)  
+
+[6] RepRap Wiki (2024). *RepRap: The Open-Source 3D Printer Community*.  
+    Información sobre hardware y software de impresoras 3D.  
+    Disponible en: [https://reprap.org/wiki/Main_Page](https://reprap.org/wiki/Main_Page)  
+
