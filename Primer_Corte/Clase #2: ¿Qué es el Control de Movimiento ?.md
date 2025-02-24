@@ -158,7 +158,7 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 
 - **Aceleración:** No se controla la aceleración, porque el usuario decide la rapidez del movimiento.
 
-# 5. ¿Cómo se hacia antes del control?
+## 5. ¿Cómo se hacia antes del control?
 
 El control de movimiento no siempre fue electrónico. Antes de los motores y sensores modernos, los ingenieros usaban mecanismos mecánicos avanzados para lograr precisión y automatización.  
 
@@ -237,7 +237,7 @@ El control de movimiento no siempre fue electrónico. Antes de los motores y sen
 **Altos costos de mantenimiento**: Reemplazar piezas dañadas era caro.  
 **Dependencia del operador**: Se necesitaban trabajadores para supervisar.  
 
-# 6. Componentes
+## 6. Componentes
 
 El control de movimiento está compuesto por varios elementos fundamentales que trabajan en conjunto para lograr un desplazamiento preciso y eficiente en sistemas mecatrónicos. Estos componentes incluyen:
 
@@ -363,4 +363,37 @@ Finalmente, la posición es el objetivo final, pero necesita de los otros dos ni
 **●** Explica el funcionamiento del sistema en pasos detallados.  
 **●** Propón una mejora en el sistema. 
 
+## 9. Solución
 
+## Impresora 3D  
+
+## Identificación de Componentes  
+
+<div align="center">  
+ 
+| Componente                     | Ejemplo en la Impresora 3D |
+|---------------------------------|--------------------------------|
+| HMI (Interfaz Hombre-Máquina)   | Pantalla táctil o software en PC (PrusaSlicer, Cura) donde el usuario configura la impresión. |
+| Control de Movimiento           | Controlador 32 bits (Marlin, Klipper) que interpreta el código G y genera las señales para los motores. |
+| Drivers (Potencia)              | Drivers de motores paso a paso (A4988, TMC2209) que regulan la corriente y el movimiento de los motores. |
+| Actuadores                      | Motores paso a paso para mover los ejes X, Y y Z, y un extrusor que empuja el filamento. |
+| Mecanismos de Transmisión        | Husillos de bolas, correas dentadas y rodamientos que convierten el giro de los motores en desplazamientos precisos. |
+| Retroalimentación (Sensores)     | Endstops para detectar límites de los ejes, sensor de nivelación automática (BLTouch), termistores para monitorear temperatura. |
+
+</div>
+
+> **Nota:** La precisión de la impresión depende del correcto ajuste de los motores, drivers y sensores.
+
+**Funcionamiento del Sistema**
+
+- El usuario carga el modelo 3D en el software y configura parámetros como temperatura, velocidad y altura de capa.
+- La HMI envía el código G al controlador de la impresora.
+- El controlador procesa las instrucciones y envía señales a los drivers.
+- Los drivers controlan la corriente de los motores paso a paso.
+- Los motores mueven la boquilla de impresión en los ejes X, Y y Z mediante correas y husillos.
+- El extrusor empuja el filamento hacia el hotend, donde se funde y se deposita en la cama de impresión.
+- Los sensores de temperatura y nivelación ajustan el sistema en tiempo real para mejorar la calidad de la impresión.
+
+## Mejora Propuesta
+
+Agregar un sensor de flujo de filamento para detectar atascos o falta de material.
