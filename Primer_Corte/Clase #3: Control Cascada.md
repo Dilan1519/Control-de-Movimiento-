@@ -38,7 +38,7 @@ imagen control cascada
 A continuación, se muestra una lista con las condiciones mas importantes a tener en cuenta al momento de diseñar un sistema de control cascada.
 
 - **velocidad de los controladores**
- - Al diseñar un controlador cascada, se deben tener en cuenta las velocidades de respuesta de los controladores, ya que el orden de la cascada dependera de esta velocidad, los sistemas mas rapidos seran los que se encuentren en la parte mas interna de la cascada, y de esta forma se ordenan los controladores hasta llegar al controlador mas lento el cual sera el mas externo de la cascada.
+- Al diseñar un controlador cascada, se deben tener en cuenta las velocidades de respuesta de los controladores, ya que el orden de la cascada dependera de esta velocidad, los sistemas mas rapidos seran los que se encuentren en la parte mas interna de la cascada, y de esta forma se ordenan los controladores hasta llegar al controlador mas lento el cual sera el mas externo de la cascada.
 
 ## 3. Ejes de Movimiento
 
