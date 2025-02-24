@@ -132,7 +132,7 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 
 <div align="center">
   <img src="Imágenes/Clase%20%232/Cinta transportadora con parada automática ConveyLinx.avif" alt="Figura de prueba" width="400">
-  <p><b>Figura 3.</b>Cinta transportadora con parada automática ConveyLinx </p>
+  <p><b>Figura 4.</b>Cinta transportadora con parada automática ConveyLinx </p>
 </div>
 
 - **Posición:** Se detiene exactamente en el punto donde debe descargarse un producto.
@@ -147,7 +147,7 @@ El control de movimiento puede regular posición, velocidad, torque y aceleraci�
 
 <div align="center">
   <img src="Imágenes/Clase%20%232/Bosch GSR 18V-EC.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 3.</b> Bosch GSR 18V-EC </p>
+  <p><b>Figura 5.</b> Bosch GSR 18V-EC </p>
 </div>
 
 - **Posición:** No se controla la posición, porque no necesita ubicarse en coordenadas exactas.
@@ -171,14 +171,14 @@ El control de movimiento no siempre fue electrónico. Antes de los motores y sen
 
 <div align="center">
   <img src="Imágenes/Clase%20%232/Herón de Alejandría Puertas Automaticas.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 3.</b> Herón de Alejandría Puertas Automaticas </p>
+  <p><b>Figura 6.</b> Herón de Alejandría Puertas Automaticas </p>
 </div>
 
 - Creó la **eolípila**, un dispositivo a vapor que anticipó las máquinas de vapor.
 
 <div align="center">
   <img src="Imágenes/Clase%20%232/Herón de Alejandría eolípila.gif" alt="Figura de prueba" width="400">
-  <p><b>Figura 3.</b> Herón de Alejandría eolípila </p>
+  <p><b>Figura 7.</b> Herón de Alejandría eolípila </p>
 </div>
 
 #### Los Autómatas Islámicos (Siglos IX - XIII)  
@@ -186,7 +186,7 @@ El control de movimiento no siempre fue electrónico. Antes de los motores y sen
 
 <div align="center">
   <img src="Imágenes/Clase%20%232/Al-Jazari Creó mecanismos de engranajes y poleas para automatizar procesos.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 3.</b> Herón de Alejandría eolípila </p>
+  <p><b>Figura 8.</b> Herón de Alejandría eolípila </p>
 </div>
 
 ## 5.2. Revolución Industrial: La Era del Control Mecánico  
@@ -310,37 +310,37 @@ Finalmente, la posición es el objetivo final, pero necesita de los otros dos ni
 
 <div align="center">
   <img src="Imágenes/Clase%20%232/¿Dónde quiero estacionarme”.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 3.</b> Control de cascada </p>
+  <p><b>Figura 9.</b> Control de cascada </p>
 </div>
 
 ## **Control de Posición (Nivel más alto)**  
-- **● Referencia (Setpoint):**  
+**● Referencia (Setpoint):**  
   - La posición deseada (ejemplo: destino del GPS o posición final del auto).  
 
-- **● Retroalimentación (Feedback):**  
+ **● Retroalimentación (Feedback):**  
   - Sensor de posición: GPS, encoder de ruedas, sensores de odometría (LIDAR o cámaras en autos autónomos).  
 
-- **● Señal de control:**  
+ **● Señal de control:**  
   - Genera un setpoint de velocidad para el siguiente nivel.  
 
 ## **Control de Velocidad (Nivel intermedio)**  
-- **● Referencia (Setpoint):**  
+**● Referencia (Setpoint):**  
   - La velocidad deseada (por ejemplo, 60 km/h en un control de crucero).  
 
-- **● Retroalimentación (Feedback):**  
+ **● Retroalimentación (Feedback):**  
   - Sensor de velocidad: Encoder en ruedas, velocímetro, radar de control adaptativo.  
 
-- **● Señal de control:**  
+  **● Señal de control:**  
   - Genera un setpoint de torque para el siguiente nivel.  
 
 ## **Control de Torque (Nivel más bajo)**  
 - **● Referencia (Setpoint):**  
   - El torque requerido por el motor para mantener la velocidad.  
 
-- **● Retroalimentación (Feedback):**  
+  **● Retroalimentación (Feedback):**  
   - Sensor de corriente del motor eléctrico o sensor de presión en motores de combustión.  
 
-- **● Señal de control:**  
+ **● Señal de control:**  
   - **PWM** (Modulación por Ancho de Pulso) controla la energía enviada al motor eléctrico.  
   - En motores de combustión, la señal es el control del acelerador o la inyección de combustible.  
 
@@ -350,16 +350,17 @@ Finalmente, la posición es el objetivo final, pero necesita de los otros dos ni
 
 ## **Instrucciones**  
 
-- **●** Selecciona un sistema en el que se aplique el control de movimiento.  
-- **●** Identifica y describe los componentes del sistema:  
+**●** Selecciona un sistema en el que se aplique el control de movimiento.  
+**●** Identifica y describe los componentes del sistema:  
   - **HMI (Interfaz Humano-Máquina)**  
   - **Controladores**  
   - **Drivers**  
   - **Actuadores**  
   - **Mecanismos de transmisión**  
-  - **Sensores**  
-- **●** Dibuja un diagrama de bloques donde se muestre la interacción entre los componentes.  
-- **●** Explica el funcionamiento del sistema en pasos detallados.  
-- **●** Propón una mejora en el sistema. 
+  - **Sensores**
+
+**●** Dibuja un diagrama de bloques donde se muestre la interacción entre los componentes.  
+**●** Explica el funcionamiento del sistema en pasos detallados.  
+**●** Propón una mejora en el sistema. 
 
 
