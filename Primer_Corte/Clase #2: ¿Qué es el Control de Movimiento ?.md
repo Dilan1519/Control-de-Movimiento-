@@ -15,6 +15,8 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
 
  [6. ¿Componentes?](#6-componentes)
 
+  [7. Control de cascada ](#7-control-de-cascada)
+
 ## 1. ¿En qué consiste?
 
 El control de movimiento, también llamado control de posicionamiento servo, consite en el proceso de mover una carga en un sistema mecánico.
@@ -291,4 +293,19 @@ El control de movimiento está compuesto por varios elementos fundamentales que 
 - Los motores mueven la herramienta de corte en los ejes X, Y y Z mediante husillos de bolas y guías lineales.  
 - Los sensores de retroalimentación, como encoders, monitorean la posición y velocidad de los ejes, enviando datos al controlador para realizar correcciones en tiempo real.  
 - La máquina ejecuta el corte con alta precisión, garantizando la calidad de la pieza terminada.  
+
+## 7. Control de cascada
+
+En un diagrama de cascada en control de movimiento, el orden posición → velocidad → torque se debe a la forma en que los sistemas de control gestionan el movimiento de un actuador.
+
+### **¿Por qué este orden?**
+
+El torque es lo que realmente mueve el sistema, pero no se puede controlar directamente la posición con torque, ya que otros factores como la inercia y la fricción influyen.
+La velocidad actúa como un intermediario, asegurando que el motor no se descontrole ni se sobrecargue.
+Finalmente, la posición es el objetivo final, pero necesita de los otros dos niveles para alcanzarse con precisión y estabilidad.
+
+<div align="center">
+  <img src="Imágenes/Clase%20%232/¿Dónde quiero estacionarme”.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 3.</b> Control de cascada </p>
+</div>
 
