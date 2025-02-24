@@ -19,6 +19,8 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
 
  [8. Ejercicio ](#8-Ejercicio)
 
+ [9. Solución ](#8-Solucion)
+
 ## 1. ¿En qué consiste?
 
 El control de movimiento, también llamado control de posicionamiento servo, consite en el proceso de mover una carga en un sistema mecánico.
