@@ -15,7 +15,9 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
 
  [6. ¿Componentes?](#6-componentes)
 
-  [7. Control de cascada ](#7-control-de-cascada)
+ [7. Control de cascada ](#7-control-de-cascada)
+
+ [8. Ejercicio ](#8-Ejercicio)
 
 ## 1. ¿En qué consiste?
 
@@ -342,4 +344,7 @@ Finalmente, la posición es el objetivo final, pero necesita de los otros dos ni
   - **PWM** (Modulación por Ancho de Pulso) controla la energía enviada al motor eléctrico.  
   - En motores de combustión, la señal es el control del acelerador o la inyección de combustible.  
 
+## 8. Ejercicio 
+
+## Configuración de un Sistema de Control de Movimiento
 
