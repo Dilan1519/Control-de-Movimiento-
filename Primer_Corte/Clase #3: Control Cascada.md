@@ -1,6 +1,6 @@
 # ¿QUÉ ES EL CONTROL CASCADA?
 
-El control cascada en una técnica de control la cual se usa comúnmente en el control de movimiento, esto ya que al necesitar controlar más de una variable a la vez, se hace uso de un sistema compuesto por dos controladores, donde la salida del primer controlador sirve de setpoint para el segundo. 
+El control cascada en una técnica de control la cual se usa comúnmente en el control de movimiento, esto ya que al necesitar controlar más de una variable a la vez y una dependiente de otra, se hace uso de un sistema compuesto por dos controladores, donde la salida del primer controlador sirve de setpoint para el segundo. 
 
 ## Índice
  [1. ¿En qué consiste?](#1-en-qué-consiste)
@@ -26,32 +26,8 @@ El control cascada en una técnica de control la cual se usa comúnmente en el c
 
 ## 1. ¿En qué consiste?
 
-El control de movimiento, también llamado control de posicionamiento servo, consite en el proceso de mover una carga en un sistema mecánico.
+Como su nombre lo sugiere, esta técnica consiste en poner en serie dos o más algoritmos de control, donde las variables controladas por estos algoritmos, son dependientes una de la otra de manera sucesiva, pero esta técnica no puede ser usada al azar, ya que requiere de ciertas condiciones y reglas para ser implementada de la manera correcta.
 
-💡**Ejemplo 1:** Un ejemplo antiguo de control de movimiento es el telar Jacquard (1801). Este telar automatizado, desarrollado por Joseph Marie Jacquard, utilizaba tarjetas perforadas para controlar el movimiento de los hilos en la fabricación de textiles con patrones complejos.
-
-<div align="center">
-  <img src="Imágenes/Clase%20%232/Telar Jacquard (1801).jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Telar Jacquard (1801) </p>
-</div>
-
-## Movimientos del telar Jacquard
-
-- **Movimiento de elevación de los hilos de urdimbre:**  
-  - Se levantaban ciertos hilos según el patrón dictado por las tarjetas perforadas.
-  - Este movimiento era clave para formar el diseño del tejido.
-
-- **Movimiento del peine o batán:**  
-  - Después de entrelazar los hilos, el peine golpeaba la trama para compactar el tejido.
-  - Garantizaba que el tejido tuviera una estructura firme y uniforme.
-
-- **Movimiento de avance de la tela:**  
-  - A medida que se tejía, la tela se iba enrollando automáticamente.
-  - Permitía la producción continua sin intervención manual.
-
-- **Movimiento de las tarjetas perforadas:**  
-  - Se desplazaban y giraban para indicar el siguiente patrón de tejido.
-  - Funcionaban como un sistema de control programable mecánico.
   
 ## 2. ¿Qué condiciones necesita?
 
