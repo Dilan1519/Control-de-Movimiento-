@@ -13,7 +13,7 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
  
  [5. ¿Cómo se hacia antes del control?](#5-cómo-se-hacia-antes-del-control)
 
- [6. ¿Componentes?](#5-componentes)
+ [6. ¿Componentes?](#6-componentes)
 
 ## 1. ¿En qué consiste?
 
@@ -238,9 +238,16 @@ El control de movimiento no siempre fue electrónico. Antes de los motores y sen
 El control de movimiento está compuesto por varios elementos fundamentales que trabajan en conjunto para lograr un desplazamiento preciso y eficiente en sistemas mecatrónicos. Estos componentes incluyen:
 
 >🔑Human-Machine Interfaces (HMI): Permiten la interacción entre el usuario y el sistema de control, facilitando la configuración y supervisión del movimiento.
+>
 >🔑Control de Movimiento: Se encarga de generar las señales necesarias para regular la posición, velocidad y trayectoria del sistema.
+>
 >🔑Drivers (Potencia): Proveen la energía necesaria para accionar los actuadores de acuerdo con las señales del controlador.
+>
 >🔑Actuadores: Dispositivos que convierten la energía eléctrica en movimiento, como motores eléctricos o servomotores.
+>
 >🔑Mecanismos de Transmisión: Elementos mecánicos, como engranajes, correas o husillos, que transfieren el movimiento desde los actuadores hasta la carga final.
+>
 >🔑Retroalimentación (Sensores): Proveen información en tiempo real sobre la posición y velocidad del sistema, permitiendo ajustes y correcciones en el control del movimiento.
+
+
 
