@@ -19,9 +19,9 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
 
  [8. Ejercicio ](#8-Ejercicio)
 
- [9.Solución](#9-Solución)
+ [9. Solución](#9-Solución)
 
- [10.Bibliografía](#10-Bibliografía)
+ [10. Bibliografía](#10-Bibliografía)
 
 
 ## 1. ¿En qué consiste?
@@ -402,7 +402,7 @@ Finalmente, la posición es el objetivo final, pero necesita de los otros dos ni
 
 Agregar un sensor de flujo de filamento para detectar atascos o falta de material.
 
-# 10.Bibliografía  
+# 10. Bibliografía  
 
 [1] Siciliano, B., & Khatib, O. (2016). *Springer Handbook of Robotics*. Springer.  
     Explica los principios del control de movimiento en robótica y automatización.  
