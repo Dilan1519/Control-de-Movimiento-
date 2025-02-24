@@ -304,8 +304,43 @@ El torque es lo que realmente mueve el sistema, pero no se puede controlar direc
 La velocidad actúa como un intermediario, asegurando que el motor no se descontrole ni se sobrecargue.
 Finalmente, la posición es el objetivo final, pero necesita de los otros dos niveles para alcanzarse con precisión y estabilidad.
 
+💡**Ejemplo 6:** ¿Donde quiero estacionarme?
+
 <div align="center">
   <img src="Imágenes/Clase%20%232/¿Dónde quiero estacionarme”.png" alt="Figura de prueba" width="400">
   <p><b>Figura 3.</b> Control de cascada </p>
 </div>
+
+# ⚙️ Niveles de Control en un Sistema de Movimiento  
+
+## Control de Posición (Nivel más alto)  
+🔹 **Referencia (Setpoint):**  
+- La posición deseada (ejemplo: destino del GPS o posición final del auto).  
+
+🔹 **Retroalimentación (Feedback):**  
+- Sensor de posición: GPS, encoder de ruedas, sensores de odometría (LIDAR o cámaras en autos autónomos).  
+
+🔹 **Señal de control:**  
+- Genera un setpoint de velocidad para el siguiente nivel.  
+
+## 2Control de Velocidad (Nivel intermedio)  
+🔹 **Referencia (Setpoint):**  
+- La velocidad deseada (por ejemplo, 5 km/h).  
+
+🔹 **Retroalimentación (Feedback):**  
+- Sensor de velocidad: Encoder en ruedas, velocímetro, radar de control adaptativo.  
+
+🔹 **Señal de control:**  
+- Genera un setpoint de torque para el siguiente nivel.  
+
+## 3️⃣ Control de Torque (Nivel más bajo)  
+🔹 **Referencia (Setpoint):**  
+- El torque requerido por el motor para mantener la velocidad.  
+
+🔹 **Retroalimentación (Feedback):**  
+- Sensor de corriente del motor eléctrico o sensor de presión en motores de combustión.  
+
+🔹 **Señal de control:**  
+- **PWM** (Modulación por Ancho de Pulso) controla la energía enviada al motor eléctrico.  
+- En motores de combustión, la señal es el control del acelerador o la inyección de combustible.  
 
