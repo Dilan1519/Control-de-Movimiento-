@@ -1,11 +1,11 @@
-# ¿QUÉ ES EL CONTROL DE MOVIMIENTO?
+# ¿QUÉ ES EL CONTROL CASCADA?
 
-El control de movimiento es una disciplina de la ingeniería que regula y coordina el desplazamiento de objetos mediante actuadores, sensores y algoritmos de control. Su aplicación es esencial en sectores como la manufactura, la robótica y la automatización de procesos. Es fundamental para garantizar precisión, eficiencia y optimización en sistemas industriales, mejorando la productividad y reduciendo errores. Su desarrollo ha permitido la evolución de máquinas inteligentes capaces de realizar operaciones con alta exactitud, impulsando la modernización y el avance tecnológico en diversas industrias.
+El control cascada en una técnica de control la cual se usa comúnmente en el control de movimiento, esto ya que al necesitar controlar más de una variable a la vez, se hace uso de un sistema compuesto por dos controladores, donde la salida del primer controlador sirve de setpoint para el segundo. 
 
 ## Índice
  [1. ¿En qué consiste?](#1-en-qué-consiste)
  
- [2. ¿En qué industria se usa?](#2-en-qué-industria-se-usa)
+ [2. ¿Qué condiciones necesita?](#2-Qué-condiciones-necesita)
  
  [3. Ejes de Movimiento](#3-ejes-de-movimiento)
 
@@ -53,7 +53,7 @@ El control de movimiento, también llamado control de posicionamiento servo, con
   - Se desplazaban y giraban para indicar el siguiente patrón de tejido.
   - Funcionaban como un sistema de control programable mecánico.
   
-## 2. ¿En qué industria se usa?
+## 2. ¿Qué condiciones necesita?
 
 A continuación, se muestra una tabla con las industrias donde se usa el control de movimiento, los tipos de máquinas que emplean esta tecnología, los países donde es más común y los beneficios clave en cada sector.
 
