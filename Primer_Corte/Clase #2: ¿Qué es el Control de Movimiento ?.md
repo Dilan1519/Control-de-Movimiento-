@@ -249,5 +249,46 @@ El control de movimiento está compuesto por varios elementos fundamentales que 
 >
 >🔑Retroalimentación (Sensores): Proveen información en tiempo real sobre la posición y velocidad del sistema, permitiendo ajustes y correcciones en el control del movimiento.
 
+## 6.1 Componentes y Ejemplos en Control de Movimiento
 
+<div align="center">
+ 
+| **Componente**                     | **Ejemplos**                                                                      |
+|:----------------------------------:|:--------------------------------------------------------------------------------:|
+| Human-Machine Interfaces (HMI)     | Pantallas táctiles, botones, paneles de control, software SCADA                  |
+| Control de Movimiento              | PLCs, controladores PID, controladores de servomotores, control por lazo abierto/cerrado |
+| Drivers (Potencia)                  | Drivers de motores paso a paso, drivers de servomotores, variadores de frecuencia (VFD) |
+| Actuadores                          | Motores eléctricos (DC, AC, paso a paso, servomotores), cilindros neumáticos, cilindros hidráulicos |
+| Mecanismos de Transmisión           | Engranajes, correas, poleas, husillos de bolas, cremalleras y piñones            |
+| Retroalimentación (Sensores)        | Encoders, tacómetros, sensores de proximidad, giroscopios, acelerómetros, sensores de corriente |
+
+</div>
+
+> **Nota:** Esta tabla da a conconer algunos componentes que puede tener un control en movimiento.
+
+💡**Ejemplo 5:** Componentes de una Máquina CNC y sus Ejemplos
+
+<div align="center">  
+
+| **Componente**                     | **Ejemplo en la Máquina CNC** |
+|:----------------------------------:|:--------------------------------------------------------------------------------:|
+| **HMI (Interfaz Hombre-Máquina)**  | Pantalla táctil o software donde el operador carga el diseño y configura parámetros de corte. |
+| **Control de Movimiento**          | Un controlador CNC que interpreta el código G y genera las señales para mover los ejes. |
+| **Drivers (Potencia)**             | Drivers de servomotores o motores paso a paso que controlan la velocidad y el torque de los motores. |
+| **Actuadores**                     | Motores paso a paso o servomotores que mueven la herramienta de corte en los ejes X, Y y Z. |
+| **Mecanismos de Transmisión**       | Husillos de bolas y guías lineales que convierten el movimiento rotatorio de los motores en desplazamientos precisos. |
+| **Retroalimentación (Sensores)**    | Encoders para medir la posición de los ejes, sensores de límite para evitar sobrecargas y sensores de vibración para detectar fallos. |
+
+</div>
+
+> **Nota:** Cada uno de estos componentes es fundamental para garantizar la precisión, eficiencia y seguridad en el control de movimiento de una máquina CNC.
+
+### **Funcionamiento de la Máquina CNC**  
+
+- El operador carga el diseño CAD/CAM y configura los parámetros de corte a través de la HMI.  
+- El controlador CNC traduce el código G en instrucciones para los motores y envía las señales de control.  
+- Los drivers regulan la potencia suministrada a los actuadores (motores paso a paso o servomotores).  
+- Los motores mueven la herramienta de corte en los ejes X, Y y Z mediante husillos de bolas y guías lineales.  
+- Los sensores de retroalimentación, como encoders, monitorean la posición y velocidad de los ejes, enviando datos al controlador para realizar correcciones en tiempo real.  
+- La máquina ejecuta el corte con alta precisión, garantizando la calidad de la pieza terminada.  
 
