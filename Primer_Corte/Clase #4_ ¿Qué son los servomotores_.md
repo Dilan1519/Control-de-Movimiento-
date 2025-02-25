@@ -56,8 +56,10 @@ Para hacer uso de un servomotor, debemos saber que varibles se pueden controlar 
 </div>
    
 - **Elementos para realizar control:**  
-  - Se desplazaban y giraban para indicar el siguiente patrón de tejido.
-  - Funcionaban como un sistema de control programable mecánico.
+  - (Controlador) Sistema embebido o computadora que ejecuta el algoritmo de control
+  - (Driver) Circuito que recibe la señal del controlador y la traduce para que así el actuador actúe de acuerdo a este.
+  - (Actuador) Motor ya sea AC o DC que recibe la señal del driver i realiza una acción. 
+
 
 ## 2. ¿En qué industria se usa?
 
