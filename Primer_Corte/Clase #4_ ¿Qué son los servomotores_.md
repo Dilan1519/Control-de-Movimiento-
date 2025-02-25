@@ -51,7 +51,7 @@ Para hacer uso de un servomotor, debemos saber que varibles se pueden controlar 
 💡**Ejemplo 3:** Aplicación de control de torque
   
 <div align="center">
-  <img src="Imágenes/Clase%20%234/tesla.png" alt="Figura de prueba" width="400">
+  <img src="Imágenes/Clase%20%234/bobina.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Robot FANUC Arc Mate 100iC</p>
 </div>
    
