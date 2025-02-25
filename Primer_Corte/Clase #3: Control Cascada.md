@@ -55,6 +55,13 @@ Si solo utilizamos un controlador de nivel, este actuaría directamente sobre la
   <p><b>Figura 1.</b> Control con un solo lazo </p>
 </div>
 
+>🔑 *Control en Cascada:* El control en cascada es una estrategia avanzada de control donde se utilizan dos o más lazos de control anidados, con el objetivo de mejorar la respuesta del sistema ante perturbaciones y reducir retardos en la acción de control.
+
+<div align="center">
+  <img src="Imágenes/Clase%20%233/Diagrama Control Cascada.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+</div>
+
 ## 1.1 ¿Cómo funciona el control de lazo único?
 
 - **Sensor:** Mide la variable de proceso (Ejemplo: temperatura, nivel, presión, velocidad).
@@ -65,22 +72,58 @@ Si solo utilizamos un controlador de nivel, este actuaría directamente sobre la
 💡**Ejemplo 2:** Control de temperatura de un horno:
 
 <div align="center">
-  <img src="Imágenes/Clase%20%233/Control con un solo lazo.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Control con un solo lazo </p>
+  <img src="Imágenes/Clase%20%233/Control de Temperatura de un horno.jpeg" alt="Figura de prueba" width="300">
+  <p><b>Figura 1.</b> Control de temperatura de un horno </p>
 </div>
 
-Se mide la temperatura con un sensor (termopar).
-Un controlador PID compara la temperatura con el setpoint.
-Si la temperatura es baja, el controlador aumenta el flujo de gas en la válvula de combustión para calentar más.
-Si la temperatura es alta, reduce el flujo de gas para evitar sobrecalentamiento.
+- Se mide la temperatura con un sensor (termopar).
+- Un controlador PID compara la temperatura con el setpoint.
+- Si la temperatura es baja, el controlador aumenta el flujo de gas en la válvula de combustión para calentar más.
+- Si la temperatura es alta, reduce el flujo de gas para evitar sobrecalentamiento.
+
+## 1.2 Ventajas y Desventajas de Control de Lazo único
 
 <div align="center">
-  <img src="Imágenes/Clase%20%233/Diagrama Control Cascada.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Telar Jacquard (1801) </p>
+ 
+| Ventajas      | Desventajas  |
+|------------------------------------------|----------------------------------------|
+| Fácil de diseñar e implementar. | Si hay retardos en el sistema, puede generar inestabilidad. |
+| Requiere menos sensores y hardware. | NSolo corrige el error cuando la variable ya ha sido afectada. |
+| Adecuado cuando los efectos de perturbaciones son mínimos. |En sistemas con múltiples variables interconectadas, puede ser insuficiente. |
+
+</div>
+
+> **Nota:** El control de lazo único es simple y económico, pero reactivo y menos eficiente en sistemas con perturbaciones o retardos.
+
+## 1.3 ¿Cómo funciona el control de lazo de cascada?
+
+En este esquema se tienen dos controladores trabajando en conjunto:
+
+- Lazo Primario: Controla la variable principal del proceso y genera el setpoint para el lazo secundario.
+- Lazo Secundario: Controla una variable intermedia que responde más rápido a perturbaciones y ayuda a estabilizar el proceso.
+
+**Flujo de operación:**
+
+- El sensor del lazo primario mide la variable principal (Ejemplo: temperatura del reactor).
+- El controlador primario calcula la corrección y envía el setpoint al controlador secundario.
+- El lazo secundario mide una variable más rápida (Ejemplo: temperatura del vapor en la tubería) y ajusta el sistema antes de que afecte a la variable principal.
+- El elemento final de control (Ejemplo: válvula de combustible) actúa para mantener la estabilidad del sistema.
+
+<div align="center">
+
+| Ventajas del Control en Cascada          | Desventajas del Control en Cascada     |
+|------------------------------------------|----------------------------------------|
+| El lazo secundario reacciona antes de que la variable principal se vea afectada. | Se necesitan sensores y controladores adicionales. |
+| Se minimizan los efectos de perturbaciones externas. |  Es necesario sintonizar correctamente ambos controladores para evitar inestabilidad. |
+
 </div>
 
 Criterio para elegir qué variable va en el lazo primario y cuál en el secundario
 
+El criterio principal para seleccionar qué variable se coloca en cada lazo se basa en qué variable genera más perturbaciones y cuál responde más rápido.
+
+🔹 Lazo primario (externo): Se encarga de la variable más lenta y crítica del sistema.
+🔹 Lazo secundario (interno): Se encarga de la variable más rápida y responde a perturbaciones inmediatas.
 
   
 ## 2. ¿Qué condiciones necesita?
