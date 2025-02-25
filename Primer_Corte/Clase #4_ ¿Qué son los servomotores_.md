@@ -55,7 +55,7 @@ Para hacer uso de un servomotor, debemos saber que varibles se pueden controlar 
   <p><b>Figura 2.</b> Robot FANUC Arc Mate 100iC</p>
 </div>
    
-- **Movimiento de las tarjetas perforadas:**  
+- **Elementos para realizar control:**  
   - Se desplazaban y giraban para indicar el siguiente patrón de tejido.
   - Funcionaban como un sistema de control programable mecánico.
 
