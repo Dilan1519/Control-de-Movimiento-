@@ -36,20 +36,21 @@ Imaginemos un tanque de almacenamiento de agua en una planta industrial.
 
 **Problema con un Control de Lazo Único**
 
-Si solo utilizamos un controlador de nivel (LC – Level Controller), este actuaría directamente sobre la válvula de entrada basándose únicamente en la medición del nivel del tanque. Sin embargo, esto tiene tres problemas principales:
+Si solo utilizamos un controlador de nivel, este actuaría directamente sobre la válvula de entrada basándose únicamente en la medición del nivel del tanque. Sin embargo, esto tiene tres problemas principales:
 
-Retardos en la respuesta 🚨
+**Retardos en la respuesta** 
 
-Si el nivel empieza a bajar, el controlador intentará corregirlo abriendo más la válvula de entrada.
-Sin embargo, el nivel del tanque cambia lentamente porque depende de la acumulación o pérdida de líquido, lo que puede hacer que la respuesta sea demasiado tardía.
-Oscilaciones en el nivel 🌊
+- Si el nivel empieza a bajar, el controlador intentará corregirlo abriendo más la válvula de entrada.
+- Sin embargo, el nivel del tanque cambia lentamente porque depende de la acumulación o pérdida de líquido, lo que puede hacer que la respuesta sea demasiado tardía.
 
-Como el nivel responde lentamente, el controlador podría sobrecompensar abriendo demasiado la válvula.
-Esto puede llevar a una sobrecarga en la entrada, causando oscilaciones no deseadas en el nivel.
-Falta de estabilidad ante perturbaciones ⚠️
+**Oscilaciones en el nivel**
 
-Si la demanda de salida varía abruptamente, el control de nivel tardará en detectarlo y reaccionar, lo que puede llevar a desbordamientos o vaciados imprevistos del tanque.
+- Como el nivel responde lentamente, el controlador podría sobrecompensar abriendo demasiado la válvula.
+- Esto puede llevar a una sobrecarga en la entrada, causando oscilaciones no deseadas en el nivel.
 
+**Falta de estabilidad ante perturbaciones**
+
+- Si la demanda de salida varía abruptamente, el control de nivel tardará en detectarlo y reaccionar, lo que puede llevar a desbordamientos o vaciados imprevistos del tanque.
 
 ## 1. ¿En qué consiste?
 
