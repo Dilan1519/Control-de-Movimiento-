@@ -32,7 +32,8 @@ Imaginemos un tanque de almacenamiento de agua en una planta industrial.
 - Entrada: El agua entra desde una tubería controlada por una válvula de entrada.
 - Salida: El agua sale por otra tubería, donde la demanda de flujo varía debido a diferentes condiciones del proceso.
 - Objetivo: Mantener el nivel del tanque constante a pesar de las variaciones en la salida.
-- El desafío aquí es que si solo controlamos el nivel, la respuesta será lenta y el sistema puede volverse inestable.
+
+El desafío aquí es que si solo controlamos el nivel, la respuesta será lenta y el sistema puede volverse inestable.
 
 **Problema con un Control de Lazo Único**
 
@@ -51,6 +52,12 @@ Si solo utilizamos un controlador de nivel, este actuaría directamente sobre la
 **Falta de estabilidad ante perturbaciones**
 
 - Si la demanda de salida varía abruptamente, el control de nivel tardará en detectarlo y reaccionar, lo que puede llevar a desbordamientos o vaciados imprevistos del tanque.
+
+**¿Qué se busca en el control en cascada en este caso?**
+
+- **Mejor respuesta a perturbaciones:** El lazo de caudal responde rápidamente a cambios en la demanda sin esperar a que el nivel fluctúe demasiado.
+- **Mayor estabilidad:** Se minimizan oscilaciones en el nivel, evitando desbordamientos o caídas abruptas.
+- **Precisión en la regulación:** Se asegura que el flujo de entrada siempre sea el adecuado para mantener el nivel deseado.
 
 ## 1. ¿En qué consiste?
 
