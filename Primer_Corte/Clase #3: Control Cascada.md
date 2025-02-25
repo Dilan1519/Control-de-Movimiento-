@@ -179,4 +179,35 @@ Siempre debemos preguntarnos:
 
 ## 2. Métodos de sintonización 
 
->🔑 *Control en Cascada:* El control en cascada es una estrategia avanzada de control donde se utilizan dos o más lazos de control anidados, con el objetivo de mejorar la respuesta del sistema ante perturbaciones y reducir retardos en la acción de control.
+>🔑 *Métodode de Sintonización:* Un método de sintonización es un procedimiento utilizado para ajustar los parámetros de un sistema de control con el objetivo de mejorar su rendimiento y estabilidad.
+
+Existen diversas metodologías para la sintonización de controladores, que pueden clasificarse en función de la forma en que se obtienen los parámetros del sistema. En este curso, nos enfocaremos en dos enfoques principales:
+
+**Métodos de Lazo Abierto:**
+
+- Se realizan pruebas en lazo abierto para analizar la respuesta del sistema sin retroalimentación.
+- A partir de estas pruebas, se ajustan los parámetros del controlador.
+
+**Métodos de Lazo Cerrado:**
+
+- Se utilizan pruebas en lazo cerrado para determinar ciertos parámetros clave.
+- Se mide el período último y la ganancia última del sistema.
+- on estos valores, se aplican fórmulas específicas para obtener los parámetros del controlador.
+
+**Otros Enfoques de Sintonización**
+
+Además de los métodos clásicos, existen otros enfoques avanzados para la sintonización de controladores:
+
+<div align="center">
+ 
+| Enfoque                      | Descripción | Ventajas | Ejemplos de Aplicación |
+|------------------------------|-------------|----------|------------------------|
+| Modelos rigurosos       | Uso de ecuaciones matemáticas y métodos algebraicos para obtener los parámetros del controlador. | - Alta precisión en sistemas bien modelados.  <br> - Permite análisis teórico sólido. | - Control de temperatura en procesos químicos.  <br> - Control de velocidad en motores eléctricos usando ecuaciones diferenciales. |
+| Sistemas difusos        | Utiliza reglas basadas en lógica difusa para ajustar los parámetros del controlador sin necesidad de un modelo matemático exacto. | - Adecuado para sistemas con incertidumbre.  <br> - No requiere un modelo exacto. | - Control de un aire acondicionado según la percepción de confort.  <br> - Control de frenos ABS en vehículos. |
+| Redes neuronales          | Emplea algoritmos de aprendizaje automático para modelar y ajustar el sistema de control basado en datos previos. | - Capacidad de adaptación a cambios en el sistema.  <br> - Ideal para sistemas no lineales. | - Control de velocidad en motores con variaciones de carga.  <br> - Control de un brazo robótico en entornos dinámicos. |
+| Modelos estadísticos (Bayesianos, Gaussianos, etc.) | Basados en probabilidad y estadística para estimar parámetros del sistema y mejorar la sintonización. | - Manejo eficiente de ruido y datos inciertos.  <br> - Útil en entornos dinámicos. | - Control de tráfico vehicular basado en predicciones de flujo.  <br> - Sistemas de navegación autónoma. |
+| Modelado matemático       | Obtención de modelos del sistema mediante ecuaciones diferenciales o funciones de transferencia para aplicar técnicas de control basadas en el modelo. | - Facilita el diseño de estrategias de control avanzadas.  <br> - Compatible con múltiples métodos de sintonización. | - Control de nivel de líquidos en tanques industriales.  <br> - Control de presión en tuberías de gas. |
+
+</div>
+
+> **Nota:** La selección del enfoque de control depende del sistema. Métodos rigurosos y matemáticos son ideales para sistemas bien modelados, mientras que enfoques difusos, neuronales y estadísticos son útiles para sistemas inciertos o dinámicos.
