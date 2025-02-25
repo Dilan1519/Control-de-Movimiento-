@@ -60,7 +60,12 @@ Si solo utilizamos un controlador de nivel, este actuaría directamente sobre la
 - **Precisión en la regulación:** Se asegura que el flujo de entrada siempre sea el adecuado para mantener el nivel deseado.
 
 <div align="center">
-  <img src="Imágenes/Clase%20%232/Telar Jacquard (1801).jpg" alt="Figura de prueba" width="400">
+  <img src="Imágenes/Clase%20%233/Control con un solo lazo.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 1.</b> Telar Jacquard (1801) </p>
+</div>
+
+<div align="center">
+  <img src="Imágenes/Clase%20%233/Diagrama Control Cascada.png" alt="Figura de prueba" width="400">
   <p><b>Figura 1.</b> Telar Jacquard (1801) </p>
 </div>
 
