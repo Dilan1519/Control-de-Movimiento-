@@ -232,18 +232,19 @@ $$ G_1(s) = \frac{e^{13-s}} {27s+1}$$
 
 Para identificar el lazo interno y el lazo externo en un sistema de control en cascada, generalmente se sigue el criterio del tiempo de respuesta (𝜏), en este caso sería:
 
-**Lazo Interno (Rápido): Relación entre la válvula y el flujo de entrada.**
+### Lazo Interno (Rápido): Relación entre la válvula y el flujo de entrada
 
-- Se modela con la función de transferencia:
+Se modela con la función de transferencia:
 
-$$ G_2(s) = \frac{5e^{3-s}}{8s+1} $$​
- 
-Aquí, una apertura de la válvula tarda 2 segundos en afectar el flujo y tiene un pequeño retardo de 1 segundo.
+$$ G_2(s) = \frac{5e^{3-s}}{8s+1} $$
 
-**Lazo Externo (Lento): Relación entre el flujo de entrada y el nivel del tanque.**
+Aquí, una apertura de la válvula tarda 8 segundos en afectar el flujo y tiene un pequeño retardo de 1 segundo.
 
-- Se modela con la función de transferencia:
+### Lazo Externo (Lento): Relación entre el flujo de entrada y el nivel del tanque
 
-$$ G_2(s) = \frac{5e^{3-s}}{8s+1} $$​
-​
+Se modela con la función de transferencia:
+
+$$ G_1(s) = \frac{K e^{-10s}}{15s+1} $$
+
 El nivel del tanque cambia con una constante de tiempo de 15 segundos y un retardo de 10 segundos debido a la inercia del sistema.
+
