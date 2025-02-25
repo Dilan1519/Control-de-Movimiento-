@@ -58,7 +58,7 @@ Para hacer uso de un servomotor, debemos saber que varibles se pueden controlar 
 - **Elementos para realizar control:**  
   - (Controlador) Sistema embebido o computadora que ejecuta el algoritmo de control
   - (Driver) Circuito que recibe la señal del controlador y la traduce para que así el actuador actúe de acuerdo a este.
-  - (Actuador) Motor ya sea AC o DC que recibe la señal del driver i realiza una acción. 
+  - (Actuador) Motor ya sea AC o DC que recibe la señal del driver y realiza una acción. 
 
 
 ## 2. ¿En qué industria se usa?
