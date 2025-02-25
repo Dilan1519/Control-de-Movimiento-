@@ -287,9 +287,6 @@ El nivel del tanque cambia con una constante de tiempo de 15 segundos y un retar
 
 **Sintonización Lazo secundario por método de Ziegler & Nichol**
 
-$$ G_2(s) = \frac{0.9}{ K_2} $$
+$$ \frac{0.9}{k_{2}}\left( \frac{t_{2}}{t_{m}}\right)= \frac{0.9}{5}\left( \frac{8}{3} \right) = 0.48 $$
 
-- \( K_2 = 0.9 \)
-- \( \tau_2 = 0.5 \)
-- \( t_m = 2 \)
-- \( 1 = 3.6 \) (verificar este valor)
+$$ t_{i2}=3.33*t_{m}=3.33*3=9.99 $$
