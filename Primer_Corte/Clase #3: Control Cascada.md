@@ -88,7 +88,7 @@ Si solo utilizamos un controlador de nivel, este actuaría directamente sobre la
 | Ventajas      | Desventajas  |
 |------------------------------------------|----------------------------------------|
 | Fácil de diseñar e implementar. | Si hay retardos en el sistema, puede generar inestabilidad. |
-| Requiere menos sensores y hardware. | NSolo corrige el error cuando la variable ya ha sido afectada. |
+| Requiere menos sensores y hardware. | Solo corrige el error cuando la variable ya ha sido afectada. |
 | Adecuado cuando los efectos de perturbaciones son mínimos. |En sistemas con múltiples variables interconectadas, puede ser insuficiente. |
 
 </div>
@@ -148,4 +148,5 @@ El criterio principal para seleccionar qué variable se coloca en cada lazo se b
 Siempre debemos preguntarnos:
 
 ¿Cuál es la variable final que quiero mantener estable? → Esa va en el lazo primario.
+
 ¿Cuál es la variable que puede responder más rápido y ayudar a estabilizar la variable principal? → Esa va en el lazo secundario.
