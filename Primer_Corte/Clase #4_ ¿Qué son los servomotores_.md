@@ -1,9 +1,9 @@
-# ¿QUÉ ES EL CONTROL DE MOVIMIENTO?
+# ¿QUÉ SON LOS SERVOMOTORES?
 
-El control de movimiento es una disciplina de la ingeniería que regula y coordina el desplazamiento de objetos mediante actuadores, sensores y algoritmos de control. Su aplicación es esencial en sectores como la manufactura, la robótica y la automatización de procesos. Es fundamental para garantizar precisión, eficiencia y optimización en sistemas industriales, mejorando la productividad y reduciendo errores. Su desarrollo ha permitido la evolución de máquinas inteligentes capaces de realizar operaciones con alta exactitud, impulsando la modernización y el avance tecnológico en diversas industrias.
+Los servomotores son un actuador electromecánico, el cual es ampliamente usado en el control de movimiento, esto debido a la gran cantidad de usos que se le puede dar y a la cantidad de contextos en los que se puede utilizar. Los servomotores son básicamente motores a los cuales se les controla de manera precisa una, dos o más variables, esto dependiendo del propósito que se tenga para estos. 
 
 ## Índice
- [1. ¿En qué consiste?](#1-en-qué-consiste)
+ [1. Control de servomotores](#1-Control-de-servomotores)
  
  [2. ¿En qué industria se usa?](#2-en-qué-industria-se-usa)
  
@@ -24,35 +24,27 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
  [10. Bibliografía](#10-Bibliografía)
 
 
-## 1. ¿En qué consiste?
+## 1. Control de servomotores
 
-El control de movimiento, también llamado control de posicionamiento servo, consite en el proceso de mover una carga en un sistema mecánico.
+Para hacer uso de un servomotor, debemos saber que varibles se pueden controlar en este y como se hace este control.
 
-💡**Ejemplo 1:** Un ejemplo antiguo de control de movimiento es el telar Jacquard (1801). Este telar automatizado, desarrollado por Joseph Marie Jacquard, utilizaba tarjetas perforadas para controlar el movimiento de los hilos en la fabricación de textiles con patrones complejos.
+- **Variables a controlar:**  
+  - (Posición) en un motor podemos controlar su posición es decir en que Angulo especifico queremos que se encuentre el rotor del motor, el controlar esta variable es especialmente útil en brazos robóticos por ejemplo, donde las articulaciones deben estar en la posición que se les indique.
 
+💡**Ejemplo 1:** Aplicación de control de posición
 <div align="center">
-  <img src="Imágenes/Clase%20%232/Telar Jacquard (1801).jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Telar Jacquard (1801) </p>
+  <img src="Imágenes/Clase%20%232/Robot FANUC Arc Mate 100iC.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Robot FANUC Arc Mate 100iC</p>
 </div>
 
-## Movimientos del telar Jacquard
 
-- **Movimiento de elevación de los hilos de urdimbre:**  
-  - Se levantaban ciertos hilos según el patrón dictado por las tarjetas perforadas.
-  - Este movimiento era clave para formar el diseño del tejido.
 
-- **Movimiento del peine o batán:**  
-  - Después de entrelazar los hilos, el peine golpeaba la trama para compactar el tejido.
-  - Garantizaba que el tejido tuviera una estructura firme y uniforme.
-
-- **Movimiento de avance de la tela:**  
-  - A medida que se tejía, la tela se iba enrollando automáticamente.
-  - Permitía la producción continua sin intervención manual.
-
+  - (Velocidad) Asi como podemos controlar en donde se encuentra el rotor, podemos indicar que tan rapido queremos que este rote, es decir que tantos grados por segundo queremos que recorra el rotor.
+   
 - **Movimiento de las tarjetas perforadas:**  
   - Se desplazaban y giraban para indicar el siguiente patrón de tejido.
   - Funcionaban como un sistema de control programable mecánico.
-  
+
 ## 2. ¿En qué industria se usa?
 
 A continuación, se muestra una tabla con las industrias donde se usa el control de movimiento, los tipos de máquinas que emplean esta tecnología, los países donde es más común y los beneficios clave en cada sector.
