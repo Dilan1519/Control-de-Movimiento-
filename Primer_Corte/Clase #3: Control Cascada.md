@@ -212,6 +212,43 @@ Además de los métodos clásicos, existen otros enfoques avanzados para la sint
 
 > **Nota:** La selección del enfoque de control depende del sistema. Métodos rigurosos y matemáticos son ideales para sistemas bien modelados, mientras que enfoques difusos, neuronales y estadísticos son útiles para sistemas inciertos o dinámicos.
 
+## 2.1 Recordando métodos de sintonización
+
+**Método Ziegler & Nichol**
+
+<div align="center">
+ 
+| Tipo de Controlador | 𝐾ₚ                        | 𝑇𝑖                  | 𝑇𝑑            |
+|---------------------|------------------------|----------------------|---------------|
+| **P**              | 𝜏 / 𝑡ₒᵧₘₐₓ              | —                    | —             |
+| **PI**             | 0,9𝜏 / 𝑡ₒᵧₘₐₓ          | 3,3𝑡ₒ                | —             |
+| **PID**            | 1,2𝜏 / 𝑡ₒᵧₘₐₓ          | 2𝑡ₒ                  | 0,5𝑡ₒ         |
+
+</div>
+
+**MétodoCohen-Coon**
+
+<div align="center">
+ 
+| Tipo de Controlador | 𝐾ₚ                          | 𝑇𝑖                              | 𝑇𝑑             |
+|---------------------|----------------------------|--------------------------------|---------------|
+| **P**              | (1 / 𝐾) * (𝜏 / 𝑡ₒ)         | (3𝜏 + 𝑡ₒ) / 3𝜏                | —             |
+| **PI**             | (1 / 𝐾) * (𝜏 / 𝑡ₒ)         | (10,8𝜏 + 𝑡ₒ) / 12𝜏            | (30 + 3𝑡ₒ) / (9 + 20𝑡ₒ / 𝜏) * 𝑡ₒ |
+| **PID**            | (1 / 𝐾) * (𝜏 / 𝑡ₒ)         | (16𝜏 + 3𝑡ₒ) / 12𝜏            | 2𝑡ₒ, 0,5𝑡ₒ    |
+
+</div>
+
+**Método por coeficiente de ajustabilidad**
+
+<div align="center">
+ 
+| 𝛾 (Coeficiente de Ajustabilidad) | 𝐾ₚ                     | 𝑇𝑖                         | 𝑇𝑑                        |
+|----------------------------------|------------------------|----------------------------|----------------------------|
+| 0 a 0,1                         | 5 / 𝐾                 | 𝜏                          | —                          |
+| 0,1 a 0,2                       | (0,5 / 𝐾𝛾)            | 𝜏 (1 + 0,5𝛾)              | 𝜏 * (0,5𝛾 / (0,5𝛾 +1))    |
+| 0,2 a 0,5                       | (1 + 0,5𝛾) / 𝐾𝛾      | 𝜏 (1 + 0,5𝛾)              | 𝜏 * (0,5𝛾 / (0,5𝛾 +1))    |
+
+</div>
 💡**Ejemplo 4:** Control en Cascada en un Sistema de Tanque y Flujo
 
 Definición de la Planta
