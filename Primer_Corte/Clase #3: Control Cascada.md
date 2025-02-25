@@ -285,3 +285,11 @@ $$ G_1(s) = \frac{K e^{-10s}}{15s+1} $$
 
 El nivel del tanque cambia con una constante de tiempo de 15 segundos y un retardo de 10 segundos debido a la inercia del sistema.
 
+**Sintonización Lazo secundario por método de Ziegler & Nichol**
+
+$$ G_2(s) = \frac{0.9}{ K_2} $$
+
+- \( K_2 = 0.9 \)
+- \( \tau_2 = 0.5 \)
+- \( t_m = 2 \)
+- \( 1 = 3.6 \) (verificar este valor)
