@@ -3,19 +3,6 @@
 El control cascada en una técnica de control la cual se usa comúnmente en el control de movimiento, esto ya que al necesitar controlar más de una variable a la vez y una dependiente de otra, se hace uso de un sistema compuesto por dos controladores, donde la salida del primer controlador sirve de setpoint para el segundo. 
 
 ## Índice
- [1. ¿En qué consiste?](#1-en-qué-consiste)
- 
- [2. ¿Qué condiciones necesita?](#2-Qué-condiciones-necesita)
- 
- [3. Ejes de Movimiento](#3-ejes-de-movimiento)
-
- [4. ¿Qué se controla?](#4-qué-se-controla)
- 
- [5. ¿Cómo se hacia antes del control?](#5-cómo-se-hacia-antes-del-control)
-
- [6. ¿Componentes?](#6-componentes)
-
- [7. Control de cascada ](#7-control-de-cascada)
 
  [8. Ejercicio ](#8-Ejercicio)
 
@@ -29,9 +16,9 @@ El control cascada en una técnica de control la cual se usa comúnmente en el c
 
 Imaginemos un tanque de almacenamiento de agua en una planta industrial.
 
-- Entrada: El agua entra desde una tubería controlada por una válvula de entrada.
-- Salida: El agua sale por otra tubería, donde la demanda de flujo varía debido a diferentes condiciones del proceso.
-- Objetivo: Mantener el nivel del tanque constante a pesar de las variaciones en la salida.
+- **Entrada:** El agua entra desde una tubería controlada por una válvula de entrada.
+- **Salida:** El agua sale por otra tubería, donde la demanda de flujo varía debido a diferentes condiciones del proceso.
+- **Objetivo:** Mantener el nivel del tanque constante a pesar de las variaciones en la salida.
 
 El desafío aquí es que si solo controlamos el nivel, la respuesta será lenta y el sistema puede volverse inestable.
 
@@ -58,20 +45,42 @@ Si solo utilizamos un controlador de nivel, este actuaría directamente sobre la
 - **Mejor respuesta a perturbaciones:** El lazo de caudal responde rápidamente a cambios en la demanda sin esperar a que el nivel fluctúe demasiado.
 - **Mayor estabilidad:** Se minimizan oscilaciones en el nivel, evitando desbordamientos o caídas abruptas.
 - **Precisión en la regulación:** Se asegura que el flujo de entrada siempre sea el adecuado para mantener el nivel deseado.
+  
+## 1 Control de Lazo Único y Control en Cascada
+
+>🔑 *Control de Lazo Único:* El control de lazo único es el esquema de control más básico en sistemas de automatización y regulación de procesos. Se caracteriza porque un solo controlador recibe la señal de una variable medida, la compara con un valor deseado (setpoint) y genera una señal de control para actuar sobre un elemento final con el objetivo de minimizar el error.
 
 <div align="center">
   <img src="Imágenes/Clase%20%233/Control con un solo lazo.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Telar Jacquard (1801) </p>
+  <p><b>Figura 1.</b> Control con un solo lazo </p>
 </div>
+
+## 1.1 ¿Cómo funciona el control de lazo único?
+
+- **Sensor:** Mide la variable de proceso (Ejemplo: temperatura, nivel, presión, velocidad).
+- **Controlador:** Compara el valor medido con el setpoint y calcula la acción correctiva.
+- **Elemento final de control:** Recibe la señal del controlador y ajusta el sistema (Ejemplo: una válvula, un variador de frecuencia, un motor).
+- **Sistema controlado:** El proceso responde a la acción de control y la variable vuelve al setpoint.
+
+💡**Ejemplo 2:** Control de temperatura de un horno:
+
+<div align="center">
+  <img src="Imágenes/Clase%20%233/Control con un solo lazo.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 1.</b> Control con un solo lazo </p>
+</div>
+
+Se mide la temperatura con un sensor (termopar).
+Un controlador PID compara la temperatura con el setpoint.
+Si la temperatura es baja, el controlador aumenta el flujo de gas en la válvula de combustión para calentar más.
+Si la temperatura es alta, reduce el flujo de gas para evitar sobrecalentamiento.
 
 <div align="center">
   <img src="Imágenes/Clase%20%233/Diagrama Control Cascada.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Telar Jacquard (1801) </p>
+  <p><b>Figura 2.</b> Telar Jacquard (1801) </p>
 </div>
 
-## 1. ¿En qué consiste?
+Criterio para elegir qué variable va en el lazo primario y cuál en el secundario
 
-Como su nombre lo sugiere, esta técnica consiste en poner en serie dos o más algoritmos de control, donde las variables controladas por estos algoritmos, son dependientes una de la otra de manera sucesiva, pero esta técnica no puede ser usada al azar, ya que requiere de ciertas condiciones y reglas para ser implementada de la manera correcta.
 
   
 ## 2. ¿Qué condiciones necesita?
