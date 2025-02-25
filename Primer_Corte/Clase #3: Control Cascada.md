@@ -129,7 +129,33 @@ El criterio principal para seleccionar qué variable se coloca en cada lazo se b
 - **Lazo primario:** Se encarga de la variable más lenta y crítica del sistema.
 - **Lazo secundario:** Se encarga de la variable más rápida y responde a perturbaciones inmediatas.
 
-## 1.6 Aplicación al ejemplo 1 del tanque
+## 1.6 Criterios de selección de controladores:
+
+<div align="center">
+
+| Criterio                        | Controlador del Lazo Secundario  | Controlador del Lazo Primario  |
+|----------------------------------|--------------------------------------|--------------------------------------|
+| Velocidad de respuesta          | Rápida                               | Más lenta que C2                    |
+| Función principal               | Rechazar perturbaciones antes de afectar el lazo primario | Alcanzar el setpoint eliminando errores en estado estacionario |
+| Controladores recomendados      | P o PI                              | PI o PID                            |
+
+</div>
+
+> **Nota:** El control en cascada mejora la estabilidad y el rechazo de perturbaciones, pero requiere mayor complejidad y ajuste preciso.
+
+💡**Ejemplo 3:** Ejemplo de selección de controladores
+
+**Control de temperatura en un reactor químico**
+
+- Lazo secundario controla la temperatura del vapor en la tubería → Controlador PI para respuesta rápida.
+- Lazo primario controla la temperatura del reactor → Controlador PID para minimizar oscilaciones y eliminar error estacionario.
+
+**Control de posición en un motor eléctrico**
+
+- Lazo secundario controla la velocidad del motor → Controlador PI para ajustar rápido la velocidad.
+- Lazo primario controla la posición del motor → Controlador PID para precisión y suavidad en la salida.
+
+## 1.7 Aplicación al ejemplo 1 del tanque
 
 **Nivel del tanque (variable más lenta) → Lazo primario**
 
@@ -143,10 +169,14 @@ El criterio principal para seleccionar qué variable se coloca en cada lazo se b
 - Es una variable que se puede modificar instantáneamente para compensar perturbaciones.
 - Controlando el caudal antes que el nivel, podemos actuar de inmediato sin esperar a que el nivel fluctúe demasiado.
 
-## 1.7 ¿Cómo aplicar este criterio en otros sistemas?
+## 1.8 ¿Cómo aplicar este criterio en otros sistemas?
 
 Siempre debemos preguntarnos:
 
 ¿Cuál es la variable final que quiero mantener estable? → Esa va en el lazo primario.
 
 ¿Cuál es la variable que puede responder más rápido y ayudar a estabilizar la variable principal? → Esa va en el lazo secundario.
+
+## 2. Métodos de sintonización 
+
+>🔑 *Control en Cascada:* El control en cascada es una estrategia avanzada de control donde se utilizan dos o más lazos de control anidados, con el objetivo de mejorar la respuesta del sistema ante perturbaciones y reducir retardos en la acción de control.
