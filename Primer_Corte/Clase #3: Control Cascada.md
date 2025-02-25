@@ -59,6 +59,11 @@ Si solo utilizamos un controlador de nivel, este actuaría directamente sobre la
 - **Mayor estabilidad:** Se minimizan oscilaciones en el nivel, evitando desbordamientos o caídas abruptas.
 - **Precisión en la regulación:** Se asegura que el flujo de entrada siempre sea el adecuado para mantener el nivel deseado.
 
+<div align="center">
+  <img src="Imágenes/Clase%20%232/Telar Jacquard (1801).jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 1.</b> Telar Jacquard (1801) </p>
+</div>
+
 ## 1. ¿En qué consiste?
 
 Como su nombre lo sugiere, esta técnica consiste en poner en serie dos o más algoritmos de control, donde las variables controladas por estos algoritmos, son dependientes una de la otra de manera sucesiva, pero esta técnica no puede ser usada al azar, ya que requiere de ciertas condiciones y reglas para ser implementada de la manera correcta.
