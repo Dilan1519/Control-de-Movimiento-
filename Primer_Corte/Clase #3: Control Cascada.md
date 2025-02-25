@@ -46,7 +46,7 @@ Si solo utilizamos un controlador de nivel, este actuaría directamente sobre la
 - **Mayor estabilidad:** Se minimizan oscilaciones en el nivel, evitando desbordamientos o caídas abruptas.
 - **Precisión en la regulación:** Se asegura que el flujo de entrada siempre sea el adecuado para mantener el nivel deseado.
   
-## 1 Control de Lazo Único y Control en Cascada
+## 1. Control de Lazo Único y Control en Cascada
 
 >🔑 *Control de Lazo Único:* El control de lazo único es el esquema de control más básico en sistemas de automatización y regulación de procesos. Se caracteriza porque un solo controlador recibe la señal de una variable medida, la compara con un valor deseado (setpoint) y genera una señal de control para actuar sobre un elemento final con el objetivo de minimizar el error.
 
@@ -109,8 +109,10 @@ En este esquema se tienen dos controladores trabajando en conjunto:
 - El lazo secundario mide una variable más rápida (Ejemplo: temperatura del vapor en la tubería) y ajusta el sistema antes de que afecte a la variable principal.
 - El elemento final de control (Ejemplo: válvula de combustible) actúa para mantener la estabilidad del sistema.
 
-<div align="center">
+## 1.4 Ventajas y Desventajas de Control de Cascada
 
+<div align="center">
+ 
 | Ventajas         | Desventajas    |
 |------------------------------------------|----------------------------------------|
 | El lazo secundario reacciona antes de que la variable principal se vea afectada. | Se necesitan sensores y controladores adicionales. |
@@ -120,102 +122,24 @@ En este esquema se tienen dos controladores trabajando en conjunto:
 
 > **Nota:** El control en cascada mejora la estabilidad y el rechazo de perturbaciones, pero requiere mayor complejidad y ajuste preciso.
 
-Criterio para elegir qué variable va en el lazo primario y cuál en el secundario
+## 1.5 Criterio para elegir qué variable va en el lazo primario y cuál en el secundario
 
 El criterio principal para seleccionar qué variable se coloca en cada lazo se basa en qué variable genera más perturbaciones y cuál responde más rápido.
 
-🔹 Lazo primario (externo): Se encarga de la variable más lenta y crítica del sistema.
-🔹 Lazo secundario (interno): Se encarga de la variable más rápida y responde a perturbaciones inmediatas.
+- **Lazo primario:** Se encarga de la variable más lenta y crítica del sistema.
+- **Lazo secundario:** Se encarga de la variable más rápida y responde a perturbaciones inmediatas.
 
-  
-## 2. ¿Qué condiciones necesita?
+## Aplicación al ejemplo 1 del tanque
 
-A continuación, se muestra una tabla con las industrias donde se usa el control de movimiento, los tipos de máquinas que emplean esta tecnología, los países donde es más común y los beneficios clave en cada sector.
+**Nivel del tanque (variable más lenta) → Lazo primario**
 
-<div align="center">
+- El nivel del tanque cambia lentamente porque depende de la acumulación o pérdida de líquido.
+- Es la variable que queremos mantener estable en todo momento.
+- Si solo controláramos el nivel, la respuesta del sistema sería muy lenta y con retardos.
 
-| **Industria**              | **Tipos de Máquinas**                                | **Países donde más se usan**      | **Beneficios clave**                                     |
-|----------------------------|-----------------------------------------------------|---------------------------------|---------------------------------------------------------|
-| **Empaque**                | Máquinas de envasado, cintas transportadoras, etiquetadoras | EE.UU., Alemania, China, México | Mayor velocidad, precisión en el empaquetado y reducción de desperdicios. |
-| **Ensamblaje**             | Robots ensambladores, sistemas pick & place, CNC   | Japón, Alemania, Corea del Sur  | Ensamblaje preciso, reducción de costos y automatización avanzada. |
-| **Impresión**              | Impresoras industriales, máquinas flexográficas     | EE.UU., China, Alemania, Brasil | Alta resolución, sincronización del material y rapidez de producción. |
-| **Productos de madera**    | Sierras automáticas, cepilladoras CNC, routers CNC  | Canadá, EE.UU., Suecia, Brasil  | Corte preciso, optimización del material y reducción de errores. |
-| **Maquinaria**             | Torno CNC, fresadoras, robots industriales         | Alemania, Japón, Italia, China  | Producción eficiente, mayor seguridad y reducción de tiempo de operación. |
-| **Eléctrica/Semiconductores** | Máquinas de soldadura PCB, ensambladoras SMT       | Taiwán, Corea del Sur, China, EE.UU. | Ensamblaje de componentes de alta velocidad y precisión en micras. |
+**Caudal de entrada (variable más rápida) → Lazo secundario** 
 
-</div>
+- El caudal cambia rápidamente con la apertura de la válvula.
+- Es una variable que se puede modificar instantáneamente para compensar perturbaciones.
+- Controlando el caudal antes que el nivel, podemos actuar de inmediato sin esperar a que el nivel fluctúe demasiado.
 
-> **Nota:** Esta tabla presenta solo algunos ejemplos de aplicaciones y países donde el control de movimiento es clave en la industria.
-
-## 3. Ejes de Movimiento
-
-Cada movimiento generado por un actuador en un sistema de control se denomina **eje de movimiento (axis)**. Un sistema puede tener múltiples ejes, y su sincronización es esencial para realizar tareas complejas con precisión y eficiencia.
-
-## Tipos de Ejes de Movimiento
-<div align="center">
- 
-| Tipo de Eje         | Descripción | Ejemplo |
-|--------------------|-------------|---------|
-| **Eje Lineal** | Movimiento en línea recta a lo largo de un solo eje (X, Y o Z). | Un torno CNC mueve el cortador en el eje X para dar forma a la pieza. |
-| **Eje Rotacional** | Movimiento giratorio alrededor de un eje fijo. | Un brazo robótico de ensamblaje rota en el eje Z para ajustar una pieza. |
-| **Ejes Coordinados** | Múltiples ejes que trabajan en sincronización para realizar una tarea. | En una impresora, el cartucho de tinta se mueve en el eje X, mientras que el rodillo mueve el papel en el eje Y. |
-| **Ejes Interpolados** | Movimiento combinado de varios ejes para generar trayectorias complejas. | Un robot industrial realiza movimientos curvos en 3D con interpolación de sus ejes. |
- 
-</div>
-
-> **Nota:** Esta tabla da una pequeña explicación de los tipos de ejes de movimiento.
-
-## 4. ¿Qué se controla?
-
-El control de movimiento puede regular posición, velocidad, torque y aceleración. Dependiendo de la aplicación, se pueden controlar las cuatro variables, solo tres, dos o una.
-
->🔑 *Posición:* Determina la ubicación exacta de un objeto en el espacio. Se controla para asegurar que un mecanismo llegue a un punto específico con precisión.
->
->🔑 *Velocidad:* Regula la rapidez con la que un objeto se mueve de un punto a otro. Es crucial para evitar vibraciones y mejorar la eficiencia del proceso.
->
->🔑 *Torque:* Es la fuerza de giro aplicada a un eje o motor. Controlarlo permite garantizar que un sistema pueda mover cargas sin sobrecargas o fallos mecánicos.
->
->🔑 *Acerleración:* Es la variación de la velocidad en el tiempo. Se controla para evitar movimientos bruscos y reducir el desgaste de los componentes.
-
-💡**Ejemplo 2:** Controlando las 4 variables (posición, velocidad, torque y aceleración)
-
-
-  
-## 2. ¿Qué condiciones necesita?
-
-A continuación, se muestra una lista con las condiciones mas importantes a tener en cuenta al momento de diseñar un sistema de control cascada.
-
-- **velocidad de los controladores:**  
-  - Al diseñar un controlador cascada, se deben tener en cuenta las velocidades de respuesta de los controladores, ya que el orden de la cascada dependerá de esta velocidad, los sistemas más rápidos serán los que se encuentren en la parte más interna de la cascada, y de esta forma se ordenan los controladores hasta llegar al controlador más lento el cual será el más externo de la cascada.
-
-## 3. Ejes de Movimiento
-
-Cada movimiento generado por un actuador en un sistema de control se denomina **eje de movimiento (axis)**. Un sistema puede tener múltiples ejes, y su sincronización es esencial para realizar tareas complejas con precisión y eficiencia.
-
-## Tipos de Ejes de Movimiento
-<div align="center">
- 
-| Tipo de Eje         | Descripción | Ejemplo |
-|--------------------|-------------|---------|
-| **Eje Lineal** | Movimiento en línea recta a lo largo de un solo eje (X, Y o Z). | Un torno CNC mueve el cortador en el eje X para dar forma a la pieza. |
-| **Eje Rotacional** | Movimiento giratorio alrededor de un eje fijo. | Un brazo robótico de ensamblaje rota en el eje Z para ajustar una pieza. |
-| **Ejes Coordinados** | Múltiples ejes que trabajan en sincronización para realizar una tarea. | En una impresora, el cartucho de tinta se mueve en el eje X, mientras que el rodillo mueve el papel en el eje Y. |
-| **Ejes Interpolados** | Movimiento combinado de varios ejes para generar trayectorias complejas. | Un robot industrial realiza movimientos curvos en 3D con interpolación de sus ejes. |
- 
-</div>
-
-> **Nota:** Esta tabla da una pequeña explicación de los tipos de ejes de movimiento.
-
-## 4. ¿Qué se controla?
-
-El control de movimiento puede regular posición, velocidad, torque y aceleración. Dependiendo de la aplicación, se pueden controlar las cuatro variables, solo tres, dos o una.
-
->🔑 *Posición:* Determina la ubicación exacta de un objeto en el espacio. Se controla para asegurar que un mecanismo llegue a un punto específico con precisión.
->
->🔑 *Velocidad:* Regula la rapidez con la que un objeto se mueve de un punto a otro. Es crucial para evitar vibraciones y mejorar la eficiencia del proceso.
->
->🔑 *Torque:* Es la fuerza de giro aplicada a un eje o motor. Controlarlo permite garantizar que un sistema pueda mover cargas sin sobrecargas o fallos mecánicos.
->
->🔑 *Acerleración:* Es la variación de la velocidad en el tiempo. Se controla para evitar movimientos bruscos y reducir el desgaste de los componentes.
-
-💡**Ejemplo 2:** Controlando las 4 variables (posición, velocidad, torque y aceleración)
