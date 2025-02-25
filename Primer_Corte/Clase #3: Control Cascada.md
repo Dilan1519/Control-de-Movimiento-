@@ -34,7 +34,8 @@ Imaginemos un tanque de almacenamiento de agua en una planta industrial.
 - Objetivo: Mantener el nivel del tanque constante a pesar de las variaciones en la salida.
 - El desafío aquí es que si solo controlamos el nivel, la respuesta será lenta y el sistema puede volverse inestable.
 
-Problema con un Control de Lazo Único
+**Problema con un Control de Lazo Único**
+
 Si solo utilizamos un controlador de nivel (LC – Level Controller), este actuaría directamente sobre la válvula de entrada basándose únicamente en la medición del nivel del tanque. Sin embargo, esto tiene tres problemas principales:
 
 Retardos en la respuesta 🚨
