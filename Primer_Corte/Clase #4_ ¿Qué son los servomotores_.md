@@ -36,8 +36,20 @@ Para hacer uso de un servomotor, debemos saber que varibles se pueden controlar 
   <img src="Imágenes/Clase%20%232/Robot FANUC Arc Mate 100iC.png" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Robot FANUC Arc Mate 100iC</p>
 </div>
-  - (Velocidad) Asi como podemos controlar en donde se encuentra el rotor, podemos indicar que tan rapido queremos que este rote, es decir que tantos grados por segundo queremos que recorra el rotor, un uso para esto es el control de crucero de los automoviles tesla, donde el objetivo es que el vehiculo transite siempre a la misma velocidad.
-  💡**Ejemplo 2:** Aplicación de control de velocidad
+  - (Velocidad) Así como podemos controlar en donde se encuentra el rotor, podemos indicar que tan rápido queremos que este rote, es decir que tantos grados por segundo queremos que recorra el rotor, un uso para esto es el control de crucero de los automóviles tesla, donde el objetivo es que el vehículo transite siempre a la misma velocidad.
+  
+  
+💡**Ejemplo 2:** Aplicación de control de velocidad
+  
+<div align="center">
+  <img src="Imágenes/Clase%20%234/tesla.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Robot FANUC Arc Mate 100iC</p>
+</div>
+
+   - (Torque) También se puede hacer control de la fuerza con la cual rota un motor, es decir cuanto esfuerzo realiza un motor con tal de lograr un movimiento, Un ejemplo de esto en una bobinadora de rotores de motor, la cual debe girar con una fuerza controlada, lo suficiente para enrollar el alambre con buena tensión, pero no demasiada como para romper el alambre de cobre.
+
+💡**Ejemplo 3:** Aplicación de control de torque
+  
 <div align="center">
   <img src="Imágenes/Clase%20%234/tesla.png" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Robot FANUC Arc Mate 100iC</p>
