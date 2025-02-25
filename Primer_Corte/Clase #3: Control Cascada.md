@@ -220,9 +220,9 @@ El sistema consta de:
 
 **Relación entre la válvula y el flujo de entrada.**
 
-$$ G_2(s) = \frac{8s+1}{5e^{3-s}} $$
+$$ G_2(s) = \frac{5e^{3-s}}{8s+1} $$
 
 **flujo de entrada y el nivel del tanque.**
 
-$$ G_1(s) = \frac{27s+1}{e^{13-s}} $$
+$$ G_1(s) = \frac{e^{13-s}} {27s+1}$$
 
