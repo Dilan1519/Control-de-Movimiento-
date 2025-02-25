@@ -99,8 +99,8 @@ Si solo utilizamos un controlador de nivel, este actuaría directamente sobre la
 
 En este esquema se tienen dos controladores trabajando en conjunto:
 
-- Lazo Primario: Controla la variable principal del proceso y genera el setpoint para el lazo secundario.
-- Lazo Secundario: Controla una variable intermedia que responde más rápido a perturbaciones y ayuda a estabilizar el proceso.
+- **Lazo Primario:** Controla la variable principal del proceso y genera el setpoint para el lazo secundario.
+- **Lazo Secundario:** Controla una variable intermedia que responde más rápido a perturbaciones y ayuda a estabilizar el proceso.
 
 **Flujo de operación:**
 
@@ -111,12 +111,14 @@ En este esquema se tienen dos controladores trabajando en conjunto:
 
 <div align="center">
 
-| Ventajas del Control en Cascada          | Desventajas del Control en Cascada     |
+| Ventajas         | Desventajas    |
 |------------------------------------------|----------------------------------------|
 | El lazo secundario reacciona antes de que la variable principal se vea afectada. | Se necesitan sensores y controladores adicionales. |
 | Se minimizan los efectos de perturbaciones externas. |  Es necesario sintonizar correctamente ambos controladores para evitar inestabilidad. |
 
 </div>
+
+> **Nota:** El control en cascada mejora la estabilidad y el rechazo de perturbaciones, pero requiere mayor complejidad y ajuste preciso.
 
 Criterio para elegir qué variable va en el lazo primario y cuál en el secundario
 
