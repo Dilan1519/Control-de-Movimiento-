@@ -129,7 +129,7 @@ El criterio principal para seleccionar qué variable se coloca en cada lazo se b
 - **Lazo primario:** Se encarga de la variable más lenta y crítica del sistema.
 - **Lazo secundario:** Se encarga de la variable más rápida y responde a perturbaciones inmediatas.
 
-## Aplicación al ejemplo 1 del tanque
+## 1.6 Aplicación al ejemplo 1 del tanque
 
 **Nivel del tanque (variable más lenta) → Lazo primario**
 
@@ -143,3 +143,9 @@ El criterio principal para seleccionar qué variable se coloca en cada lazo se b
 - Es una variable que se puede modificar instantáneamente para compensar perturbaciones.
 - Controlando el caudal antes que el nivel, podemos actuar de inmediato sin esperar a que el nivel fluctúe demasiado.
 
+## 1.7 ¿Cómo aplicar este criterio en otros sistemas?
+
+Siempre debemos preguntarnos:
+
+¿Cuál es la variable final que quiero mantener estable? → Esa va en el lazo primario.
+¿Cuál es la variable que puede responder más rápido y ayudar a estabilizar la variable principal? → Esa va en el lazo secundario.
