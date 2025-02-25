@@ -211,3 +211,18 @@ Además de los métodos clásicos, existen otros enfoques avanzados para la sint
 </div>
 
 > **Nota:** La selección del enfoque de control depende del sistema. Métodos rigurosos y matemáticos son ideales para sistemas bien modelados, mientras que enfoques difusos, neuronales y estadísticos son útiles para sistemas inciertos o dinámicos.
+
+💡**Ejemplo 4:** Control en Cascada en un Sistema de Tanque y Flujo
+
+Definición de la Planta
+
+El sistema consta de:
+
+**Relación entre la válvula y el flujo de entrada.**
+
+$$ G_2(s) = \frac{8s+1}{5e^{3-s}} $$
+
+**flujo de entrada y el nivel del tanque.**
+
+$$ G_1(s) = \frac{27s+1}{e^{13-s}} $$
+
