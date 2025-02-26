@@ -77,11 +77,11 @@ Ahora que sabemos los distintos motores y cómo funcionan, se debe hacer la gran
 
 <div align="center">
  
-| **Motor**          | **Potencia** | **Mantenimiento** | **Tamaño** | **Consumo** |
-|:------------------:|:------------:|:-----------------:|:----------:|:-----------:|
-| Motor DC           | 2 | 2 | 3 | 3 |
-| Motor AC sincrono  | 4 | 5 | 4 | 5 |
-| Motor AC asincrono | 5 | 5 | 4 | 4 |
+| **Motor**          | **Potencia** | **Mantenimiento** | **Tamaño** | **Consumo** | **Durabilidad** |
+|:------------------:|:------------:|:-----------------:|:----------:|:-----------:|:---------------:|
+| Motor DC           | 2 | 2 | 3 | 3 | 2 |
+| Motor AC sincrono  | 4 | 5 | 4 | 5 | 3 |
+| Motor AC asincrono | 5 | 5 | 4 | 4 | 4 |
 
 </div>
 
