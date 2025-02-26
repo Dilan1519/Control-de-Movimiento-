@@ -7,7 +7,7 @@ Los servomotores son un actuador electromecánico, el cual es ampliamente usado 
  
  [2. Motores AC y DC](#2-Motores-AC-y-DC)
  
- [3. Ejes de Movimiento](#3-ejes-de-movimiento)
+ [3. ¿Qué motor elegir?](#3-¿Qué-motor-elegir?)
 
  [4. ¿Qué se controla?](#4-qué-se-controla)
  
