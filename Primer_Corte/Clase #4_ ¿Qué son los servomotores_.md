@@ -71,160 +71,20 @@ Como se había dicho antes, el motor o prácticamente el corazón del servomotor
 >
 >🔑 *Motor AC asíncrono:* Al igual que el motor AC síncrono, este funciona con corriente alterna, sin embargo, el motor asíncrono no tiene ningún imán permanente, tanto el rotor como el estator cuentan con bobinas, las cuales en el caso del estator generan un campo magnético, este induce una corriente en el rotor, la cual a su vez crea un campo magnético en el mismo, el cual interactúa con el campo magnético del estator. 
 
+## 3. ¿Qué motor elegir?
 
-
-
-## 4. ¿Qué se controla?
-
-El control de movimiento puede regular posición, velocidad, torque y aceleración. Dependiendo de la aplicación, se pueden controlar las cuatro variables, solo tres, dos o una.
-
->🔑 *Posición:* Determina la ubicación exacta de un objeto en el espacio. Se controla para asegurar que un mecanismo llegue a un punto específico con precisión.
->
->🔑 *Velocidad:* Regula la rapidez con la que un objeto se mueve de un punto a otro. Es crucial para evitar vibraciones y mejorar la eficiencia del proceso.
->
->🔑 *Torque:* Es la fuerza de giro aplicada a un eje o motor. Controlarlo permite garantizar que un sistema pueda mover cargas sin sobrecargas o fallos mecánicos.
->
->🔑 *Acerleración:* Es la variación de la velocidad en el tiempo. Se controla para evitar movimientos bruscos y reducir el desgaste de los componentes.
-
-💡**Ejemplo 2:** Controlando las 4 variables (posición, velocidad, torque y aceleración)
-
-<div align="center">
-  <img src="Imágenes/Clase%20%232/Robot FANUC Arc Mate 100iC.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Robot FANUC Arc Mate 100iC</p>
-</div>
-
-
-- **Posición:** El brazo robótico debe moverse con precisión milimétrica para soldar en el punto exacto.
-
-- **Velocidad:** Se ajusta para evitar sobrecalentamiento o defectos en la soldadura.
-
-- **Torque:** Se controla para aplicar la presión adecuada en la unión de las piezas.
-
-- **Aceleración:** Se regula para evitar movimientos bruscos que puedan afectar la calidad de la soldadura.
-
-💡**Ejemplo 3:** Controlando 3 variables (posición, velocidad y torque)
-
-<div align="center">
-  <img src="Imágenes/Clase%20%232/Fresadora HAAS VF-2.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 3.</b> Fresadora HAAS VF-2 </p>
-</div>
-
-- **Posición:** La herramienta debe ubicarse exactamente en la coordenada correcta para realizar cortes precisos.
-
-- **Velocidad:** La velocidad de corte se ajusta según el material para evitar sobrecalentamiento o desgaste prematuro.
-
-- **Torque:** Se regula para asegurar la fuerza suficiente en el mecanizado sin dañar la pieza.
-
-- **Aceleración:** No se controla la aceleración directamente, ya que no es crítica para este proceso.
-
-💡**Ejemplo 4:** Controlando 2 variables (posición y velocidad)
-
-<div align="center">
-  <img src="Imágenes/Clase%20%232/Cinta transportadora con parada automática ConveyLinx.avif" alt="Figura de prueba" width="400">
-  <p><b>Figura 4.</b>Cinta transportadora con parada automática ConveyLinx </p>
-</div>
-
-- **Posición:** Se detiene exactamente en el punto donde debe descargarse un producto.
-
-- **Velocidad:** Se ajusta para sincronizarse con otras máquinas de la línea de producción.
-
-- **Torque:** No se controla el torque, porque la carga es liviana y no se requiere fuerza específica.
-
-- **Aceleración:** No se controla la aceleración, ya que no es relevante en este tipo de movimiento
-
-💡**Ejemplo 5:** Controlando solo 1 variable (torque)
-
-<div align="center">
-  <img src="Imágenes/Clase%20%232/Bosch GSR 18V-EC.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 5.</b> Bosch GSR 18V-EC </p>
-</div>
-
-- **Posición:** No se controla la posición, porque no necesita ubicarse en coordenadas exactas.
-
-- **Velocidad:** No se controla la velocidad, ya que funciona a una velocidad fija o ajustable manualmente.
-
-- **Torque:** Se regula para apretar los tornillos con la fuerza exacta sin dañar la pieza.
-
-- **Aceleración:** No se controla la aceleración, porque el usuario decide la rapidez del movimiento.
-
-## 5. ¿Cómo se hacia antes del control?
-
-El control de movimiento no siempre fue electrónico. Antes de los motores y sensores modernos, los ingenieros usaban mecanismos mecánicos avanzados para lograr precisión y automatización.  
-
-## 5.1. Primeros Métodos de Control Mecánico  
-
-### El Mundo Antiguo: Primeras Máquinas Autónomas  
-
-#### Herón de Alejandría (Siglo I d.C.)  
-- Inventó **puertas automáticas** en templos usando contrapesos.
-
-<div align="center">
-  <img src="Imágenes/Clase%20%232/Herón de Alejandría Puertas Automaticas.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 6.</b> Herón de Alejandría Puertas Automaticas </p>
-</div>
-
-- Creó la **eolípila**, un dispositivo a vapor que anticipó las máquinas de vapor.
-
-<div align="center">
-  <img src="Imágenes/Clase%20%232/Herón de Alejandría eolípila.gif" alt="Figura de prueba" width="400">
-  <p><b>Figura 7.</b> Herón de Alejandría eolípila </p>
-</div>
-
-#### Los Autómatas Islámicos (Siglos IX - XIII)  
-- Al-Jazari Creó mecanismos de engranajes y poleas para automatizar procesos.
-
-<div align="center">
-  <img src="Imágenes/Clase%20%232/Al-Jazari Creó mecanismos de engranajes y poleas para automatizar procesos.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 8.</b> Herón de Alejandría eolípila </p>
-</div>
-
-## 5.2. Revolución Industrial: La Era del Control Mecánico  
-
-<div align="center">
-  <table>
-    <tr>
-      <th>País</th>
-      <th>Industria Destacada</th>
-    </tr>
-    <tr>
-      <td>Reino Unido</td>
-      <td>Máquinas de vapor y telares</td>
-    </tr>
-    <tr>
-      <td>Francia</td>
-      <td>Industria textil y relojería</td>
-    </tr>
-    <tr>
-      <td>Alemania</td>
-      <td>Metalurgia y manufactura</td>
-    </tr>
-  </table>
- 
-</div>
-
- > **Nota:** Países Pioneros en la Automatización Mecánica.
-
-## 5.3. ¿Cómo Funcionaban Sin Control?  
+Ahora que sabemos los distintos motores y cómo funcionan, se debe hacer la gran pregunta, que motor se debe elegir para que tarea, la respuesta a este tipo de presunta siempre es la misma, y es que depende, por lo tanto a continuación verán una tabla la cual tomara en cuenta ciertos parámetros a considerar, y como se desarrollan estos motores en cada caso.
 
 <div align="center">
  
-| Mecanismo | Función | Ejemplo |
-|-----------|---------|---------|
-| **Engranajes y ruedas de levas** | Generar movimientos repetitivos | Telares mecánicos |
-| **Cajas de cambio y árboles de transmisión** | Transmitir energía a varias máquinas | Fundiciones de acero |
-| **Mecanismos de frenado y relojes de control** | Regular procesos en intervalos de tiempo | Molinos de viento |
-| **Sistemas de tarjetas perforadas** | Programar secuencias automáticas | Máquinas textiles |
+| **Motor**          | **Potencia**     |
+|:------------------:|:--------------------------------------------------------------------------------:|
+| Motor DC           | Pantallas táctiles, botones, paneles de control, software SCADA |
+| Motor AC sincrono  | PLCs, controladores PID, controladores de servomotores, control por lazo abierto/cerrado |
+| Motor AC asincrono | |
 
 </div>
 
-> **Nota:** Esta tabla da a conconer como funcionaba antes sin control
-
-## 5.4. Desventajas de los Métodos Antiguos  
-
-**Poca flexibilidad**: Modificar una máquina requería reconstruir todo el sistema.  
-**Errores por desgaste**: Engranajes y levas perdían precisión con el tiempo.  
-**Altos costos de mantenimiento**: Reemplazar piezas dañadas era caro.  
-**Dependencia del operador**: Se necesitaban trabajadores para supervisar.  
 
 ## 6. Componentes
 
