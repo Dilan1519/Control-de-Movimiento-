@@ -73,15 +73,15 @@ Como se había dicho antes, el motor o prácticamente el corazón del servomotor
 
 ## 3. ¿Qué motor elegir?
 
-Ahora que sabemos los distintos motores y cómo funcionan, se debe hacer la gran pregunta, que motor se debe elegir para que tarea, la respuesta a este tipo de presunta siempre es la misma, y es que depende, por lo tanto a continuación verán una tabla la cual tomara en cuenta ciertos parámetros a considerar, y como se desarrollan estos motores en cada caso.
+Ahora que sabemos los distintos motores y cómo funcionan, se debe hacer la gran pregunta, que motor se debe elegir para que tarea, la respuesta a este tipo de presunta siempre es la misma, y es que depende, por lo tanto a continuación verán una tabla la cual tomara en cuenta ciertos parámetros a considerar, y como se desarrollan estos motores en cada caso, con una calificacion de 1 a 5.
 
 <div align="center">
  
-| **Motor**          | **Potencia**     |
-|:------------------:|:--------------------------------------------------------------------------------:|
-| Motor DC           | Pantallas táctiles, botones, paneles de control, software SCADA |
-| Motor AC sincrono  | PLCs, controladores PID, controladores de servomotores, control por lazo abierto/cerrado |
-| Motor AC asincrono | |
+| **Motor**          | **Potencia** |
+|:------------------:|:------------:|
+| Motor DC           | 2 |
+| Motor AC sincrono  | 4 |
+| Motor AC asincrono | 5 |
 
 </div>
 
