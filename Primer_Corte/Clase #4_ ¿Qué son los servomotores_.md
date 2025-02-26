@@ -5,7 +5,7 @@ Los servomotores son un actuador electromecánico, el cual es ampliamente usado 
 ## Índice
  [1. Control de servomotores](#1-Control-de-servomotores)
  
- [2. ¿En qué industria se usa?](#2-en-qué-industria-se-usa)
+ [2. Motores AC y DC](#2-Motores-AC-y-DC)
  
  [3. Ejes de Movimiento](#3-ejes-de-movimiento)
 
@@ -57,46 +57,22 @@ Para hacer uso de un servomotor, debemos saber que varibles se pueden controlar 
    
 - **Elementos para realizar control:**  
   - (Controlador) Sistema embebido o computadora que ejecuta el algoritmo de control
-  - (Driver) Circuito que recibe la señal del controlador y la traduce para que así el actuador actúe de acuerdo a este.
-  - (Actuador) Motor ya sea AC o DC que recibe la señal del driver y realiza una acción. 
+  - (Driver) Circuito que recibe la señal del controlador y la traduce para que así el actuador actúe de acuerdo a este, ya sea un puente H para el caso de motores DC o un ESC (Electronic Speed Controler) para motores AC Síncronos
+  - (Actuador) Motor ya sea AC (síncrono o asíncrono) o DC que recibe la señal del driver y realiza una acción. 
 
 
-## 2. ¿En qué industria se usa?
+## 2. Motores AC y DC
 
-A continuación, se muestra una tabla con las industrias donde se usa el control de movimiento, los tipos de máquinas que emplean esta tecnología, los países donde es más común y los beneficios clave en cada sector.
+Como se había dicho antes, el motor o prácticamente el corazón del servomotor, es este actuador al cual queremos controlar sus variables. Este actuador lo podemos clasificar en dos, lo motores DC y lo AC, y estos últimos los podemos dividir en Síncronos Y asíncronos. 
 
-<div align="center">
+>🔑 *Motor DC:* Motor que funciona por corriente continua, que está compuesto de un estator el cual contiene imanes permanentes, y un rotor el cual contiene una serie de bobinas que al recibir corriente por medio de las escobillas, genera un campo magnético que interactúa con el estator.
+>
+>🔑 *Motor AC síncrono:* Este motor a diferencia del anterior, opera con corriente alterna, además en este caso la bobina está ubicada en le estator lo cual evita la fricción con escobillas, y en este orden de ideas, los imanes permanentes se encuentran en el rotor.
+>
+>🔑 *Motor AC asíncrono:* Al igual que el motor AC síncrono, este funciona con corriente alterna, sin embargo, el motor asíncrono no tiene ningún imán permanente, tanto el rotor como el estator cuentan con bobinas, las cuales en el caso del estator generan un campo magnético, este induce una corriente en el rotor, la cual a su vez crea un campo magnético en el mismo, el cual interactúa con el campo magnético del estator. 
 
-| **Industria**              | **Tipos de Máquinas**                                | **Países donde más se usan**      | **Beneficios clave**                                     |
-|----------------------------|-----------------------------------------------------|---------------------------------|---------------------------------------------------------|
-| **Empaque**                | Máquinas de envasado, cintas transportadoras, etiquetadoras | EE.UU., Alemania, China, México | Mayor velocidad, precisión en el empaquetado y reducción de desperdicios. |
-| **Ensamblaje**             | Robots ensambladores, sistemas pick & place, CNC   | Japón, Alemania, Corea del Sur  | Ensamblaje preciso, reducción de costos y automatización avanzada. |
-| **Impresión**              | Impresoras industriales, máquinas flexográficas     | EE.UU., China, Alemania, Brasil | Alta resolución, sincronización del material y rapidez de producción. |
-| **Productos de madera**    | Sierras automáticas, cepilladoras CNC, routers CNC  | Canadá, EE.UU., Suecia, Brasil  | Corte preciso, optimización del material y reducción de errores. |
-| **Maquinaria**             | Torno CNC, fresadoras, robots industriales         | Alemania, Japón, Italia, China  | Producción eficiente, mayor seguridad y reducción de tiempo de operación. |
-| **Eléctrica/Semiconductores** | Máquinas de soldadura PCB, ensambladoras SMT       | Taiwán, Corea del Sur, China, EE.UU. | Ensamblaje de componentes de alta velocidad y precisión en micras. |
 
-</div>
 
-> **Nota:** Esta tabla presenta solo algunos ejemplos de aplicaciones y países donde el control de movimiento es clave en la industria.
-
-## 3. Ejes de Movimiento
-
-Cada movimiento generado por un actuador en un sistema de control se denomina **eje de movimiento (axis)**. Un sistema puede tener múltiples ejes, y su sincronización es esencial para realizar tareas complejas con precisión y eficiencia.
-
-## Tipos de Ejes de Movimiento
-<div align="center">
- 
-| Tipo de Eje         | Descripción | Ejemplo |
-|--------------------|-------------|---------|
-| **Eje Lineal** | Movimiento en línea recta a lo largo de un solo eje (X, Y o Z). | Un torno CNC mueve el cortador en el eje X para dar forma a la pieza. |
-| **Eje Rotacional** | Movimiento giratorio alrededor de un eje fijo. | Un brazo robótico de ensamblaje rota en el eje Z para ajustar una pieza. |
-| **Ejes Coordinados** | Múltiples ejes que trabajan en sincronización para realizar una tarea. | En una impresora, el cartucho de tinta se mueve en el eje X, mientras que el rodillo mueve el papel en el eje Y. |
-| **Ejes Interpolados** | Movimiento combinado de varios ejes para generar trayectorias complejas. | Un robot industrial realiza movimientos curvos en 3D con interpolación de sus ejes. |
- 
-</div>
-
-> **Nota:** Esta tabla da una pequeña explicación de los tipos de ejes de movimiento.
 
 ## 4. ¿Qué se controla?
 
