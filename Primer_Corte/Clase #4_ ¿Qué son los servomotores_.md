@@ -87,15 +87,19 @@ Ahora que sabemos los distintos motores y cómo funcionan, se debe hacer la gran
 
 
 ## 6. Caracterización 
-Con tal de hacer mas facil para los usuarios de servomotores la tarea de caracterizar y probar los motores, los fabricantes comparten informacion vital dedl motor, en forma de graficos torque vs velocidad y tablas de datos, las dos con información de vital inportancia para los procesos de diseño y elección de hardware. 
+ Con tal de hacer más fácil para los usuarios de servomotores la tarea de caracterizar y probar los motores, los fabricantes comparten información vital del motor, en forma de gráficos torque vs velocidad y tablas de datos, las dos con información de vital importancia para los procesos de diseño y elección de hardware.
 
 ### Curvas velocidad vs Torque:
-Las curvas de velocidad vs torque son un grafico que bien interpretado, puede dar ciertos datos sobre el motor, en adicion algunas graficas de este tipo tambien añaden un eje vertical de corriente, que tambien adicione ciertos datos.
+Las curvas de velocidad vs torque son un gráfico que bien interpretado, puede dar ciertos datos sobre el motor, en adición algunas graficas de este tipo también añaden un eje vertical de corriente, que también adicione ciertos datos. 
 
 <div align="center">
   <img src="Imágenes/Clase%20%234/grafico 1.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Robot FANUC Arc Mate 100iC</p>
+  <p><b>Figura 4.</b> Curva velocidad vs torque servomotor QB02302 </p>
 </div>
+
+Como se observa el grafico, tenemos dos secciones remarcadas con cirulos de colores, en cuanto al círculo de color rojo, este punto donde el motor inicia arranque y no tiene carga (torque) tenemos el valor máximo de velocidad o velocidad máxima, con el de color azul, vemos que es el punto de torque en donde el motor tiene 0 RPM’s, esto indica el stal torque o torque de parada, por ultimo si nos fijamos en el título del grafico  este después del número de modelo tiene la inscripción A00, esto se refiere a que este grafico corresponde con el motor a un voltaje de 24 V, si la inscripción fuera B00, este sería el mismo modelo, pero a 40 V, esto se ve más fácil con la tabla de datos que se verá a continuación. 
+
+### Tablas de datos:
 
 ## 7. Control de cascada
 
