@@ -93,7 +93,7 @@ Con tal de hacer mas facil para los usuarios de servomotores la tarea de caracte
 Las curvas de velocidad vs torque son un grafico que bien interpretado, puede dar ciertos datos sobre el motor, en adicion algunas graficas de este tipo tambien añaden un eje vertical de corriente, que tambien adicione ciertos datos.
 
 <div align="center">
-  <img src="Imágenes/Clase%20%232/grafico1.png" alt="Figura de prueba" width="400">
+  <img src="Imágenes/Clase%20%232/grafico 1.png" alt="Figura de prueba" width="400">
   <p><b>Figura 1.</b> Robot FANUC Arc Mate 100iC</p>
 </div>
 
