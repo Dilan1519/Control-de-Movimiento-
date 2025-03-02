@@ -36,6 +36,7 @@ Para hacer uso de un servomotor, debemos saber que varibles se pueden controlar 
   <img src="Imágenes/Clase%20%232/Robot FANUC Arc Mate 100iC.png" alt="Figura de prueba" width="400">
   <p><b>Figura 1.</b> Robot FANUC Arc Mate 100iC</p>
 </div>
+- ** **
   - (Velocidad) Así como podemos controlar en donde se encuentra el rotor, podemos indicar que tan rápido queremos que este rote, es decir que tantos grados por segundo queremos que recorra el rotor, un uso para esto es el control de crucero de los automóviles tesla, donde el objetivo es que el vehículo transite siempre a la misma velocidad.
   
   
