@@ -13,7 +13,7 @@ Los servomotores son un actuador electromecánico, el cual es ampliamente usado 
  
  [5. ¿Cómo se hacia antes del control?](#5-cómo-se-hacia-antes-del-control)
 
- [6. ¿Componentes?](#6-componentes)
+ [6. Caracterización](#6-Caracterización)
 
  [7. Control de cascada ](#7-control-de-cascada)
 
@@ -86,7 +86,13 @@ Ahora que sabemos los distintos motores y cómo funcionan, se debe hacer la gran
 </div>
 
 
-## 6. Componentes
+## 6. Caracterización 
+Con tal de hacer mas facil para los usuarios de servomotores la tarea de caracterizar y probar los motores, los fabricantes comparten informacion vital dedl motor, en forma de graficos torque vs velocidad y tablas de datos, las dos con información de vital inportancia para los procesos de diseño y elección de hardware. 
+
+### Curvas velocidad vs Torque:
+Las curvas de velocidad vs torque son un grafico que bien interpretado, puede dar ciertos datos sobre el motor, en adicion algunas graficas de este tipo tambien añaden un eje vertical de corriente, que tambien adicione ciertos datos.
+
+
 
 ## 7. Control de cascada
 
