@@ -109,57 +109,8 @@ Con las tablas es más fácil interpretar, pues los datos están directamente li
 
 Además, podemos evidenciar lo dicho en el apartado del gráfico, este motor cuenta con tres voltajes de operación, por ejemplo, si quisiéramos el grafico de velocidad torque del motor a 130 V tendríamos que buscar el que tenga los últimos tres dígitos C00.
 
-<div align="center">
-  <img src="Imágenes/Clase%20%234/grafico 1.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 4.</b> Curva velocidad vs torque servomotor QB02302 </p>
-</div>
 ## 7. Control de cascada
 
-En un diagrama de cascada en control de movimiento, el orden posición → velocidad → torque se debe a la forma en que los sistemas de control gestionan el movimiento de un actuador.
-
-### **¿Por qué este orden?**
-
-El torque es lo que realmente mueve el sistema, pero no se puede controlar directamente la posición con torque, ya que otros factores como la inercia y la fricción influyen.
-La velocidad actúa como un intermediario, asegurando que el motor no se descontrole ni se sobrecargue.
-Finalmente, la posición es el objetivo final, pero necesita de los otros dos niveles para alcanzarse con precisión y estabilidad.
-
-💡**Ejemplo 6:** ¿Donde quiero estacionarme?
-
-<div align="center">
-  <img src="Imágenes/Clase%20%232/¿Dónde quiero estacionarme”.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 9.</b> Control de cascada </p>
-</div>
-
-## **Control de Posición (Nivel más alto)**  
-**● Referencia (Setpoint):**  
-  - La posición deseada (ejemplo: destino del GPS o posición final del auto).  
-
- **● Retroalimentación (Feedback):**  
-  - Sensor de posición: GPS, encoder de ruedas, sensores de odometría (LIDAR o cámaras en autos autónomos).  
-
- **● Señal de control:**  
-  - Genera un setpoint de velocidad para el siguiente nivel.  
-
-## **Control de Velocidad (Nivel intermedio)**  
-**● Referencia (Setpoint):**  
-  - La velocidad deseada (por ejemplo, 60 km/h en un control de crucero).  
-
- **● Retroalimentación (Feedback):**  
-  - Sensor de velocidad: Encoder en ruedas, velocímetro, radar de control adaptativo.  
-
-  **● Señal de control:**  
-  - Genera un setpoint de torque para el siguiente nivel.  
-
-## **Control de Torque (Nivel más bajo)**  
-- **● Referencia (Setpoint):**  
-  - El torque requerido por el motor para mantener la velocidad.  
-
-  **● Retroalimentación (Feedback):**  
-  - Sensor de corriente del motor eléctrico o sensor de presión en motores de combustión.  
-
- **● Señal de control:**  
-  - **PWM** (Modulación por Ancho de Pulso) controla la energía enviada al motor eléctrico.  
-  - En motores de combustión, la señal es el control del acelerador o la inyección de combustible.  
 
 ## 8. Ejercicio 
 
