@@ -36,7 +36,6 @@ Para hacer uso de un servomotor, debemos saber que varibles se pueden controlar 
   <img src="Imágenes/Clase%20%232/Robot FANUC Arc Mate 100iC.png" alt="Figura de prueba" width="400">
   <p><b>Figura 1.</b> Robot FANUC Arc Mate 100iC</p>
 </div>
-- ** **
   - (Velocidad) Así como podemos controlar en donde se encuentra el rotor, podemos indicar que tan rápido queremos que este rote, es decir que tantos grados por segundo queremos que recorra el rotor, un uso para esto es el control de crucero de los automóviles tesla, donde el objetivo es que el vehículo transite siempre a la misma velocidad.
   
   
@@ -59,7 +58,8 @@ Para hacer uso de un servomotor, debemos saber que varibles se pueden controlar 
 - **Elementos para realizar control:**  
   - (Controlador) Sistema embebido o computadora que ejecuta el algoritmo de control
   - (Driver) Circuito que recibe la señal del controlador y la traduce para que así el actuador actúe de acuerdo a este, ya sea un puente H para el caso de motores DC o un ESC (Electronic Speed Controler) para motores AC Síncronos
-  - (Actuador) Motor ya sea AC (síncrono o asíncrono) o DC que recibe la señal del driver y realiza una acción. 
+  - (Actuador) Motor ya sea AC (síncrono o asíncrono) o DC que recibe la señal del driver y realiza una acción.
+  - (Sensor) Existen diferentes sensores tanto para los motores DC como LOS AC, sin embargo, el más comúnmente usado es el enconder, el cual consta de una rueda ranurada, la cual permite o no el paso de un haz de luz desde un emisor láser, dependiendo de cuantas ranuras tenga la rueda, depende la resolución, entre más ranuras más resolución.
 
 
 ## 2. Motores AC y DC
