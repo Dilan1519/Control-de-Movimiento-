@@ -100,7 +100,19 @@ Las curvas de velocidad vs torque son un gráfico que bien interpretado, puede d
 Como se observa el grafico, tenemos dos secciones remarcadas con cirulos de colores, en cuanto al círculo de color rojo, este punto donde el motor inicia arranque y no tiene carga (torque) tenemos el valor máximo de velocidad o velocidad máxima, con el de color azul, vemos que es el punto de torque en donde el motor tiene 0 RPM’s, esto indica el stal torque o torque de parada, por ultimo si nos fijamos en el título del grafico  este después del número de modelo tiene la inscripción A00, esto se refiere a que este grafico corresponde con el motor a un voltaje de 24 V, si la inscripción fuera B00, este sería el mismo modelo, pero a 40 V, esto se ve más fácil con la tabla de datos que se verá a continuación. 
 
 ### Tablas de datos:
+Con las tablas es más fácil interpretar, pues los datos están directamente listados con su nombre, si embargo, es importante fijarse en las unidades de las constantes, ya que a veces estos motores son de fabricantes estadounidenses y las unidades están en sistema imperial y no internacional.
 
+<div align="center">
+  <img src="Imágenes/Clase%20%234/tabla.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 4.</b> Curva velocidad vs torque servomotor QB02302 </p>
+</div>
+
+Además, podemos evidenciar lo dicho en el apartado del gráfico, este motor cuenta con tres voltajes de operación, por ejemplo, si quisiéramos el grafico de velocidad torque del motor a 130 V tendríamos que buscar el que tenga los últimos tres dígitos C00.
+
+<div align="center">
+  <img src="Imágenes/Clase%20%234/grafico 1.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 4.</b> Curva velocidad vs torque servomotor QB02302 </p>
+</div>
 ## 7. Control de cascada
 
 En un diagrama de cascada en control de movimiento, el orden posición → velocidad → torque se debe a la forma en que los sistemas de control gestionan el movimiento de un actuador.
