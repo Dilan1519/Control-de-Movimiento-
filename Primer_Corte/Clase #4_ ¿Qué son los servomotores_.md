@@ -15,9 +15,7 @@ Los servomotores son un actuador electromecánico, el cual es ampliamente usado 
 
  [6. Caracterización](#6-Caracterización)
 
- [7. Control de cascada ](#7-control-de-cascada)
-
- [8. Ejercicio ](#8-Ejercicio)
+ [7. Ejercicio ](#8-Ejercicio)
 
  [9. Solución](#9-Solución)
 
@@ -110,26 +108,9 @@ Con las tablas es más fácil interpretar, pues los datos están directamente li
 
 Además, podemos evidenciar lo dicho en el apartado del gráfico, este motor cuenta con tres voltajes de operación, por ejemplo, si quisiéramos el grafico de velocidad torque del motor a 130 V tendríamos que buscar el que tenga los últimos tres dígitos C00.
 
-## 7. Control de cascada
-
 
 ## 8. Ejercicio 
 
-## Configuración de un Sistema de Control de Movimiento
-
-## **Instrucciones**  
-
-**●** Selecciona un sistema en el que se aplique el control de movimiento.  
-**●** Identifica y describe los componentes del sistema:  
-  - **HMI (Interfaz Humano-Máquina)**  
-  - **Controladores**  
-  - **Drivers**  
-  - **Actuadores**  
-  - **Mecanismos de transmisión**  
-  - **Sensores**
-
-**●** Explica el funcionamiento del sistema en pasos detallados.  
-**●** Propón una mejora en el sistema. 
 
 # 9. Solución
 
