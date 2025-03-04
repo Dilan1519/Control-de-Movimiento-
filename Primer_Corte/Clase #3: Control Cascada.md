@@ -321,3 +321,36 @@ $$
 
 ## 3.1 Metodologías empíricas de lazo abierto Austin
 
+Austin fue una ingeniera y discípula de Astro, reconocida por desarrollar el método del relé. En su tesis doctoral, presentada en 1986, propuso una metodología de sintonización para esquemas de control en cascada, utilizando controladores PI y PID.
+
+El objetivo central de su trabajo fue abordar el problema de la separación de modelos en estos sistemas. Para ello, planteó un método basado en curvas de reacción, donde todas las curvas se obtienen desde una misma entrada: la entrada del sistema.
+
+Para utilizar la tabla, primero es importante recordar que el lazo secundario se diseña de manera independiente, aplicando cualquier metodología conocida. Se asume que este ya ha sido definido antes de usar la tabla.
+
+- Si en el lazo secundario se elige un controlador proporcional (P), se deben usar las fórmulas de la fila correspondiente.
+  
+- Si se selecciona un controlador PI en el secundario, se deben emplear las fórmulas de la fila siguiente.
+
+En la parte superior de la tabla, se encuentran las opciones para el lazo primario:
+
+- Si se elige un controlador PI en el primario, se usan las fórmulas de la primera columna.
+  
+- Si se selecciona un PID, se emplean las de la segunda columna.
+  
+- Para determinar las fórmulas adecuadas, se busca la intersección entre la fila del controlador secundario y la columna del controlador primario.
+
+Por ejemplo:
+
+-Si en el secundario se usa un controlador proporcional (P) y en el primario un PID, se debe seleccionar la fórmula ubicada en la intersección correspondiente.
+
+-Si se utilizan controladores PI en ambos lazos, la ganancia proporcional del primario se calcula con la fórmula correspondiente en la tabla.
+
+<div align="center">
+  <img src="Imágenes/Clase%20%233/Austin.jpg" alt="Figura de prueba" width="500">
+  <p><b>Figura 1.</b> Tabla de Austin </p>
+</div>
+
+<div align="center">
+  <img src="Imágenes/Clase%20%233/Austin_2.jpg" alt="Figura de prueba" width="500">
+  <p><b>Figura 1.</b> Tabla </p>
+</div>
