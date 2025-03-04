@@ -55,7 +55,7 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 >🔑 *Control en Cascada:* El control en cascada es una estrategia avanzada de control donde se utilizan dos o más lazos de control anidados, con el objetivo de mejorar la respuesta del sistema ante perturbaciones y reducir retardos en la acción de control.
 
 <div align="center">
-  <img src="Imágenes/Clase%20%233/Diagrama Control Cascada.png" alt="Figura de prueba" width="400">
+  <img src="Imágenes/Clase%20%235/Solidworks vs Simscpae.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
 </div>
 
