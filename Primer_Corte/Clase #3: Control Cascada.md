@@ -291,3 +291,28 @@ $$ \frac{0.9}{k_{2}}\left( \frac{t_{2}}{t_{m}}\right)= \frac{0.9}{5}\left( \frac
 
 $$ t_{i2} = 3.33 \cdot t_{m} = 3.33 \cdot 3 = 9.99 $$
 
+**Sintonización Lazo Primario**
+
+$$
+K_{\text{Total}} = K_1 \cdot 1 = K_1 = 1
+$$
+
+$$
+t_{m\text{Total}} = t_{m1} + t_{m2} = 13 + 3 = 16
+$$
+
+$$
+\tau_{\text{Total}} \approx \tau_1 \approx 15
+$$
+
+$$
+K_{c1} = \frac{1.2}{K_{\text{Total}} \cdot \tau_{\text{Total}} \cdot t_{m\text{Total}}} = \frac{1.2}{1} *  \frac{15}{16} = 1.125
+$$
+
+$$
+T_{i1} = 2 t_{m\text{Total}} = 2 \times 11 = 22
+$$
+
+$$
+T_{d1} = 0.5 t_{m\text{Total}} = 0.5 \times 11 = 5.5
+$$
