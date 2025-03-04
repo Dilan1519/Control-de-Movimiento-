@@ -27,9 +27,9 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 > **Nota:** Este modelo permite realizar simulaciones dinámicas avanzadas con integración de múltiples disciplinas, facilitando el análisis y diseño de sistemas complejos.
 
-<div align="center">
-
 ## 1.1 Simscape y sus aplicaciones en distintas industrias:
+
+<div align="center">
 
 | Industria         | Aplicaciones con Simscape |
 |------------------|-------------------------|
