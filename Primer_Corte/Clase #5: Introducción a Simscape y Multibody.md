@@ -1,6 +1,6 @@
 # Introducción a Simscape y Multibody
 
-El control cascada en una técnica de control la cual se usa comúnmente en el control de movimiento, esto ya que al necesitar controlar más de una variable a la vez y una dependiente de otra, se hace uso de un sistema compuesto por dos controladores, donde la salida del primer controlador sirve de setpoint para el segundo. 
+Los software de modelado estructural permiten simular esfuerzos, materiales y comportamiento ante fuerzas, pero no analizan la dinámica del sistema. Aunque generan animaciones basadas en la cinemática, no ofrecen curvas de posición, velocidad o aceleración en función del tiempo. Para ello, se requieren herramientas específicas de simulación dinámica.
 
 ## Índice
 
@@ -9,44 +9,41 @@ El control cascada en una técnica de control la cual se usa comúnmente en el c
  [9. Solución](#9-Solución)
 
  [10. Bibliografía](#10-Bibliografía)
-
-💡**Ejemplo 1:** Control en Cascada de Nivel y Caudal en un Tanque
-
-**Descripción del Sistema**
-
-Imaginemos un tanque de almacenamiento de agua en una planta industrial.
-
-- **Entrada:** El agua entra desde una tubería controlada por una válvula de entrada.
-- **Salida:** El agua sale por otra tubería, donde la demanda de flujo varía debido a diferentes condiciones del proceso.
-- **Objetivo:** Mantener el nivel del tanque constante a pesar de las variaciones en la salida.
-
-El desafío aquí es que si solo controlamos el nivel, la respuesta será lenta y el sistema puede volverse inestable.
-
-**Problema con un Control de Lazo Único**
-
-Si solo utilizamos un controlador de nivel, este actuaría directamente sobre la válvula de entrada basándose únicamente en la medición del nivel del tanque. Sin embargo, esto tiene tres problemas principales:
-
-**Retardos en la respuesta** 
-
-- Si el nivel empieza a bajar, el controlador intentará corregirlo abriendo más la válvula de entrada.
-- Sin embargo, el nivel del tanque cambia lentamente porque depende de la acumulación o pérdida de líquido, lo que puede hacer que la respuesta sea demasiado tardía.
-
-**Oscilaciones en el nivel**
-
-- Como el nivel responde lentamente, el controlador podría sobrecompensar abriendo demasiado la válvula.
-- Esto puede llevar a una sobrecarga en la entrada, causando oscilaciones no deseadas en el nivel.
-
-**Falta de estabilidad ante perturbaciones**
-
-- Si la demanda de salida varía abruptamente, el control de nivel tardará en detectarlo y reaccionar, lo que puede llevar a desbordamientos o vaciados imprevistos del tanque.
-
-**¿Qué se busca en el control en cascada en este caso?**
-
-- **Mejor respuesta a perturbaciones:** El lazo de caudal responde rápidamente a cambios en la demanda sin esperar a que el nivel fluctúe demasiado.
-- **Mayor estabilidad:** Se minimizan oscilaciones en el nivel, evitando desbordamientos o caídas abruptas.
-- **Precisión en la regulación:** Se asegura que el flujo de entrada siempre sea el adecuado para mantener el nivel deseado.
   
-## 1. Control de Lazo Único y Control en Cascada
+## 1. Características
+
+<div align="center">
+ 
+| Característica              | Descripción |
+|-----------------------------|-------------|
+| **Tipo de modelado**        | Basado en cuerpos rígidos y articulaciones con restricciones. |
+| **Generación de ecuaciones** | Calcula automáticamente ecuaciones diferenciales y cinemáticas. |
+| **Análisis en el tiempo**   | Muestra la respuesta temporal de variables dinámicas. |
+| **Animación 3D**            | Visualiza el movimiento del sistema en tiempo real. |
+| **Integración con otros sistemas** | Permite combinar con modelos hidráulicos, térmicos, electromecánicos y eléctricos. |
+| **Uso de motores**          | Se pueden agregar modelos de motores para simular accionamientos. |
+
+</div>
+
+> **Nota:** Este modelo permite realizar simulaciones dinámicas avanzadas con integración de múltiples disciplinas, facilitando el análisis y diseño de sistemas complejos.
+
+<div align="center">
+
+## 1.1 Simscape y sus aplicaciones en distintas industrias:
+
+| Industria         | Aplicaciones con Simscape |
+|------------------|-------------------------|
+| **Automotriz**    | Modelado de sistemas de suspensión, frenos, transmisión y motores eléctricos. |
+| **Aeroespacial**  | Simulación de actuadores hidráulicos, controles de vuelo y trenes de aterrizaje. |
+| **Robótica**      | Diseño de manipuladores, simulación de control de motores y análisis de dinámica. |
+| **Manufactura**   | Modelado de líneas de producción, control de maquinaria y sistemas neumáticos. |
+| **Energía**       | Simulación de turbinas eólicas, paneles solares y sistemas de almacenamiento de energía. |
+| **Dispositivos médicos** | Análisis de prótesis, exoesqueletos y sistemas biomédicos electromecánicos. |
+
+</div>
+
+> **Nota:** Simscape es una herramienta poderosa para la simulación multidominio, permitiendo modelar y analizar sistemas físicos en diversas industrias con alta precisión y realismo.
+
 
 >🔑 *Control de Lazo Único:* El control de lazo único es el esquema de control más básico en sistemas de automatización y regulación de procesos. Se caracteriza porque un solo controlador recibe la señal de una variable medida, la compara con un valor deseado (setpoint) y genera una señal de control para actuar sobre un elemento final con el objetivo de minimizar el error.
 
