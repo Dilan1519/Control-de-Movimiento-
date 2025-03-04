@@ -289,4 +289,5 @@ El nivel del tanque cambia con una constante de tiempo de 15 segundos y un retar
 
 $$ \frac{0.9}{k_{2}}\left( \frac{t_{2}}{t_{m}}\right)= \frac{0.9}{5}\left( \frac{8}{3} \right) = 0.48 $$
 
-$$ t_{i2}=3.33*t_{m}=3.33*3=9.99 $$
+$$ t_{i2} = 3.33 \cdot t_{m} = 3.33 \cdot 3 = 9.99 $$
+
