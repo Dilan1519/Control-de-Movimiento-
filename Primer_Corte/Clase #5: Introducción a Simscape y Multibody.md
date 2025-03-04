@@ -70,12 +70,12 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 </div>
 
 <div align="center">
-  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_7.jpg" alt="Figura de prueba" width="400">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_6.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
 </div>
 
 <div align="center">
-  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_1.jpg" alt="Figura de prueba" width="400">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_7.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
 </div>
 
@@ -98,6 +98,27 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
   <img src="Imágenes/Clase%20%235/Pendulo_Simple.gif" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
 </div>
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejemplo_pendulo_11.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+</div>
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejemplo_pendulo_12.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+</div>
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejemplo_pendulo_13.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+</div>
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Pendulo_Simple_1.gif" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+</div>
+
 >🔑 *Control de Lazo Único:* El control de lazo único es el esquema de control más básico en sistemas de automatización y regulación de procesos. Se caracteriza porque un solo controlador recibe la señal de una variable medida, la compara con un valor deseado (setpoint) y genera una señal de control para actuar sobre un elemento final con el objetivo de minimizar el error.
 
 <div align="center">
