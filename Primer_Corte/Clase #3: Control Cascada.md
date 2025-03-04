@@ -306,13 +306,13 @@ $$
 $$
 
 $$
-K_{c1} = \frac{1.2}{K_{\text{Total}} \cdot \tau_{\text{Total}} \cdot t_{m\text{Total}}} = \frac{1.2}{1} *  \frac{15}{16} = 1.125
+K_{c1} = \left( \frac{1.2}{K_{\text{Total}}} \right) \cdot \left( \frac{\tau_{\text{Total}}}{t_{m\text{Total}}} \right) = \left( \frac{1.2}{1} \right) \cdot \left( \frac{15}{16} \right) = 1.2 \times \frac{15}{16} = 1.125
 $$
 
 $$
-T_{i1} = 2 t_{m\text{Total}} = 2 \times 11 = 22
+T_{i1} = 2 t_{m\text{Total}} = 2 \times 16 = 32
 $$
 
 $$
-T_{d1} = 0.5 t_{m\text{Total}} = 0.5 \times 11 = 5.5
+T_{d1} = 0.5 t_{m\text{Total}} = 0.5 \times 16 = 8
 $$
