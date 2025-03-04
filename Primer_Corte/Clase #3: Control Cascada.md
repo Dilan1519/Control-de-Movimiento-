@@ -316,3 +316,8 @@ $$
 $$
 T_{d1} = 0.5 t_{m\text{Total}} = 0.5 \times 16 = 8
 $$
+
+## 3. MÉTODOS DE SINTONIZACIÓN
+
+## 3.1 Metodologías empíricas de lazo abierto Austin
+
