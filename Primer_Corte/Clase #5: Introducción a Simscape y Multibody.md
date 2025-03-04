@@ -44,7 +44,60 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 > **Nota:** Simscape es una herramienta poderosa para la simulación multidominio, permitiendo modelar y analizar sistemas físicos en diversas industrias con alta precisión y realismo.
 
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_1.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+</div>
 
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_2.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+</div>
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_3.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+</div>
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_4.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+</div>
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_5.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+</div>
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_7.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+</div>
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_1.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+</div>
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_8.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+</div>
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_9.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+</div>
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_10.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+</div>
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Pendulo_Simple.gif" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+</div>
 >🔑 *Control de Lazo Único:* El control de lazo único es el esquema de control más básico en sistemas de automatización y regulación de procesos. Se caracteriza porque un solo controlador recibe la señal de una variable medida, la compara con un valor deseado (setpoint) y genera una señal de control para actuar sobre un elemento final con el objetivo de minimizar el error.
 
 <div align="center">
