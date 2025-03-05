@@ -121,6 +121,12 @@ En los fraficos de velocidad VS torque, uno puede fijarse en ciertos puntos clav
   <p><b>Figura 4.</b> Curva velocidad vs torque servomotor QB02300 </p>
 </div>
 
+En orden de izquierda a derecha:
+
+- **Velocidad maxima = 5900 RPM**  
+- **Velocidad nominal = 5300 RPM**  
+- **Torque de parada = 0.35 Nm**
+  
 # 7. Bibliografía  
 
 [1] Siciliano, B., & Khatib, O. (2016). *Springer Handbook of Robotics*. Springer.  
