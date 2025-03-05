@@ -114,6 +114,12 @@ Segun la siguiente grafica de Velocidad VS Torque, encuenrte la mayor catidad de
 
 # 6. Solución
 
+En los fraficos de velocidad VS torque, uno puede fijarse en ciertos puntos clave que le dan datos sobre el funcionamiento del motor, el la siguiente imagen se evidencia cuales:
+
+<div align="center">
+  <img src="Imágenes/Clase%20%234/grafico3.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 4.</b> Curva velocidad vs torque servomotor QB02300 </p>
+</div>
 
 # 7. Bibliografía  
 
