@@ -9,13 +9,9 @@ Los servomotores son un actuador electromecánico, el cual es ampliamente usado 
  
  [3. ¿Qué motor elegir?](#3-Qué-motor-elegir)
 
- [4. ¿Qué se controla?](#4-qué-se-controla)
- 
- [5. ¿Cómo se hacia antes del control?](#5-cómo-se-hacia-antes-del-control)
+ [4. Caracterización](#4-Caracterización)
 
- [6. Caracterización](#6-Caracterización)
-
- [7. Ejercicio ](#8-Ejercicio)
+ [5. Ejercicio ](#5-Ejercicio)
 
  [9. Solución](#9-Solución)
 
@@ -84,8 +80,7 @@ Ahora que sabemos los distintos motores y cómo funcionan, se debe hacer la gran
 
 </div>
 
-
-## 6. Caracterización 
+## 4. Caracterización 
  Con tal de hacer más fácil para los usuarios de servomotores la tarea de caracterizar y probar los motores, los fabricantes comparten información vital del motor, en forma de gráficos torque vs velocidad y tablas de datos, las dos con información de vital importancia para los procesos de diseño y elección de hardware.
 
 ### Curvas velocidad vs Torque:
@@ -108,46 +103,18 @@ Con las tablas es más fácil interpretar, pues los datos están directamente li
 
 Además, podemos evidenciar lo dicho en el apartado del gráfico, este motor cuenta con tres voltajes de operación, por ejemplo, si quisiéramos el grafico de velocidad torque del motor a 130 V tendríamos que buscar el que tenga los últimos tres dígitos C00.
 
+## 5. Ejercicio 
 
-## 8. Ejercicio 
+Segun la siguiente grafica de Velocidad VS Torque, encuenrte la mayor catidad de parametros de importancia sobre el motor.
 
 
-# 9. Solución
 
-## Impresora 3D  
 
-## Identificación de Componentes  
 
-<div align="center">  
- 
-| Componente                     | Ejemplo en la Impresora 3D |
-|---------------------------------|--------------------------------|
-| HMI (Interfaz Hombre-Máquina)   | Pantalla táctil o software en PC (PrusaSlicer, Cura) donde el usuario configura la impresión. |
-| Control de Movimiento           | Controlador 32 bits (Marlin, Klipper) que interpreta el código G y genera las señales para los motores. |
-| Drivers (Potencia)              | Drivers de motores paso a paso (A4988, TMC2209) que regulan la corriente y el movimiento de los motores. |
-| Actuadores                      | Motores paso a paso para mover los ejes X, Y y Z, y un extrusor que empuja el filamento. |
-| Mecanismos de Transmisión        | Husillos de bolas, correas dentadas y rodamientos que convierten el giro de los motores en desplazamientos precisos. |
-| Retroalimentación (Sensores)     | Endstops para detectar límites de los ejes, sensor de nivelación automática (BLTouch), termistores para monitorear temperatura. |
+# 6. Solución
 
-</div>
 
-> **Nota:** La precisión de la impresión depende del correcto ajuste de los motores, drivers y sensores.
-
-**Funcionamiento del Sistema**
-
-- El usuario carga el modelo 3D en el software y configura parámetros como temperatura, velocidad y altura de capa.
-- La HMI envía el código G al controlador de la impresora.
-- El controlador procesa las instrucciones y envía señales a los drivers.
-- Los drivers controlan la corriente de los motores paso a paso.
-- Los motores mueven la boquilla de impresión en los ejes X, Y y Z mediante correas y husillos.
-- El extrusor empuja el filamento hacia el hotend, donde se funde y se deposita en la cama de impresión.
-- Los sensores de temperatura y nivelación ajustan el sistema en tiempo real para mejorar la calidad de la impresión.
-
-## Mejora Propuesta
-
-Agregar un sensor de flujo de filamento para detectar atascos o falta de material.
-
-# 10. Bibliografía  
+# 7. Bibliografía  
 
 [1] Siciliano, B., & Khatib, O. (2016). *Springer Handbook of Robotics*. Springer.  
     Explica los principios del control de movimiento en robótica y automatización.  
