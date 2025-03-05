@@ -107,9 +107,10 @@ Además, podemos evidenciar lo dicho en el apartado del gráfico, este motor cue
 
 Segun la siguiente grafica de Velocidad VS Torque, encuenrte la mayor catidad de parametros de importancia sobre el motor.
 
-
-
-
+<div align="center">
+  <img src="Imágenes/Clase%20%234/grafico2.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 4.</b> Curva velocidad vs torque servomotor QB02300 </p>
+</div>
 
 # 6. Solución
 
