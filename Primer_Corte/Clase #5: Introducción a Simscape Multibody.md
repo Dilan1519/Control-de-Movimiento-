@@ -83,16 +83,22 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_3.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+  <p><b>Figura 3.</b> Diagrama Control Cascada </p>
 </div>
 
 4- Enocntramos el bloque World Frame Sirve como base para definir posiciones y orientaciones.
 
 <div align="center">
-  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_5.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_4.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 4.</b> Diagrama Control Cascada </p>
 </div>
 
+5- Enocntramos el bloque World Frame Sirve como base para definir posiciones y orientaciones.
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_4.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 5.</b> Diagrama Control Cascada </p>
+</div>
 
 ## 3  Ejercicio 
 
