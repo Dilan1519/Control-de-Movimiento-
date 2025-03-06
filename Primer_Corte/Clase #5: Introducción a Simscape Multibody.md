@@ -63,7 +63,9 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 > **Nota:** Esta tabla contiene una descripción de algunos bloques fundamentales en Simscape Multibody, junto con sus características y funciones principales.
 
+## 2  Ejercicio 
 
+## 3 Solución 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_1.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
