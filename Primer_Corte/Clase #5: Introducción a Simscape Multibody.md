@@ -44,6 +44,26 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 > **Nota:** Simscape es una herramienta poderosa para la simulación multidominio, permitiendo modelar y analizar sistemas físicos en diversas industrias con alta precisión y realismo.
 
+
+## 1.2  Descripción de algunos bloques en Simscape Miltibody
+
+<div align="center">
+ 
+| Concepto                | ¿Qué es? | Características / Función |
+|-------------------------|---------|---------------------------|
+| **Solver Configuration** | Bloque necesario en Simscape para definir los parámetros del solucionador numérico. | - Establece el tipo de solver (variable o fijo).<br>- Define el paso de simulación.<br>- Maneja restricciones algebraicas y diferenciales. |
+| **World Frame** | Representa el marco de referencia global para simulaciones mecánicas. | - Punto de referencia fijo en el espacio.<br>- Sirve como base para definir posiciones y orientaciones. |
+| **Mechanism Configuration** | Bloque usado en Simscape Multibody para definir la configuración del mecanismo. | - Permite definir gravedad y unidades.<br>- Necesario para sistemas mecánicos en Simscape Multibody. |
+| **Revolute Joint** | Una unión mecánica que permite la rotación entre dos cuerpos alrededor de un solo eje. | - Define movimiento rotacional.<br>- Puede tener restricciones y actuadores.<br>- Se puede controlar con torques o ángulos. |
+| **Scope** | Bloque de Simulink que permite visualizar señales durante la simulación. | - Muestra gráficos en tiempo real.<br>- Permite múltiples entradas.<br>- Se usa para analizar señales y depuración. |
+| **Sine Wave** | Generador de señal senoidal en Simulink. | - Permite definir amplitud, frecuencia y fase.<br>- Se usa como entrada para sistemas dinámicos.<br>- Puede representar fuentes de vibración o señales de control. |
+| **Simulink-PS Converter** | Convierte señales de Simulink en señales físicas para Simscape. | - Necesario para conectar Simulink con Simscape.<br>- Permite definir unidades físicas.<br>- Se usa para aplicar entradas externas a modelos físicos. |
+
+</div>
+
+> **Nota:** Esta tabla contiene una descripción de algunos bloques fundamentales en Simscape Multibody, junto con sus características y funciones principales.
+
+
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_1.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
