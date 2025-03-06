@@ -63,28 +63,41 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 > **Nota:** Esta tabla contiene una descripción de algunos bloques fundamentales en Simscape Multibody, junto con sus características y funciones principales.
 
-## 2  Ejercicio 
+## 2 ¿Cómo se configura cada elemento desde Simscape multibody?
 
-## 3 Solución 
+1- Abrir desde la ventana de comandos y poner smnew para abrir los objestos mencioandos en la tabla anterior
+
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_1.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+  <p><b>Figura 1.</b> Abrir Smnew </p>
 </div>
+
+2- Encontramos el siguiente esquema que es el principal 
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_2.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+  <p><b>Figura 2.</b> Esquema principal </p>
 </div>
+
+3- Enocntramos el bloque World Frame Sirve como base para definir posiciones y orientaciones.
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_3.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
 </div>
 
+4- Enocntramos el bloque World Frame Sirve como base para definir posiciones y orientaciones.
+
 <div align="center">
-  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_4.jpg" alt="Figura de prueba" width="400">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_5.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
 </div>
+
+
+## 3  Ejercicio 
+
+## 4 Solución 
+
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_5.jpg" alt="Figura de prueba" width="400">
