@@ -4,11 +4,11 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 ## Índice
 
- [8. Ejercicio ](#8-Ejercicio)
+ [4. Ejercicio ](#8-Ejercicio)
 
- [9. Solución](#9-Solución)
+ [5. Solución](#9-Solución)
 
- [10. Bibliografía](#10-Bibliografía)
+ [6. Bibliografía](#10-Bibliografía)
   
 ## 1. Características
 
