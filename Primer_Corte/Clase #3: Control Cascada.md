@@ -4,9 +4,9 @@ El control cascada en una técnica de control la cual se usa comúnmente en el c
 
 ## Índice
 
-[1. ¿Cómo funciona el control de lazo único?](#1-Control-de-Lazo-Único-y-Control-en-Cascada)
+[1. Control-de-Lazo-Único-y-Control-en-Cascada](#1-Control-de-Lazo-Único-y-Control-en-Cascada)
 
-[1.1 ¿Cómo funciona el control de lazo único?](#11-Ventajas-y-Desventajas-de-Control-de-Lazo-único)
+[1.1 ¿Cómo funciona el control de lazo único?](#11-Cómo-funciona-el-control-de-lazo-único)
 
 [1.2 Ventajas y Desventajas de Control de Lazo único](#12-Ventajas-y-Desventajas-de-Control-de-Lazo-único)
 
