@@ -21,7 +21,7 @@ El control de movimiento es una disciplina de la ingeniería que regula y coordi
 
  [9. Solución](#9-Solución)
 
- [10. Bibliografía](#10-Bibliografía)
+ [11. Bibliografía](#11-Bibliografía)
 
 
 ## 1. ¿En qué consiste?
@@ -402,7 +402,12 @@ Finalmente, la posición es el objetivo final, pero necesita de los otros dos ni
 
 Agregar un sensor de flujo de filamento para detectar atascos o falta de material.
 
-# 10. Bibliografía  
+
+Optimización y estabilidad: El control de movimiento es fundamental para garantizar la precisión y estabilidad en sistemas mecánicos y robóticos. La selección adecuada de estrategias de control, como PID, control en cascada o control por realimentación de estado, permite minimizar errores, mejorar la respuesta dinámica y optimizar el consumo energético del sistema.
+
+Importancia de la retroalimentación: La implementación de sensores como encoders, giróscopos y acelerómetros es crucial para lograr un control preciso del movimiento. La retroalimentación permite ajustar continuamente las señales de control en función de las condiciones del sistema, compensando perturbaciones y garantizando un desempeño robusto en entornos dinámicos.
+
+# 11. Bibliografía  
 
 [1] Siciliano, B., & Khatib, O. (2016). *Springer Handbook of Robotics*. Springer.  
     Explica los principios del control de movimiento en robótica y automatización.  
