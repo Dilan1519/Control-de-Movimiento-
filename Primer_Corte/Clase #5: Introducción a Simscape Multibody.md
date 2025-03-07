@@ -4,7 +4,7 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 ## Índice
 
- [4. Ejercicio ](#8-Ejercicio)
+ [4. Ejercicio Simulación de un Péndulo Simple en Simscape Multibody ](#4-Ejercicio Simulación de un Péndulo Simple en Simscape Multibody)
 
  [5. Solución](#9-Solución)
 
