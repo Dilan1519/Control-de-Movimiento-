@@ -269,6 +269,13 @@ En la pestaña State Targets:
   <p><b>Figura 17.</b>  Aplicación de una señal de entrada </p>
 </div>
 
+8- Visualización de resultados:
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_16.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 9.</b> Diagrama Control Cascada </p>
+</div>
+
 <div align="center">
   <img src="Imágenes/Clase%20%235/Pendulo_Simple.gif" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
