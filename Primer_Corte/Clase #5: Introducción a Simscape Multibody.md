@@ -76,46 +76,58 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
   <p><b>Figura 1.</b> Abrir Smnew </p>
 </div>
 
-2- Encontramos el siguiente esquema que es el principal 
+2- Esquema principal del modelo
+
+- Al abrir el modelo, se muestra un esquema con los bloques esenciales para la simulación de sistemas mecánicos.
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_2.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Esquema principal </p>
 </div>
 
-3- Enocontramos el bloque World Frame Sirve como base para definir posiciones y orientaciones.
+3- World Frame
+
+- Este bloque representa el marco de referencia global y sirve como base para definir posiciones y orientaciones de los objetos en el espacio.
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_3.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 3.</b> Diagrama Control Cascada </p>
+  <p><b>Figura 3.</b> Bloque World Frame </p>
 </div>
 
-4- Enocntramos el bloque mechanism configuraion que se basa en la gravedad del objeto
+4- Mechanism Configuration
+
+- Este bloque permite configurar parámetros fundamentales del mecanismo, como la gravedad y las unidades de medida utilizadas en la simulación.
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_4.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 4.</b> Diagrama Control Cascada </p>
+  <p><b>Figura 4.</b> Mechanism Configuration </p>
 </div>
 
-5- Enocntramos el bloque Brick SOLID Sirve PARA DIFINIR DIMSENCIONES
+5- Brick Solid
+
+- Se usa para definir las dimensiones, densidad y propiedades físicas de un objeto sólido. Es útil para representar cuerpos rígidos en el modelo.
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_5.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 5.</b> Diagrama Control Cascada </p>
+  <p><b>Figura 5.</b> Brick Solid </p>
 </div>
 
-6- Dentro de Brick solid hay un cja de herramientas que nos ayudan para mover, ver todas las vistas y verlo en las tres diemseiones
+6- Herramientas de visualización
+
+- Dentro del bloque Brick Solid, hay una caja de herramientas que permite mover, rotar y cambiar la perspectiva del objeto, facilitando la visualización en tres dimensiones.
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_6.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+  <p><b>Figura 2.</b> Herramienta de visualización </p>
 </div>
 
-7- Por ultiomo el bloque de Rigid Trasnome que sirve para solo cambia su posición y orientación
+7- Rigid Transform
+
+- Este bloque permite cambiar la posición y orientación de un objeto sin deformarlo. Se usa para conectar diferentes componentes dentro de un mecanismo.
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_9.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+  <p><b>Figura 2.</b> Rigid Transform </p>
 </div>
 
 
