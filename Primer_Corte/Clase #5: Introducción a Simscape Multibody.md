@@ -223,32 +223,12 @@ En la pestaña State Targets:
 </div>
 
 
-<div align="center">
-  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_7.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
-</div>
-
-
-
-<div align="center">
-  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_10.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
-</div>
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Pendulo_Simple.gif" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
 </div>
 
-<div align="center">
-  <img src="Imágenes/Clase%20%235/Ejemplo_pendulo_11.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
-</div>
-
-<div align="center">
-  <img src="Imágenes/Clase%20%235/Ejemplo_pendulo_12.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
-</div>
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Pendulo_Simple_1.gif" alt="Figura de prueba" width="400">
@@ -261,19 +241,10 @@ En la pestaña State Targets:
 </div>
 
 <div align="center">
-  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_15.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
-</div>
-
-<div align="center">
   <img src="Imágenes/Clase%20%235/Pendulo_Simple_2.gif" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
 </div>
 
-<div align="center">
-  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_16.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
-</div>
 
 ## 5. Cocluisiones
 
