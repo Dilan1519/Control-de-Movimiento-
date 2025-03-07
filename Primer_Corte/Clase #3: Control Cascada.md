@@ -5,9 +5,8 @@ El control cascada en una técnica de control la cual se usa comúnmente en el c
 ## Índice
 
  [8. Ejercicio ](#8-Ejercicio)
-1.8 ¿Cómo aplicar este criterio en otros sistemas?
  
- [1.8 ¿Cómo aplicar este criterio en otros sistemas?](#21-Métodos-de-sintonización)
+ [1.8 ¿Cómo aplicar este criterio en otros sistemas?](#18-¿Cómo-aplicar-este-criterio-en-otros-sistemas?)
 
  [2. Métodos de sintonización](#21-Métodos-de-sintonización)
  
