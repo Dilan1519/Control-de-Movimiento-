@@ -283,22 +283,22 @@ En la pestaña State Targets:
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_16.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 9.</b> Diagrama Control Cascada </p>
+  <p><b>Figura 18.</b> Visualización de resultados </p>
 </div>
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Pendulo_Simple.gif" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+  <p><b>Figura 19.</b> Ejercicio </p>
 </div>
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Pendulo_Simple_1.gif" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+  <p><b>Figura 20.</b> Ejercicio </p>
 </div>
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Pendulo_Simple_2.gif" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+  <p><b>Figura 21.</b> Ejercicio </p>
 </div>
 
 
