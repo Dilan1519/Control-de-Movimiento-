@@ -4,15 +4,17 @@ El control cascada en una técnica de control la cual se usa comúnmente en el c
 
 ## Índice
 
- [8. Ejercicio ](#8-Ejercicio)
- 
- 1.4 Ventajas y Desventajas de Control de Cascada
- 1.3 ¿Cómo funciona el control de lazo de cascada?
- 1.2 Ventajas y Desventajas de Control de Lazo único
- 1.1 ¿Cómo funciona el control de lazo único?
- 1. Control de Lazo Único y Control en Cascada
-    
- [1.5 Criterio para elegir qué variable va en el lazo primario y cuál en el secundario](#16-Criterio-para-elegir-qué-variable-va-en-el-lazo-primario-y-cuál-en-el-secundarios)
+[1. ¿Cómo funciona el control de lazo único?](#1-Control-de-Lazo-Único-y-Control-en-Cascada)
+
+[1.1 ¿Cómo funciona el control de lazo único?](#11-Ventajas-y-Desventajas-de-Control-de-Lazo-único)
+
+[1.2 Ventajas y Desventajas de Control de Lazo único](#12-Ventajas-y-Desventajas-de-Control-de-Lazo-único)
+
+[1.3 ¿Cómo funciona el control de lazo de cascada?](#13-Cómo-funciona-el-control-de-lazo-de-cascada)
+
+[1.4 Ventajas y Desventajas de Control de Cascada](#14-Ventajas-y-Desventajas-de-Control-de-Cascada)
+
+[1.5 Criterio para elegir qué variable va en el lazo primario y cuál en el secundario](#15-Criterio-para-elegir-qué-variable-va-en-el-lazo-primario-y-cuál-en-el-secundarios)
 
  [1.6 Criterios de selección de controladores](#16-Criterios-de-selección-de-controladores)
  
