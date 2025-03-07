@@ -15,7 +15,7 @@ Los servomotores son un actuador electromecánico, el cual es ampliamente usado 
 
  [6. Solución](#6-Solución)
 
- [7. conclusión](#6-conclusión)
+ [7. Conclusión](#6-Conclusión)
 
  [8. Bibliografía](#7-Bibliografía)
 
