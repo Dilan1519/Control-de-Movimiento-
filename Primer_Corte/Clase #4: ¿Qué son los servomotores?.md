@@ -130,7 +130,7 @@ En orden de izquierda a derecha:
 - **Torque de parada = 0.35 Nm**
   
 # 7. Conclusión 
-Teniendo en cuenta que los servomotores son el actuador mas usado en la automatización, es de vital importancia tener en cuenta datos como los datasheet o las curvas de torque velocidad, ademas de ser cauteloso a la hora de elegir elementos que interactuaran con el motor, como lo son los sensores o los deiver de potencia.
+Teniendo en cuenta que los servomotores son el actuador mas usado en la automatización, es de vital importancia tener en cuenta datos como los datasheet o las curvas de torque velocidad, ademas de ser cauteloso a la hora de elegir que tipo de motor y los elementos que interactuaran con el, como lo son los sensores o los deiver de potencia.
 
 # 8. Bibliografía
 
