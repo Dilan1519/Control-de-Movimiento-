@@ -6,9 +6,13 @@ El control cascada en una técnica de control la cual se usa comúnmente en el c
 
  [8. Ejercicio ](#8-Ejercicio)
 
- [9. Solución](#9-Solución)
+ [4. Ejercicio (#4-Ejercicio)
+  
+ [5. Solución](#5-Solución)
 
- [10. Bibliografía](#10-Bibliografía)
+ [6. Conclusiones](#6-Conclusiones)
+
+ [7. Bibliografía](#7-Bibliografía)
 
 💡**Ejemplo 1:** Control en Cascada de Nivel y Caudal en un Tanque
 
@@ -365,6 +369,6 @@ $$
 - Al corregir errores en etapas intermedias, el control en cascada mejora la precisión y reduce el impacto de variaciones en el sistema.
 
 
-## 7. Referencias
+## 7. Bibliografía
 
 Cote,(2025). Control de Movimiento (9° semestre). Recuperado de https://aulas.ecci.edu.co/mod/resource/view.php?id=217378
