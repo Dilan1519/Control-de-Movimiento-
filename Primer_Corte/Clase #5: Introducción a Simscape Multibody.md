@@ -4,11 +4,12 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 ## Índice
 
-[1. Características](#1-Características)  1.1 Simscape y sus aplicaciones en distintas industrias
+[1. Características](#1-Características) 
 
-[1.1 Simscape y sus aplicaciones en distintas industrias](#1.1-Simscape-y-sus-aplicaciones-en-distintas-industrias)
+[1.1 Simscape y sus aplicaciones en distintas industrias](#11-simscape-y-sus-aplicaciones-en-distintas-industrias)
 
 [3. Ejercicio Simulación de un Péndulo Simple en Simscape Multibody](#3-ejercicio-simulación-de-un-péndulo-simple-en-simscape-multibody)
+
 
  [4. Solución](#9-Solución)
 
@@ -152,7 +153,7 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
   <p><b>Figura 9.</b> Diagrama Control Cascada </p>
 </div>
 
-## 3.  Ejercicio Simulación de un Péndulo Simple en Simscape Multibody
+## 3. Ejercicio Simulación de un Péndulo Simple en Simscape Multibody
 
 En este ejercicio, diseñaremos un péndulo simple en Simscape Multibody, siguiendo los pasos detallados a continuación:
 
