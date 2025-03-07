@@ -14,9 +14,11 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 [3. Ejercicio Simulación de un Péndulo Simple en Simscape Multibody](#3-ejercicio-simulación-de-un-péndulo-simple-en-simscape-multibody)
 
-[4. Solución](#9-Solución)
+[4. Solución](#4-Solución)
 
- [6. Bibliografía](#10-Bibliografía)
+[5. Conclusiones](#5-Conclusiones)
+
+[6. Bibliografía](#10-Bibliografía)
   
 ## 1. Características
 
@@ -300,7 +302,7 @@ En la pestaña State Targets:
 </div>
 
 
-## 5. Cocluisiones
+## 5. Conclusiones
 
 - Facilita el modelado y simulación de sistemas mecánicos complejos Simscape Multibody permite representar mecanismos de múltiples cuerpos con conexiones articuladas de manera eficiente y realista. Gracias a su entorno basado en bloques, los ingenieros pueden diseñar, analizar y simular sistemas mecánicos sin necesidad de resolver manualmente ecuaciones diferenciales complejas.
 
