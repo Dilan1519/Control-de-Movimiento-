@@ -222,21 +222,25 @@ En la pestaña State Targets:
   <p><b>Figura 10.</b> Diagrama </p>
 </div>
 
+- Creación de los componentes del péndulo:
+- 
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejercicio_Pendulo_1.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 11.</b> Diagrama Control Cascada </p>
+</div>
 
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejercicio_Pendulo_2.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 12.</b> Diagrama Control Cascada </p>
+</div>
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Pendulo_Simple.gif" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
 </div>
 
-
 <div align="center">
   <img src="Imágenes/Clase%20%235/Pendulo_Simple_1.gif" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
-</div>
-
-<div align="center">
-  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_14.png" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
 </div>
 
