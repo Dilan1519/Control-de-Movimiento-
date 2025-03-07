@@ -67,7 +67,9 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 ## 2 ¿Cómo se configura cada elemento desde Simscape multibody?
 
-1- Abrir desde la ventana de comandos y poner smnew para abrir los objestos mencioandos en la tabla anterior
+1- Abrir el entorno de Simscape Multibody
+
+- En la ventana de comandos de MATLAB, escribe smnew y presiona Enter. Esto abrirá un modelo base con los elementos principales de Simscape Multibody.
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_1.jpg" alt="Figura de prueba" width="400">
