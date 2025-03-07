@@ -18,7 +18,7 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 [5. Conclusiones](#5-Conclusiones)
 
-[6. Bibliografía](#10-Bibliografía)
+[6. Bibliografía](#6-Bibliografía)
   
 ## 1. Características
 
@@ -308,4 +308,6 @@ En la pestaña State Targets:
 
 - Integración fluida con Simulink y Simscape La compatibilidad de Simscape Multibody con otras herramientas de Simulink y Simscape permite combinar sistemas mecánicos con modelos eléctricos, hidráulicos y de control. Esto facilita el desarrollo de simulaciones,para aplicaciones en robótica y sistemas industriales avanzados.
 
+## 6. Bibliografía
 
+[1] MathWorks, "Simscape Multibody," [En línea]. Disponible: https://la.mathworks.com/products/simscape.html. [Accedido: 06-Mar-2025].
