@@ -318,6 +318,8 @@ Por ejemplo:
 
 ## 4. Ejercicio
 
+Dedes el ejercicio 1 sacar la sintonziaión
+
 ## 5. Solución
 
 Definición de la Planta
