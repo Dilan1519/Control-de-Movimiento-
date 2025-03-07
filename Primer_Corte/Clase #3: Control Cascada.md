@@ -5,6 +5,15 @@ El control cascada en una técnica de control la cual se usa comúnmente en el c
 ## Índice
 
  [8. Ejercicio ](#8-Ejercicio)
+ 1.7 Aplicación al ejemplo 1 del tanque
+ 1.6 Criterios de selección de controladores
+ 1.5 Criterio para elegir qué variable va en el lazo primario y cuál en el secundario
+ 1.4 Ventajas y Desventajas de Control de Cascada
+ 1.3 ¿Cómo funciona el control de lazo de cascada?
+ 1.2 Ventajas y Desventajas de Control de Lazo único
+ 1.1 ¿Cómo funciona el control de lazo único?
+ 1. Control de Lazo Único y Control en Cascada
+ 
  
  [1.8 ¿Cómo aplicar este criterio en otros sistemas?](#18-¿Cómo-aplicar-este-criterio-en-otros-sistemas?)
 
@@ -143,7 +152,7 @@ El criterio principal para seleccionar qué variable se coloca en cada lazo se b
 - **Lazo primario:** Se encarga de la variable más lenta y crítica del sistema.
 - **Lazo secundario:** Se encarga de la variable más rápida y responde a perturbaciones inmediatas.
 
-## 1.6 Criterios de selección de controladores:
+## 1.6 Criterios de selección de controladores
 
 <div align="center">
 
