@@ -14,17 +14,14 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 <div align="center">
 
-| Concepto                | ¿Qué es? | Características / Función |
-|-------------------------|---------|---------------------------|
-| **Solver Configuration** | Bloque necesario en Simscape para definir los parámetros del solucionador numérico. | - Establece el tipo de solver (variable o fijo).<br>- Define el paso de simulación.<br>- Maneja restricciones algebraicas y diferenciales. |
-| **World Frame** | Representa el marco de referencia global para simulaciones mecánicas. | - Punto de referencia fijo en el espacio.<br>- Sirve como base para definir posiciones y orientaciones. |
-| **Mechanism Configuration** | Bloque usado en Simscape Multibody para definir la configuración del mecanismo. | - Permite definir gravedad y unidades.<br>- Necesario para sistemas mecánicos en Simscape Multibody. |
-| **Revolute Joint** | Una unión mecánica que permite la rotación entre dos cuerpos alrededor de un solo eje. | - Define movimiento rotacional.<br>- Puede tener restricciones y actuadores.<br>- Se puede controlar con torques o ángulos. |
-| **Scope** | Bloque de Simulink que permite visualizar señales durante la simulación. | - Muestra gráficos en tiempo real.<br>- Permite múltiples entradas.<br>- Se usa para analizar señales y depuración. |
-| **Sine Wave** | Generador de señal senoidal en Simulink. | - Permite definir amplitud, frecuencia y fase.<br>- Se usa como entrada para sistemas dinámicos.<br>- Puede representar fuentes de vibración o señales de control. |
-| **Simulink-PS Converter** | Convierte señales de Simulink en señales físicas para Simscape. | - Necesario para conectar Simulink con Simscape.<br>- Permite definir unidades físicas.<br>- Se usa para aplicar entradas externas a modelos físicos. |
-| **Brick Solid** | Bloque que representa un cuerpo rígido con forma de paralelepípedo (bloque sólido) en Simscape Multibody. | - Permite definir dimensiones, densidad y material.<br>- Se puede conectar a juntas mecánicas.<br>- Es útil para modelar estructuras, masas y elementos mecánicos. |
-| **Rigid Transform** | Bloque que permite definir una transformación rígida entre dos marcos de referencia en Simscape Multibody. | - No deforma el objeto, solo cambia su posición y orientación.<br>- Se usa para ensamblar diferentes partes de un mecanismo.<br>- Permite especificar traslaciones y rotaciones en el espacio. |
+| Característica              | Descripción |
+|-----------------------------|-------------|
+| **Tipo de modelado**        | Basado en cuerpos rígidos y articulaciones con restricciones. |
+| **Generación de ecuaciones** | Calcula automáticamente ecuaciones diferenciales y cinemáticas. |
+| **Análisis en el tiempo**   | Muestra la respuesta temporal de variables dinámicas. |
+| **Animación 3D**            | Visualiza el movimiento del sistema en tiempo real. |
+| **Integración con otros sistemas** | Permite combinar con modelos hidráulicos, térmicos, electromecánicos y eléctricos. |
+| **Uso de motores**          | Se pueden agregar modelos de motores para simular accionamientos. |
 
 </div>
 
@@ -51,7 +48,7 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 ## 1.2  Descripción de algunos bloques en Simscape Miltibody
 
 <div align="center">
- 
+
 | Concepto                | ¿Qué es? | Características / Función |
 |-------------------------|---------|---------------------------|
 | **Solver Configuration** | Bloque necesario en Simscape para definir los parámetros del solucionador numérico. | - Establece el tipo de solver (variable o fijo).<br>- Define el paso de simulación.<br>- Maneja restricciones algebraicas y diferenciales. |
@@ -61,6 +58,8 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 | **Scope** | Bloque de Simulink que permite visualizar señales durante la simulación. | - Muestra gráficos en tiempo real.<br>- Permite múltiples entradas.<br>- Se usa para analizar señales y depuración. |
 | **Sine Wave** | Generador de señal senoidal en Simulink. | - Permite definir amplitud, frecuencia y fase.<br>- Se usa como entrada para sistemas dinámicos.<br>- Puede representar fuentes de vibración o señales de control. |
 | **Simulink-PS Converter** | Convierte señales de Simulink en señales físicas para Simscape. | - Necesario para conectar Simulink con Simscape.<br>- Permite definir unidades físicas.<br>- Se usa para aplicar entradas externas a modelos físicos. |
+| **Brick Solid** | Bloque que representa un cuerpo rígido con forma de paralelepípedo (bloque sólido) en Simscape Multibody. | - Permite definir dimensiones, densidad y material.<br>- Se puede conectar a juntas mecánicas.<br>- Es útil para modelar estructuras, masas y elementos mecánicos. |
+| **Rigid Transform** | Bloque que permite definir una transformación rígida entre dos marcos de referencia en Simscape Multibody. | - No deforma el objeto, solo cambia su posición y orientación.<br>- Se usa para ensamblar diferentes partes de un mecanismo.<br>- Permite especificar traslaciones y rotaciones en el espacio. |
 
 </div>
 
@@ -110,7 +109,7 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
 </div>
 
-7- 
+7- Por ultiomo el bloque de Rigid Trasnome que sirve para solo cambia su posición y orientación
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_9.jpg" alt="Figura de prueba" width="400">
