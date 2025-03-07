@@ -140,7 +140,7 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 </div>
 
 
-## 3  Ejercicio Simulación de un Péndulo Simple en Simscape Multibody
+## 3.  Ejercicio Simulación de un Péndulo Simple en Simscape Multibody
 
 En este ejercicio, diseñaremos un péndulo simple en Simscape Multibody, siguiendo los pasos detallados a continuación:
 
@@ -205,7 +205,7 @@ En la pestaña State Targets:
 
 -Colocar un bloque Scope en cada salida para analizar el comportamiento del sistema.
 
-## 4 Solución 
+## 4. Solución 
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_7.jpg" alt="Figura de prueba" width="400">
@@ -267,10 +267,10 @@ En la pestaña State Targets:
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
 </div>
 
-## Cocluisiones
+## 5. Cocluisiones
 
-Facilita el modelado y simulación de sistemas mecánicos complejos Simscape Multibody permite representar mecanismos de múltiples cuerpos con conexiones articuladas de manera eficiente y realista. Gracias a su entorno basado en bloques, los ingenieros pueden diseñar, analizar y simular sistemas mecánicos sin necesidad de resolver manualmente ecuaciones diferenciales complejas.
+- Facilita el modelado y simulación de sistemas mecánicos complejos Simscape Multibody permite representar mecanismos de múltiples cuerpos con conexiones articuladas de manera eficiente y realista. Gracias a su entorno basado en bloques, los ingenieros pueden diseñar, analizar y simular sistemas mecánicos sin necesidad de resolver manualmente ecuaciones diferenciales complejas.
 
-Integración fluida con Simulink y Simscape La compatibilidad de Simscape Multibody con otras herramientas de Simulink y Simscape permite combinar sistemas mecánicos con modelos eléctricos, hidráulicos y de control. Esto facilita el desarrollo de simulaciones,para aplicaciones en robótica y sistemas industriales avanzados.
+- Integración fluida con Simulink y Simscape La compatibilidad de Simscape Multibody con otras herramientas de Simulink y Simscape permite combinar sistemas mecánicos con modelos eléctricos, hidráulicos y de control. Esto facilita el desarrollo de simulaciones,para aplicaciones en robótica y sistemas industriales avanzados.
 
 
