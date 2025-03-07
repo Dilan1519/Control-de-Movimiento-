@@ -5,8 +5,15 @@ El control cascada en una técnica de control la cual se usa comúnmente en el c
 ## Índice
 
  [8. Ejercicio ](#8-Ejercicio)
+1.8 ¿Cómo aplicar este criterio en otros sistemas?
+ 
+ [1.8 ¿Cómo aplicar este criterio en otros sistemas?](#21-Métodos-de-sintonización)
 
- [3. MÉTODOS DE SINTONIZACIÓN ](#4-MÉTODOS_DE_SINTONIZACIÓN)
+ [2. Métodos de sintonización](#21-Métodos-de-sintonización)
+ 
+ [2.1 Recordando métodos de sintonización](#21-Recordando-métodos-de-sintonización)
+
+ [3. Métodos de Sintonización](#4-Métodos-de-Sintonización)
 
  [3.1 Metodologías empíricas de lazo abierto Austin](#31-Metodologías-empíricas-de-lazo-abierto-Austin)
 
@@ -258,7 +265,7 @@ Además de los métodos clásicos, existen otros enfoques avanzados para la sint
 
 </div>
 
-## 3. MÉTODOS DE SINTONIZACIÓN
+## 3. Métodos de Sintonización
 
 ## 3.1 Metodologías empíricas de lazo abierto Austin
 
