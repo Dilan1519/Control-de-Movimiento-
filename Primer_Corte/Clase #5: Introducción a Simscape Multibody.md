@@ -8,6 +8,8 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 [1.1 Simscape y sus aplicaciones en distintas industrias](#11-simscape-y-sus-aplicaciones-en-distintas-industrias)
 
+[1.2 Descripción de algunos bloques en Simscape Multibody](#12-descripción-de-algunos-bloques-en-simscape-multibody)
+
 [3. Ejercicio Simulación de un Péndulo Simple en Simscape Multibody](#3-ejercicio-simulación-de-un-péndulo-simple-en-simscape-multibody)
 
 
@@ -50,7 +52,7 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 > **Nota:** Simscape es una herramienta poderosa para la simulación multidominio, permitiendo modelar y analizar sistemas físicos en diversas industrias con alta precisión y realismo.
 
 
-## 1.2  Descripción de algunos bloques en Simscape Miltibody
+## 1.2 Descripción de algunos bloques en Simscape Multibody
 
 <div align="center">
 
