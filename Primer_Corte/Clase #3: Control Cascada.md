@@ -249,7 +249,48 @@ Además de los métodos clásicos, existen otros enfoques avanzados para la sint
 | 0,2 a 0,5                       | (1 + 0,5𝛾) / 𝐾𝛾      | 𝜏 (1 + 0,5𝛾)              | 𝜏 * (0,5𝛾 / (0,5𝛾 +1))    |
 
 </div>
-💡**Ejemplo 4:** Control en Cascada en un Sistema de Tanque y Flujo
+
+## 3. MÉTODOS DE SINTONIZACIÓN
+
+## 3.1 Metodologías empíricas de lazo abierto Austin
+
+Austin fue una ingeniera y discípula de Astro, reconocida por desarrollar el método del relé. En su tesis doctoral, presentada en 1986, propuso una metodología de sintonización para esquemas de control en cascada, utilizando controladores PI y PID.
+
+El objetivo central de su trabajo fue abordar el problema de la separación de modelos en estos sistemas. Para ello, planteó un método basado en curvas de reacción, donde todas las curvas se obtienen desde una misma entrada: la entrada del sistema.
+
+Para utilizar la tabla, primero es importante recordar que el lazo secundario se diseña de manera independiente, aplicando cualquier metodología conocida. Se asume que este ya ha sido definido antes de usar la tabla.
+
+- Si en el lazo secundario se elige un controlador proporcional (P), se deben usar las fórmulas de la fila correspondiente.
+  
+- Si se selecciona un controlador PI en el secundario, se deben emplear las fórmulas de la fila siguiente.
+
+En la parte superior de la tabla, se encuentran las opciones para el lazo primario:
+
+- Si se elige un controlador PI en el primario, se usan las fórmulas de la primera columna.
+  
+- Si se selecciona un PID, se emplean las de la segunda columna.
+  
+- Para determinar las fórmulas adecuadas, se busca la intersección entre la fila del controlador secundario y la columna del controlador primario.
+
+Por ejemplo:
+
+-Si en el secundario se usa un controlador proporcional (P) y en el primario un PID, se debe seleccionar la fórmula ubicada en la intersección correspondiente.
+
+-Si se utilizan controladores PI en ambos lazos, la ganancia proporcional del primario se calcula con la fórmula correspondiente en la tabla.
+
+<div align="center">
+  <img src="Imágenes/Clase%20%233/Austin.jpg" alt="Figura de prueba" width="500">
+  <p><b>Figura 1.</b> Tabla de Austin </p>
+</div>
+
+<div align="center">
+  <img src="Imágenes/Clase%20%233/Austin_2.jpg" alt="Figura de prueba" width="500">
+  <p><b>Figura 1.</b> Tabla </p>
+</div>
+
+## 4. Ejercicio
+
+## 5. Solución
 
 Definición de la Planta
 
@@ -317,40 +358,13 @@ $$
 T_{d1} = 0.5 t_{m\text{Total}} = 0.5 \times 16 = 8
 $$
 
-## 3. MÉTODOS DE SINTONIZACIÓN
+## 6. Conclusiones
 
-## 3.1 Metodologías empíricas de lazo abierto Austin
-
-Austin fue una ingeniera y discípula de Astro, reconocida por desarrollar el método del relé. En su tesis doctoral, presentada en 1986, propuso una metodología de sintonización para esquemas de control en cascada, utilizando controladores PI y PID.
-
-El objetivo central de su trabajo fue abordar el problema de la separación de modelos en estos sistemas. Para ello, planteó un método basado en curvas de reacción, donde todas las curvas se obtienen desde una misma entrada: la entrada del sistema.
-
-Para utilizar la tabla, primero es importante recordar que el lazo secundario se diseña de manera independiente, aplicando cualquier metodología conocida. Se asume que este ya ha sido definido antes de usar la tabla.
-
-- Si en el lazo secundario se elige un controlador proporcional (P), se deben usar las fórmulas de la fila correspondiente.
+- El control en cascada aumenta la estabilidad y el rendimiento al dividir el sistema en lazos internos y externos, permitiendo una respuesta más rápida a perturbaciones.
   
-- Si se selecciona un controlador PI en el secundario, se deben emplear las fórmulas de la fila siguiente.
+- Al corregir errores en etapas intermedias, el control en cascada mejora la precisión y reduce el impacto de variaciones en el sistema.
 
-En la parte superior de la tabla, se encuentran las opciones para el lazo primario:
 
-- Si se elige un controlador PI en el primario, se usan las fórmulas de la primera columna.
-  
-- Si se selecciona un PID, se emplean las de la segunda columna.
-  
-- Para determinar las fórmulas adecuadas, se busca la intersección entre la fila del controlador secundario y la columna del controlador primario.
+## 7. Referencias
 
-Por ejemplo:
-
--Si en el secundario se usa un controlador proporcional (P) y en el primario un PID, se debe seleccionar la fórmula ubicada en la intersección correspondiente.
-
--Si se utilizan controladores PI en ambos lazos, la ganancia proporcional del primario se calcula con la fórmula correspondiente en la tabla.
-
-<div align="center">
-  <img src="Imágenes/Clase%20%233/Austin.jpg" alt="Figura de prueba" width="500">
-  <p><b>Figura 1.</b> Tabla de Austin </p>
-</div>
-
-<div align="center">
-  <img src="Imágenes/Clase%20%233/Austin_2.jpg" alt="Figura de prueba" width="500">
-  <p><b>Figura 1.</b> Tabla </p>
-</div>
+Cote,(2025). Control de Movimiento (9° semestre). Recuperado de https://aulas.ecci.edu.co/mod/resource/view.php?id=217378
