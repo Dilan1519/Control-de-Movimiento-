@@ -135,7 +135,7 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 - Este bloque crea una unión rotacional entre dos objetos, permitiendo que uno de ellos gire alrededor de un eje fijo.
 
 <div align="center">
-  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_17.jpg" alt="Figura de prueba" width="400">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_17.png" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Revolute Joint </p>
 </div>
 
