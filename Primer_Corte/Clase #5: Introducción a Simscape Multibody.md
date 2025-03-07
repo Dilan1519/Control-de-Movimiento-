@@ -65,7 +65,7 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 > **Nota:** Esta tabla contiene una descripción de algunos bloques fundamentales en Simscape Multibody, junto con sus características y funciones principales.
 
-## 2 ¿Cómo se configura cada elemento desde Simscape multibody?
+## 2 Configuración de Elementos en Simscape Multibody: Guía Paso a Paso
 
 1- Abrir el entorno de Simscape Multibody
 
@@ -130,8 +130,80 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
   <p><b>Figura 2.</b> Rigid Transform </p>
 </div>
 
+8- Revolute Joint 
 
-## 3  Ejercicio 
+- Este bloque crea una unión rotacional entre dos objetos, permitiendo que uno de ellos gire alrededor de un eje fijo.
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_17.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Revolute Joint </p>
+</div>
+
+
+## 3  Ejercicio Simulación de un Péndulo Simple en Simscape Multibody
+
+En este ejercicio, diseñaremos un péndulo simple en Simscape Multibody, siguiendo los pasos detallados a continuación:
+
+## Creación de los componentes del péndulo:
+
+- Primer eslabón (masa del péndulo - cubo):
+- Dimensiones: 4 cm × 4 cm × 4 cm.
+- Color: naranja.
+- Segundo eslabón (barra de suspensión):
+- Dimensiones: 20 cm × 1 cm × 1 cm.
+- Color: azul.
+
+## Posicionamiento de los eslabones:
+
+- Se debe trasladar el primer eslabón (cubo) a una de las puntas del segundo eslabón (barra).
+  
+- Para esto, utilizaremos el bloque Rigid Transform con la siguiente configuración:
+  
+    - Translation Method: Standard Axis.
+    - Axis: +X.
+    - Offset: 10 cm.
+      
+## Conexión de los componentes:
+
+- Usaremos el bloque Revolute Joint para unir los dos eslabones y permitir la rotación del péndulo.
+  
+## Aplicación de la gravedad:
+
+- La gravedad se configurará a través del bloque Mechanism Configuration.
+
+- Como la gravedad normalmente actúa en el eje Z, se cambiará para que actúe en el eje Y.
+
+## Configuración del solucionador (Solver):
+
+- Seleccionar el solver "ode15s (stiff/NDF)".
+  
+- Establecer el Max Step Size en 0.01.
+
+## Configuración de la Revolute Joint:
+
+- En la pestaña Actuation:
+  
+  - En Torque, seleccionar Provided by Input.
+
+- En la pestaña Sensing:
+  
+  - Habilitar la medición de Position y Velocity.
+
+En la pestaña State Targets:
+
+   - Ángulo inicial: 45°.
+     
+   - Velocidad inicial: 1 rad/s.
+     
+## Aplicación de una señal de entrada:
+
+- La entrada de torque será una señal senoidal con:
+
+  - Amplitud: 0.06.
+    
+ ## Visualización de resultados:
+
+-Colocar un bloque Scope en cada salida para analizar el comportamiento del sistema.
 
 ## 4 Solución 
 
