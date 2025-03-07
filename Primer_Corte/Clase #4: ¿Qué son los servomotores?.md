@@ -15,7 +15,9 @@ Los servomotores son un actuador electromecánico, el cual es ampliamente usado 
 
  [6. Solución](#6-Solución)
 
- [7. Bibliografía](#7-Bibliografía)
+ [7. conclusión](#6-conclusión)
+
+ [8. Bibliografía](#7-Bibliografía)
 
 
 ## 1. Control de servomotores
@@ -127,25 +129,9 @@ En orden de izquierda a derecha:
 - **Velocidad nominal = 5300 RPM**  
 - **Torque de parada = 0.35 Nm**
   
-# 7. Bibliografía  
+# 7. Conclusión 
+Teniendo en cuenta que los servomotores son el actuador mas usado en la automatización, es de vital importancia tener en cuenta datos como los datasheet o las curvas de torque velocidad, ademas de ser cauteloso a la hora de elegir elementos que interactuaran con el motor, como lo son los sensores o los deiver de potencia.
 
-[1] Siciliano, B., & Khatib, O. (2016). *Springer Handbook of Robotics*. Springer.  
-    Explica los principios del control de movimiento en robótica y automatización.  
+# 8. Bibliografía
 
-[2] Nof, S. Y. (2009). *Springer Handbook of Automation*. Springer.  
-    Cubre sistemas de automatización, incluyendo control de motores y sensores.  
-
-[3] Gibson, I., Rosen, D. W., & Stucker, B. (2021). *Additive Manufacturing Technologies*. Springer.  
-    Libro clave sobre impresión 3D y control de movimiento en fabricación aditiva.  
-
-[4] Chua, C. K., & Leong, K. F. (2017). *3D Printing and Additive Manufacturing: Principles and Applications*. World Scientific.  
-    Explica los sistemas de impresión 3D, componentes y control de movimiento.  
-
-[5] Documentation of Marlin Firmware (2024). *Marlin 3D Printer Firmware*.  
-    Documentación oficial del firmware Marlin, usado en muchas impresoras 3D.  
-    Disponible en: [https://marlinfw.org/](https://marlinfw.org/)  
-
-[6] RepRap Wiki (2024). *RepRap: The Open-Source 3D Printer Community*.  
-    Información sobre hardware y software de impresoras 3D.  
-    Disponible en: [https://reprap.org/wiki/Main_Page](https://reprap.org/wiki/Main_Page)  
 
