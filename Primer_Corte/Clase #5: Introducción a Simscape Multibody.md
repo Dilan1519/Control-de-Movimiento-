@@ -156,7 +156,7 @@ En este ejercicio, diseñaremos un péndulo simple en Simscape Multibody, siguie
 
 - Primer eslabón (masa del péndulo - cubo):
 - Dimensiones: 4 cm × 4 cm × 4 cm.
-- Color: naranja.
+- Color: rojo.
 - Segundo eslabón (barra de suspensión):
 - Dimensiones: 20 cm × 1 cm × 1 cm.
 - Color: azul.
@@ -222,16 +222,51 @@ En la pestaña State Targets:
   <p><b>Figura 10.</b> Diagrama </p>
 </div>
 
-- Creación de los componentes del péndulo:
-- 
+1- Creación de los componentes del péndulo:
+  
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejercicio_Pendulo_1.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 11.</b> Diagrama Control Cascada </p>
+  <p><b>Figura 11.</b> Cubo </p>
 </div>
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejercicio_Pendulo_2.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 12.</b> Diagrama Control Cascada </p>
+  <p><b>Figura 12.</b>  Eslabón </p>
+</div>
+
+2- Posicionamiento de los eslabones:
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejercicio_Pendulo_3.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 13.</b>   Posicionamiento de los eslabones </p>
+</div>
+
+4- Aplicación de la gravedad:
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejercicio_Pendulo_4.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 14.</b>   Aplicación de la gravedad </p>
+</div>
+
+5- Configuración del solucionador (Solver):
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejercicio_Pendulo_5.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 15.</b>   Configuración del solucionador </p>
+</div>
+
+6- Configuración de la Revolute Joint:
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejercicio_Pendulo_6.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 16.</b>  Configuración de la Revolute Joint </p>
+</div>
+
+7- Aplicación de una señal de entrada:
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejercicio_Pendulo_7.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 17.</b>  Aplicación de una señal de entrada </p>
 </div>
 
 <div align="center">
