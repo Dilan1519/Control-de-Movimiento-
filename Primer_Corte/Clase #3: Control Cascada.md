@@ -6,7 +6,7 @@ El control cascada en una técnica de control la cual se usa comúnmente en el c
 
  [8. Ejercicio ](#8-Ejercicio)
 
- [4. Ejercicio (#4-Ejercicio)
+ [4. Ejercicio ](#4-Ejercicio)
   
  [5. Solución](#5-Solución)
 
