@@ -139,12 +139,20 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
   <p><b>Figura 2.</b> Revolute Joint </p>
 </div>
 
+9- Ctrl + D
+
+- Nos ayudará abrir la pestaña de simulación
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_8.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+</div>
 
 ## 3.  Ejercicio Simulación de un Péndulo Simple en Simscape Multibody
 
 En este ejercicio, diseñaremos un péndulo simple en Simscape Multibody, siguiendo los pasos detallados a continuación:
 
-## Creación de los componentes del péndulo:
+1- Creación de los componentes del péndulo:
 
 - Primer eslabón (masa del péndulo - cubo):
 - Dimensiones: 4 cm × 4 cm × 4 cm.
@@ -153,7 +161,7 @@ En este ejercicio, diseñaremos un péndulo simple en Simscape Multibody, siguie
 - Dimensiones: 20 cm × 1 cm × 1 cm.
 - Color: azul.
 
-## Posicionamiento de los eslabones:
+2- Posicionamiento de los eslabones:
 
 - Se debe trasladar el primer eslabón (cubo) a una de las puntas del segundo eslabón (barra).
   
@@ -163,23 +171,23 @@ En este ejercicio, diseñaremos un péndulo simple en Simscape Multibody, siguie
     - Axis: +X.
     - Offset: 10 cm.
       
-## Conexión de los componentes:
+3- Conexión de los componentes:
 
 - Usaremos el bloque Revolute Joint para unir los dos eslabones y permitir la rotación del péndulo.
   
-## Aplicación de la gravedad:
+4- Aplicación de la gravedad:
 
 - La gravedad se configurará a través del bloque Mechanism Configuration.
 
 - Como la gravedad normalmente actúa en el eje Z, se cambiará para que actúe en el eje Y.
 
-## Configuración del solucionador (Solver):
+5- Configuración del solucionador (Solver):
 
 - Seleccionar el solver "ode15s (stiff/NDF)".
   
 - Establecer el Max Step Size en 0.01.
 
-## Configuración de la Revolute Joint:
+6- Configuración de la Revolute Joint:
 
 - En la pestaña Actuation:
   
@@ -195,27 +203,29 @@ En la pestaña State Targets:
      
    - Velocidad inicial: 1 rad/s.
      
-## Aplicación de una señal de entrada:
+7- Aplicación de una señal de entrada:
 
 - La entrada de torque será una señal senoidal con:
 
   - Amplitud: 0.06.
     
- ## Visualización de resultados:
+8- Visualización de resultados:
 
 -Colocar un bloque Scope en cada salida para analizar el comportamiento del sistema.
 
 ## 4. Solución 
+
+cp Simulaciones/Pendulo.slx .
+git add Pendulo.slx
+git commit -m "Añadiendo archivo de Simulink"
+git push origin main
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_7.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
 </div>
 
-<div align="center">
-  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_8.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
-</div>
+
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_10.jpg" alt="Figura de prueba" width="400">
