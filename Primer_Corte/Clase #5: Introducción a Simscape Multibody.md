@@ -79,28 +79,28 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
   <p><b>Figura 2.</b> Esquema principal </p>
 </div>
 
-3- Enocntramos el bloque World Frame Sirve como base para definir posiciones y orientaciones.
+3- Enocontramos el bloque World Frame Sirve como base para definir posiciones y orientaciones.
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_3.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 3.</b> Diagrama Control Cascada </p>
 </div>
 
-4- Enocntramos el bloque World Frame Sirve como base para definir posiciones y orientaciones.
+4- Enocntramos el bloque mechanism configuraion que se basa en la gravedad del objeto
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_4.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 4.</b> Diagrama Control Cascada </p>
 </div>
 
-5- Enocntramos el bloque World Frame Sirve como base para definir posiciones y orientaciones.
+5- Enocntramos el bloque Brick SOLID Sirve PARA DIFINIR DIMSENCIONES
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_5.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 5.</b> Diagrama Control Cascada </p>
 </div>
 
-6- 
+6- Dentro de Brick solid hay un cja de herramientas que nos ayudan para mover, ver todas las vistas y verlo en las tres diemseiones
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_6.jpg" alt="Figura de prueba" width="400">
@@ -110,22 +110,22 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 7- 
 
 <div align="center">
-  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_7.jpg" alt="Figura de prueba" width="400">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_9.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
 </div>
+
 
 ## 3  Ejercicio 
 
 ## 4 Solución 
 
-
 <div align="center">
-  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_8.jpg" alt="Figura de prueba" width="400">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_7.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
 </div>
 
 <div align="center">
-  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_9.jpg" alt="Figura de prueba" width="400">
+  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_8.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
 </div>
 
