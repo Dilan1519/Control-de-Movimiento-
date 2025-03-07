@@ -118,7 +118,7 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_6.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Herramienta de visualización </p>
+  <p><b>Figura 6.</b> Herramienta de visualización </p>
 </div>
 
 7- Rigid Transform
@@ -127,7 +127,7 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_9.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Rigid Transform </p>
+  <p><b>Figura 7.</b> Rigid Transform </p>
 </div>
 
 8- Revolute Joint 
@@ -136,7 +136,7 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_17.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Revolute Joint </p>
+  <p><b>Figura 8.</b> Revolute Joint </p>
 </div>
 
 9- Ctrl + D
@@ -145,7 +145,7 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_8.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
+  <p><b>Figura 9.</b> Diagrama Control Cascada </p>
 </div>
 
 ## 3.  Ejercicio Simulación de un Péndulo Simple en Simscape Multibody
