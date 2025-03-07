@@ -431,4 +431,4 @@ Agregar un sensor de flujo de filamento para detectar atascos o falta de materia
 [6] RepRap Wiki (2024). *RepRap: The Open-Source 3D Printer Community*.  
     Información sobre hardware y software de impresoras 3D.  
     Disponible en: [https://reprap.org/wiki/Main_Page](https://reprap.org/wiki/Main_Page)  
-j
+
