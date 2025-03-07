@@ -10,8 +10,11 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 [1.2 Descripción de algunos bloques en Simscape Multibody](#12-descripción-de-algunos-bloques-en-simscape-multibody)
 
+[2. Configuración de Elementos en Simscape Multibody: Guía Paso a Paso](#2-configuración-de-elementos-en-simscape-multibody-guía-paso-a-paso)
+
 [3. Ejercicio Simulación de un Péndulo Simple en Simscape Multibody](#3-ejercicio-simulación-de-un-péndulo-simple-en-simscape-multibody)
 
+Configuración de Elementos en Simscape Multibody: Guía Paso a Paso
 
  [4. Solución](#9-Solución)
 
@@ -72,7 +75,7 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 > **Nota:** Esta tabla contiene una descripción de algunos bloques fundamentales en Simscape Multibody, junto con sus características y funciones principales.
 
-## 2 Configuración de Elementos en Simscape Multibody: Guía Paso a Paso
+## 2. Configuración de Elementos en Simscape Multibody: Guía Paso a Paso
 
 1- Abrir el entorno de Simscape Multibody
 
