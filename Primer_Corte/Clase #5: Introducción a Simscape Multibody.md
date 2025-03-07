@@ -4,7 +4,9 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 ## Índice
 
-[1. Características](#1-Características)
+[1. Características](#1-Características)  1.1 Simscape y sus aplicaciones en distintas industrias
+
+[1.1 Simscape y sus aplicaciones en distintas industrias](#1.1-Simscape-y-sus-aplicaciones-en-distintas-industrias)
 
 [3. Ejercicio Simulación de un Péndulo Simple en Simscape Multibody](#3-ejercicio-simulación-de-un-péndulo-simple-en-simscape-multibody)
 
@@ -29,7 +31,7 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 
 > **Nota:** Este modelo permite realizar simulaciones dinámicas avanzadas con integración de múltiples disciplinas, facilitando el análisis y diseño de sistemas complejos.
 
-## 1.1 Simscape y sus aplicaciones en distintas industrias:
+## 1.1 Simscape y sus aplicaciones en distintas industrias
 
 <div align="center">
 
