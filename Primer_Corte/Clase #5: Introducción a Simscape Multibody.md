@@ -215,10 +215,13 @@ En la pestaña State Targets:
 
 ## 4. Solución 
 
-cp Simulaciones/Pendulo.slx .
-git add Pendulo.slx
-git commit -m "Añadiendo archivo de Simulink"
-git push origin main
+- Diagrama completo del ejercico
+
+<div align="center">
+  <img src="Imágenes/Clase%20%235/Ejemplo_pendulo_13.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 10.</b> Diagrama </p>
+</div>
+
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_7.jpg" alt="Figura de prueba" width="400">
@@ -244,11 +247,6 @@ git push origin main
 
 <div align="center">
   <img src="Imágenes/Clase%20%235/Ejemplo_pendulo_12.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Diagrama Control Cascada </p>
-</div>
-
-<div align="center">
-  <img src="Imágenes/Clase%20%235/Ejemplo_pendulo_13.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 2.</b> Diagrama Control Cascada </p>
 </div>
 
