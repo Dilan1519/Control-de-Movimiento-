@@ -134,4 +134,7 @@ Teniendo en cuenta que los servomotores son el actuador mas usado en la automati
 
 # 8. Bibliografía
 
+Cote B, J. E. (2025). Control de movimiento-Servomotores. En J. E. Cote B, Control Digital y de movimiento 2. Universidad ECCI.
+
+Quantum, “Quantum QB23 Series Housed Brushless Servo Motors, December 6, 2016 .
 
