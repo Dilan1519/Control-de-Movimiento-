@@ -10,6 +10,8 @@ El perfil de movimiento es una representación matemática y gráfica que descri
 
 [1.2 Parámetros Principales](#12-Parámetros-Principales)
 
+[1.3 Tipos de Sistemas y su Perfil de Movimiento](#13-Tipos-de-Sistemas-y-su-Perfil-de-Movimiento)
+
 ## 1. ¿En qué Consiste?
 
 - Es la trayectoria planificada para que una carga llegue a su destino cumpliendo restricciones de posición, velocidad y aceleración.
@@ -97,5 +99,19 @@ Situación: Un brazo robótico debe mover su herramienta de soldadura de un punt
   <img src="Imágenes_Corte_2/Clase%20%237/Tiempo.png" alt="Figura de prueba" width="300">
   <p><b>Figura 6.</b>Tiempo</p>
 </div>
+
+## 1.3 Tipos de Sistemas y su Perfil de Movimiento
+
+<div align="center">
+    
+| Sistema | Descripción | Ejemplo |
+|---------|-------------|---------|
+| **Sistema de un solo eje** | El perfil de movimiento suele ser una línea recta, ya que el desplazamiento ocurre en una única dirección. | Un actuador lineal mueve un objeto de un punto A a un punto B en una cinta transportadora. |
+| **Sistema multieje** | Se generan trayectorias más complejas al combinar movimientos de varios ejes. | Un brazo robótico mueve una pieza siguiendo una trayectoria curva en 3D. |
+| **Sincronización con otros procesos** | Es fundamental coordinar el perfil de movimiento con el resto del sistema para evitar acumulaciones o retrasos. | En una línea de ensamblaje, un robot debe esperar a que una pieza esté lista antes de continuar su tarea. |
+
+</div>
+
+> **Nota:** La elección del sistema adecuado depende de la complejidad del movimiento requerido y de la necesidad de sincronización con otros procesos en el entorno de trabajo.
 
 >🔑 *Posición:* Determina la ubicación exacta de un objeto en el espacio. Se controla para asegurar que un mecanismo llegue a un punto específico con precisión.
