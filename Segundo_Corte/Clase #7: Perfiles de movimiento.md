@@ -47,6 +47,20 @@ El perfil de movimiento es una representación matemática y gráfica que descri
   <p><b>Figura 1.</b>Leva mecánica</p>
 </div>
 
+💡**Ejemplo 2:** Ejemplo en Control de Movimiento: Movimiento de un brazo robótico para soldadura automatizada.
+
+Situación: Un brazo robótico debe mover su herramienta de soldadura de un punto A a un punto B con precisión, asegurando que la velocidad y aceleración sean adecuadas para una soldadura uniforme.
+
+- **Solución desde el Control de Movimiento:**
+
+    - Se definen los perfiles de movimiento (por ejemplo, un perfil trapezoidal para suavizar el arranque y frenado).
+
+    - Se programan los controladores del motor para cumplir con las restricciones de posición, velocidad y aceleración.  
+
+    - Se sincroniza el movimiento con otros robots en la línea de producción para evitar interferencias.
+
+- **Resultado:** El brazo robótico realiza el movimiento de manera precisa y en el tiempo adecuado, asegurando una soldadura de calidad sin interrupciones en la producción.
+
 <div align="center">
   <img src="Imágenes_Corte_2/Clase%20%237/Soldadura_robotizada.jpg" alt="Figura de prueba" width="300">
   <p><b>Figura 2.</b>Soldadura robotizada</p>
