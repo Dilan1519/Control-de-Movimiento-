@@ -20,6 +20,8 @@ El perfil de movimiento es una representación matemática y gráfica que descri
 
 [2.3 Integración (Cálculo de velocidad y posición)](#23-Integración-Cálculo-de-velocidad-y-posición)
 
+[2.4 Ejercicio Movimiento de un Actuador Lineal)](#24-Ejercicio-Movimiento-de-un-Actuador-Lineal)
+
 ## 1. ¿En qué Consiste?
 
 - Es la trayectoria planificada para que una carga llegue a su destino cumpliendo restricciones de posición, velocidad y aceleración.
@@ -165,3 +167,7 @@ $$ v(t) = \int a(t) \, dt $$
 - Posición a partir de la velocidad:
 
 $$ s(t) = \int v(t) \, dt $$
+
+## 2.4 Ejercicio Movimiento de un Actuador Lineal
+
+Un actuador lineal mueve una carga desde el punto A hasta el punto B en un sistema de un solo eje. La aceleración del actuador está dada por la función:
