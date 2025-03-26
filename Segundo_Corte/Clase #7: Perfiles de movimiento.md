@@ -4,11 +4,13 @@ El perfil de movimiento es una representación matemática y gráfica que descri
 
 ## Índice
 
-[1. ¿En qué consiste?](#1-en-qué-consiste)
+[1. ¿En qué Consiste?](#1-en-qué-Consiste)
 
 [1.1 Diferencia entre Mecánica y Control de Movimiento](#11-Diferencia-entre-Mecánica-y-Control-de-Movimiento)
 
-## 1. ¿En qué consiste?
+[1.2 Parámetros Principales](#12-Parámetros-Principales)
+
+## 1. ¿En qué Consiste?
 
 - Es la trayectoria planificada para que una carga llegue a su destino cumpliendo restricciones de posición, velocidad y aceleración.
 
@@ -65,5 +67,15 @@ Situación: Un brazo robótico debe mover su herramienta de soldadura de un punt
   <img src="Imágenes_Corte_2/Clase%20%237/Soldadura_robotizada.jpg" alt="Figura de prueba" width="300">
   <p><b>Figura 2.</b>Soldadura robotizada</p>
 </div>
+
+## 1.2 Parámetros Principales
+
+Posición: Punto inicial y final del desplazamiento.
+
+Velocidad: Ritmo al que se mueve la carga.
+
+Aceleración: Cambio en la velocidad durante el movimiento.
+
+Tiempo: Duración en la que se debe realizar el movimiento.
 
 >🔑 *Posición:* Determina la ubicación exacta de un objeto en el espacio. Se controla para asegurar que un mecanismo llegue a un punto específico con precisión.
