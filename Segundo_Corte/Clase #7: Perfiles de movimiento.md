@@ -22,6 +22,8 @@ El perfil de movimiento es una representación matemática y gráfica que descri
 
 [2.4 Ejercicio Movimiento de un Actuador Lineal)](#24-Ejercicio-Movimiento-de-un-Actuador-Lineal)
 
+[2.5 Solución Movimiento de un Actuador Lineal)](#25-Solución-Movimiento-de-un-Actuador-Lineal)
+
 ## 1. ¿En qué Consiste?
 
 - Es la trayectoria planificada para que una carga llegue a su destino cumpliendo restricciones de posición, velocidad y aceleración.
@@ -179,15 +181,20 @@ Un actuador lineal mueve una carga desde el punto A hasta el punto B en un siste
 
 Sabemos que:
 
-- Velocidad inicial: v(0)=0v(0) = 0v(0)=0 m/s
+- Velocidad inicial: v(0) = 0 m/s
   
-- Posición inicial: s(0)=0s(0) = 0s(0)=0 m
+- Posición inicial: s(0) = 0 m 
 
 Preguntas:
 
-- ¿Cuál es la velocidad v(t)v(t)v(t) en función del tiempo?
+- ¿Cuál es la velocidad v(t) en función del tiempo?
 
-- ¿Cuál es la posición s(t)s(t)s(t) en función del tiempo?
+- ¿Cuál es la posición s(t) en función del tiempo?
 
 - ¿Cuál será la posición y velocidad después de 3 segundos?
 
+## 2.5 Solución Movimiento de un Actuador Lineal 
+
+Cálculo de la Velocidad
+
+Usamos la ecuación integral:
