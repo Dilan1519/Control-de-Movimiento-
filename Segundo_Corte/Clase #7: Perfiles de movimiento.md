@@ -41,8 +41,8 @@ El perfil de movimiento es una representación matemática y gráfica que descri
 - **Resultado:** Un sistema mecánico correctamente diseñado que permite que el seguidor se mueva de manera precisa cuando la leva gira.
 
 <div align="center">
-  <img src="Imágenes/Clase%20%232/Robot FANUC Arc Mate 100iC.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Robot FANUC Arc Mate 100iC</p>
+  <img src="Imágenes_Corte_2/Clase%20%237/Leva_(mecánica).gif" alt="Figura de prueba" width="300">
+  <p><b>Figura 1.</b>Leva mecánica</p>
 </div>
 
 >🔑 *Posición:* Determina la ubicación exacta de un objeto en el espacio. Se controla para asegurar que un mecanismo llegue a un punto específico con precisión.
