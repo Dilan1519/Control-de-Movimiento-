@@ -6,6 +6,8 @@ El perfil de movimiento es una representación matemática y gráfica que descri
 
 [1. ¿En qué consiste?](#1-en-qué-consiste)
 
+[1.1 Diferencia entre Mecánica y Control de Movimiento](#11-Diferencia-entre-Mecánica-y-Control-de-Movimiento)
+
 ## 1. ¿En qué consiste?
 
 - Es la trayectoria planificada para que una carga llegue a su destino cumpliendo restricciones de posición, velocidad y aceleración.
@@ -43,6 +45,11 @@ El perfil de movimiento es una representación matemática y gráfica que descri
 <div align="center">
   <img src="Imágenes_Corte_2/Clase%20%237/Leva_(mecánica).gif" alt="Figura de prueba" width="300">
   <p><b>Figura 1.</b>Leva mecánica</p>
+</div>
+
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%237/Soldadura_robotizada.jpg" alt="Figura de prueba" width="300">
+  <p><b>Figura 2.</b>Soldadura robotizada</p>
 </div>
 
 >🔑 *Posición:* Determina la ubicación exacta de un objeto en el espacio. Se controla para asegurar que un mecanismo llegue a un punto específico con precisión.
