@@ -28,9 +28,9 @@ El perfil de movimiento es una representación matemática y gráfica que descri
 
 💡**Ejemplo 1:** Ejemplo en Mecánica: Diseño de un sistema de leva y seguidor en una máquina industrial.
 
-- Situación: Se necesita diseñar un mecanismo que convierta el movimiento rotacional de un motor en un movimiento lineal para accionar una prensa.
+- **Situación:** Se necesita diseñar un mecanismo que convierta el movimiento rotacional de un motor en un movimiento lineal para accionar una prensa.
 
-- Solución desde la Mecánica:
+- **Solución desde la Mecánica:**
 
     - Se diseña una leva con una forma específica que garantice el desplazamiento adecuado del seguidor.
   
@@ -38,6 +38,11 @@ El perfil de movimiento es una representación matemática y gráfica que descri
       
     - Se verifica que los materiales soporten las fuerzas y momentos generados.
 
-🔹 Resultado: Un sistema mecánico correctamente diseñado que permite que el seguidor se mueva de manera precisa cuando la leva gira.
+- **Resultado:** Un sistema mecánico correctamente diseñado que permite que el seguidor se mueva de manera precisa cuando la leva gira.
+
+<div align="center">
+  <img src="Imágenes/Clase%20%232/Robot FANUC Arc Mate 100iC.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 2.</b> Robot FANUC Arc Mate 100iC</p>
+</div>
 
 >🔑 *Posición:* Determina la ubicación exacta de un objeto en el espacio. Se controla para asegurar que un mecanismo llegue a un punto específico con precisión.
