@@ -12,6 +12,10 @@ El perfil de movimiento es una representación matemática y gráfica que descri
 
 [1.3 Tipos de Sistemas y su Perfil de Movimiento](#13-Tipos-de-Sistemas-y-su-Perfil-de-Movimiento)
 
+[2 Cinemática](#2-Cinemática)
+
+[2.1 Parámetros Fundamentales de la Cinemática](#21-Parámetros-Fundamentales-de-la-Cinemática)
+
 ## 1. ¿En qué Consiste?
 
 - Es la trayectoria planificada para que una carga llegue a su destino cumpliendo restricciones de posición, velocidad y aceleración.
@@ -114,4 +118,22 @@ Situación: Un brazo robótico debe mover su herramienta de soldadura de un punt
 
 > **Nota:** La elección del sistema adecuado depende de la complejidad del movimiento requerido y de la necesidad de sincronización con otros procesos en el entorno de trabajo.
 
->🔑 *Posición:* Determina la ubicación exacta de un objeto en el espacio. Se controla para asegurar que un mecanismo llegue a un punto específico con precisión.
+## 2 Cinemática
+
+>🔑 *Cinemática:* La cinemática es la rama de la mecánica clásica que describe el movimiento de puntos, objetos y sistemas de grupos de objetos, sin referencia a las causas del movimiento (es decir, las fuerzas). El estudio de la cinemática a menudo se conoce como la 'geometría del movimiento'.
+
+## 2.1 Parámetros Fundamentales de la Cinemática
+
+En un sistema donde un eje se mueve de un punto A a un punto B, su movimiento se describe con tres parámetros esenciales:
+
+<div align="center">
+    
+| Parámetro | Símbolo | Definición | Expresión Matemática |
+|-----------|---------|------------|----------------------|
+| **Posición** | s(t) | Ubicación del objeto en un instante de tiempo. | s(t) |
+| **Velocidad** | v(t) | Cambio de la posición con respecto al tiempo. | v(t) = \( \frac{ds}{dt} \) |
+| **Aceleración** | a(t) | Cambio de la velocidad con respecto al tiempo. | a(t) = \( \frac{dv}{dt} \) |
+
+</div>
+
+> **Nota:** Estos parámetros son fundamentales en el análisis del movimiento, ya que permiten describir cómo varía la ubicación, velocidad y aceleración de un objeto en función del tiempo, proporcionando información clave para el diseño y control de sistemas mecánicos.
