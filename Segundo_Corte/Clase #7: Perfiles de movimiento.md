@@ -16,6 +16,8 @@ El perfil de movimiento es una representación matemática y gráfica que descri
 
 [2.1 Parámetros Fundamentales de la Cinemática](#21-Parámetros-Fundamentales-de-la-Cinemática)
 
+[2.2 Diferenciación (Definición de velocidad y aceleración)](#22-Diferenciación-Definición-de-velocidad-y-aceleración)
+
 ## 1. ¿En qué Consiste?
 
 - Es la trayectoria planificada para que una carga llegue a su destino cumpliendo restricciones de posición, velocidad y aceleración.
@@ -128,12 +130,36 @@ En un sistema donde un eje se mueve de un punto A a un punto B, su movimiento se
 
 <div align="center">
     
-| Parámetro | Símbolo | Definición | Expresión Matemática |
-|-----------|---------|------------|----------------------|
-| **Posición** | s(t) | Ubicación del objeto en un instante de tiempo. | s(t) |
-| **Velocidad** | v(t) | Cambio de la posición con respecto al tiempo. | v(t) = \( \frac{ds}{dt} \) |
-| **Aceleración** | a(t) | Cambio de la velocidad con respecto al tiempo. | a(t) = \( \frac{dv}{dt} \) |
+| Parámetro    | Símbolo    | Definición                                  | Expresión Matemática        |
+|-------------|-----------|--------------------------------|-----------------------------|
+| **Posición**  | \( s(t) \)  | Ubicación del objeto en un instante de tiempo. | \( s(t) \) |
+| **Velocidad** | \( v(t) \)  | Cambio de la posición con respecto al tiempo.  | $$ v(t) = ( \frac{ds}{dt} ) $$ |
+| **Aceleración** | \( a(t) \)  | Cambio de la velocidad con respecto al tiempo.  | \( a(t) = \frac{dv}{dt} \) |
 
 </div>
 
 > **Nota:** Estos parámetros son fundamentales en el análisis del movimiento, ya que permiten describir cómo varía la ubicación, velocidad y aceleración de un objeto en función del tiempo, proporcionando información clave para el diseño y control de sistemas mecánicos.
+
+## 2.2 Diferenciación (Definición de velocidad y aceleración)
+
+Las ecuaciones básicas del movimiento se obtienen mediante derivación:
+
+- Velocidad instantánea como la derivada de la posición:
+
+$$ v(t) = ( \frac{ds}{dt} ) $$
+
+- Aceleración instantánea como la derivada de la velocidad:
+
+$$ a(t) = ( \frac{dv}{dt} ) $$
+
+## 2.3 Integración (Cálculo de velocidad y posición)
+
+Si se conoce la aceleración, se pueden obtener la velocidad y la posición mediante integración:
+
+- Velocidad a partir de la aceleración:
+
+$$ v(t) = \int a(t) \, dt $$
+
+- Posición a partir de la velocidad:
+
+$$ s(t) = \int v(t) \, dt $$
