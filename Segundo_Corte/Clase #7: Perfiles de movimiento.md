@@ -171,3 +171,23 @@ $$ s(t) = \int v(t) \, dt $$
 ## 2.4 Ejercicio Movimiento de un Actuador Lineal
 
 Un actuador lineal mueve una carga desde el punto A hasta el punto B en un sistema de un solo eje. La aceleración del actuador está dada por la función:
+
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%237/Actuador_Lineal.gif" alt="Figura de prueba" width="400">
+  <p><b>Figura 7.</b>Actuador Lineal</p>
+</div>
+
+Sabemos que:
+
+- Velocidad inicial: v(0)=0v(0) = 0v(0)=0 m/s
+  
+- Posición inicial: s(0)=0s(0) = 0s(0)=0 m
+
+Preguntas:
+
+- ¿Cuál es la velocidad v(t)v(t)v(t) en función del tiempo?
+
+- ¿Cuál es la posición s(t)s(t)s(t) en función del tiempo?
+
+- ¿Cuál será la posición y velocidad después de 3 segundos?
+
