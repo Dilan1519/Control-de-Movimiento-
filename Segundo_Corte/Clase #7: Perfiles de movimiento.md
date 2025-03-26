@@ -70,12 +70,32 @@ Situación: Un brazo robótico debe mover su herramienta de soldadura de un punt
 
 ## 1.2 Parámetros Principales
 
-Posición: Punto inicial y final del desplazamiento.
+- **Posición:** Punto inicial y final del desplazamiento.
+  
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%237/Posición.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 3.</b>Posición</p>
+</div>
 
-Velocidad: Ritmo al que se mueve la carga.
+- **Velocidad:** Ritmo al que se mueve la carga.
 
-Aceleración: Cambio en la velocidad durante el movimiento.
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%237/Velocidad.jpg" alt="Figura de prueba" width="300">
+  <p><b>Figura 4.</b>Velocidad</p>
+</div>
 
-Tiempo: Duración en la que se debe realizar el movimiento.
+- **Aceleración:** Cambio en la velocidad durante el movimiento.
+
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%237/Aceleración.jpg" alt="Figura de prueba" width="300">
+  <p><b>Figura 5.</b>Aceleración</p>
+</div>
+
+- **Tiempo:** Duración en la que se debe realizar el movimiento.
+
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%237/Tiempo.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 6.</b>Tiempo</p>
+</div>
 
 >🔑 *Posición:* Determina la ubicación exacta de un objeto en el espacio. Se controla para asegurar que un mecanismo llegue a un punto específico con precisión.
