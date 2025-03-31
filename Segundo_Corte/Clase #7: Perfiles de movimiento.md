@@ -24,6 +24,8 @@ El perfil de movimiento es una representación matemática y gráfica que descri
 
 [2.5 Solución Movimiento de un Actuador Lineal)](#25-Solución-Movimiento-de-un-Actuador-Lineal)
 
+[3. Reglas Geométricas)](#3-Reglas-Geométricas)
+
 ## 1. ¿En qué Consiste?
 
 - Es la trayectoria planificada para que una carga llegue a su destino cumpliendo restricciones de posición, velocidad y aceleración.
@@ -242,3 +244,5 @@ $$ v(3) = 4(3) = 12 \text{ m/s} $$
 **Posición:**
 
 $$ s(3) = 2(3)^2 = 18 \text{ m} $$
+
+## 3. Reglas Geométricas  
