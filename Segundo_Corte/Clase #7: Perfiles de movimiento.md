@@ -30,7 +30,7 @@ El perfil de movimiento es una representación matemática y gráfica que descri
 
 [3.2 Ejercicio en Matlab)](#32-Ejercicio-en-Matlab)
 
-
+[4 Ejercicio en Matlab)](#4-Comparación-de-Perfiles-de-Movimiento)
 
 ## 1. ¿En qué Consiste?
 
@@ -332,7 +332,12 @@ $$ 𝑆_{o} = \frac{1}{2} ∗ (15s − 5s)∗ 0,1 \frac{m}{s} = 0,5 m $$
 
 Un eje (axis) lineal comienza su movimiento desde el reposo en la posición 0, con una aceleración de 2 m/s^2. Después de moverse durante 5 s, cual es la posición del eje (axis)?
 
-## Comparación de Perfiles de Movimiento
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%237/Ejercicio_Matlab.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 11.</b>Ejercicio Matlab 2</p>
+</div>
+
+## 4. Comparación de Perfiles de Movimiento
 
 <div align="center">
     
