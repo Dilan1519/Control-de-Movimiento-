@@ -30,7 +30,7 @@ El perfil de movimiento es una representación matemática y gráfica que descri
 
 [3.2 Ejercicio en Matlab)](#32-Ejercicio-en-Matlab)
 
-[4 Ejercicio en Matlab)](#4-Comparación-de-Perfiles-de-Movimiento)
+[4 Comparación de Perfiles de Movimiento)](#4-Comparación-de-Perfiles-de-Movimiento)
 
 ## 1. ¿En qué Consiste?
 
@@ -338,6 +338,11 @@ Un eje (axis) lineal comienza su movimiento desde el reposo en la posición 0, c
 </div>
 
 ## 4. Comparación de Perfiles de Movimiento
+
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%237/Ejemplo_3.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 13.</b>Perfil trapezoidal</p>
+</div>
 
 <div align="center">
     
