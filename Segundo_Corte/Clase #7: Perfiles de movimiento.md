@@ -303,13 +303,23 @@ Solución:
 
 $$ a = \frac{10}{5} = 2\frac{in}{s^{2}} $$
 
-El área bajo la curva de velocidad es hasta t=5 s es la posición alcanzada en t=5 s
+- El área bajo la curva de velocidad es hasta t=5 s es la posición alcanzada en t=5 s
 
 $$ s= \frac{1}{2}(10*5) = 25 \frac{in}{s} $$
 
-💡**Ejemplo 4:** Ejemplo en Control de Movimiento: Movimiento de un brazo robótico para soldadura automatiza
+💡**Ejemplo 4:** Un eje está viajando a una velocidad de 10 cm/s. En t=5s empieza a disminuir la velocidad como se ve en el perfil. Cual es la posición del eje cuando se detiene? Asumaque empieza a desacelerar a 25 cm.
 
 <div align="center">
   <img src="Imágenes_Corte_2/Clase%20%237/Ejemplo_Geometria_2.png" alt="Figura de prueba" width="200">
   <p><b>Figura 10.</b>Ejemplo 2</p>
 </div>
+
+Solución:
+
+- La pendiente de la velocidad es la aceleración:
+
+$$ a=\frac{-10\frac{cm}{s}\frac{1 m}{100 cm}}{10s - 5s} =- \frac{0,1 \frac{m}{s}}{10 s} = -0,01 \frac{m}{s^{2}} $$
+
+-  El área del perfil de velocidad triangular es la posición alcanzada en t=15s
+
+$$ 𝑆_{o} = \frac{1}{2} ∗ (15s − 5s)∗ 0,1 \frac{m}{s} = 0,5 m $$
