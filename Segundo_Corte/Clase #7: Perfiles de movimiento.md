@@ -26,6 +26,8 @@ El perfil de movimiento es una representación matemática y gráfica que descri
 
 [3. Reglas Geométricas)](#3-Reglas-Geométricas)
 
+[3.1 Fórmulas Fundamentales Para Aceleración Constante)](#31-Fórmulas-Fundamentales-Para-Aceleración-Constante)
+
 ## 1. ¿En qué Consiste?
 
 - Es la trayectoria planificada para que una carga llegue a su destino cumpliendo restricciones de posición, velocidad y aceleración.
@@ -259,13 +261,31 @@ $$ s(3) = 2(3)^2 = 18 \text{ m} $$
 
   - Es decir, la derivada de la velocidad con respecto al tiempo nos da la aceleración en cada instante.
 
-## Fórmulas Fundamentales (Para Aceleración Constante)
+## 3.1 Fórmulas Fundamentales Para Aceleración Constante
 
 Si consideramos que la aceleración 𝑎 es constante, podemos utilizar las ecuaciones básicas del movimiento rectilíneo uniformemente acelerado:
 
 <div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%237/Actuador_Lineal.gif" alt="Figura de prueba" width="400">
-  <p><b>Figura 7.</b>Actuador Lineal</p>
+  <img src="Imágenes_Corte_2/Clase%20%237/Movimiento-rectilineo-uniformemente-acelerado.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 8.</b>Movimiento Rectilíneo Uniformemente Acelerado</p>
 </div>
 
 - Velocidad en función del tiempo
+
+$$ v = V_{0} +a(t−t_{0}) $$
+
+Donde:
+
+$V_{0}$ es la velocidad inicial.
+
+𝑎 es la aceleración.
+
+$t_{0}$ es el tiempo inicial.
+
+- Posición en función del tiempo
+
+$$ s=s_{0}+v_{0}(t−t_{0})+ \frac{1}{2}a(t−t_{0})^{2} $$
+ 
+Donde:
+
+$s_{0}$ es la posición inicial.
