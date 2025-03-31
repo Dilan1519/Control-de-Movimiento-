@@ -246,3 +246,26 @@ $$ v(3) = 4(3) = 12 \text{ m/s} $$
 $$ s(3) = 2(3)^2 = 18 \text{ m} $$
 
 ## 3. Reglas Geométricas  
+
+- Relación entre Posición y Velocidad
+
+  - La posición en un instante de tiempo es igual al área bajo la curva de velocidad hasta ese instante.
+
+  - Esto significa que integrar la velocidad en un intervalo de tiempo nos da el desplazamiento total.
+
+- Relación entre Velocidad y Aceleración
+
+  - La aceleración es la pendiente de la curva de velocidad.
+
+  - Es decir, la derivada de la velocidad con respecto al tiempo nos da la aceleración en cada instante.
+
+## Fórmulas Fundamentales (Para Aceleración Constante)
+
+Si consideramos que la aceleración 𝑎 es constante, podemos utilizar las ecuaciones básicas del movimiento rectilíneo uniformemente acelerado:
+
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%237/Actuador_Lineal.gif" alt="Figura de prueba" width="400">
+  <p><b>Figura 7.</b>Actuador Lineal</p>
+</div>
+
+- Velocidad en función del tiempo
