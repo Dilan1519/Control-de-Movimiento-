@@ -28,6 +28,10 @@ El perfil de movimiento es una representación matemática y gráfica que descri
 
 [3.1 Fórmulas Fundamentales Para Aceleración Constante)](#31-Fórmulas-Fundamentales-Para-Aceleración-Constante)
 
+[3.2 Ejercicio en Matlab)](#32-Ejercicio-en-Matlab)
+
+
+
 ## 1. ¿En qué Consiste?
 
 - Es la trayectoria planificada para que una carga llegue a su destino cumpliendo restricciones de posición, velocidad y aceleración.
@@ -323,3 +327,25 @@ $$ a=\frac{-10\frac{cm}{s}\frac{1 m}{100 cm}}{10s - 5s} =- \frac{0,1 \frac{m}{s}
 -  El área del perfil de velocidad triangular es la posición alcanzada en t=15s
 
 $$ 𝑆_{o} = \frac{1}{2} ∗ (15s − 5s)∗ 0,1 \frac{m}{s} = 0,5 m $$
+
+## 3.2 Ejercicio en Matlab
+
+Un eje (axis) lineal comienza su movimiento desde el reposo en la posición 0, con una aceleración de 2 m/s^2. Después de moverse durante 5 s, cual es la posición del eje (axis)?
+
+## Comparación de Perfiles de Movimiento
+
+<div align="center">
+    
+| Característica             | Perfil Trapezoidal                                        | Perfil en S (Sigmoidal o Gaussiano)                     |
+|----------------------------|----------------------------------------------------------|---------------------------------------------------------|
+| **Forma de la curva**      | Tres fases: aceleración constante, velocidad constante y desaceleración constante. | Transiciones suaves en la aceleración y desaceleración, formando una curva en "S". |
+| **Transiciones**           | Cambios bruscos entre fases.                            | Transiciones progresivas sin cambios abruptos.         |
+| **Facilidad de implementación** | Fácil, requiere cálculos básicos de aceleración y velocidad. | Más complejo, requiere funciones matemáticas avanzadas. |
+| **Impacto mecánico**       | Puede generar esfuerzos mecánicos elevados y vibraciones. | Reduce esfuerzos mecánicos y minimiza vibraciones.     |
+| **Tiempo de movimiento**   | Más rápido en trayectos cortos.                         | Puede ser más lento debido a transiciones suaves.      |
+| **Precisión del movimiento** | Adecuado para movimientos estándar.                    | Mejor precisión en sistemas que requieren estabilidad y suavidad. |
+| **Aplicaciones típicas**   | Máquinas CNC, transportadores, automatización industrial. | Robótica de precisión, impresión 3D, manipulación de materiales frágiles. |
+
+</div>
+
+**Nota:** Esta tabla compara dos tipos de perfiles de movimiento utilizados en sistemas mecánicos y robóticos. Mientras que el perfil trapezoidal es más simple y rápido en trayectos cortos, el perfil en S ofrece mayor suavidad y precisión, reduciendo esfuerzos mecánicos y vibraciones. La elección entre ambos depende de la aplicación específica y los requisitos del sistema.
