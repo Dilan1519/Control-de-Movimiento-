@@ -181,6 +181,8 @@ Un actuador lineal mueve una carga desde el punto A hasta el punto B en un siste
 
 Sabemos que:
 
+$$ a(t)=4m/s^{2} $$
+
 - Velocidad inicial: v(0) = 0 m/s
   
 - Posición inicial: s(0) = 0 m 
@@ -195,6 +197,48 @@ Preguntas:
 
 ## 2.5 Solución Movimiento de un Actuador Lineal 
 
-Cálculo de la Velocidad
+- Cálculo de la Velocidad
 
 Usamos la ecuación integral:
+
+$$ v(t)=∫a(t)dt $$
+
+Sustituyendo $a(t) = 4t$:
+
+$$v(t) = ∫4 , dt = 4t + C_1$$
+
+Como $v(0) = 0$, sustituimos:
+
+$$ 0 = 4(0) + C_1 \Rightarrow C_1 = 0 $$
+
+Por lo tanto:
+
+$$ v(t) = 4t $$
+
+- Cálculo de la Posición
+
+Usamos la ecuación integral:
+
+$$ s(t) = ∫ v(t), dt $$
+
+Sustituyendo $v(t) = 4t$:
+
+$$ s(t) = ∫ 4t, dt = 2t^2 + C_2 $$
+
+Como $s(0) = 0$, sustituimos:
+
+$$ 0 = 2(0)^2 + C_2 \Rightarrow C_2 = 0 $$
+
+Por lo tanto:
+
+$$ s(t) = 2t^2 $$
+
+- Evaluación en $t = 3$ segundos
+
+**Velocidad:**
+
+$$ v(3) = 4(3) = 12 \text{ m/s} $$
+
+**Posición:**
+
+$$ s(3) = 2(3)^2 = 18 \text{ m} $$
