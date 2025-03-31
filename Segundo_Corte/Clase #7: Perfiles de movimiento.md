@@ -289,3 +289,27 @@ $$ s=s_{0}+v_{0}(t−t_{0})+ \frac{1}{2}a(t−t_{0})^{2} $$
 Donde:
 
 $s_{0}$ es la posición inicial.
+
+💡**Ejemplo 3:**  Encuentre la posición y la aceleración en t=5s
+
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%237/Ejemplo_Geometría.png" alt="Figura de prueba" width="200">
+  <p><b>Figura 9.</b>Ejemplo 1</p>
+</div>
+
+Solución:
+
+- La aceleración sería la pendiente de la velocidad:
+
+$$ a = \frac{10}{5} = 2\frac{in}{s^{2}} $$
+
+El área bajo la curva de velocidad es hasta t=5 s es la posición alcanzada en t=5 s
+
+$$ s= \frac{1}{2}(10*5) = 25 \frac{in}{s} $$
+
+💡**Ejemplo 4:** Ejemplo en Control de Movimiento: Movimiento de un brazo robótico para soldadura automatiza
+
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%237/Ejemplo_Geometria_2.png" alt="Figura de prueba" width="200">
+  <p><b>Figura 10.</b>Ejemplo 2</p>
+</div>
