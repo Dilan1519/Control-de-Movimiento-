@@ -526,4 +526,121 @@ Entonces, también podés expresar la posición así:
 
 $$ s(t) = \frac{1}{2} a t_a^2 + v_m (t - t_a) $$
 
+## Fase 3: Desaceleración (Enfoque Analítico)
+
+
+## Rango de tiempo:
+
+$$ t_a + t_m < t < t_a + t_m + t_d $$
+
+## Velocidad en esta fase:
+
+La aceleración es negativa ($-a$), por lo tanto:
+
+$$ v(t) = v_m - a(t - t_a - t_m) $$
+
+- $v_m$: velocidad máxima al inicio del frenado
+  
+- $t - t_a - t_m$: tiempo desde que empezó la desaceleración
+
+## 🔧 Ejemplo – Movimiento de un eje en un robot Gantry
+
+### 🎯 Planteamiento del problema:
+
+Queremos mover el eje **X** de un robot con los siguientes datos:
+
+- Distancia total:  
+  $$L = 10 \,\text{cm}$$  
+- Velocidad máxima:  
+  $$v_m = 2 \,\text{cm/s}$$  
+- Aceleración máxima:  
+  $$a = 1 \,\text{cm/s}^2$$  
+
+---
+
+### ✏️ Paso 1: Calcular el tiempo de aceleración y desaceleración
+
+Sabemos que:
+
+$$
+t_a = t_d = \frac{v_m}{a}
+$$
+
+Sustituyendo:
+
+$$
+t_a = \frac{2\,\text{cm/s}}{1\,\text{cm/s}^2} = 2\,\text{s}
+$$
+
+> El tiempo de aceleración y desaceleración es el mismo ya que se usa la misma aceleración para frenar.
+
+---
+
+### ✏️ Paso 2: Calcular el tiempo a velocidad constante
+
+Sabemos que la distancia total es la suma de:
+
+- Aceleración (área de un triángulo):  
+  $$\frac{1}{2} v_m t_a$$
+- Velocidad constante (área de un rectángulo):  
+  $$v_m t_m$$
+- Desaceleración (igual al área de aceleración):  
+  $$\frac{1}{2} v_m t_d$$
+
+Entonces, la distancia total es:
+
+$$
+L = \frac{1}{2} v_m t_a + v_m t_m + \frac{1}{2} v_m t_d
+$$
+
+Como \( t_a = t_d \), agrupamos:
+
+$$
+L = v_m \left(t_a + \frac{t_m}{1}\right)
+$$
+
+Despejando \( t_m \):
+
+$$
+t_m = \frac{L}{v_m} - t_a
+$$
+
+Sustituyendo valores:
+
+$$
+t_m = \frac{10\,\text{cm}}{2\,\text{cm/s}} - 2\,\text{s} = 5\,\text{s} - 2\,\text{s} = 3\,\text{s}
+$$
+
+---
+
+### Resultado final: Tiempo total del movimiento
+
+$$
+t_{\text{total}} = t_a + t_m + t_d = 2\,\text{s} + 3\,\text{s} + 2\,\text{s} = 7\,\text{s}
+$$
+
+**Tiempo total del movimiento trapezoidal: 7 segundos**
+
+
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%237/Ejemplo_1.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 15.</b>Ejemplo</p>
+</div>
+
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%237/Ejemplo_2.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 16.</b>Ejemplo</p>
+</div>
+
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%237/Ejemplo_3_Tra.png" alt="Figura de prueba" width="200">
+  <p><b>Figura 17.</b>Ejercicio</p>
+</div>
+
+CONCLUSONES 1. El perfil de velocidad trapezoidal es una herramienta fundamental en el diseño de trayectorias para sistemas de movimiento, como robots o ejes lineales. Su principal ventaja es que permite planificar el desplazamiento de manera suave y controlada, dividiéndolo en tres fases: aceleración, velocidad constante y desaceleración. Esta estructura facilita un movimiento más eficiente y menos agresivo para los componentes mecánicos, al evitar cambios bruscos de velocidad.
+
+2. A través del uso de fórmulas geométricas y analíticas, se pueden calcular con precisión todos los parámetros clave del movimiento: tiempos de aceleración y desaceleración, duración del movimiento uniforme y el desplazamiento total. Estas relaciones permiten adaptar el perfil a las restricciones físicas del sistema, como la aceleración máxima o la distancia que se debe recorrer. Además, la posibilidad de calcular la posición en cada instante del tiempo es esencial para aplicaciones que requieren alta precisión.
+
+3. Tanto el enfoque geométrico como el analítico resultan válidos y complementarios. El primero ofrece una solución rápida e intuitiva mediante áreas bajo la curva de velocidad, mientras que el segundo brinda mayor exactitud y permite analizar el comportamiento del sistema en todo momento. La correcta aplicación de estos métodos garantiza trayectorias optimizadas, seguras y eficientes, fundamentales en sistemas automatizados modernos
+
 
