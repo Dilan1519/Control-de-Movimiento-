@@ -543,9 +543,9 @@ $$ v(t) = v_m - a(t - t_a - t_m) $$
   
 - $t - t_a - t_m$: tiempo desde que empezó la desaceleración
 
-## 🔧 Ejemplo – Movimiento de un eje en un robot Gantry
+##  Ejemplo – Movimiento de un eje en un robot Gantry
 
-### 🎯 Planteamiento del problema:
+###  Planteamiento del problema:
 
 Queremos mover el eje **X** de un robot con los siguientes datos:
 
@@ -558,7 +558,7 @@ Queremos mover el eje **X** de un robot con los siguientes datos:
 
 ---
 
-### ✏️ Paso 1: Calcular el tiempo de aceleración y desaceleración
+### Paso 1: Calcular el tiempo de aceleración y desaceleración
 
 Sabemos que:
 
@@ -576,7 +576,7 @@ $$
 
 ---
 
-### ✏️ Paso 2: Calcular el tiempo a velocidad constante
+###  Paso 2: Calcular el tiempo a velocidad constante
 
 Sabemos que la distancia total es la suma de:
 
@@ -611,8 +611,6 @@ $$
 t_m = \frac{10\,\text{cm}}{2\,\text{cm/s}} - 2\,\text{s} = 5\,\text{s} - 2\,\text{s} = 3\,\text{s}
 $$
 
----
-
 ### Resultado final: Tiempo total del movimiento
 
 $$
@@ -643,4 +641,17 @@ CONCLUSONES 1. El perfil de velocidad trapezoidal es una herramienta fundamental
 
 3. Tanto el enfoque geométrico como el analítico resultan válidos y complementarios. El primero ofrece una solución rápida e intuitiva mediante áreas bajo la curva de velocidad, mientras que el segundo brinda mayor exactitud y permite analizar el comportamiento del sistema en todo momento. La correcta aplicación de estos métodos garantiza trayectorias optimizadas, seguras y eficientes, fundamentales en sistemas automatizados modernos
 
+Referencia 
+
+Referencias
+
+[1] J. J. Craig, Introduction to Robotics: Mechanics and Control, 3rd ed., Pearson Prentice Hall, 2005.
+
+[2] L. Sciavicco y B. Siciliano, Modeling and Control of Robot Manipulators, 2nd ed., Springer, 2012.
+
+[3] M. P. Groover, Automation, Production Systems, and Computer-Integrated Manufacturing, 4th ed., Pearson, 2015.
+
+[4] Bosch Rexroth AG, Mechatronics and Motion Control – Application Manual, 2002.
+
+[5] J. E. Cote B., Perfiles de Movimiento, diapositivas de clase, 9° semestre, Universidad ECCI, 2025.
 
