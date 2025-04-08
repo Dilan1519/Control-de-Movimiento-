@@ -359,3 +359,50 @@ Un eje (axis) lineal comienza su movimiento desde el reposo en la posición 0, c
 </div>
 
 **Nota:** Esta tabla compara dos tipos de perfiles de movimiento utilizados en sistemas mecánicos y robóticos. Mientras que el perfil trapezoidal es más simple y rápido en trayectos cortos, el perfil en S ofrece mayor suavidad y precisión, reduciendo esfuerzos mecánicos y vibraciones. La elección entre ambos depende de la aplicación específica y los requisitos del sistema.
+
+## 5. Perfil de Velocidad Trapezoidal (Geométrico)
+
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%237/Perfil_de_velocidad_trapezoidal .png" alt="Figura de prueba" width="400">
+  <p><b>Figura 14.</b>Tornillo sin Fin</p>
+</div>
+
+$$ t_a = t_d = \frac{v_m}{a} $$
+
+- **$t_a$** : Tiempo que tarda el sistema en acelerar desde 0 hasta la velocidad máxima $v_m$.
+  
+- **$t_d$** : Tiempo que tarda en frenar desde la velocidad máxima $v_m$ hasta 0.
+  
+- **$a$** : Aceleración constante durante ese tramo.
+
+Se usa cuando ya se conoce:
+
+- La aceleración máxima que el sistema puede aplicar.
+  
+- La velocidad máxima que se desea alcanzar.
+
+Se asume que:
+
+$$ t_a = t_d $$
+
+Pero esto no siempre es cierto. Por ejemplo, si el sistema puede frenar más rápido que acelerar, entonces:
+
+$$ t_d < t_a $$
+
+## 5.1 Tiempo Total de Movimiento
+
+$$ t_{total} = t_a + t_m + t_d $$
+
+Es la suma del tiempo que el sistema pasa en cada una de las tres fases:
+
+- **$t_a$**: Aceleración
+   
+- **$t_m$**: Movimiento a velocidad constante
+  
+- **$t_d$**: Desaceleración
+
+Nos permite saber cuánto tiempo dura todo el trayecto, como:
+
+- Coordinando movimientos en un robot o máquina multieje.
+  
+- Sincronizando este eje con otros procesos.
