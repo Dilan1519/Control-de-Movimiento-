@@ -358,7 +358,7 @@ Un eje (axis) lineal comienza su movimiento desde el reposo en la posición 0, c
 
 </div>
 
-**Nota:** Esta tabla compara dos tipos de perfiles de movimiento utilizados en sistemas mecánicos y robóticos. Mientras que el perfil trapezoidal es más simple y rápido en trayectos cortos, el perfil en S ofrece mayor suavidad y precisión, reduciendo esfuerzos mecánicos y vibraciones. La elección entre ambos depende de la aplicación específica y los requisitos del sistema.
+**Nota:** Esta tabla compara dos tipos de perfiles de movimiento utilizados en sistemas mecánicos y robóticos. Mientras que el perfil trapezoidal es más simple y rápido en trayectos cortos, el perfil en S ofrece mayor suavidad y precisión, reduciendo esfuerzos mecánicos y vibraciones.
 
 ## 5. Perfil de Velocidad Trapezoidal (Geométrico)
 
@@ -406,3 +406,124 @@ Nos permite saber cuánto tiempo dura todo el trayecto, como:
 - Coordinando movimientos en un robot o máquina multieje.
   
 - Sincronizando este eje con otros procesos.
+
+## 5.2 Cálculo del recorrido total $L$ y del tiempo en velocidad constante $t_m$
+
+Calcular:
+
+- Cuánta distancia recorre el sistema en total ($L$).
+
+- Cuánto tiempo se mantiene moviéndose a velocidad constante ($t_m$).
+
+Esto es esencial si se quiere que el sistema llegue a un punto específico y se necesita saber cuánto tiempo debe estar en cada fase del perfil trapezoidal.
+
+
+## 5.3 Cálculo Geométrico del Recorrido Total $L$
+
+Se suman las áreas bajo la curva de velocidad, ya que:
+
+- Área bajo $v(t)$ = posición $s(t)$
+
+- Área del triángulo de aceleración:
+  
+$$ A_1 = \frac{t_a \cdot v_m}{2} $$
+
+- Área del rectángulo (velocidad constante):
+
+$$ A_2 = t_m \cdot v_m $$
+
+- Área del triángulo de desaceleración:
+    
+$$ A_3 = \frac{t_d \cdot v_m}{2} $$
+
+Distancia total recorrida $L$:
+
+$$ L = \frac{t_a \cdot v_m}{2} + t_m \cdot v_m + \frac{t_d \cdot v_m}{2} $$
+
+## 5.4 Simplificación 
+
+Si asumimos que $t_a = t_d$, entonces:
+
+$$ L = v_m \cdot (t_a + t_m) $$
+
+## 5.5 Despeje del Tiempo en Velocidad Constante $t_m$
+
+$$ t_m = \frac{L}{v_m} - t_a $$
+
+Es el tiempo que el sistema permanece a velocidad constante durante el trayecto, o sea, la parte plana del trapecio en la gráfica de velocidad.
+
+Si:
+
+$$ \frac{L}{v_m} < 2t_a $$
+
+Entonces no hay fase de velocidad constante → el perfil será triangular, no trapezoidal.
+
+## 5.6 Enfoque Analítico del Perfil Trapezoidal (Fase de Aceleración)
+
+Ahora, pasamos al enfoque analítico, que permite calcular la posición $s(t)$ en cualquier instante de tiempo de forma exacta.
+
+FASE 1: Aceleración ( $0 < t < t_a$ )
+
+En esta fase:
+
+- El sistema parte desde reposo: $v_0 = 0$
+  
+- Se aplica una aceleración constante: $a$
+  
+- La velocidad aumenta linealmente desde 0 hasta la velocidad máxima $v_m$.
+
+Velocidad en función del tiempo:
+
+$$ v(t) = a \cdot t $$
+
+## 5.7 Posición en Función del Tiempo:
+
+Para obtener la posición, integramos la velocidad:
+
+$$ s(t) = \int_0^t v(t) \, dt = \int_0^t a \cdot t \, dt = \frac{1}{2} a t^2 $$
+
+Es la posición recorrida durante la fase de aceleración, y crece con una parábola.
+
+FASE 2: $$ t_a < t < t_a + t_m $$
+
+Sabemos que para el intervalo:
+
+$$ t_a < t < t_a + t_m $$
+
+la velocidad del sistema es constante:
+
+$$ v(t) = v_m $$
+
+Cálculo de la posición_
+
+Para obtener la posición en esta fase, integramos la velocidad a partir de la posición alcanzada al final de la aceleración:
+
+$$ s(t) = s(t_a) + \int_{t_a}^{t} v_m \, dt $$
+
+Como $v_m$ es constante, podemos sacarlo fuera de la integral:
+
+$$ s(t) = s(t_a) + v_m \int_{t_a}^{t} dt = s(t_a) + v_m (t - t_a) $$
+
+Fórmula final para la posición en esta fase:
+
+$$ s(t) = s(t_a) + v_m (t - t_a) $$
+
+Desglose de los términos:
+
+- $s(t)$ → posición actual en esta fase.
+  
+- $s(t_a)$ → posición al final de la fase de aceleración.
+  
+- $v_m$ → velocidad máxima (constante durante esta fase).
+  
+- $(t - t_a)$ → tiempo transcurrido desde que empezó la velocidad constante.
+
+Sabemos que:
+
+$$ s(t_a) = \frac{1}{2} a t_a^2 $$
+
+Entonces, también podés expresar la posición así:
+
+$$ s(t) = \frac{1}{2} a t_a^2 + v_m (t - t_a) $$
+
+
