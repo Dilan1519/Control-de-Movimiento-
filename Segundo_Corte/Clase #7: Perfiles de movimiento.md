@@ -20,17 +20,17 @@ El perfil de movimiento es una representación matemática y gráfica que descri
 
 [2.3 Integración (Cálculo de velocidad y posición)](#23-Integración-Cálculo-de-velocidad-y-posición)
 
-[2.4 Ejercicio Movimiento de un Actuador Lineal)](#24-Ejercicio-Movimiento-de-un-Actuador-Lineal)
+[2.4 Ejercicio Movimiento de un Actuador Lineal](#24-Ejercicio-Movimiento-de-un-Actuador-Lineal)
 
-[2.5 Solución Movimiento de un Actuador Lineal)](#25-Solución-Movimiento-de-un-Actuador-Lineal)
+[2.5 Solución Movimiento de un Actuador Lineal](#25-Solución-Movimiento-de-un-Actuador-Lineal)
 
-[3. Reglas Geométricas)](#3-Reglas-Geométricas)
+[3. Reglas Geométricas](#3-Reglas-Geométricas)
 
-[3.1 Fórmulas Fundamentales Para Aceleración Constante)](#31-Fórmulas-Fundamentales-Para-Aceleración-Constante)
+[3.1 Fórmulas Fundamentales Para Aceleración Constante](#31-Fórmulas-Fundamentales-Para-Aceleración-Constante)
 
-[3.2 Ejercicio en Matlab)](#32-Ejercicio-en-Matlab)
+[3.2 Ejercicio en Matlab](#32-Ejercicio-en-Matlab)
 
-[4 Comparación de Perfiles de Movimiento)](#4-Comparación-de-Perfiles-de-Movimiento)
+[4 Comparación de Perfiles de Movimiento](#4-Comparación-de-Perfiles-de-Movimiento)
 
 ## 1. ¿En qué Consiste?
 
