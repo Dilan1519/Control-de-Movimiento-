@@ -7,7 +7,7 @@ Ya que en la sesión anterior vimos como modelar sólidos y cambiar sus propieda
 
 [1. Articulaciones basicas en multibody](#1-Articulaciones-basicas-en-multibody)
 
-[1.1 Articulación revoluta](#11-Diferencia-entre-Mecánica-y-Control-de-Movimiento)
+[1.1 Articulación revoluta](#11-Articulación-revoluta)
 
 [1.2 Articulación prismática](#12-Parámetros-Principales)
 
@@ -35,9 +35,13 @@ Ya que en la sesión anterior vimos como modelar sólidos y cambiar sus propieda
 
 ## 1. Articulaciones basicas en multibody
 
-Como había mencionado antes, en multibody las articulaciones tienen la función de unir de cierta forma los sólidos, a continuación, explicare de que marea se unen estos sólidos y de formas la articulación los hace interactuar 
+Como había mencionado antes, en multibody las articulaciones tienen la función de unir de cierta forma los sólidos, a continuación, explicare de que marea se unen estos sólidos y la forma en que la articulación los hace interactuar 
 
-## 1.1 Diferencia entre Mecánica y Control de Movimiento
+## 1.1 Articulación revoluta
+
+La articulacion revoluta, como el nombre la sugiere, es una articulacion que hace girar un solido con respecto a otro en un eje determinado, esta articulacion solo puede generar rotaciones en el eje Z como se especifica en la descripcion de el bloque de esta articulacion, si se requiere una rotacion en un eje diferente, esto requerira del uso de un "Rigid Transform", este bloque sera explicado despues de la seccion de articulaciones.
+
+  <img src="Segundo_Corte/Imágenes_Corte_2/Clase #6/articulacionr.png" width="300">
 
 <div align="center">
 
