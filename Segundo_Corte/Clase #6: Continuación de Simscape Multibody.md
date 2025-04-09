@@ -1,21 +1,21 @@
 
-# ¿QUÉ SON PERFILES DE MOVIMIENTO?
+# Articulaciones, Rigid transformation ,sensing y entradas
 
-El perfil de movimiento es una representación matemática y gráfica que describe cómo varían la posición, la velocidad y la aceleración de un sistema en función del tiempo. Su estudio es fundamental en el control de movimiento para garantizar transiciones suaves y eficientes en sistemas mecánicos y robóticos. Para comprenderlo, es esencial conocer los principios básicos de la cinemática, las reglas geométricas involucradas y los diferentes tipos de perfiles utilizados. Entre los más comunes se encuentran el perfil trapezoidal y la curva en S, cada uno con aplicaciones específicas según los requerimientos de suavidad, precisión y tiempo de ejecución.
+Ya que en la sesión anterior vimos como modelar sólidos y cambiar sus propiedades, en esta oportunidad veremos cómo es que estos se pueden conectar entre sí, esto con el objetivo de tener la capacidad de realizar simulaciones de mecanismos, para así tener la facilidad de realizar análisis ya sea de posición, velocidad o aceleración, además de ver las limitaciones de este tipo de simulación y como poder aprovecharlas al máximo.  
 
 ## Índice
 
-[1. ¿En qué Consiste?](#1-en-qué-Consiste)
+[1. Articulaciones basicas en multibody](#1-Articulaciones-basicas-en-multibody)
 
-[1.1 Diferencia entre Mecánica y Control de Movimiento](#11-Diferencia-entre-Mecánica-y-Control-de-Movimiento)
+[1.1 Articulación revoluta](#11-Diferencia-entre-Mecánica-y-Control-de-Movimiento)
 
-[1.2 Parámetros Principales](#12-Parámetros-Principales)
+[1.2 Articulación prismática](#12-Parámetros-Principales)
 
-[1.3 Tipos de Sistemas y su Perfil de Movimiento](#13-Tipos-de-Sistemas-y-su-Perfil-de-Movimiento)
+[2 Propiedades generales de las articulaciones](#13-Tipos-de-Sistemas-y-su-Perfil-de-Movimiento)
 
-[2 Cinemática](#2-Cinemática)
+[2.1 Cinemática](#2-Cinemática)
 
-[2.1 Parámetros Fundamentales de la Cinemática](#21-Parámetros-Fundamentales-de-la-Cinemática)
+[2.2 Parámetros Fundamentales de la Cinemática](#21-Parámetros-Fundamentales-de-la-Cinemática)
 
 [2.2 Diferenciación (Definición de velocidad y aceleración)](#22-Diferenciación-Definición-de-velocidad-y-aceleración)
 
@@ -33,11 +33,9 @@ El perfil de movimiento es una representación matemática y gráfica que descri
 
 [4 Comparación de Perfiles de Movimiento](#4-Comparación-de-Perfiles-de-Movimiento)
 
-## 1. ¿En qué Consiste?
+## 1. Articulaciones basicas en multibody
 
-- Es la trayectoria planificada para que una carga llegue a su destino cumpliendo restricciones de posición, velocidad y aceleración.
-
-- Se emplea en control de movimiento para garantizar transiciones suaves y predecibles.
+Como había mencionado antes, en multibody las articulaciones tienen la función de unir de cierta forma los sólidos, a continuación, explicare de que marea se unen estos sólidos y de formas la articulación los hace interactuar 
 
 ## 1.1 Diferencia entre Mecánica y Control de Movimiento
 
