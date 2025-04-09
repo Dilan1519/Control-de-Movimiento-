@@ -41,7 +41,7 @@ Como había mencionado antes, en multibody las articulaciones tienen la función
 
 La articulacion revoluta, como el nombre la sugiere, es una articulacion que hace girar un solido con respecto a otro en un eje determinado, esta articulacion solo puede generar rotaciones en el eje Z como se especifica en la descripcion de el bloque de esta articulacion, si se requiere una rotacion en un eje diferente, esto requerira del uso de un "Rigid Transform", este bloque sera explicado despues de la seccion de articulaciones.
 
-  <img src="Segundo_Corte/Imágenes_Corte_2/Clase #6/articulacionr.png" width="300">
+   <img src="Imágenes_Corte_2/Clase%20%236/articulacionr.png" alt="Figura de prueba" width="300">
 
 <div align="center">
 
