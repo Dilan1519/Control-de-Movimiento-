@@ -11,11 +11,11 @@ Ya que en la sesión anterior vimos como modelar sólidos y cambiar sus propieda
 
 [1.2 Articulación prismática](#12-Articulación-prismática)
 
-[2 Propiedades generales de las articulaciones](#13-Tipos-de-Sistemas-y-su-Perfil-de-Movimiento)
+[2 Propiedades generales de las articulaciones](#2-Tipos-de-Sistemas-y-su-Perfil-de-Movimiento)
 
-[2.1 Actuadores en las articulaciones](#2-Actuadores-en-las-articulaciones)
+[2.1 Actuadores en las articulaciones](#21-Actuadores-en-las-articulaciones)
 
-[2.2 Sensores en las articulaciones](#21-Sensores-en-las-articulaciones)
+[2.2 Sensores en las articulaciones](#22-Sensores-en-las-articulaciones)
 
 [2.2 Diferenciación (Definición de velocidad y aceleración)](#22-Diferenciación-Definición-de-velocidad-y-aceleración)
 
@@ -81,51 +81,33 @@ Esta articulación a diferencia de la revoluta, no genera un movimiento rotacion
   <p><b>Figura 5.</b>Resultado ejemplo de articulación prismatica</p>
 </div>
 
-## 1.3 Tipos de Sistemas y su Perfil de Movimiento
+## 2 Propiedades generales de las articulaciones
 
-<div align="center">
-    
-| Sistema | Descripción | Ejemplo |
-|---------|-------------|---------|
-| **Sistema de un solo eje** | El perfil de movimiento suele ser una línea recta, ya que el desplazamiento ocurre en una única dirección. | Un actuador lineal mueve un objeto de un punto A a un punto B en una cinta transportadora. |
-| **Sistema multieje** | Se generan trayectorias más complejas al combinar movimientos de varios ejes. | Un brazo robótico mueve una pieza siguiendo una trayectoria curva en 3D. |
-| **Sincronización con otros procesos** | Es fundamental coordinar el perfil de movimiento con el resto del sistema para evitar acumulaciones o retrasos. | En una línea de ensamblaje, un robot debe esperar a que una pieza esté lista antes de continuar su tarea. |
+Ya pudimos notar que diferentes articulaciones cuentan con diferentes propiedades, sin embargo, esto no quiere decir que las articulaciones sean absolutamente diferentes unas de otras, las articulaciones cuentan con funciones generales que se pueden usar en todas las articulaciones y se usan de las mismas maneras. a continuación, veremos las dos principales. 
 
+## 2.1 Actuadores en las articulaciones
+
+Tal cual como en una maquina real, esta simulación necesita de un actuador que realice la función de entrada de estos sistemas, pero en lugar de ser un motor o servo, las articulaciones permiten ingresar graficas o series de datos que le digan a multibody como va a moverse este mecanismo, en este caso la entrada se limita a dos tipos, de fuerza o torque para la articulación revoluta, y posición, ya sea metros para la prismática o radianes para la revoluta.
+
+  <div align="center">
+   <img src="Imágenes_Corte_2/Clase%20%236/articulacionejem.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 6.</b>configuración de actuador para junta prismatica</p>
 </div>
 
-> **Nota:** La elección del sistema adecuado depende de la complejidad del movimiento requerido y de la necesidad de sincronización con otros procesos en el entorno de trabajo.
+Cabe aclarar que si elegimos una entrada para la posición debemos poner la fuerza en auto calculada y viceversa, además de que si usamos el bloque "Simulink-PS
+Convertir" necesitaremos configurarlo de una forma específica en cada caso.
 
-## 2 Cinemática
-
->🔑 *Cinemática:* La cinemática es la rama de la mecánica clásica que describe el movimiento de puntos, objetos y sistemas de grupos de objetos, sin referencia a las causas del movimiento (es decir, las fuerzas). El estudio de la cinemática a menudo se conoce como la 'geometría del movimiento'.
-
-## 2.1 Parámetros Fundamentales de la Cinemática
-
-En un sistema donde un eje se mueve de un punto A a un punto B, su movimiento se describe con tres parámetros esenciales:
-
-<div align="center">
-    
-| Parámetro    | Símbolo    | Definición                                  | Expresión Matemática        |
-|-------------|-----------|--------------------------------|-----------------------------|
-| **Posición**  | \( s(t) \)  | Ubicación del objeto en un instante de tiempo. | \( s(t) \) |
-| **Velocidad** | \( v(t) \)  | Cambio de la posición con respecto al tiempo.  | $$ v(t) = ( \frac{ds}{dt} ) $$ |
-| **Aceleración** | \( a(t) \)  | Cambio de la velocidad con respecto al tiempo.  | \( a(t) = \frac{dv}{dt} \) |
-
+💡**Ejemplo 3:** Ejemplo aplicacion articulación prismatica.
+- **Situación:** Se une un solido y el rigid original de la sumilación mediante una articulacion prismatica, ademas de usar una entrada senoidal en el actuador de posición.
+  <div align="center">
+   <img src="Imágenes_Corte_2/Clase%20%236/articulacionejem.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 6.</b>Ejemplo de actuador para junta prismatica</p>
 </div>
 
-> **Nota:** Estos parámetros son fundamentales en el análisis del movimiento, ya que permiten describir cómo varía la ubicación, velocidad y aceleración de un objeto en función del tiempo, proporcionando información clave para el diseño y control de sistemas mecánicos.
+- **Resultado:** El solido ya no cae por accion de la gravedad, si no que en cambio sigue el movimiento dictado por la onda seno que define su posición.
 
-## 2.2 Diferenciación (Definición de velocidad y aceleración)
+## 2.2 Sensores en las articulaciones
 
-Las ecuaciones básicas del movimiento se obtienen mediante derivación:
-
-- Velocidad instantánea como la derivada de la posición:
-
-$$ v(t) = ( \frac{ds}{dt} ) $$
-
-- Aceleración instantánea como la derivada de la velocidad:
-
-$$ a(t) = ( \frac{dv}{dt} ) $$
 
 ## 2.3 Integración (Cálculo de velocidad y posición)
 
