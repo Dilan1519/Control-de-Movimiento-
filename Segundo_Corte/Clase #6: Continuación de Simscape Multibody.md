@@ -13,9 +13,9 @@ Ya que en la sesión anterior vimos como modelar sólidos y cambiar sus propieda
 
 [2 Propiedades generales de las articulaciones](#13-Tipos-de-Sistemas-y-su-Perfil-de-Movimiento)
 
-[2.1 Cinemática](#2-Cinemática)
+[2.1 Actuadores en las articulaciones](#2-Actuadores-en-las-articulaciones)
 
-[2.2 Parámetros Fundamentales de la Cinemática](#21-Parámetros-Fundamentales-de-la-Cinemática)
+[2.2 Sensores en las articulaciones](#21-Sensores-en-las-articulaciones)
 
 [2.2 Diferenciación (Definición de velocidad y aceleración)](#22-Diferenciación-Definición-de-velocidad-y-aceleración)
 
@@ -42,7 +42,7 @@ Como había mencionado antes, en multibody las articulaciones tienen la función
 La articulacion revoluta, como el nombre la sugiere, es una articulacion que hace girar un solido con respecto a otro en un eje determinado, esta articulacion solo puede generar rotaciones en el eje Z como se especifica en la descripcion de el bloque de esta articulacion, si se requiere una rotacion en un eje diferente, esto requerira del uso de un "Rigid Transform", este bloque sera explicado despues de la seccion de articulaciones.
 <div align="center">
    <img src="Imágenes_Corte_2/Clase%20%236/articulacionr.png" alt="Figura de prueba" width="300">
-  <p><b>Figura 1.</b>Articulacion revoluto multibody</p>
+  <p><b>Figura 1.</b>Articulacion revoluta multibody</p>
 </div>
 
 💡**Ejemplo 1:** Ejemplo aplicacion articulación revoluta.
@@ -50,58 +50,35 @@ La articulacion revoluta, como el nombre la sugiere, es una articulacion que hac
 
 <div align="center">
    <img src="Imágenes_Corte_2/Clase%20%236/articulacionejem.png" alt="Figura de prueba" width="300">
-  <p><b>Figura 1.</b>Diagrama ejemplo de articulación revoluta</p>
+  <p><b>Figura 2.</b>Diagrama ejemplo de articulación revoluta</p>
 </div>
+ 
+- **Resultado:** por accion de la gravedad que actua sobre el eje y, el solido comienza a girar sobre el eje z con un movimiento de tipo pendulo.
 
+gif simulacion revolute
 
+## 1.2 Articulación prismática
 
-💡**Ejemplo 2:** Ejemplo en Control de Movimiento: Movimiento de un brazo robótico para soldadura automatizada.
-
-Situación: Un brazo robótico debe mover su herramienta de soldadura de un punto A a un punto B con precisión, asegurando que la velocidad y aceleración sean adecuadas para una soldadura uniforme.
-
-- **Solución desde el Control de Movimiento:**
-
-    - Se definen los perfiles de movimiento (por ejemplo, un perfil trapezoidal para suavizar el arranque y frenado).
-
-    - Se programan los controladores del motor para cumplir con las restricciones de posición, velocidad y aceleración.  
-
-    - Se sincroniza el movimiento con otros robots en la línea de producción para evitar interferencias.
-
-- **Resultado:** El brazo robótico realiza el movimiento de manera precisa y en el tiempo adecuado, asegurando una soldadura de calidad sin interrupciones en la producción.
+Esta articulación a diferencia de la revoluta, no genera un movimiento rotacional, en cambia esta genera un movimiento lineal entre dos sólidos, es decir que el sólido que esté conectado al follower de la articulación, se deslizara por el sólido conectado a la base de esta articulación. al igual que en la junta revoluta, este articulación solo funciona en un eje especifico, este se detalla en la descripción de la articulación y este eje es el eje Z, si se requiere una junta prismática en otro eje, este necesitara estar acompañado de un "Rigid Transform" para cambiar este eje. 
 
 <div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%237/Soldadura_robotizada.jpg" alt="Figura de prueba" width="300">
-  <p><b>Figura 2.</b>Soldadura robotizada</p>
+   <img src="Imágenes_Corte_2/Clase%20%236/articulacionejem.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 3.</b>Articulación prismatica multibody</p>
 </div>
 
-## 1.2 Parámetros Principales
+💡**Ejemplo 2:** Ejemplo aplicacion articulación prismatica.
+- **Situación:** Se une un solido y el rigid original de la sumilación mediante una articulacion prismatica.
 
-- **Posición:** Punto inicial y final del desplazamiento.
-  
 <div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%237/Posición.png" alt="Figura de prueba" width="300">
-  <p><b>Figura 3.</b>Posición</p>
+   <img src="Imágenes_Corte_2/Clase%20%236/articulacionejem.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 4.</b>Diagrama ejemplo de articulación prismatica</p>
 </div>
 
-- **Velocidad:** Ritmo al que se mueve la carga.
+- **Resultado:** por acción de la gravedad que actúa sobre el eje z, el sólido cae al vacío al deslizarse a través de la articulación prismática.
 
-<div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%237/Velocidad.jpg" alt="Figura de prueba" width="300">
-  <p><b>Figura 4.</b>Velocidad</p>
-</div>
-
-- **Aceleración:** Cambio en la velocidad durante el movimiento.
-
-<div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%237/Aceleración.jpg" alt="Figura de prueba" width="300">
-  <p><b>Figura 5.</b>Aceleración</p>
-</div>
-
-- **Tiempo:** Duración en la que se debe realizar el movimiento.
-
-<div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%237/Tiempo.png" alt="Figura de prueba" width="300">
-  <p><b>Figura 6.</b>Tiempo</p>
+  <div align="center">
+   <img src="Imágenes_Corte_2/Clase%20%236/articulacionejem.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 5.</b>Resultado ejemplo de articulación prismatica</p>
 </div>
 
 ## 1.3 Tipos de Sistemas y su Perfil de Movimiento
