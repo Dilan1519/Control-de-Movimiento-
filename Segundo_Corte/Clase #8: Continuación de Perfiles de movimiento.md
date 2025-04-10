@@ -63,11 +63,9 @@ $$a = \frac{v_{\text{max}}}{\frac{t}{2}} = \frac{2v_{\text{max}}}{t}$$
 
 </div>
 
-> **Nota:**  
-La elección entre un perfil trapezoidal y uno en **curva en S** depende del compromiso entre tiempo de movimiento y suavidad requerida.
+> **Nota:** La elección entre un perfil trapezoidal y uno en **curva en S** depende del compromiso entre tiempo de movimiento y suavidad requerida.
 
 ## 1.1 Comparativa entre Perfil en S (Mixto) y Perfil de Curva en S Pura
-
 
 <div align="center">
   <img src="Imágenes_Corte_2/Clase%20%238/Comparación_2.png" alt="Figura de prueba" width="600">
@@ -89,8 +87,7 @@ La elección entre un perfil trapezoidal y uno en **curva en S** depende del com
 
 </div>
 
-> **Nota:**  
-El perfil en S mixto ofrece un buen balance entre suavidad y simplicidad. El perfil en S puro, al evitar completamente los tramos constantes y mantener la continuidad incluso en el jerk.
+> **Nota:** El perfil en S mixto ofrece un buen balance entre suavidad y simplicidad. El perfil en S puro, al evitar completamente los tramos constantes y mantener la continuidad incluso en el jerk.
 
 ## 2. Modelo Matemático de la Curva en S
 
@@ -124,7 +121,7 @@ es constante, lo que implica un jerk limitado y controlado.
 
 Los coeficientes $$C_1$$, $$C_2$$ y $$C_3$$ se calculan usando condiciones de frontera, es decir, los valores conocidos de velocidad y tiempo al inicio y final de cada segmento.
 
-Por ejemplo, si queremos construir una función de velocidad que vaya desde una velocidad inicial $$v_0$$ hasta una velocidad final $$v_f$$ en un tiempo $$t_f$, usando también la aceleración inicial \( a_0 \), podemos plantear un sistema de ecuaciones:
+Por ejemplo, si queremos construir una función de velocidad que vaya desde una velocidad inicial $$v_0$$ hasta una velocidad final $$v_f$$ en un tiempo $$t_f$$, usando también la aceleración inicial $$a_0$$, podemos plantear un sistema de ecuaciones:
 
 $$
 \begin{cases}
@@ -140,6 +137,151 @@ $$\frac{dv}{dt} = 2C_1 t + C_2 \Rightarrow a(t)$$
 
 Con estas condiciones, se puede resolver el sistema para obtener los valores de los coeficientes $$C_1$$, $$C_2$$ y $$C_3$$ que hacen que el perfil encaje exactamente con los requerimientos del movimiento.
 
+## Desarrollo del modelo matemático para la curva A
+
+Encontrar los coeficientes del polinomio de segundo orden que modela la velocidad $$v(t)$$ en el intervalo $$0 < t < \frac{t_a}{2}$$, correspondiente al primer tramo del perfil de curva en S.
+
+$$v(t) = C_1 t^2 + C_2 t + C_3$$
+
+### Condiciones de frontera
+
+Para este intervalo, se conocen los siguientes valores:
+
+<div align="center">
+  
+| Tiempo $$t$$            | Velocidad $$v(t)$$         | Aceleración $$a(t)$$       |
+|---------------------------|-------------------------------|-------------------------------|
+| $$t = 0$$              | $$v(0) = 0$$                | $$a(0) = 0$$                |
+| $$t = \frac{t_a}{2}$$   | $$v\left(\frac{t_a}{2}\right) = \frac{v_m}{2}$$ | $$a\left(\frac{t_a}{2}\right) = a$$|
+
+</div>
+
+Paso 1: Derivar la función para obtener la aceleración
+
+$$ a(t) = \frac{dv(t)}{dt} = 2C_1 t + C_2 $$
+
+Paso 2: Aplicar condiciones de frontera
+
+Evaluando $$v(0) = 0$$:
+
+$$v(0) = C_1(0)^2 + C_2(0) + C_3 = 0 \Rightarrow C_3 = 0$$
+
+Evaluando $$a(0) = 0$$:
+
+$$a(0) = 2C_1(0) + C_2 = 0 \Rightarrow C_2 = 0$$
+
+Evaluando \( v\left(\frac{t_a}{2}\right) = \frac{v_m}{2} \):
+
+$$v\left(\frac{t_a}{2}\right) = C_1 \left(\frac{t_a}{2}\right)^2 = \frac{v_m}{2} \Rightarrow
+C_1 = \frac{2v_m}{t_a^2}$$
+
+La función de velocidad para el primer tramo (curva A) es:
+
+$$v(t) = \frac{2v_m}{t_a^2} t^2$$
+
+Y su derivada, que representa la aceleración:
+
+$$a(t) = \frac{4v_m}{t_a^2} t$$
+
+Este modelo permite una aceleración suave y progresiva, con jerk constante, ideal para movimientos que requieran control fino sin impactos o vibraciones abruptas.
+
+💡**Ejemplo 2:** Determinar la posición del eje en 100 ms
+
+**Datos del problema**
+
+- Velocidad máxima: $$v_m = 32 \, \text{cm/s}$$
+  
+- Tiempo total de aceleración: $$t_a = 30 \, \text{ms}$$
+  
+- Tiempo objetivo: $$t = 100 \, \text{ms}$$
+
+**División del perfil**
+
+El perfil está compuesto por tres zonas:
+
+- **Curva A**: aceleración creciente $$(0 \, \text{ms} \leq t < 15 \, \text{ms})$$
+  
+- **Curva B**: aceleración decreciente $$(15 \, \text{ms} \leq t < 30 \, \text{ms})$$
+  
+- **Sección constante**: velocidad constante $$(30 \, \text{ms} \leq t \leq 100 \, \text{ms})$$
+
+## Expresiones de velocidad
+
+## Para la curva A:
+
+$$v_A(t) = \frac{2 v_m}{t_a^2} t^2 = \frac{2 \cdot 32}{30^2} t^2 = \frac{64}{900} t^2$$
+
+## Para la curva B (con $$t \in [15, 30]$$):
+
+$$v_B(t) = v_m - \frac{2 v_m}{t_a^2} (t_a - t)^2 = 32 - \frac{64}{900}(30 - t)^2$$
+
+Expandimos:
+
+$$(30 - t)^2 = t^2 - 60t + 900$$
+
+Entonces:
+
+$$v_B(t) = 32 - \left( \frac{64}{900} t^2 - \frac{64}{15} t + 64 \right) = -\frac{64}{900} t^2 + \frac{64}{15} t - 32$$
+
+### 📏 Cálculo de posición total
+
+La posición es el área bajo la curva de velocidad:
+
+$$s(t) = \int_0^{15} v_A(t) \, dt + \int_{15}^{30} v_B(t) \, dt + \int_{30}^{100} v_m \, dt$$
+
+#### ① Integrar curva A:
+
+$$\int_0^{15} \frac{64}{900} t^2 \, dt = \frac{64}{900} \cdot \left[ \frac{t^3}{3} \right]_0^{15} = \frac{64}{900} \cdot \frac{3375}{3} = \frac{64 \cdot 1125}{900} = \boxed{80 \, \text{cm}}$$
+
+#### ② Integrar curva B:
+
+$$\int_{15}^{30} \left( -\frac{64}{900} t^2 + \frac{64}{15} t - 32 \right) dt$$
+
+Integrando término a término:
+
+$$= \left[ -\frac{64}{900} \cdot \frac{t^3}{3} + \frac{64}{15} \cdot \frac{t^2}{2} - 32t \right]_{15}^{30}$$
+
+Después de calcular:
+
+$$= \boxed{80 \, \text{cm}}$$
+
+#### ③ Sección de velocidad constante:
+
+$$\int_{30}^{100} 32 \, dt = 32 \cdot (100 - 30) = \boxed{2240 \, \text{cm}}$$
+
+###  Resultado final:
+
+$$s(100) = 80 + 80 + 2240 = \boxed{2400 \, \text{cm}}$$
+
+## 🧮 Modelo usado con fórmulas de posición
+
+### ✅ Sección A (0 a 15 ms):
+
+$$s_A(t) = 0.023 \cdot t^3$$
+
+Evaluado en $$t = 15$$:
+
+$$s_A = 0.023 \cdot 3375 = \boxed{77.62 \, \text{cts}}$$
+
+---
+
+### ✅ Sección B (15 a 30 ms):
+
+Modelo cúbico:
+
+$$s_B(t) = 32t + 0.071 \left( 900t - \frac{60}{2} t^2 + \frac{t^3}{3} \right)$$
+
+Evaluado entre 15 y 30:
+
+$$s_B = 480 - 64.12 = \boxed{415.88 \, \text{cts}}$$
+
+### ✅ Sección C (30 a 100 ms):
+
+$$s_C = 32 \cdot (100 - 30) = \boxed{2240 \, \text{cts}}$$
+
+### 🧮 Resultado total en cts:
+
+$$s_{0C}(100) = 77.62 + 415.88 + 2240 = \boxed{2733.49 \, \text{cts}}$$
 
 
 CONCLUSONES 1. El perfil de velocidad trapezoidal es una herramienta fundamental en el diseño de trayectorias para sistemas de movimiento, como robots o ejes lineales. Su principal ventaja es que permite planificar el desplazamiento de manera suave y controlada, dividiéndolo en tres fases: aceleración, velocidad constante y desaceleración. Esta estructura facilita un movimiento más eficiente y menos agresivo para los componentes mecánicos, al evitar cambios bruscos de velocidad.
