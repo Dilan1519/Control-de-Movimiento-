@@ -9,7 +9,7 @@ Ya que en la sesión anterior vimos como modelar sólidos y cambiar sus propieda
 
 [1.1 Articulación revoluta](#11-Articulación-revoluta)
 
-[1.2 Articulación prismática](#12-Parámetros-Principales)
+[1.2 Articulación prismática](#12-Articulación-prismática)
 
 [2 Propiedades generales de las articulaciones](#13-Tipos-de-Sistemas-y-su-Perfil-de-Movimiento)
 
