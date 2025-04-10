@@ -233,7 +233,7 @@ $$s(t) = \int_0^{15} v_A(t) \, dt + \int_{15}^{30} v_B(t) \, dt + \int_{30}^{100
 
 $$\int_0^{15} \frac{64}{900} t^2 \, dt = \frac{64}{900} \cdot \left[ \frac{t^3}{3} \right]_0^{15} = \frac{64}{900} \cdot \frac{3375}{3} = \frac{64 \cdot 1125}{900} = \boxed{80 \, \text{cm}}$$
 
-#### ② Integrar curva B:
+### Integrar curva B:
 
 $$\int_{15}^{30} \left( -\frac{64}{900} t^2 + \frac{64}{15} t - 32 \right) dt$$
 
@@ -245,7 +245,7 @@ Después de calcular:
 
 $$= \boxed{80 \, \text{cm}}$$
 
-#### ③ Sección de velocidad constante:
+### Sección de velocidad constante:
 
 $$\int_{30}^{100} 32 \, dt = 32 \cdot (100 - 30) = \boxed{2240 \, \text{cm}}$$
 
@@ -253,9 +253,9 @@ $$\int_{30}^{100} 32 \, dt = 32 \cdot (100 - 30) = \boxed{2240 \, \text{cm}}$$
 
 $$s(100) = 80 + 80 + 2240 = \boxed{2400 \, \text{cm}}$$
 
-## 🧮 Modelo usado con fórmulas de posición
+## Modelo usado con fórmulas de posición
 
-### ✅ Sección A (0 a 15 ms):
+## Sección A (0 a 15 ms):
 
 $$s_A(t) = 0.023 \cdot t^3$$
 
@@ -263,9 +263,7 @@ Evaluado en $$t = 15$$:
 
 $$s_A = 0.023 \cdot 3375 = \boxed{77.62 \, \text{cts}}$$
 
----
-
-### ✅ Sección B (15 a 30 ms):
+## Sección B (15 a 30 ms):
 
 Modelo cúbico:
 
@@ -275,11 +273,11 @@ Evaluado entre 15 y 30:
 
 $$s_B = 480 - 64.12 = \boxed{415.88 \, \text{cts}}$$
 
-### ✅ Sección C (30 a 100 ms):
+## Sección C (30 a 100 ms):
 
 $$s_C = 32 \cdot (100 - 30) = \boxed{2240 \, \text{cts}}$$
 
-### 🧮 Resultado total en cts:
+## Resultado total en cts:
 
 $$s_{0C}(100) = 77.62 + 415.88 + 2240 = \boxed{2733.49 \, \text{cts}}$$
 
