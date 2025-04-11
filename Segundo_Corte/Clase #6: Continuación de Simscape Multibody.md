@@ -127,7 +127,7 @@ Para poder ver estas variables de forma visual, se debe usar un "PS-Simulink Con
 💡**Ejemplo 4:** Ejemplo sensor articulación prismatica.
 - **Situación:** se pone una entrada de posición a la articulación, y por medio de el sensor de posición se obtiene de vuelta la misma información de posición.
   <div align="center">
-   <img src="Imágenes_Corte_2/Clase%20%236/articulacionejem.png" alt="Figura de prueba" width="300">
+   <img src="Imágenes_Corte_2/Clase%20%236/ejemplos.png" alt="Figura de prueba" width="300">
   <p><b>Figura 6.</b>Ejemplo de sensor para junta prismatica</p>
 </div>
 
