@@ -173,7 +173,7 @@ Este tipo de transformación hace que los ejes coordenados intercambien de lugar
 </div>
 
   <div align="center">
-   <img src="Imágenes_Corte_2/Clase%20%236/ejemplot.png" alt="Figura de prueba" width="300">
+   <img src="Imágenes_Corte_2/Clase%20%236/ejemplot.gif" alt="Figura de prueba" width="300">
   <p><b>Figura 16.</b>Ejemplo de sensor para junta prismatica</p>
 </div>
 
