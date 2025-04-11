@@ -93,7 +93,7 @@ Ya pudimos notar que diferentes articulaciones cuentan con diferentes propiedade
 Tal cual como en una maquina real, esta simulación necesita de un actuador que realice la función de entrada de estos sistemas, pero en lugar de ser un motor o servo, las articulaciones permiten ingresar graficas o series de datos que le digan a multibody como va a moverse este mecanismo, en este caso la entrada se limita a dos tipos, de fuerza o torque para la articulación revoluta, y posición, ya sea metros para la prismática o radianes para la revoluta.
 
   <div align="center">
-   <img src="Imágenes_Corte_2/Clase%20%236/articulacionejem.png" alt="Figura de prueba" width="300">
+   <img src="Imágenes_Corte_2/Clase%20%236/sensor.png" alt="Figura de prueba" width="300">
   <p><b>Figura 6.</b>configuración de actuador para junta prismatica</p>
 </div>
 
@@ -103,7 +103,7 @@ Convertir" necesitaremos configurarlo de una forma específica en cada caso.
 💡**Ejemplo 3:** Ejemplo aplicacion articulación prismatica.
 - **Situación:** Se une un solido y el rigid original de la sumilación mediante una articulacion prismatica, ademas de usar una entrada senoidal en el actuador de posición.
   <div align="center">
-   <img src="Imágenes_Corte_2/Clase%20%236/articulacionejem.png" alt="Figura de prueba" width="300">
+   <img src="Imágenes_Corte_2/Clase%20%236/ejemplos.png" alt="Figura de prueba" width="300">
   <p><b>Figura 6.</b>Ejemplo de actuador para junta prismatica</p>
 </div>
 
