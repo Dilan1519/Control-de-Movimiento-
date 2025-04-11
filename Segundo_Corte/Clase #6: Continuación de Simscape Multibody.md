@@ -103,7 +103,7 @@ Convertir" necesitaremos configurarlo de una forma específica en cada caso.
 💡**Ejemplo 3:** Ejemplo aplicacion articulación prismatica.
 - **Situación:** Se une un solido y el rigid original de la sumilación mediante una articulacion prismatica, ademas de usar una entrada senoidal en el actuador de posición.
   <div align="center">
-   <img src="Imágenes_Corte_2/Clase%20%236/ddejemploa.png" alt="Figura de prueba" width="300">
+   <img src="Imágenes_Corte_2/Clase%20%236/dejemploa.png" alt="Figura de prueba" width="300">
   <p><b>Figura 6.</b>Diagrama ejemplo de actuador para junta prismatica</p>
 </div>
 
