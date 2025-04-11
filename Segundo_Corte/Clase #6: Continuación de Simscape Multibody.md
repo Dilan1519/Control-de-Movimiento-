@@ -65,7 +65,7 @@ La articulacion revoluta, como el nombre la sugiere, es una articulacion que hac
 Esta articulación a diferencia de la revoluta, no genera un movimiento rotacional, en cambia esta genera un movimiento lineal entre dos sólidos, es decir que el sólido que esté conectado al follower de la articulación, se deslizara por el sólido conectado a la base de esta articulación. al igual que en la junta revoluta, este articulación solo funciona en un eje especifico, este se detalla en la descripción de la articulación y este eje es el eje Z, si se requiere una junta prismática en otro eje, este necesitara estar acompañado de un "Rigid Transform" para cambiar este eje. 
 
 <div align="center">
-   <img src="Imágenes_Corte_2/Clase%20%236/articulacionejem.png" alt="Figura de prueba" width="300">
+   <img src="Imágenes_Corte_2/Clase%20%236/articulacionp.png" alt="Figura de prueba" width="300">
   <p><b>Figura 3.</b>Articulación prismatica multibody</p>
 </div>
 
@@ -73,7 +73,7 @@ Esta articulación a diferencia de la revoluta, no genera un movimiento rotacion
 - **Situación:** Se une un solido y el rigid original de la sumilación mediante una articulacion prismatica.
 
 <div align="center">
-   <img src="Imágenes_Corte_2/Clase%20%236/articulacionejem.png" alt="Figura de prueba" width="300">
+   <img src="Imágenes_Corte_2/Clase%20%236/articulacionejemp.png" alt="Figura de prueba" width="300">
   <p><b>Figura 4.</b>Diagrama ejemplo de articulación prismatica</p>
 </div>
 
