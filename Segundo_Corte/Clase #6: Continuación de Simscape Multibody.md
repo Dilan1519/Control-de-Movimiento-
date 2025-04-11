@@ -149,10 +149,17 @@ El rigid es este simbolo de tres lineas que indica en que direccion estan apunta
 
   <div align="center">
    <img src="Imágenes_Corte_2/Clase%20%236/rigid.png" alt="Figura de prueba" width="300">
-  <p><b>Figura 12.</b>Rigid transformation</p>
+  <p><b>Figura 13.</b>Rigid transformation</p>
 </div>
 
 ## 3.1 Transformaciones de posición
+
+En el momento de configurar la transformación de rigid podemos moverlo en base a dos tipos de coordenadas, (cartesiano y cilíndrico), la última opción permite mover los ejes individualmente.
+
+  <div align="center">
+   <img src="Imágenes_Corte_2/Clase%20%236/rigidt.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 14.</b>trasformacion de posicion de rigid</p>
+</div>
 
 
 
