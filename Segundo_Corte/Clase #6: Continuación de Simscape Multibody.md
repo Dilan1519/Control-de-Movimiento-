@@ -103,6 +103,11 @@ Convertir" necesitaremos configurarlo de una forma específica en cada caso.
 💡**Ejemplo 3:** Ejemplo aplicacion articulación prismatica.
 - **Situación:** Se une un solido y el rigid original de la sumilación mediante una articulacion prismatica, ademas de usar una entrada senoidal en el actuador de posición.
   <div align="center">
+   <img src="Imágenes_Corte_2/Clase%20%236/ddejemploa.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 6.</b>Diagrama ejemplo de actuador para junta prismatica</p>
+</div>
+
+  <div align="center">
    <img src="Imágenes_Corte_2/Clase%20%236/ejemploa.gif" alt="Figura de prueba" width="300">
   <p><b>Figura 6.</b>Ejemplo de actuador para junta prismatica</p>
 </div>
@@ -126,6 +131,11 @@ Para poder ver estas variables de forma visual, se debe usar un "PS-Simulink Con
 
 💡**Ejemplo 4:** Ejemplo sensor articulación prismatica.
 - **Situación:** se pone una entrada de posición a la articulación, y por medio de el sensor de posición se obtiene de vuelta la misma información de posición.
+  <div align="center">
+   <img src="Imágenes_Corte_2/Clase%20%236/dejemplos.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 6.</b>Diagrama ejemplo de sensor para junta prismatica</p>
+</div>
+
   <div align="center">
    <img src="Imágenes_Corte_2/Clase%20%236/ejemplos.png" alt="Figura de prueba" width="300">
   <p><b>Figura 6.</b>Ejemplo de sensor para junta prismatica</p>
