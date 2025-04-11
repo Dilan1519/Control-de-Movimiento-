@@ -57,7 +57,7 @@ La articulacion revoluta, como el nombre la sugiere, es una articulacion que hac
 
 <div align="center">
    <img src="Imágenes_Corte_2/Clase%20%236/ejemplor.gif" alt="Figura de prueba" width="300">
-  <p><b>Figura 2.</b>resultado ejemplo de articulación revoluta</p>
+  <p><b>Figura 3.</b>resultado ejemplo de articulación revoluta</p>
 </div>
 
 ## 1.2 Articulación prismática
@@ -66,7 +66,7 @@ Esta articulación a diferencia de la revoluta, no genera un movimiento rotacion
 
 <div align="center">
    <img src="Imágenes_Corte_2/Clase%20%236/articulacionp.png" alt="Figura de prueba" width="300">
-  <p><b>Figura 3.</b>Articulación prismatica multibody</p>
+  <p><b>Figura 4.</b>Articulación prismatica multibody</p>
 </div>
 
 💡**Ejemplo 2:** Ejemplo aplicacion articulación prismatica.
@@ -74,14 +74,14 @@ Esta articulación a diferencia de la revoluta, no genera un movimiento rotacion
 
 <div align="center">
    <img src="Imágenes_Corte_2/Clase%20%236/articulacionejemp.png" alt="Figura de prueba" width="300">
-  <p><b>Figura 4.</b>Diagrama ejemplo de articulación prismatica</p>
+  <p><b>Figura 5.</b>Diagrama ejemplo de articulación prismatica</p>
 </div>
 
 - **Resultado:** por acción de la gravedad que actúa sobre el eje z, el sólido cae al vacío al deslizarse a través de la articulación prismática.
 
   <div align="center">
    <img src="Imágenes_Corte_2/Clase%20%236/ejemplop.gif" alt="Figura de prueba" width="300">
-  <p><b>Figura 5.</b>Resultado ejemplo de articulación prismatica</p>
+  <p><b>Figura 6.</b>Resultado ejemplo de articulación prismatica</p>
 </div>
 
 ## 2 Propiedades generales de las articulaciones
@@ -94,7 +94,7 @@ Tal cual como en una maquina real, esta simulación necesita de un actuador que 
 
   <div align="center">
    <img src="Imágenes_Corte_2/Clase%20%236/actuador.png" alt="Figura de prueba" width="300">
-  <p><b>Figura 6.</b>configuración de actuador para junta prismatica</p>
+  <p><b>Figura 7.</b>configuración de actuador para junta prismatica</p>
 </div>
 
 Cabe aclarar que si elegimos una entrada para la posición debemos poner la fuerza en auto calculada y viceversa, además de que si usamos el bloque "Simulink-PS
@@ -104,12 +104,12 @@ Convertir" necesitaremos configurarlo de una forma específica en cada caso.
 - **Situación:** Se une un solido y el rigid original de la sumilación mediante una articulacion prismatica, ademas de usar una entrada senoidal en el actuador de posición.
   <div align="center">
    <img src="Imágenes_Corte_2/Clase%20%236/dejemploa.png" alt="Figura de prueba" width="300">
-  <p><b>Figura 6.</b>Diagrama ejemplo de actuador para junta prismatica</p>
+  <p><b>Figura 8.</b>Diagrama ejemplo de actuador para junta prismatica</p>
 </div>
 
   <div align="center">
    <img src="Imágenes_Corte_2/Clase%20%236/ejemploa.gif" alt="Figura de prueba" width="300">
-  <p><b>Figura 6.</b>Ejemplo de actuador para junta prismatica</p>
+  <p><b>Figura 9.</b>Ejemplo de actuador para junta prismatica</p>
 </div>
 
 - **Resultado:** El solido ya no cae por accion de la gravedad, si no que en cambio sigue el movimiento dictado por la onda seno que define su posición.
@@ -124,7 +124,7 @@ Así como pudimos ingresar datos en la simulación, también podemos sacarlos, t
 
   <div align="center">
    <img src="Imágenes_Corte_2/Clase%20%236/sensor.png" alt="Figura de prueba" width="300">
-  <p><b>Figura 6.</b>Configuración de sensor en articulaciones</p>
+  <p><b>Figura 10.</b>Configuración de sensor en articulaciones</p>
 </div>
 
 Para poder ver estas variables de forma visual, se debe usar un "PS-Simulink Converter", el cual permite a los osciloscopios de la simulación proyectas la variable, este conversor se debe conectar en el pin indicado con la primera letra de la variable a medir, por ejemplo "p" si es posición, o "v" si es velocidad.  
@@ -133,12 +133,12 @@ Para poder ver estas variables de forma visual, se debe usar un "PS-Simulink Con
 - **Situación:** se pone una entrada de posición a la articulación, y por medio de el sensor de posición se obtiene de vuelta la misma información de posición.
   <div align="center">
    <img src="Imágenes_Corte_2/Clase%20%236/dejemplos.png" alt="Figura de prueba" width="300">
-  <p><b>Figura 6.</b>Diagrama ejemplo de sensor para junta prismatica</p>
+  <p><b>Figura 11.</b>Diagrama ejemplo de sensor para junta prismatica</p>
 </div>
 
   <div align="center">
    <img src="Imágenes_Corte_2/Clase%20%236/ejemplos.png" alt="Figura de prueba" width="300">
-  <p><b>Figura 6.</b>Ejemplo de sensor para junta prismatica</p>
+  <p><b>Figura 12.</b>Ejemplo de sensor para junta prismatica</p>
 </div>
 
 - **Resultado:** El grafico obtenido a la salida del sensor y a la entrada del actuador son los mismos, por lo tanto el sensor funciona de manera adecuada. 
