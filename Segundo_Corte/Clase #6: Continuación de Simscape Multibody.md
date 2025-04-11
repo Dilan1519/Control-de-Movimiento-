@@ -108,6 +108,22 @@ Convertir" necesitaremos configurarlo de una forma específica en cada caso.
 
 ## 2.2 Sensores en las articulaciones
 
+Así como pudimos ingresar datos en la simulación, también podemos sacarlos, todas las articulaciones cuentan con un sensor, que puede dar información sobre variables como: 
+
+- Velocidad
+- Aceleración
+- posición
+
+Para poder ver estas variables de forma visual, se debe usar un "PS-Simulink Converter", el cual permite a los osciloscopios de la simulación proyectas la variable, este conversor se debe conectar en el pin indicado con la primera letra de la variable a medir, por ejemplo "p" si es posición, o "v" si es velocidad.  
+
+💡**Ejemplo 4:** Ejemplo sensor articulación prismatica.
+- **Situación:** se pone una entrada de posición a la articulación, y por medio de el sensor de posición se obtiene de vuelta la misma información de posición.
+  <div align="center">
+   <img src="Imágenes_Corte_2/Clase%20%236/articulacionejem.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 6.</b>Ejemplo de sensor para junta prismatica</p>
+</div>
+
+- **Resultado:** El grafico obtenido a la salida del sensor y a la entrada del actuador son los mismos, por lo tanto el sensor funciona de manera adecuada. 
 
 ## 2.3 Integración (Cálculo de velocidad y posición)
 
