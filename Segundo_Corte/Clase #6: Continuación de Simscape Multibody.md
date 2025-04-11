@@ -17,11 +17,11 @@ Ya que en la sesión anterior vimos como modelar sólidos y cambiar sus propieda
 
 [2.2 Sensores en las articulaciones](#22-Sensores-en-las-articulaciones)
 
-[2.2 Diferenciación (Definición de velocidad y aceleración)](#22-Diferenciación-Definición-de-velocidad-y-aceleración)
+[3 Transformaciones de rigid](#3-Transformaciones-de-rigid)
 
-[2.3 Integración (Cálculo de velocidad y posición)](#23-Integración-Cálculo-de-velocidad-y-posición)
+[3.1 Transformaciones de posición](#31-Transformaciones-de-posición)
 
-[2.4 Ejercicio Movimiento de un Actuador Lineal](#24-Ejercicio-Movimiento-de-un-Actuador-Lineal)
+[3.2 Transformcaiones de angulo](#24-Transformcaiones-de-angulo)
 
 [2.5 Solución Movimiento de un Actuador Lineal](#25-Solución-Movimiento-de-un-Actuador-Lineal)
 
@@ -143,106 +143,14 @@ Para poder ver estas variables de forma visual, se debe usar un "PS-Simulink Con
 
 - **Resultado:** El grafico obtenido a la salida del sensor y a la entrada del actuador son los mismos, por lo tanto el sensor funciona de manera adecuada. 
 
-## 2.3 Integración (Cálculo de velocidad y posición)
+## 3 Transformaciones de rigid
 
-Si se conoce la aceleración, se pueden obtener la velocidad y la posición mediante integración:
 
-- Velocidad a partir de la aceleración:
+## 3.1 Transformaciones de posición
 
-$$ v(t) = \int a(t) \, dt $$
 
-- Posición a partir de la velocidad:
 
-$$ s(t) = \int v(t) \, dt $$
-
-## 2.4 Ejercicio Movimiento de un Actuador Lineal
-
-Un actuador lineal mueve una carga desde el punto A hasta el punto B en un sistema de un solo eje. La aceleración del actuador está dada por la función:
-
-<div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%237/Actuador_Lineal.gif" alt="Figura de prueba" width="400">
-  <p><b>Figura 7.</b>Actuador Lineal</p>
-</div>
-
-Sabemos que:
-
-$$ a(t)=4m/s^{2} $$
-
-- Velocidad inicial: v(0) = 0 m/s
-  
-- Posición inicial: s(0) = 0 m 
-
-Preguntas:
-
-- ¿Cuál es la velocidad v(t) en función del tiempo?
-
-- ¿Cuál es la posición s(t) en función del tiempo?
-
-- ¿Cuál será la posición y velocidad después de 3 segundos?
-
-## 2.5 Solución Movimiento de un Actuador Lineal 
-
-- Cálculo de la Velocidad
-
-Usamos la ecuación integral:
-
-$$ v(t)=∫a(t)dt $$
-
-Sustituyendo $a(t) = 4t$:
-
-$$v(t) = ∫4 , dt = 4t + C_1$$
-
-Como $v(0) = 0$, sustituimos:
-
-$$ 0 = 4(0) + C_1 \Rightarrow C_1 = 0 $$
-
-Por lo tanto:
-
-$$ v(t) = 4t $$
-
-- Cálculo de la Posición
-
-Usamos la ecuación integral:
-
-$$ s(t) = ∫ v(t), dt $$
-
-Sustituyendo $v(t) = 4t$:
-
-$$ s(t) = ∫ 4t, dt = 2t^2 + C_2 $$
-
-Como $s(0) = 0$, sustituimos:
-
-$$ 0 = 2(0)^2 + C_2 \Rightarrow C_2 = 0 $$
-
-Por lo tanto:
-
-$$ s(t) = 2t^2 $$
-
-- Evaluación en $t = 3$ segundos
-
-**Velocidad:**
-
-$$ v(3) = 4(3) = 12 \text{ m/s} $$
-
-**Posición:**
-
-$$ s(3) = 2(3)^2 = 18 \text{ m} $$
-
-## 3. Reglas Geométricas  
-
-- Relación entre Posición y Velocidad
-
-  - La posición en un instante de tiempo es igual al área bajo la curva de velocidad hasta ese instante.
-
-  - Esto significa que integrar la velocidad en un intervalo de tiempo nos da el desplazamiento total.
-
-- Relación entre Velocidad y Aceleración
-
-  - La aceleración es la pendiente de la curva de velocidad.
-
-  - Es decir, la derivada de la velocidad con respecto al tiempo nos da la aceleración en cada instante.
-
-## 3.1 Fórmulas Fundamentales Para Aceleración Constante
+## 3.2 Transformaciones de angulo
 
 Si consideramos que la aceleración 𝑎 es constante, podemos utilizar las ecuaciones básicas del movimiento rectilíneo uniformemente acelerado:
 
