@@ -161,72 +161,23 @@ En el momento de configurar la transformación de rigid podemos moverlo en base 
   <p><b>Figura 14.</b>trasformacion de posicion de rigid</p>
 </div>
 
-
-
 ## 3.2 Transformaciones de angulo
 
-Si consideramos que la aceleración 𝑎 es constante, podemos utilizar las ecuaciones básicas del movimiento rectilíneo uniformemente acelerado:
+Este tipo de transformación hace que los ejes coordenados intercambien de lugar haciendo rotar el rigid tomando como base uno de los tres ejes, la transformación es realmente útil en el momento de usar las articulaciones, ya que estas se limitan a actuar sobre un solo eje, por lo tanto si en un sistema se necesita cierta articulación, pero esta no actúa sobre el eje deseado, ese eje puede ser reubicado gracias a la transformaciones de Angulo. 
 
-<div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%237/Movimiento-rectilineo-uniformemente-acelerado.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 8.</b>Movimiento Rectilíneo Uniformemente Acelerado</p>
+💡**Ejemplo 5:** Ejemplo sensor articulación prismatica.
+- **Situación:** se necesita una traslación de un bloque en el eje Y, pero la articulación prismática solo acuta sobre el eje z
+  <div align="center">
+   <img src="Imágenes_Corte_2/Clase%20%236/dejemplot.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 15.</b>Diagrama ejemplo de sensor para junta prismatica</p>
 </div>
 
-- Velocidad en función del tiempo
-
-$$ v = V_{0} +a(t−t_{0}) $$
-
-Donde:
-
-$V_{0}$ es la velocidad inicial.
-
-𝑎 es la aceleración.
-
-$t_{0}$ es el tiempo inicial.
-
-- Posición en función del tiempo
-
-$$ s=s_{0}+v_{0}(t−t_{0})+ \frac{1}{2}a(t−t_{0})^{2} $$
- 
-Donde:
-
-$s_{0}$ es la posición inicial.
-
-💡**Ejemplo 3:**  Encuentre la posición y la aceleración en t=5s
-
-<div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%237/Ejemplo_Geometría.png" alt="Figura de prueba" width="200">
-  <p><b>Figura 9.</b>Ejemplo 1</p>
+  <div align="center">
+   <img src="Imágenes_Corte_2/Clase%20%236/ejemplot.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 16.</b>Ejemplo de sensor para junta prismatica</p>
 </div>
 
-Solución:
-
-- La aceleración sería la pendiente de la velocidad:
-
-$$ a = \frac{10}{5} = 2\frac{in}{s^{2}} $$
-
-- El área bajo la curva de velocidad es hasta t=5 s es la posición alcanzada en t=5 s
-
-$$ s= \frac{1}{2}(10*5) = 25 \frac{in}{s} $$
-
-💡**Ejemplo 4:** Un eje está viajando a una velocidad de 10 cm/s. En t=5s empieza a disminuir la velocidad como se ve en el perfil. Cual es la posición del eje cuando se detiene? Asumaque empieza a desacelerar a 25 cm.
-
-<div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%237/Ejemplo_Geometria_2.png" alt="Figura de prueba" width="200">
-  <p><b>Figura 10.</b>Ejemplo 2</p>
-</div>
-
-Solución:
-
-- La pendiente de la velocidad es la aceleración:
-
-$$ a=\frac{-10\frac{cm}{s}\frac{1 m}{100 cm}}{10s - 5s} =- \frac{0,1 \frac{m}{s}}{10 s} = -0,01 \frac{m}{s^{2}} $$
-
--  El área del perfil de velocidad triangular es la posición alcanzada en t=15s
-
-$$ 𝑆_{o} = \frac{1}{2} ∗ (15s − 5s)∗ 0,1 \frac{m}{s} = 0,5 m $$
-
-## 3.2 Ejercicio en Matlab
+- **Resultado:** la transformación de rigid puso el eje Z en la dirección del eje Y, realizando la acción en el eje deseado. 
 
 Un eje (axis) lineal comienza su movimiento desde el reposo en la posición 0, con una aceleración de 2 m/s^2. Después de moverse durante 5 s, cual es la posición del eje (axis)?
 
