@@ -145,6 +145,12 @@ Para poder ver estas variables de forma visual, se debe usar un "PS-Simulink Con
 
 ## 3 Transformaciones de rigid
 
+El rigid es este simbolo de tres lineas que indica en que direccion estan apuntado los ejes X Y Z. este bloque permite modificar este rigis de dos formas, la primera en posicion, es decir cambniar la posicion del rigid, o en angulo, el cual permite cambiar la direccion en la que apuntan los ejes.
+
+  <div align="center">
+   <img src="Imágenes_Corte_2/Clase%20%236/rigid.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 12.</b>Rigid transformation</p>
+</div>
 
 ## 3.1 Transformaciones de posición
 
