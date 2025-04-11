@@ -21,7 +21,7 @@ Ya que en la sesión anterior vimos como modelar sólidos y cambiar sus propieda
 
 [3.1 Transformaciones de posición](#31-Transformaciones-de-posición)
 
-[3.2 Transformcaiones de angulo](#24-Transformcaiones-de-angulo)
+[3.2 Transformcaiones de angulo](#32-Transformcaiones-de-angulo)
 
 [2.5 Solución Movimiento de un Actuador Lineal](#25-Solución-Movimiento-de-un-Actuador-Lineal)
 
