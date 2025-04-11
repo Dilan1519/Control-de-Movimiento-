@@ -55,7 +55,10 @@ La articulacion revoluta, como el nombre la sugiere, es una articulacion que hac
  
 - **Resultado:** por accion de la gravedad que actua sobre el eje y, el solido comienza a girar sobre el eje z con un movimiento de tipo pendulo.
 
-gif simulacion revolute
+<div align="center">
+   <img src="Imágenes_Corte_2/Clase%20%236/ejemplor.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 2.</b>resultado ejemplo de articulación revoluta</p>
+</div>
 
 ## 1.2 Articulación prismática
 
