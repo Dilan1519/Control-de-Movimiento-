@@ -80,7 +80,7 @@ Esta articulación a diferencia de la revoluta, no genera un movimiento rotacion
 - **Resultado:** por acción de la gravedad que actúa sobre el eje z, el sólido cae al vacío al deslizarse a través de la articulación prismática.
 
   <div align="center">
-   <img src="Imágenes_Corte_2/Clase%20%236/articulacionejem.png" alt="Figura de prueba" width="300">
+   <img src="Imágenes_Corte_2/Clase%20%236/ejemplop.gif" alt="Figura de prueba" width="300">
   <p><b>Figura 5.</b>Resultado ejemplo de articulación prismatica</p>
 </div>
 
