@@ -11,25 +11,25 @@ Ya que en la sesión anterior vimos como modelar sólidos y cambiar sus propieda
 
 [1.2 Articulación prismática](#12-Articulación-prismática)
 
-[2 Propiedades generales de las articulaciones](#2-Tipos-de-Sistemas-y-su-Perfil-de-Movimiento)
+[2. Propiedades generales de las articulaciones](#2-Tipos-de-Sistemas-y-su-Perfil-de-Movimiento)
 
 [2.1 Actuadores en las articulaciones](#21-Actuadores-en-las-articulaciones)
 
 [2.2 Sensores en las articulaciones](#22-Sensores-en-las-articulaciones)
 
-[3 Transformaciones de rigid](#3-Transformaciones-de-rigid)
+[3. Transformaciones de rigid](#3-Transformaciones-de-rigid)
 
 [3.1 Transformaciones de posición](#31-Transformaciones-de-posición)
 
 [3.2 Transformcaiones de angulo](#32-Transformcaiones-de-angulo)
 
-[4 Ejercicio](#4-ejercicio)
+[4. Ejercicio](#4-ejercicio)
 
-[5.Solución](#5-Solución)
+[5. Solución](#5-Solución)
 
-[6 Conclusiones](#6-conclusiones)
+[6. Conclusiones](#6-conclusiones)
 
-[7 Referencias](#7-Referencias)
+[7. Referencias](#7-Referencias)
 
 
 ## 1. Articulaciones basicas en multibody
@@ -83,7 +83,7 @@ Esta articulación a diferencia de la revoluta, no genera un movimiento rotacion
   <p><b>Figura 6.</b>Resultado ejemplo de articulación prismatica</p>
 </div>
 
-## 2 Propiedades generales de las articulaciones
+## 2. Propiedades generales de las articulaciones
 
 Ya pudimos notar que diferentes articulaciones cuentan con diferentes propiedades, sin embargo, esto no quiere decir que las articulaciones sean absolutamente diferentes unas de otras, las articulaciones cuentan con funciones generales que se pueden usar en todas las articulaciones y se usan de las mismas maneras. a continuación, veremos las dos principales. 
 
@@ -142,7 +142,7 @@ Para poder ver estas variables de forma visual, se debe usar un "PS-Simulink Con
 
 - **Resultado:** El grafico obtenido a la salida del sensor y a la entrada del actuador son los mismos, por lo tanto el sensor funciona de manera adecuada. 
 
-## 3 Transformaciones de rigid
+## 3. Transformaciones de rigid
 
 El rigid es este simbolo de tres lineas que indica en que direccion estan apuntado los ejes X Y Z. este bloque permite modificar este rigis de dos formas, la primera en posicion, es decir cambniar la posicion del rigid, o en angulo, el cual permite cambiar la direccion en la que apuntan los ejes.
 
@@ -176,7 +176,7 @@ Este tipo de transformación hace que los ejes coordenados intercambien de lugar
   <p><b>Figura 16.</b>Ejemplo de sensor para junta prismatica</p>
 </div>
 
-## 4 Ejercicio
+## 4. Ejercicio
 
 Con lo aprendido anteriormente debe recrear un sistema biela corredera, en el cual un movimiento rotacional se transforma en un movimiento lineal, ademas use la funcion de sensor para ver la velocidad de la corredera
 
@@ -185,7 +185,7 @@ Con lo aprendido anteriormente debe recrear un sistema biela corredera, en el cu
   <p><b>Figura 17.</b>Sistema biela corredera</p>
 </div>
 
-## 5 Solución
+## 5. Solución
 Recreando cada parte del mecanismo (Manivela, biela y corredera), conectándolos con las articulaciones correspondientes (3 revolutas y una prismática), y haciendo las transformaciones de rigids adecuadas, (2 de Angulo) para poner el eje de la prismática en el lugar correcto, (1 de posición) para ubicar la corredera a tierra en el lugar adecuado, pudimos recrear el mecanismo y su cinemática.
 
   <div align="center">
@@ -198,7 +198,7 @@ Recreando cada parte del mecanismo (Manivela, biela y corredera), conectándolos
   <p><b>Figura 17.</b>Animación sistema biela corredera</p>
 </div>
 
-## 6 Conclusiones
+## 6. Conclusiones
 
 Al conocer todas las capacidades de simulynk multibody, tanto la forma de crear los mecanismos como la forma de obtener información de estos, este se vuelve una herramienta sumamente poderosa a la hora de analizar cualquier sistema mecánico o implementar perfiles de movimiento o sesiones sin necesidad de tener una planta física o modificarla. 
 
