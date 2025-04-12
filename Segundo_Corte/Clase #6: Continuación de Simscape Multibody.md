@@ -27,9 +27,9 @@ Ya que en la sesión anterior vimos como modelar sólidos y cambiar sus propieda
 
 [5.Solución](#5-Solución)
 
-[6 Conclusiones](#31-Fórmulas-Fundamentales-Para-Aceleración-Constante)
+[6 Conclusiones](#6-conclusiones)
 
-[7 Referencias](#32-Ejercicio-en-Matlab)
+[7 Referencias](#7-Referencias)
 
 
 ## 1. Articulaciones basicas en multibody
