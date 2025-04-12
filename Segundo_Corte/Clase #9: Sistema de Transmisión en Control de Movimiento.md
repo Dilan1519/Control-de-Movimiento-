@@ -277,6 +277,94 @@ Entonces:
 
 $$\frac{\omega_m}{\omega_l} = \frac{T_l}{T_m}$$
 
+## 6. Simulación de Engranajes en Simscape
+
+ <div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%239/8_Diapositiva_Simulación_simscape.png" alt="Figura de prueba" width="700">
+  <p><b>Figura 6.</b>Simulación de Engranajes en Simscape</p>
+</div>
+
+- Descripción del sistema
+
+El sistema utiliza un motor DC Moog C23L33W10 alimentado a 24 V, conectado a un sistema de engranajes modelado con bloques de Simscape (no Multibody). Esto permite simular únicamente variables dinámicas del sistema: torque, velocidad y aceleración.
+
+- Modelado del engranaje
+
+El bloque de engranaje en Simscape representa dos ruedas:
+
+  -  Rueda motriz (lado izquierdo del bloque): conectada al eje del motor.
+    
+  -  Rueda conducida (lado derecho): entrega el movimiento transformado.
+
+Este bloque simula automáticamente la relación de transformación, considerando:
+
+- Relación de radios o número de dientes.
+  
+- Variables opcionales: fricción, eficiencia, juego entre dientes, etc.
+
+- Análisis de velocidades
+
+Según el sistema simulado:
+
+<div align="center">
+  
+| Variable               | Valor            |
+|------------------------|------------------|
+| Velocidad del motor    | $$\omega_m = 11500 \ \text{rpm}$$ |
+| Velocidad de salida    | $$\omega_l = 2300 \ \text{rpm}$$  |
+
+</div>
+
+Relación de engranajes:
+
+$$N_{GB} = \frac{\omega_l}{\omega_m} = \frac{2300}{11500} = 0.2$$
+
+Esto implica:
+
+- Reducción de velocidad a la salida.
+  
+- Aumento del torque** en la carga (idealmente, por conservación de potencia).
+
+- Relación y reflexión
+
+La relación también afecta otras variables importantes:
+
+- Inercia reflejada al motor:
+
+$$J_{\text{reflejada}} = J_{\text{carga}} \cdot N_{GB}^2$$
+
+- Torque requerido por el motor:
+
+$$T_m = \frac{T_l}{N_{GB}}$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
