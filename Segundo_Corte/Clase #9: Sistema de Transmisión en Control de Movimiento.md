@@ -431,6 +431,58 @@ Momento reflejado en el engranaje base:
 
 $$J_{\text{reflejado}} = 1.225 \times 10^{-6} \cdot \left( \frac{0.02}{0.01} \right)^2 = 4.9 \times 10^{-6} \, \text{kg} \cdot \text{m}^2$$
 
+## 8. Configuración del bloque *Common Gear Constraint*
+
+ <div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%239/10_Diapositiva_Engranaje_Comun.png" alt="Figura de prueba" width="700">
+  <p><b>Figura 8.</b>Engranaje Común</p>
+</div>
+
+El bloque Common Gear Constraint permite modelar la interacción cinemática entre dos engranajes externos (sin fricción ni contacto real) imponiendo una restricción de movimiento rotacional.
+
+- Opción 1: *Center Distance and Ratio*
+
+ <div align="center">
+   
+| Parámetro               | Valor   | Descripción                                              |
+|-------------------------|---------|----------------------------------------------------------|
+| Type                    | External| Define el tipo de engranajes (externos o internos).      |
+| Specification Method    | Center Distance and Ratio | Método basado en la distancia entre centros y relación de transmisión. |
+| Center Distance         | 3 cm    | Distancia entre los ejes de los dos engranajes.          |
+| Gear Ratio (Nf/Nb)      | 0.5     | Relación de transmisión: dientes del **seguidor/base**.  |
+
+</div>
+
+- Opción 2: Pitch Circle Radii
+
+ <div align="center">
+   
+| Parámetro               | Valor   | Descripción                                              |
+|-------------------------|---------|----------------------------------------------------------|
+| Type                    | External| Tipo de engranaje (externo).                             |
+| Specification Method    | Pitch Circle Radii | Método basado en los radios de los círculos de paso.         |
+| Base Gear Radius        | 2 cm    | Radio del engranaje base.                               |
+| Follower Gear Radius    | 1 cm    | Radio del engranaje seguidor.                           |
+
+</div>
+
+- ¿Qué hace el bloque internamente?
+
+El bloque impone una relación entre las velocidades angulares de los dos ejes:
+
+$$\omega_b \cdot r_b = - \omega_f \cdot r_f$$
+
+Donde:
+
+- $$\omega_b$$: velocidad angular del engranaje base
+  
+- $$\omega_f$$: velocidad angular del engranaje seguidor
+  
+- $$r_b$$: radio del engranaje base
+  
+- $$r_f$$: radio del engranaje seguidor  
+
+El signo negativo indica que los engranajes giran en sentidos opuestos al estar acoplados de forma externa.
 
 
 
