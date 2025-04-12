@@ -1,0 +1,235 @@
+# Sistema de Transmisión en Control de Movimiento
+
+En sesiones anteriores se revisaron los principales componentes de un sistema de control de movimiento, incluyendo los controladores, el esquema de control en cascada y los perfiles de movimiento. Estos últimos funcionan como señales de referencia (set points) para los controladores, definiendo cómo debe evolucionar la posición, velocidad o aceleración del sistema a lo largo del tiempo.
+
+A partir de esta clase se inicia el estudio de la parte mecánica del sistema, enfocándose específicamente en el sistema de transmisión. Este sistema es el encargado de acoplar el actuador, usualmente un motor, con la carga, es decir, el elemento físico que se debe mover para cumplir con una tarea específica dentro del proceso.
+
+El análisis del sistema de transmisión es crucial, ya que determina cómo se transfiere el movimiento del motor hacia la carga. En el contexto del curso, este estudio se orientará hacia el dimensionamiento del motor, es decir, la selección adecuada de su capacidad en función de los requerimientos de la carga. Un dimensionamiento correcto garantiza que el sistema pueda ejecutar su tarea sin sobrecargas ni fallos.
+
+## Índice
+
+[1. ¿En qué Consiste?](#1-en-qué-Consiste)
+
+## 1. Diseño de Transmisión en Control de Movimiento
+
+Garantizar que el perfil de movimiento definido se transmita correctamente desde el motor hasta la carga mediante un sistema de transmisión bien dimensionado.
+
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%239/1_Diapositiva_Diseño_de_Transmición.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 1.</b>Diseño de Transmición</p>
+</div>
+
+- Importancia de una buena selección de motor y transmisión
+
+<div align="center">
+  
+| Caso               | Consecuencia                                                             |
+|--------------------|---------------------------------------------------------------------------|
+| Subdimensionamiento | El motor no puede cumplir con la tarea → Fallo y reemplazo costoso.      |
+| Sobredimensionamiento | Capacidad desaprovechada → Mayor costo y menor eficiencia.              |
+
+</div>
+  
+> **Nota:** La selección debe considerar variaciones futuras en el proceso, como aumento de carga o cambios en el mecanismo.
+
+- Tipos de acoplamiento
+
+<div align="center">
+  
+| Tipo de transmisión | Descripción                                                             |
+|---------------------|-------------------------------------------------------------------------|
+| Directo             | La carga se acopla directamente al eje del motor.                       |
+| Engranajes          | Modifican torque y velocidad mediante relación de transmisión.          |
+| Polea-correa        | Permite ajustar velocidad/torque, absorbe vibraciones.                  |
+| Tornillo sin fin    | Alta reducción, ideal para movimientos lentos y de alta fuerza.         |
+| Transportadoras     | Transmiten movimiento lineal para desplazar objetos.                    |
+
+</div>
+
+> **Nota:** La elección del tipo de acoplamiento impacta directamente en el rendimiento, la eficiencia y el mantenimiento del sistema. Debe seleccionarse según la aplicación y las condiciones de operación.
+
+💡**Ejemplo 1:**
+
+Supóongamos que necesitas mover una caja de 10 kg mediante una banda transportadora. Si más adelante se aumenta la carga a 20 kg, un motor mal dimensionado podría falla
+
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%239/Ejemplo_1_Clase_9.jpeg" alt="Figura de prueba" width="300">
+  <p><b>Figura 2.</b>Ejemplo 1</p>
+</div>
+
+- Solución:
+
+  - Dimensionar el motor considerando una margen de carga adicional.
+
+  - Analizar el tipo de transmisión para optimizar torque/velocidad según el requerimiento.
+
+- ¿Por qué no basta con mirar el torque de la carga?
+  
+Cuando usamos transmisiones no directas (como engranajes), el torque y la inercia de la carga no se transfieren tal cual al motor.
+
+- Se debe hacer una reflexión de parámetros:
+
+  - Convertir inercia y torque de la carga a valores equivalentes en el eje del motor.
+
+  - Considerar también la inercia del mecanismo (engranajes, poleas, etc.), no solo de la carga final.
+
+## 2. Requerimientos de Diseño en Control de Movimiento
+
+También es crucial balancear la inercia motor-carga para garantizar estabilidad y desempeño. Además, deben considerarse factores como costo, precisión, frecuencia de operación y restricciones del entorno.
+
+ <div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%239/2_Diapositiva_Clase_9.gif" alt="Figura de prueba" width="300">
+  <p><b>Figura 3.</b>Inercia Motor</p>
+</div>
+
+🔑 Margen de seguridad: Factor multiplicativo aplicado al requerimiento mínimo de torque para garantizar que el motor funcione correctamente incluso en condiciones imprevistas. Generalmente se recomienda un margen entre 1.2 y 2.0, dependiendo del nivel de incertidumbre del sistema.
+
+- Factores comunes en la selección del motor
+
+<div align="center">
+   
+| Requisito                | ¿Por qué es importante?                                 | Consecuencia de ignorarlo                          |
+|--------------------------|---------------------------------------------------------|----------------------------------------------------|
+| Torque mínimo requerido  | Mover la carga sin que el motor se sobrecargue         | Subdimensionamiento, falla del sistema             |
+| Relación de inercias     | Estabilidad del sistema de control                     | Respuesta lenta o inestable                        |
+| Costos                   | Ajustarse al presupuesto del proyecto                  | Inviabilidad del diseño                            |
+| Precisión y ciclos       | Garantizar repetibilidad y rendimiento en tiempo esperado | Fallos de calidad o productividad              |
+
+</div>
+
+> **Nota:** La correcta evaluación de estos factores asegura una selección de motor equilibrada entre rendimiento, eficiencia y viabilidad económica.
+
+💡**Ejemplo 2:** 
+
+**Pregunta:**  
+
+Supongamos que nuestro sistema requiere 2.5 Nm de torque para funcionar correctamente. Si decides usar un margen de seguridad del 1.5, ¿cuál debería ser el torque mínimo nominal del motor?
+
+**Solución:**  
+
+$$T_{\text{motor}} = 2.5\, \text{Nm} \times 1.5 = 3.75\, \text{Nm}$$
+
+Deberiamos elegir un motor con un torque nominal de al menos **3.75 Nm**.
+
+## 3. Posibles Problemas de Diseño en Sistemas de Movimiento
+
+🔑 Transmisión mecánica: Sistema que adapta la velocidad y el torque entre un actuador (como un motor) y la carga. Puede incluir engranajes, bandas, poleas, tornillos sin fin, etc.
+
+En el diseño de sistemas mecatrónicos, es común enfrentarse a distintos escenarios dependiendo de los elementos que ya estén disponibles o definidos. Estos escenarios afectan directamente el enfoque del proceso de diseño.
+
+- Tipos de problemas de diseño:
+
+<div align="center">
+  
+| Tipo | Datos conocidos                            | A determinar                      | Contexto típico                                                      |
+|------|--------------------------------------------|-----------------------------------|----------------------------------------------------------------------|
+| 1    | Movimiento deseado de la carga             | Transmisión y motor               | Proyectos que inician desde cero                                     |
+| 2    | Motor y transmisión existentes             | Movimiento resultante de la carga | Análisis de reutilización o diagnóstico                              |
+| 3    | Motor existente + movimiento deseado       | Transmisión                       | Muy común en entornos industriales con recursos limitados            |
+| 4    | Movimiento deseado + transmisión existente | Motor                             | Frecuente en modernización de maquinaria                             |
+
+</div>
+
+> 📌 **Nota:** Identificar correctamente el tipo de problema permite enfocar el diseño o análisis hacia soluciones más eficientes y viables dentro del contexto del proyecto.
+
+- Comparativa internacional del tipo de problemas más comunes
+
+<div align="center">
+  
+| País        | Escenario más común  | Razón principal                                                        |
+|-------------|----------------------|------------------------------------------------------------------------|
+| 🇨🇴 Colombia   | Tipos 3 y 4           | Reutilización de equipos por limitaciones de presupuesto              |
+| 🇩🇪 Alemania   | Tipo 1               | Alto nivel de planeación y diseño desde cero                          |
+| 🇺🇸 Estados Unidos | Tipo 1 y 4        | Innovación frecuente + modernización de líneas antiguas               |
+| 🇯🇵 Japón      | Tipo 1 y 2           | Fuerte enfoque en eficiencia y análisis de ciclo de vida              |
+
+</div>
+
+> 📌 **Nota:** Las decisiones de diseño están fuertemente influenciadas por el contexto económico, cultural y tecnológico de cada país, lo que define prioridades distintas en cada escenario.
+
+## 4. Inercia y Torque Reflejado
+
+- Conceptos Clave
+
+<div align="center">
+  
+| Término                   | Definición                                                                 |
+|---------------------------|----------------------------------------------------------------------------|
+| Inercia (J)               | Propiedad física que representa la resistencia de un cuerpo a cambiar su velocidad angular. |
+| Torque (τ)                | Fuerza que produce un giro sobre un eje. Se relaciona con la inercia por leyes de Newton.   |
+| Aceleración angular (α)   | Cambio de velocidad angular por unidad de tiempo.                          |
+
+</div>
+
+> 📌 **Nota:** Estos conceptos son fundamentales para entender el comportamiento dinámico de sistemas rotacionales y seleccionar adecuadamente un motor o sistema de transmisión.
+
+- Ley de Newton para rotaciones
+
+ <div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%239/Ley_de_NEWTON_para_Rotaciones.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 4.</b>Inercia Motor</p>
+</div>
+
+$$\sum \tau = J \cdot \alpha$$
+
+Esta ecuación es el equivalente rotacional de la famosa:
+
+$$F = m \cdot a$$
+
+**En este contexto:**
+
+- $$\sum \tau$$: Torque total aplicado sobre el sistema.
+  
+- $$J$$: Momento de inercia del sistema.
+  
+- $$\alpha$$: Aceleración angular.
+
+ Inercia reflejada
+Cuando hay una cadena de transmisión (acoples, engranajes, bandas, etc.), el motor no ve directamente la inercia de la carga, sino una inercia reflejada, que depende del sistema de transmisión.
+
+Esto es crucial para:
+
+Dimensionar correctamente el motor.
+
+Prever el torque que deberá ejercer el motor.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CONCLUSONES 1. El perfil de velocidad trapezoidal es una herramienta fundamental en el diseño de trayectorias para sistemas de movimiento, como robots o ejes lineales. Su principal ventaja es que permite planificar el desplazamiento de manera suave y controlada, dividiéndolo en tres fases: aceleración, velocidad constante y desaceleración. Esta estructura facilita un movimiento más eficiente y menos agresivo para los componentes mecánicos, al evitar cambios bruscos de velocidad.
+
+2. A través del uso de fórmulas geométricas y analíticas, se pueden calcular con precisión todos los parámetros clave del movimiento: tiempos de aceleración y desaceleración, duración del movimiento uniforme y el desplazamiento total. Estas relaciones permiten adaptar el perfil a las restricciones físicas del sistema, como la aceleración máxima o la distancia que se debe recorrer. Además, la posibilidad de calcular la posición en cada instante del tiempo es esencial para aplicaciones que requieren alta precisión.
+
+3. Tanto el enfoque geométrico como el analítico resultan válidos y complementarios. El primero ofrece una solución rápida e intuitiva mediante áreas bajo la curva de velocidad, mientras que el segundo brinda mayor exactitud y permite analizar el comportamiento del sistema en todo momento. La correcta aplicación de estos métodos garantiza trayectorias optimizadas, seguras y eficientes, fundamentales en sistemas automatizados modernos
+
+
+
+Referencias
+
+[1] J. J. Craig, Introduction to Robotics: Mechanics and Control, 3rd ed., Pearson Prentice Hall, 2005.
+
+[2] L. Sciavicco y B. Siciliano, Modeling and Control of Robot Manipulators, 2nd ed., Springer, 2012.
+
+[3] M. P. Groover, Automation, Production Systems, and Computer-Integrated Manufacturing, 4th ed., Pearson, 2015.
+
+[4] Bosch Rexroth AG, Mechatronics and Motion Control – Application Manual, 2002.
+
+[5] J. E. Cote B., Perfiles de Movimiento, diapositivas de clase, 9° semestre, Universidad ECCI, 2025.
