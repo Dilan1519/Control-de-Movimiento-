@@ -130,7 +130,7 @@ En el diseño de sistemas mecatrónicos, es común enfrentarse a distintos escen
 
 </div>
 
-> 📌 **Nota:** Identificar correctamente el tipo de problema permite enfocar el diseño o análisis hacia soluciones más eficientes y viables dentro del contexto del proyecto.
+> **Nota:** Identificar correctamente el tipo de problema permite enfocar el diseño o análisis hacia soluciones más eficientes y viables dentro del contexto del proyecto.
 
 - Comparativa internacional del tipo de problemas más comunes
 
@@ -145,7 +145,7 @@ En el diseño de sistemas mecatrónicos, es común enfrentarse a distintos escen
 
 </div>
 
-> 📌 **Nota:** Las decisiones de diseño están fuertemente influenciadas por el contexto económico, cultural y tecnológico de cada país, lo que define prioridades distintas en cada escenario.
+> **Nota:** Las decisiones de diseño están fuertemente influenciadas por el contexto económico, cultural y tecnológico de cada país, lo que define prioridades distintas en cada escenario.
 
 ## 4. Inercia y Torque Reflejado
 
@@ -161,7 +161,7 @@ En el diseño de sistemas mecatrónicos, es común enfrentarse a distintos escen
 
 </div>
 
-> 📌 **Nota:** Estos conceptos son fundamentales para entender el comportamiento dinámico de sistemas rotacionales y seleccionar adecuadamente un motor o sistema de transmisión.
+> **Nota:** Estos conceptos son fundamentales para entender el comportamiento dinámico de sistemas rotacionales y seleccionar adecuadamente un motor o sistema de transmisión.
 
 - Ley de Newton para rotaciones
 
@@ -207,7 +207,7 @@ Aunque la inercia $$J$$ es formalmente un concepto rotacional, en ingeniería de
 
 </div>
 
-> 📌 **Nota:** Reconocer la equivalencia conceptual entre masa e inercia permite aplicar principios similares tanto en sistemas lineales como rotacionales, facilitando el modelado y análisis dinámico.
+> **Nota:** Reconocer la equivalencia conceptual entre masa e inercia permite aplicar principios similares tanto en sistemas lineales como rotacionales, facilitando el modelado y análisis dinámico.
 
 ## Ejercicio 1
  
