@@ -197,9 +197,11 @@ Recreando cada parte del mecanismo (Manivela, viela y corredera), conectandolos 
    <img src="Imágenes_Corte_2/Clase%20%236/ejer1g.gif" alt="Figura de prueba" width="300">
   <p><b>Figura 17.</b>Animación sistema biela corredera</p>
 </div>
+
 ## 6 Conclusiones
 
+Al conocer todas las capacidades de simulynk multibody, tanto la forma de crear los mecanismos como la forma de obtener información de estos, este se vuelve una herramienta sumamente poderosa a la hora de analizar cualquier sistema mecánico o implementar perfiles de movimiento o sesiones sin necesidad de tener una planta física o modificarla. 
 
 
-## Referencias
+## 7 Referencias
 
