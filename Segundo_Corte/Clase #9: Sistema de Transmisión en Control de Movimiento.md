@@ -179,19 +179,104 @@ $$F = m \cdot a$$
 **En este contexto:**
 
 - $$\sum \tau$$: Torque total aplicado sobre el sistema.
-  
+
 - $$J$$: Momento de inercia del sistema.
   
 - $$\alpha$$: Aceleración angular.
 
- Inercia reflejada
+- Inercia reflejada
+
 Cuando hay una cadena de transmisión (acoples, engranajes, bandas, etc.), el motor no ve directamente la inercia de la carga, sino una inercia reflejada, que depende del sistema de transmisión.
 
 Esto es crucial para:
 
-Dimensionar correctamente el motor.
+- Dimensionar correctamente el motor.
 
-Prever el torque que deberá ejercer el motor.
+- Prever el torque que deberá ejercer el motor.
+
+- ¿Inercia rotacional o lineal?
+
+Aunque la inercia $$J$$ es formalmente un concepto rotacional, en ingeniería de control de movimiento se usa también para sistemas en traslación porque ambos representan resistencia al cambio de velocidad.
+
+ <div align="center">
+   
+| Movimiento          | Variable análoga a la masa/inercia     |
+|---------------------|-----------------------------------------|
+| Rotacional          | $$J$$ inercia rotacional            |
+| Lineal/traslación   | $$m$$ masa                          |
+
+</div>
+
+> 📌 **Nota:** Reconocer la equivalencia conceptual entre masa e inercia permite aplicar principios similares tanto en sistemas lineales como rotacionales, facilitando el modelado y análisis dinámico.
+
+## Ejercicio 1
+ 
+Un motor debe acelerar una carga con una inercia reflejada de  $$ J = 0.05\, \text{kg}\text{m}^2$$ a una velocidad de $$100\, \text{rad/s}$$ en $$2\, \text{s}$$. 
+
+¿Qué torque promedio debe aplicar el motor?
+
+**Solución:**
+
+1. **Aceleración angular:**
+
+$$\alpha = \frac{\Delta \omega}{\Delta t} = \frac{100}{2} = 50\, \text{rad/s}^2$$
+
+2. **Aplicando la ley de Newton rotacional:**
+
+$$\tau = J \cdot \alpha = 0.05 \cdot 50 = 2.5\, \text{N} \cdot \text{m}$$
+
+**Resultado:** El torque promedio requerido es **2.5 N·m**.
+
+## 5. Relación de Engranajes y su Efecto en el Sistema
+
+ <div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%239/7_Diapositiva_Engranajes.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 5.</b>Engranajes</p>
+</div>
+
+- Concepto general
+
+La relación de engranajes $$N_{GB}$$ describe cómo se transforman la velocidad angular y el torque entre el motor y la carga mediante un sistema de engranajes:
+
+$$N_{GB} = \frac{\omega_m}{\omega_l} = \frac{r_l}{r_m} = \frac{n_l}{n_m} = \frac{T_l}{T_m}$$
+
+**Donde:**
+
+- $$\omega_m, \omega_l$$: Velocidad angular del motor y la carga
+    
+- $$r_m, r_l$$: Radios de los engranajes
+  
+- $$n_m, n_l$$: Número de dientes de cada engranaje
+  
+- $$T_m, T_l$$: Torque del motor y de la carga  
+
+
+- Relación desde la velocidad tangencial:
+
+Como los engranajes están en contacto en un punto común:
+
+$$V_{\text{tangencial}} = \omega_m r_m = \omega_l r_l$$
+
+Entonces:
+
+$$\frac{\omega_m}{\omega_l} = \frac{r_l}{r_m}$$
+
+- Relación desde la cantidad de dientes
+
+También se puede deducir la relación de transmisión a partir del número de dientes:
+
+$$\frac{n_l}{n_m} = \frac{r_l}{r_m} \Rightarrow N_{GB} = \frac{n_l}{n_m}$$
+
+- Relación desde la potencia
+
+Como la potencia mecánica se conserva:
+
+$$P = T_m \omega_m = T_l \omega_l$$
+
+Entonces:
+
+$$\frac{\omega_m}{\omega_l} = \frac{T_l}{T_m}$$
+
 
 
 
