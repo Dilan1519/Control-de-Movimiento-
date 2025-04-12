@@ -194,7 +194,7 @@ Recreando cada parte del mecanismo (Manivela, viela y corredera), conectandolos 
 </div>
 
   <div align="center">
-   <img src="Imágenes_Corte_2/Clase%20%236/ejer1g.png" alt="Figura de prueba" width="300">
+   <img src="Imágenes_Corte_2/Clase%20%236/ejer1g.gif" alt="Figura de prueba" width="300">
   <p><b>Figura 17.</b>Animación sistema biela corredera</p>
 </div>
 ## 6 Conclusiones
