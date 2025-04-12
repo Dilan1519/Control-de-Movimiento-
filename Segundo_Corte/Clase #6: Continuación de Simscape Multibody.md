@@ -186,7 +186,7 @@ Con lo aprendido anteriormente debe recrear un sistema biela corredera, en el cu
 </div>
 
 ## 5 Solución
-Recreando cada parte del mecanismo (Manivela, viela y corredera), conectandolos con las articulaciones correspondientes (3 revolutas y una prismatica), y haciendo las transformaciones de rigis adecuadas, (2 de angulo) para poner el eje de la prismatica en el lugar correcto, (1 de posición) para ubicar la corredera a tierra en el lugar adecuado, pudimos recrear el mecnismo y su cinematica.
+Recreando cada parte del mecanismo (Manivela, biela y corredera), conectándolos con las articulaciones correspondientes (3 revolutas y una prismática), y haciendo las transformaciones de rigids adecuadas, (2 de Angulo) para poner el eje de la prismática en el lugar correcto, (1 de posición) para ubicar la corredera a tierra en el lugar adecuado, pudimos recrear el mecanismo y su cinemática.
 
   <div align="center">
    <img src="Imágenes_Corte_2/Clase%20%236/dejer1.png" alt="Figura de prueba" width="300">
