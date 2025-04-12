@@ -186,59 +186,7 @@ Un eje (axis) lineal comienza su movimiento desde el reposo en la posición 0, c
   <p><b>Figura 11.</b>Ejercicio Matlab 2</p>
 </div>
 
-## 4. Comparación de Perfiles de Movimiento
 
-<div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%237/Ejemplo_3.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 13.</b>Perfil trapezoidal</p>
-</div>
-
-<div align="center">
-    
-| Característica             | Perfil Trapezoidal                                        | Perfil en S (Sigmoidal o Gaussiano)                     |
-|----------------------------|----------------------------------------------------------|---------------------------------------------------------|
-| **Forma de la curva**      | Tres fases: aceleración constante, velocidad constante y desaceleración constante. | Transiciones suaves en la aceleración y desaceleración, formando una curva en "S". |
-| **Transiciones**           | Cambios bruscos entre fases.                            | Transiciones progresivas sin cambios abruptos.         |
-| **Facilidad de implementación** | Fácil, requiere cálculos básicos de aceleración y velocidad. | Más complejo, requiere funciones matemáticas avanzadas. |
-| **Impacto mecánico**       | Puede generar esfuerzos mecánicos elevados y vibraciones. | Reduce esfuerzos mecánicos y minimiza vibraciones.     |
-| **Tiempo de movimiento**   | Más rápido en trayectos cortos.                         | Puede ser más lento debido a transiciones suaves.      |
-| **Precisión del movimiento** | Adecuado para movimientos estándar.                    | Mejor precisión en sistemas que requieren estabilidad y suavidad. |
-| **Aplicaciones típicas**   | Máquinas CNC, transportadores, automatización industrial. | Robótica de precisión, impresión 3D, manipulación de materiales frágiles. |
-
-</div>
-
-**Nota:** Esta tabla compara dos tipos de perfiles de movimiento utilizados en sistemas mecánicos y robóticos. Mientras que el perfil trapezoidal es más simple y rápido en trayectos cortos, el perfil en S ofrece mayor suavidad y precisión, reduciendo esfuerzos mecánicos y vibraciones.
-
-## 5. Perfil de Velocidad Trapezoidal (Geométrico)
-
-<div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%237/Perfil_de_velocidad_trapezoidal .png" alt="Figura de prueba" width="400">
-  <p><b>Figura 14.</b>Tornillo sin Fin</p>
-</div>
-
-$$ t_a = t_d = \frac{v_m}{a} $$
-
-- **$t_a$** : Tiempo que tarda el sistema en acelerar desde 0 hasta la velocidad máxima $v_m$.
-  
-- **$t_d$** : Tiempo que tarda en frenar desde la velocidad máxima $v_m$ hasta 0.
-  
-- **$a$** : Aceleración constante durante ese tramo.
-
-Se usa cuando ya se conoce:
-
-- La aceleración máxima que el sistema puede aplicar.
-  
-- La velocidad máxima que se desea alcanzar.
-
-Se asume que:
-
-$$ t_a = t_d $$
-
-Pero esto no siempre es cierto. Por ejemplo, si el sistema puede frenar más rápido que acelerar, entonces:
-
-$$ t_d < t_a $$
-
-## 5.1 Tiempo Total de Movimiento
 
 $$ t_{total} = t_a + t_m + t_d $$
 
