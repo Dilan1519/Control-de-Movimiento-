@@ -23,15 +23,14 @@ Ya que en la sesión anterior vimos como modelar sólidos y cambiar sus propieda
 
 [3.2 Transformcaiones de angulo](#32-Transformcaiones-de-angulo)
 
-[2.5 Solución Movimiento de un Actuador Lineal](#25-Solución-Movimiento-de-un-Actuador-Lineal)
+[4 Ejercicio](#4-ejercicio)
 
-[3. Reglas Geométricas](#3-Reglas-Geométricas)
+[5.Solución](#5-Solución)
 
-[3.1 Fórmulas Fundamentales Para Aceleración Constante](#31-Fórmulas-Fundamentales-Para-Aceleración-Constante)
+[6 Conclusiones](#31-Fórmulas-Fundamentales-Para-Aceleración-Constante)
 
-[3.2 Ejercicio en Matlab](#32-Ejercicio-en-Matlab)
+[7 Referencias](#32-Ejercicio-en-Matlab)
 
-[4 Comparación de Perfiles de Movimiento](#4-Comparación-de-Perfiles-de-Movimiento)
 
 ## 1. Articulaciones basicas en multibody
 
@@ -177,6 +176,16 @@ Este tipo de transformación hace que los ejes coordenados intercambien de lugar
   <p><b>Figura 16.</b>Ejemplo de sensor para junta prismatica</p>
 </div>
 
+## 4 Ejercicio
+
+Con lo aprendido anteriormente debe recrear un sistema biela corredera, en el cual un movimiento rotacional se transforma en un movimiento lineal.
+
+  <div align="center">
+   <img src="Imágenes_Corte_2/Clase%20%236/ejer1.gif" alt="Figura de prueba" width="300">
+  <p><b>Figura 16.</b>Sistema biela corredera</p>
+</div>
+
+## 5 Solución
 - **Resultado:** la transformación de rigid puso el eje Z en la dirección del eje Y, realizando la acción en el eje deseado. 
 
 Un eje (axis) lineal comienza su movimiento desde el reposo en la posición 0, con una aceleración de 2 m/s^2. Después de moverse durante 5 s, cual es la posición del eje (axis)?
@@ -188,249 +197,7 @@ Un eje (axis) lineal comienza su movimiento desde el reposo en la posición 0, c
 
 
 
-$$ t_{total} = t_a + t_m + t_d $$
 
-Es la suma del tiempo que el sistema pasa en cada una de las tres fases:
-
-- **$t_a$**: Aceleración
-   
-- **$t_m$**: Movimiento a velocidad constante
-  
-- **$t_d$**: Desaceleración
-
-Nos permite saber cuánto tiempo dura todo el trayecto, como:
-
-- Coordinando movimientos en un robot o máquina multieje.
-  
-- Sincronizando este eje con otros procesos.
-
-## 5.2 Cálculo del recorrido total $L$ y del tiempo en velocidad constante $t_m$
-
-Calcular:
-
-- Cuánta distancia recorre el sistema en total ($L$).
-
-- Cuánto tiempo se mantiene moviéndose a velocidad constante ($t_m$).
-
-Esto es esencial si se quiere que el sistema llegue a un punto específico y se necesita saber cuánto tiempo debe estar en cada fase del perfil trapezoidal.
-
-
-## 5.3 Cálculo Geométrico del Recorrido Total $L$
-
-Se suman las áreas bajo la curva de velocidad, ya que:
-
-- Área bajo $v(t)$ = posición $s(t)$
-
-- Área del triángulo de aceleración:
-  
-$$ A_1 = \frac{t_a \cdot v_m}{2} $$
-
-- Área del rectángulo (velocidad constante):
-
-$$ A_2 = t_m \cdot v_m $$
-
-- Área del triángulo de desaceleración:
-    
-$$ A_3 = \frac{t_d \cdot v_m}{2} $$
-
-Distancia total recorrida $L$:
-
-$$ L = \frac{t_a \cdot v_m}{2} + t_m \cdot v_m + \frac{t_d \cdot v_m}{2} $$
-
-## 5.4 Simplificación 
-
-Si asumimos que $t_a = t_d$, entonces:
-
-$$ L = v_m \cdot (t_a + t_m) $$
-
-## 5.5 Despeje del Tiempo en Velocidad Constante $t_m$
-
-$$ t_m = \frac{L}{v_m} - t_a $$
-
-Es el tiempo que el sistema permanece a velocidad constante durante el trayecto, o sea, la parte plana del trapecio en la gráfica de velocidad.
-
-Si:
-
-$$ \frac{L}{v_m} < 2t_a $$
-
-Entonces no hay fase de velocidad constante → el perfil será triangular, no trapezoidal.
-
-## 5.6 Enfoque Analítico del Perfil Trapezoidal (Fase de Aceleración)
-
-Ahora, pasamos al enfoque analítico, que permite calcular la posición $s(t)$ en cualquier instante de tiempo de forma exacta.
-
-FASE 1: Aceleración ( $0 < t < t_a$ )
-
-En esta fase:
-
-- El sistema parte desde reposo: $v_0 = 0$
-  
-- Se aplica una aceleración constante: $a$
-  
-- La velocidad aumenta linealmente desde 0 hasta la velocidad máxima $v_m$.
-
-Velocidad en función del tiempo:
-
-$$ v(t) = a \cdot t $$
-
-## 5.7 Posición en Función del Tiempo:
-
-Para obtener la posición, integramos la velocidad:
-
-$$ s(t) = \int_0^t v(t) \, dt = \int_0^t a \cdot t \, dt = \frac{1}{2} a t^2 $$
-
-Es la posición recorrida durante la fase de aceleración, y crece con una parábola.
-
-FASE 2: $$ t_a < t < t_a + t_m $$
-
-Sabemos que para el intervalo:
-
-$$ t_a < t < t_a + t_m $$
-
-la velocidad del sistema es constante:
-
-$$ v(t) = v_m $$
-
-Cálculo de la posición_
-
-Para obtener la posición en esta fase, integramos la velocidad a partir de la posición alcanzada al final de la aceleración:
-
-$$ s(t) = s(t_a) + \int_{t_a}^{t} v_m \, dt $$
-
-Como $v_m$ es constante, podemos sacarlo fuera de la integral:
-
-$$ s(t) = s(t_a) + v_m \int_{t_a}^{t} dt = s(t_a) + v_m (t - t_a) $$
-
-Fórmula final para la posición en esta fase:
-
-$$ s(t) = s(t_a) + v_m (t - t_a) $$
-
-Desglose de los términos:
-
-- $s(t)$ → posición actual en esta fase.
-  
-- $s(t_a)$ → posición al final de la fase de aceleración.
-  
-- $v_m$ → velocidad máxima (constante durante esta fase).
-  
-- $(t - t_a)$ → tiempo transcurrido desde que empezó la velocidad constante.
-
-Sabemos que:
-
-$$ s(t_a) = \frac{1}{2} a t_a^2 $$
-
-Entonces, también podés expresar la posición así:
-
-$$ s(t) = \frac{1}{2} a t_a^2 + v_m (t - t_a) $$
-
-## Fase 3: Desaceleración (Enfoque Analítico)
-
-
-## Rango de tiempo:
-
-$$ t_a + t_m < t < t_a + t_m + t_d $$
-
-## Velocidad en esta fase:
-
-La aceleración es negativa ($-a$), por lo tanto:
-
-$$ v(t) = v_m - a(t - t_a - t_m) $$
-
-- $v_m$: velocidad máxima al inicio del frenado
-  
-- $t - t_a - t_m$: tiempo desde que empezó la desaceleración
-
-##  Ejemplo – Movimiento de un eje en un robot Gantry
-
-###  Planteamiento del problema:
-
-Queremos mover el eje **X** de un robot con los siguientes datos:
-
-- Distancia total:  
-  $$L = 10 \,\text{cm}$$  
-- Velocidad máxima:  
-  $$v_m = 2 \,\text{cm/s}$$  
-- Aceleración máxima:  
-  $$a = 1 \,\text{cm/s}^2$$  
-
----
-
-### Paso 1: Calcular el tiempo de aceleración y desaceleración
-
-Sabemos que:
-
-$$
-t_a = t_d = \frac{v_m}{a}
-$$
-
-Sustituyendo:
-
-$$
-t_a = \frac{2\,\text{cm/s}}{1\,\text{cm/s}^2} = 2\,\text{s}
-$$
-
-> El tiempo de aceleración y desaceleración es el mismo ya que se usa la misma aceleración para frenar.
-
----
-
-###  Paso 2: Calcular el tiempo a velocidad constante
-
-Sabemos que la distancia total es la suma de:
-
-- Aceleración (área de un triángulo):  
-  $$\frac{1}{2} v_m t_a$$
-- Velocidad constante (área de un rectángulo):  
-  $$v_m t_m$$
-- Desaceleración (igual al área de aceleración):  
-  $$\frac{1}{2} v_m t_d$$
-
-Entonces, la distancia total es:
-
-$$
-L = \frac{1}{2} v_m t_a + v_m t_m + \frac{1}{2} v_m t_d
-$$
-
-Como \( t_a = t_d \), agrupamos:
-
-$$
-L = v_m \left(t_a + \frac{t_m}{1}\right)
-$$
-
-Despejando \( t_m \):
-
-$$
-t_m = \frac{L}{v_m} - t_a
-$$
-
-Sustituyendo valores:
-
-$$
-t_m = \frac{10\,\text{cm}}{2\,\text{cm/s}} - 2\,\text{s} = 5\,\text{s} - 2\,\text{s} = 3\,\text{s}
-$$
-
-### Resultado final: Tiempo total del movimiento
-
-$$
-t_{\text{total}} = t_a + t_m + t_d = 2\,\text{s} + 3\,\text{s} + 2\,\text{s} = 7\,\text{s}
-$$
-
-**Tiempo total del movimiento trapezoidal: 7 segundos**
-
-
-<div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%237/Ejemplo_1.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 15.</b>Ejemplo</p>
-</div>
-
-<div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%237/Ejemplo_2.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 16.</b>Ejemplo</p>
-</div>
-
-<div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%237/Ejemplo_3_Tra.png" alt="Figura de prueba" width="200">
-  <p><b>Figura 17.</b>Ejercicio</p>
-</div>
 
 CONCLUSONES 1. El perfil de velocidad trapezoidal es una herramienta fundamental en el diseño de trayectorias para sistemas de movimiento, como robots o ejes lineales. Su principal ventaja es que permite planificar el desplazamiento de manera suave y controlada, dividiéndolo en tres fases: aceleración, velocidad constante y desaceleración. Esta estructura facilita un movimiento más eficiente y menos agresivo para los componentes mecánicos, al evitar cambios bruscos de velocidad.
 
@@ -438,7 +205,6 @@ CONCLUSONES 1. El perfil de velocidad trapezoidal es una herramienta fundamental
 
 3. Tanto el enfoque geométrico como el analítico resultan válidos y complementarios. El primero ofrece una solución rápida e intuitiva mediante áreas bajo la curva de velocidad, mientras que el segundo brinda mayor exactitud y permite analizar el comportamiento del sistema en todo momento. La correcta aplicación de estos métodos garantiza trayectorias optimizadas, seguras y eficientes, fundamentales en sistemas automatizados modernos
 
-Referencia 
 
 Referencias
 
