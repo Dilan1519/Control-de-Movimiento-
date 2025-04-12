@@ -181,8 +181,8 @@ Este tipo de transformación hace que los ejes coordenados intercambien de lugar
 Con lo aprendido anteriormente debe recrear un sistema biela corredera, en el cual un movimiento rotacional se transforma en un movimiento lineal.
 
   <div align="center">
-   <img src="Imágenes_Corte_2/Clase%20%236/ejer1.gif" alt="Figura de prueba" width="300">
-  <p><b>Figura 16.</b>Sistema biela corredera</p>
+   <img src="Imágenes_Corte_2/Clase%20%236/ejer1.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 17.</b>Sistema biela corredera</p>
 </div>
 
 ## 5 Solución
@@ -192,7 +192,7 @@ Un eje (axis) lineal comienza su movimiento desde el reposo en la posición 0, c
 
 <div align="center">
   <img src="Imágenes_Corte_2/Clase%20%237/Ejercicio_Matlab.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 11.</b>Ejercicio Matlab 2</p>
+  <p><b>Figura 18.</b>Ejercicio Matlab 2</p>
 </div>
 
 
