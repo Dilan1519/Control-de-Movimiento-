@@ -205,3 +205,5 @@ Al conocer todas las capacidades de simulynk multibody, tanto la forma de crear 
 
 ## 7 Referencias
 
+Cote B, J. E. (2025). Clase 13/03/2025 Simulynk multibody. En J. E. Cote B, Control Digital y de movimiento 2. Universidad ECCI.
+The MathWorks Inc. (2025). MATLAB version: 9.14.0.2674353 (R2023a), Natick, Massachusetts: The MathWorks Inc. https://www.mathworks.com
