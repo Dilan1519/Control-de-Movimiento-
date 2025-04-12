@@ -337,6 +337,104 @@ $$J_{\text{reflejada}} = J_{\text{carga}} \cdot N_{GB}^2$$
 
 $$T_m = \frac{T_l}{N_{GB}}$$
 
+## 7. Modelo de Engranajes en Simscape Multibody (Aproximado con Discos)
+
+ <div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%239/9_Diapositiva_Engranajes_con_Discos.png" alt="Figura de prueba" width="700">
+  <p><b>Figura 7.</b>Engranajes con Discos</p>
+</div>
+
+Simular el comportamiento cinemático de un sistema de engranajes usando ruedas lisas (sin dientes) en Simscape Multibody. Aunque no hay contacto real, se utiliza una restricción de movimiento para simular el acoplamiento.
+
+- Componentes del Modelo
+  
+<div align="center">
+  
+| Elemento                | Descripción técnica |
+|-------------------------|---------------------|
+| Base-gear y Follower-gear | Discos sólidos con radios distintos, simulando engranajes cilíndricos. |
+| Solid Blocks            | Definen masa, geometría y densidad (ej. acero). |
+| Revolute Joints         | Permiten rotación individual de cada engranaje. |
+| Rigid Transforms        | Ajustan posición para evitar superposición. |
+| Gear Constraint         | Impone relación angular entre ruedas. |
+| Simulink-PS Converter   | Conecta señales de Simulink al entorno físico. |
+
+</div>
+
+- Parámetros Usados
+
+<div align="center">
+  
+| Parámetro      | Base Gear  | Follower Gear |
+|----------------|------------|---------------|
+| Radio          | 0.02 m     | 0.01 m        |
+| Largo          | 0.01 m     | 0.01 m        |
+| Densidad       | 7800 kg/m³ | 7800 kg/m³    |
+
+</div>
+
+- Relación de Movimiento
+
+La restricción impuesta por el bloque Gear Constraint determina:
+
+$$\frac{\omega_{\text{follower}}}{\omega_{\text{base}}} = \frac{r_{\text{base}}}{r_{\text{follower}}} = \frac{0.02}{0.01} = 2$$
+
+- El engranaje seguidor gira el doble de rápido que el base, en sentido opuesto.
+
+- Observaciones clave
+
+- No se modelan fuerzas de contacto ni fricción entre dientes.
+  
+- Ideal para análisis cinemático y visualización del movimiento.
+  
+- Para un modelado más realista: usar modelos CAD exportados desde herramientas como SolidWorks.
+
+💡**Ejemplo 3:** Engranajes con masa y momento de inercia reflejado
+
+- Fundamento teórico
+
+Para acoplamiento ideal (sin pérdidas), el momento de inercia reflejado desde el seguidor hacia el base es:
+
+$$J_{\text{reflejado}} = J_{\text{seguidor}} \cdot \left( \frac{r_{\text{base}}}{r_{\text{seguidor}}} \right)^2$$
+
+- Configuración de parámetros
+
+<div align="center">
+
+| Propiedad       | Engranaje Base | Engranaje Seguidor |
+|------------------|----------------|--------------------|
+| Radio (\(r\))    | 0.02 m         | 0.01 m             |
+| Largo            | 0.01 m         | 0.01 m             |
+| Densidad (\(\rho\)) | 7800 kg/m³  | 7800 kg/m³         |
+
+</div>
+
+- Cálculo del momento de inercia
+
+Para cilindros sólidos:
+
+$$J = \frac{1}{2} m r^2$$
+
+Volumen del seguidor:
+
+$$V = \pi r^2 h = \pi (0.01)^2 (0.01) = 3.14 \times 10^{-6} \, \text{m}^3$$
+
+- Masa del seguidor:
+
+$$m = \rho V = 7800 \cdot 3.14 \times 10^{-6} \approx 0.0245 \, \text{kg}$$
+
+Momento de inercia del seguidor:
+
+$$J_{\text{seguidor}} = \frac{1}{2} \cdot 0.0245 \cdot (0.01)^2 = 1.225 \times 10^{-6} \, \text{kg} \cdot \text{m}^2$$
+
+Momento reflejado en el engranaje base:
+
+$$J_{\text{reflejado}} = 1.225 \times 10^{-6} \cdot \left( \frac{0.02}{0.01} \right)^2 = 4.9 \times 10^{-6} \, \text{kg} \cdot \text{m}^2$$
+
+
+
+
+
 
 
 
