@@ -178,7 +178,7 @@ Este tipo de transformación hace que los ejes coordenados intercambien de lugar
 
 ## 4 Ejercicio
 
-Con lo aprendido anteriormente debe recrear un sistema biela corredera, en el cual un movimiento rotacional se transforma en un movimiento lineal.
+Con lo aprendido anteriormente debe recrear un sistema biela corredera, en el cual un movimiento rotacional se transforma en un movimiento lineal, ademas use la funcion de sensor para ver la velocidad de la corredera
 
   <div align="center">
    <img src="Imágenes_Corte_2/Clase%20%236/ejer1.png" alt="Figura de prueba" width="300">
@@ -186,35 +186,20 @@ Con lo aprendido anteriormente debe recrear un sistema biela corredera, en el cu
 </div>
 
 ## 5 Solución
-- **Resultado:** la transformación de rigid puso el eje Z en la dirección del eje Y, realizando la acción en el eje deseado. 
+Recreando cada parte del mecanismo (Manivela, viela y corredera), conectandolos con las articulaciones correspondientes (3 revolutas y una prismatica), y haciendo las transformaciones de rigis adecuadas, (2 de angulo) para poner el eje de la prismatica en el lugar correcto, (1 de posición) para ubicar la corredera a tierra en el lugar adecuado, pudimos recrear el mecnismo y su cinematica.
 
-Un eje (axis) lineal comienza su movimiento desde el reposo en la posición 0, con una aceleración de 2 m/s^2. Después de moverse durante 5 s, cual es la posición del eje (axis)?
-
-<div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%237/Ejercicio_Matlab.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 18.</b>Ejercicio Matlab 2</p>
+  <div align="center">
+   <img src="Imágenes_Corte_2/Clase%20%236/dejer1.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 17.</b>Diagrama sistema biela corredera</p>
 </div>
 
+  <div align="center">
+   <img src="Imágenes_Corte_2/Clase%20%236/ejer1g.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 17.</b>Animación sistema biela corredera</p>
+</div>
+## 6 Conclusiones
 
 
 
-
-CONCLUSONES 1. El perfil de velocidad trapezoidal es una herramienta fundamental en el diseño de trayectorias para sistemas de movimiento, como robots o ejes lineales. Su principal ventaja es que permite planificar el desplazamiento de manera suave y controlada, dividiéndolo en tres fases: aceleración, velocidad constante y desaceleración. Esta estructura facilita un movimiento más eficiente y menos agresivo para los componentes mecánicos, al evitar cambios bruscos de velocidad.
-
-2. A través del uso de fórmulas geométricas y analíticas, se pueden calcular con precisión todos los parámetros clave del movimiento: tiempos de aceleración y desaceleración, duración del movimiento uniforme y el desplazamiento total. Estas relaciones permiten adaptar el perfil a las restricciones físicas del sistema, como la aceleración máxima o la distancia que se debe recorrer. Además, la posibilidad de calcular la posición en cada instante del tiempo es esencial para aplicaciones que requieren alta precisión.
-
-3. Tanto el enfoque geométrico como el analítico resultan válidos y complementarios. El primero ofrece una solución rápida e intuitiva mediante áreas bajo la curva de velocidad, mientras que el segundo brinda mayor exactitud y permite analizar el comportamiento del sistema en todo momento. La correcta aplicación de estos métodos garantiza trayectorias optimizadas, seguras y eficientes, fundamentales en sistemas automatizados modernos
-
-
-Referencias
-
-[1] J. J. Craig, Introduction to Robotics: Mechanics and Control, 3rd ed., Pearson Prentice Hall, 2005.
-
-[2] L. Sciavicco y B. Siciliano, Modeling and Control of Robot Manipulators, 2nd ed., Springer, 2012.
-
-[3] M. P. Groover, Automation, Production Systems, and Computer-Integrated Manufacturing, 4th ed., Pearson, 2015.
-
-[4] Bosch Rexroth AG, Mechatronics and Motion Control – Application Manual, 2002.
-
-[5] J. E. Cote B., Perfiles de Movimiento, diapositivas de clase, 9° semestre, Universidad ECCI, 2025.
+## Referencias
 
