@@ -582,6 +582,71 @@ $$J_{\text{ref}} = J_{\text{load}} \cdot N_{GB}^2$$
 
 Cuando hay una reducción (es decir, el engranaje del motor es más pequeño que el de la carga), el motor siente una inercia menor.
 
+## 11. Eficiencia en Sistemas de Movimiento
+
+- Definición General
+
+La eficiencia $$\eta$$ se define como la relación entre la potencia de salida y la potencia de entrada:
+
+$$
+\eta = \frac{P_{\text{out}}}{P_{\text{in}}}
+$$
+
+Donde la potencia mecánica es:
+
+$$
+P = T \cdot \omega
+$$
+
+- $$T$$: Torque (Nm)
+  
+- $$\omega$$: Velocidad angular (rad/s)
+
+- Aplicación al Torque y a la Inercia Reflejada
+
+Relación entre potencias en carga y motor considerando eficiencia:
+
+$$
+T_l \cdot \omega_l = \eta \cdot T_m \cdot \omega_m
+$$
+
+Despejando el torque del motor:
+
+$$
+T_m = \frac{T_l}{\eta \cdot N_{GB}}
+$$
+
+Donde:
+
+- $$N_{GB} = \frac{\omega_l}{\omega_m}$$: Relación de engranaje
+  
+- $$eta \in (0, 1]$$: Eficiencia del sistema
+
+- Inercia Reflejada con Eficiencia
+
+Cuando hay engranajes con pérdidas:
+
+$$
+J_{\text{ref}} = \frac{J_{\text{load}}}{\eta} \cdot N_{GB}^2
+$$
+
+- Interpretación:
+ 
+Una menor eficiencia implica mayor inercia aparente en el eje del motor → se requiere más esfuerzo para mover la misma carga.
+
+- Valores Típicos de Eficiencia
+
+ <div align="center">
+   
+| Calidad del Sistema | Rango de Eficiencia \( \eta \) | Comentario                         |
+|---------------------|-------------------------------|------------------------------------|
+| Baja calidad        | 0.60 – 0.75                   | Alto rozamiento                    |
+| Media calidad       | 0.80 – 0.90                   | Común en la industria              |
+| Alta calidad        | 0.95 – 0.98                   | Sistemas bien diseñados/lubricados|
+| Ideal (teórico)     | 1.00                          | Sin pérdidas (imposible)           |
+
+</div>
+
 
 
 
