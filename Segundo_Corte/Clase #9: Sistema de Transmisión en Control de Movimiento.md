@@ -403,9 +403,9 @@ $$J_{\text{reflejado}} = J_{\text{seguidor}} \cdot \left( \frac{r_{\text{base}}}
 
 | Propiedad       | Engranaje Base | Engranaje Seguidor |
 |------------------|----------------|--------------------|
-| Radio (\(r\))    | 0.02 m         | 0.01 m             |
+| Radio $$r$$    | 0.02 m         | 0.01 m             |
 | Largo            | 0.01 m         | 0.01 m             |
-| Densidad (\(\rho\)) | 7800 kg/m³  | 7800 kg/m³         |
+| Densidad $$\rho\$$| 7800 kg/m³  | 7800 kg/m³         |
 
 </div>
 
@@ -483,6 +483,20 @@ Donde:
 - $$r_f$$: radio del engranaje seguidor  
 
 El signo negativo indica que los engranajes giran en sentidos opuestos al estar acoplados de forma externa.
+
+## 9. Resultado de la Simulación del Sistema de Engranajes
+
+ <div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%239/Simulacion_Engranajes.gif" alt="Figura de prueba" width="600">
+  <p><b>Figura 9.</b>Gif Engranajes</p>
+</div>
+
+Durante la simulación, se observó que la rueda seguidora (de menor radio) gira al doble de velocidad que la rueda base. Esto valida correctamente la relación de transmisión definida en la configuración del bloque *Common Gear Constraint*, donde:
+
+- Gear Ratio $$Nf/Nb$$ = 0.5
+
+
+
 
 
 
