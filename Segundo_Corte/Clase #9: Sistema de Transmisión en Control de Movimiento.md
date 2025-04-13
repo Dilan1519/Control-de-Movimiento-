@@ -728,6 +728,77 @@ $$
 J_{\text{total}} = J_m + J_{\text{coupling}} + J_{\text{mg}} + \frac{1}{\eta} \cdot N_{GB}^2 \cdot \left( J_{\text{lg}} + J_{\text{load}} \right)
 $$
 
+## 13. Relación de Inercia $$J_R$$
+
+Definición
+
+La relación de inercia compara la inercia total que el motor debe mover (reflejada al eje del motor) con la inercia del rotor del motor:
+
+$$
+J_R = \frac{J_{\text{on motor shaft}} + J_{\text{ref}}}{J_m}
+$$
+
+Donde:
+
+- $$J_R$$: Relación de inercia (adimensional)  
+- $$J_{\text{on motor shaft}}$$: Inercia directa en el eje del motor (acople, rueda motriz, etc.)  
+- $$J_{\text{ref}}$$: Inercia reflejada al eje del motor (de la carga y engranajes)  
+- $$J_m$$: Inercia del rotor del motor  
+
+- Interpretación Física
+
+<div align="center">
+  
+| Valor de $$J_R$$ | Interpretación |
+|-------------------|----------------|
+| $$J_R \approx 1$$ | El motor mueve una inercia similar a la suya propia |
+| $$J_R > 3$$       | El sistema está fuertemente cargado (el motor debe mover mucha masa) |
+| $$J_R < 1$$       | El sistema es muy ligero en comparación con el motor |
+
+</div>
+
+También puede interpretarse como un porcentaje relativo.
+
+Por ejemplo, si $$J_R = 4$$, significa que el motor está moviendo 4 veces su propia inercia.
+
+- Expresión Extendida
+
+Considerando que la inercia reflejada incluye distintos componentes (como engranajes y carga):
+
+$$
+J_R = \frac{J_{\text{on motor shaft}} + J_{\text{load} \to M} + J_{\text{GB} \to M}}{J_m}
+$$
+
+Donde:
+
+- $$J_{\text{load} \to M}$$: Carga reflejada al eje del motor
+  
+- $$J_{\text{GB} \to M}$$: Caja de engranajes reflejada al eje del motor  
+
+
+💡**Ejemplo 5:**
+
+Un motor tiene una inercia de:
+
+$$
+J_m = 0.02 \, \text{kg} \cdot \text{m}^2
+$$
+
+La inercia total reflejada al eje del motor es:
+
+$$
+J_{\text{on motor shaft}} + J_{\text{ref}} = 0.06 \, \text{kg} \cdot \text{m}^2
+$$
+
+Entonces:
+
+$$
+J_R = \frac{0.06}{0.02} = 3
+$$
+
+Esto indica que la carga representa 300% de la inercia del motor, lo cual puede ser aceptable o no, dependiendo del fabricante y del tipo de control requerido.
+
+
 
 
 
