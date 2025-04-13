@@ -798,6 +798,54 @@ $$
 
 Esto indica que la carga representa 300% de la inercia del motor, lo cual puede ser aceptable o no, dependiendo del fabricante y del tipo de control requerido.
 
+💡**Ejemplo 6:**
+
+ <div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%239/Ejemplo_6_load.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 10.</b>Gif Ejempl 4</p>
+</div>
+
+- Convertir Unidades
+
+La inercia del engranaje está dada en $$\text{kg} \cdot \text{cm}^2$$. Se convierte a $$\text{kg} \cdot \text{m}^2$$:
+
+$$
+J_{GB} = 0.15\, \text{kg} \cdot \text{cm}^2 = 0.15 \times 10^{-4} = 1.5 \times 10^{-5} \, \text{kg} \cdot \text{m}^2
+$$
+
+- Reflejar la Inercia de la Carga al Eje del Motor
+
+La fórmula para reflejar una inercia a través de un engranaje con relación \( N \) (reducción salida/entrada):
+
+$$
+J_{\text{load} \to M} = \frac{J_{\text{load}}}{N^2} = \frac{10 \times 10^{-4}}{5^2} = \frac{10 \times 10^{-4}}{25} = 4 \times 10^{-5} \, \text{kg} \cdot \text{m}^2
+$$
+
+- Reflejar la Inercia del Engranaje al Eje del Motor
+
+Ya está dada como reflejada a la entrada (es decir, al eje del motor):
+
+$$
+J_{GB \to M} = 1.5 \times 10^{-5} \, \text{kg} \cdot \text{m}^2
+$$
+
+- Calcular la Relación de Inercia \( J_R \)
+
+Usamos la fórmula completa:
+
+$$
+J_R = \frac{J_{\text{load} \to M} + J_{GB \to M}}{J_m}
+$$
+
+Sustituyendo valores:
+
+$$
+J_R = \frac{4 \times 10^{-5} + 1.5 \times 10^{-5}}{1.5 \times 10^{-5}} = \frac{5.5 \times 10^{-5}}{1.5 \times 10^{-5}} = 3.67
+$$
+
+
+
+
 
 
 
