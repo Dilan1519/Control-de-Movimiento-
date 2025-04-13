@@ -843,10 +843,42 @@ $$
 J_R = \frac{4 \times 10^{-5} + 1.5 \times 10^{-5}}{1.5 \times 10^{-5}} = \frac{5.5 \times 10^{-5}}{1.5 \times 10^{-5}} = 3.67
 $$
 
+
+💡**Actividad 1:**
+
 <div align="center">
   <img src="Imágenes_Corte_2/Clase%20%239/Actividad_Clase_9.png" alt="Figura de prueba" width="300">
   <p><b>Figura 2.</b>Actividad</p>
 </div>
+
+- Datos del sistema
+
+- Engranaje 651: $$N_{651} = \frac{60}{30} = 2$$
+
+- Engranaje 652: $$N_{652} = \frac{90}{30} = 3$$
+  
+- Inercia de la carga: $$J_{\text{load}} = 5 \times 10^{-4} \, \text{kg} \cdot \text{m}^2$$
+
+- Inercia del motor: $$J_m = 3 \times 10^{-6} \, \text{kg} \cdot \text{m}^2$$
+
+- Calcular la Relación de Transmisión Total
+
+$$
+N_{\text{total}} = N_{651} \times N_{652} = 2 \times 3 = 6
+$$
+
+- Reflejar la Inercia de la Carga al Eje del Motor
+
+$$
+J_{\text{ref}} = \frac{J_{\text{load}}}{N_{\text{total}}^2} = \frac{5 \times 10^{-4}}{(2 \times 3)^2} = \frac{5 \times 10^{-4}}{36} \approx 1.38 \times 10^{-5} \, \text{kg} \cdot \text{m}^2
+$$
+
+- Calcular la Relación de Inercia \( J_R \)
+
+$$
+J_R = \frac{J_{\text{ref}}}{J_m} = \frac{1.38 \times 10^{-5}}{3 \times 10^{-6}} \approx 4.6
+$$
+
 
 
 
