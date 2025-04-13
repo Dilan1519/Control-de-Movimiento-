@@ -848,7 +848,7 @@ $$
 
 <div align="center">
   <img src="Imágenes_Corte_2/Clase%20%239/Actividad_Clase_9.png" alt="Figura de prueba" width="300">
-  <p><b>Figura 2.</b>Actividad</p>
+  <p><b>Figura 12.</b>Actividad</p>
 </div>
 
 - Datos del sistema
@@ -878,6 +878,145 @@ $$
 $$
 J_R = \frac{J_{\text{ref}}}{J_m} = \frac{1.38 \times 10^{-5}}{3 \times 10^{-6}} \approx 4.6
 $$
+
+## 14. Mecanismo Polea-Correa
+
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%239/Poleas.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 13.</b>Poleas</p>
+</div>
+
+Un sistema polea-correa es un mecanismo que transmite movimiento rotacional entre dos ejes, utilizando:
+
+- Dos poleas de diferentes radios.
+
+- Una correa (lisa o dentada) que conecta ambas poleas.
+
+La relación de radios determina la transformación de velocidad angular y torque entre los ejes conectados.
+
+- Comportamiento Mecánico
+
+- A diferencia de los engranajes, ambas poleas giran en el mismo sentido.
+
+- La velocidad angular se transforma según la relación inversa de radios:
+
+$$
+\frac{\omega_2}{\omega_1} = \frac{r_1}{r_2}
+\quad \Rightarrow \quad \text{Si una polea es más pequeña, gira más rápido.}
+$$
+
+- El torque se transforma de forma inversa a la velocidad angular:
+
+$$
+\frac{T_2}{T_1} = \frac{r_2}{r_1}
+$$
+
+## 15. Simulación en Simscape: Sistema Polea-Correa con Motor DC
+
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%239/Simulación_simscape_Poleas.png" alt="Figura de prueba" width="700">
+  <p><b>Figura 14.</b>imulación en Simscape: Sistema Polea-Correa con Motor DC</p>
+</div>
+
+- Componentes del Sistema
+
+- Motor DC Moog C23L33W10: Motor alimentado con 24 V DC, genera una velocidad de salida de 11,500 rpm.
+
+- Sistema Polea-Correa:
+
+  - Compuesto por dos bloques de polea configurables.
+
+  - Correa modelada como bloque adicional, para simular comportamiento realista (elasticidad, deslizamiento, etc.).
+- Medidores de velocidad:
+
+  - $$\omega_{\text{motor}} = 11{,}500 \, \text{rpm}$$
+
+  - $$\omega_{\text{salida}} = -24{,}642.86 \, \text{rpm}$$
+
+- Relación de Transmisión
+
+La relación de velocidades observada es:
+
+$$
+\frac{\omega_{\text{salida}}}{\omega_{\text{motor}}} = \frac{-24{,}642.86}{11{,}500} \approx -2.14
+$$
+
+Esto implica:
+
+- La salida gira en sentido opuesto al motor.
+
+- La relación de transmisión efectiva es de aproximadamente 2.14:1 (inversa), lo que sugiere una diferencia de radios entre poleas.
+
+
+- Configuraciones Avanzadas en Simscape
+
+Los bloques de Belt Pulley permiten ajustar:
+
+- Tamaño de poleas: Define directamente la relación de transmisión.
+
+- Forma de las poleas: Lisos, acanalados, dentados, etc.
+
+- Tipo de correa: Elástica, rígida, con o sin deslizamiento.
+
+- Deslizamiento relativo: Para simular pérdida de adherencia bajo carga.
+
+- Punto de ruptura / fatiga: Útil para análisis de durabilidad y fallas.
+
+## 16. Configuración del Bloque: Acoplamiento (Belt Pulley)
+
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%239/Poleas_Ya_casi.png" alt="Figura de prueba" width="700">
+  <p><b>Figura 14.</b>Configuración del Bloque: Acoplamiento (Belt Pulley)</p>
+</div>
+
+<div align="center">
+  
+| Parámetro              | Opciones disponibles           | Descripción                                                                 |
+|------------------------|-------------------------------|-----------------------------------------------------------------------------|
+| **Tipo de correa**     | Ideal (No slip), Realista     | Define si hay o no deslizamiento entre la correa y las poleas.             |
+| **Dirección**          | Same direction, Opposite direction | Sentido de rotación entre poleas. Afecta el signo de la salida.       |
+| **Tensión máxima**     | Valor numérico (N)            | Límite de tracción antes del fallo del material.                           |
+| **Advertencia de tensión** | Activada / Desactivada     | Informa si se supera la tensión máxima configurada en la simulación.       |
+
+</div>
+
+- Configuración del Bloque: Polea
+
+<div align="center">
+  
+| Parámetro            | Unidad / Opciones               | Descripción                                                                 |
+|----------------------|----------------------------------|-----------------------------------------------------------------------------|
+| **Radio de la polea** | m, cm, etc.                     | Determina la relación de transmisión entre poleas.                         |
+| **Fricción viscosa** | N·m/(rad/s)                      | Modela pérdida de energía por fricción en cojinetes o ejes.                |
+| **Inercia**          | Activada / Desactivada (No inertia) | Considera el momento de inercia de la polea en el sistema. Afecta torque. |
+
+</div>
+
+- Configuración del Bloque: Correa
+
+<div align="center">
+  
+| Parámetro           | Opciones / Valores               | Descripción                                                                |
+|---------------------|----------------------------------|----------------------------------------------------------------------------|
+| **Tipo de correa**   | Ideal, trapezoidal, dentada      | Influye en el contacto con la polea y en el comportamiento dinámico.      |
+| **Masa de la correa**| kg                               | Contribuye al momento de inercia reflejado en el sistema.                 |
+| **Elasticidad**      | N/m                              | Modela el comportamiento elástico de la correa bajo carga.                |
+| **Amortiguamiento**  | N·s/m                            | Simula disipación de energía por vibraciones.                             |
+| **Tensión máxima**   | N                                | Valor umbral en el que la correa "falla" o se rompe en simulación.        |
+
+</div>
+
+- Tabla de Relación de Giro entre Poleas
+
+<div align="center">
+  
+| Configuración       | Polea motriz (entrada) | Polea seguidora (salida) | Sentido resultante  |
+|---------------------|------------------------|---------------------------|----------------------|
+| **Same direction**   | $$+\omega\$$            | $$+\omega\$$               | Mismo sentido        |
+| **Opposite direction** | $$+\omega\$$         | $$-\omega\$$             | Sentido contrario     |
+
+</div>
+
 
 
 
