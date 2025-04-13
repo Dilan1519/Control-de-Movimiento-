@@ -4,33 +4,53 @@ El perfil de movimiento es una representación matemática y gráfica que descri
 
 ## Índice
 
-[1. ¿En qué Consiste?](#1-en-qué-Consiste)
+[1. ¿En qué Consiste?](#1-en-qué-consiste)
 
-[1.1 Diferencia entre Mecánica y Control de Movimiento](#11-Diferencia-entre-Mecánica-y-Control-de-Movimiento)
+[1.1 Diferencia entre Mecánica y Control de Movimiento](#11-diferencia-entre-mecánica-y-control-de-movimiento)
 
-[1.2 Parámetros Principales](#12-Parámetros-Principales)
+[1.2 Parámetros Principales](#12-parámetros-principales)
 
-[1.3 Tipos de Sistemas y su Perfil de Movimiento](#13-Tipos-de-Sistemas-y-su-Perfil-de-Movimiento)
+[1.3 Tipos de Sistemas y su Perfil de Movimiento](#13-tipos-de-sistemas-y-su-perfil-de-movimiento)
 
-[2 Cinemática](#2-Cinemática)
+[2. Cinemática](#2-cinemática)
 
-[2.1 Parámetros Fundamentales de la Cinemática](#21-Parámetros-Fundamentales-de-la-Cinemática)
+[2.1 Parámetros Fundamentales de la Cinemática](#21-parámetros-fundamentales-de-la-cinemática)
 
-[2.2 Diferenciación (Definición de velocidad y aceleración)](#22-Diferenciación-Definición-de-velocidad-y-aceleración)
+[2.2 Diferenciación (Definición de velocidad y aceleración)](#22-diferenciación-definición-de-velocidad-y-aceleración)
 
-[2.3 Integración (Cálculo de velocidad y posición)](#23-Integración-Cálculo-de-velocidad-y-posición)
+[2.3 Integración (Cálculo de velocidad y posición)](#23-integración-cálculo-de-velocidad-y-posicion)
 
-[2.4 Ejercicio Movimiento de un Actuador Lineal](#24-Ejercicio-Movimiento-de-un-Actuador-Lineal)
+[2.4 Ejercicio Movimiento de un Actuador Lineal](#24-ejercicio-movimiento-de-un-actuador-lineal)
+[2.5 Solución Movimiento de un Actuador Lineal](#25-solución-movimiento-de-un-actuador-lineal)
 
-[2.5 Solución Movimiento de un Actuador Lineal](#25-Solución-Movimiento-de-un-Actuador-Lineal)
+[3. Reglas Geométricas](#3-reglas-geométricas)
 
-[3. Reglas Geométricas](#3-Reglas-Geométricas)
+[3.1 Fórmulas Fundamentales Para Aceleración Constante](#31-fórmulas-fundamentales-para-aceleración-constante)
 
-[3.1 Fórmulas Fundamentales Para Aceleración Constante](#31-Fórmulas-Fundamentales-Para-Aceleración-Constante)
+[3.2 Ejercicio en Matlab](#32-ejercicio-en-matlab)
 
-[3.2 Ejercicio en Matlab](#32-Ejercicio-en-Matlab)
+[4. Comparación de Perfiles de Movimiento](#4-comparación-de-perfiles-de-movimiento)
 
-[4 Comparación de Perfiles de Movimiento](#4-Comparación-de-Perfiles-de-Movimiento)
+[5. Perfil de Velocidad Trapezoidal (Geométrico)](#5-perfil-de-velocidad-trapezoidal-geométrico)
+
+[5.1 Tiempo Total de Movimiento](#51-tiempo-total-de-movimiento)
+
+[5.2 Cálculo del Recorrido Total \(L\) y del Tiempo en Velocidad Constante \(t_m\)](#52-cálculo-del-recorrido-total-l-y-del-tiempo-en-velocidad-constante-t_m)
+
+[5.3 Cálculo Geométrico del Recorrido Total \(L\)](#53-cálculo-geométrico-del-recorrido-total-l)
+
+[5.4 Simplificación](#54-simplificación)
+
+[5.5 Despeje del Tiempo en Velocidad Constante \(t_m\)](#55-despeje-del-tiempo-en-velocidad-constante-t_m)
+
+[5.6 Enfoque Analítico del Perfil Trapezoidal (Fase de Aceleración)](#56-enfoque-analítico-del-perfil-trapezoidal-fase-de-aceleración)
+
+[5.7 Posición en Función del Tiempo](#57-posición-en-función-del-tiempo)
+
+[Conclusiones](#conclusiones)
+
+[Referencias](#referencias)
+
 
 ## 1. ¿En qué Consiste?
 
@@ -417,7 +437,6 @@ Calcular:
 
 Esto es esencial si se quiere que el sistema llegue a un punto específico y se necesita saber cuánto tiempo debe estar en cada fase del perfil trapezoidal.
 
-
 ## 5.3 Cálculo Geométrico del Recorrido Total $L$
 
 Se suman las áreas bajo la curva de velocidad, ya que:
@@ -556,8 +575,6 @@ Queremos mover el eje **X** de un robot con los siguientes datos:
 - Aceleración máxima:  
   $$a = 1 \,\text{cm/s}^2$$  
 
----
-
 ### Paso 1: Calcular el tiempo de aceleración y desaceleración
 
 Sabemos que:
@@ -574,7 +591,6 @@ $$
 
 > El tiempo de aceleración y desaceleración es el mismo ya que se usa la misma aceleración para frenar.
 
----
 
 ###  Paso 2: Calcular el tiempo a velocidad constante
 
@@ -635,15 +651,16 @@ $$
   <p><b>Figura 17.</b>Ejercicio</p>
 </div>
 
-CONCLUSONES 1. El perfil de velocidad trapezoidal es una herramienta fundamental en el diseño de trayectorias para sistemas de movimiento, como robots o ejes lineales. Su principal ventaja es que permite planificar el desplazamiento de manera suave y controlada, dividiéndolo en tres fases: aceleración, velocidad constante y desaceleración. Esta estructura facilita un movimiento más eficiente y menos agresivo para los componentes mecánicos, al evitar cambios bruscos de velocidad.
+## Conclusiones 
+
+1. El perfil de velocidad trapezoidal es una herramienta fundamental en el diseño de trayectorias para sistemas de movimiento, como robots o ejes lineales. Su principal ventaja es que permite planificar el desplazamiento de manera suave y controlada, dividiéndolo en tres fases: aceleración, velocidad constante y desaceleración. Esta estructura facilita un movimiento más eficiente y menos agresivo para los componentes mecánicos, al evitar cambios bruscos de velocidad.
 
 2. A través del uso de fórmulas geométricas y analíticas, se pueden calcular con precisión todos los parámetros clave del movimiento: tiempos de aceleración y desaceleración, duración del movimiento uniforme y el desplazamiento total. Estas relaciones permiten adaptar el perfil a las restricciones físicas del sistema, como la aceleración máxima o la distancia que se debe recorrer. Además, la posibilidad de calcular la posición en cada instante del tiempo es esencial para aplicaciones que requieren alta precisión.
 
 3. Tanto el enfoque geométrico como el analítico resultan válidos y complementarios. El primero ofrece una solución rápida e intuitiva mediante áreas bajo la curva de velocidad, mientras que el segundo brinda mayor exactitud y permite analizar el comportamiento del sistema en todo momento. La correcta aplicación de estos métodos garantiza trayectorias optimizadas, seguras y eficientes, fundamentales en sistemas automatizados modernos
 
-Referencia 
 
-Referencias
+## Referencias
 
 [1] J. J. Craig, Introduction to Robotics: Mechanics and Control, 3rd ed., Pearson Prentice Hall, 2005.
 
