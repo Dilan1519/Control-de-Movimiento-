@@ -8,24 +8,25 @@ El análisis del sistema de transmisión es crucial, ya que determina cómo se t
 
 ## Índice
 
-1. [Diseño de Transmisión en Control de Movimiento](#diseño-de-transmisión-en-control-de-movimiento)
-2. [Requerimientos de Diseño en Control de Movimiento](#requerimientos-de-diseño-en-control-de-movimiento)
-3. [Posibles Problemas de Diseño en Sistemas de Movimiento](#posibles-problemas-de-diseño-en-sistemas-de-movimiento)
-4. [Inercia y Torque Reflejado](#inercia-y-torque-reflejado)
-5. [Relación de Engranajes y su Efecto en el Sistema](#relación-de-engranajes-y-su-efecto-en-el-sistema)
-6. [Simulación de Engranajes en Simscape](#simulación-de-engranajes-en-simscape)
-7. [Modelo de Engranajes en Simscape Multibody (Aproximado con Discos)](#modelo-de-engranajes-en-simscape-multibody-aproximado-con-discos)
-8. [Configuración del bloque Common Gear Constraint](#configuración-del-bloque-common-gear-constraint)
-9. [Resultado de la Simulación del Sistema de Engranajes](#resultado-de-la-simulación-del-sistema-de-engranajes)
-10. [Inercia Reflejada a través de Engranajes](#inercia-reflejada-a-través-de-engranajes)
-11. [Eficiencia en Sistemas de Movimiento](#eficiencia-en-sistemas-de-movimiento)
-12. [Inercia Total en Sistemas Mecánicos](#inercia-total-en-sistemas-mecánicos)
-13. [Relación de Inercia  J R](#relación-de-inercia-j-r)
-14. [Mecanismo Polea-Correa](#mecanismo-polea-correa)
-15. [Simulación en Simscape: Sistema Polea-Correa con Motor DC](#simulación-en-simscape-sistema-polea-correa-con-motor-dc)
-16. [Configuración del Bloque: Acoplamiento (Belt Pulley)](#configuración-del-bloque-acoplamiento-belt-pulley)
-17. [Conclusiones](#contenido)
-18. [Referencias](#calificación)
+1. [1. Diseño de Transmisión en Control de Movimiento](#1-diseño-de-transmision-en-control-de-movimiento)  
+2. [2. Requerimientos de Diseño en Control de Movimiento](#2-requerimientos-de-diseño-en-control-de-movimiento)  
+3. [3. Posibles Problemas de Diseño en Sistemas de Movimiento](#3-posibles-problemas-de-diseño-en-sistemas-de-movimiento)  
+4. [4. Inercia y Torque Reflejado](#4-inercia-y-torque-reflejado)  
+5. [5. Relación de Engranajes y su Efecto en el Sistema](#5-relacion-de-engranajes-y-su-efecto-en-el-sistema)  
+6. [6. Simulación de Engranajes en Simscape](#6-simulacion-de-engranajes-en-simscape)  
+7. [7. Modelo de Engranajes en Simscape Multibody (Aproximado con Discos)](#7-modelo-de-engranajes-en-simscape-multibody-aproximado-con-discos)  
+8. [8. Configuración del bloque Common Gear Constraint](#8-configuracion-del-bloque-common-gear-constraint)  
+9. [9. Resultado de la Simulación del Sistema de Engranajes](#9-resultado-de-la-simulacion-del-sistema-de-engranajes)  
+10. [10. Inercia Reflejada a través de Engranajes](#10-inercia-reflejada-a-traves-de-engranajes)  
+11. [11. Eficiencia en Sistemas de Movimiento](#11-eficiencia-en-sistemas-de-movimiento)  
+12. [12. Inercia Total en Sistemas Mecánicos](#12-inercia-total-en-sistemas-mecanicos)  
+13. [13. Relación de Inercia J R](#13-relacion-de-inercia-j-r)  
+14. [14. Mecanismo Polea-Correa](#14-mecanismo-polea-correa)  
+15. [15. Simulación en Simscape: Sistema Polea-Correa con Motor DC](#15-simulacion-en-simscape-sistema-polea-correa-con-motor-dc)  
+16. [16. Configuración del Bloque: Acoplamiento (Belt Pulley)](#16-configuracion-del-bloque-acoplamiento-belt-pulley)  
+17. [17. Conclusiones](#17-conclusiones)  
+18. [18. Referencias](#18-referencias)  
+
 
 
 ## 1. Diseño de Transmisión en Control de Movimiento
