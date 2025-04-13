@@ -158,7 +158,7 @@ Para este intervalo, se conocen los siguientes valores:
 
 Paso 1: Derivar la función para obtener la aceleración
 
-$$ a(t) = \frac{dv(t)}{dt} = 2C_1 t + C_2 $$
+$$a(t) = \frac{dv(t)}{dt} = 2C_1 t + C_2$$
 
 Paso 2: Aplicar condiciones de frontera
 
@@ -223,13 +223,13 @@ Entonces:
 
 $$v_B(t) = 32 - \left( \frac{64}{900} t^2 - \frac{64}{15} t + 64 \right) = -\frac{64}{900} t^2 + \frac{64}{15} t - 32$$
 
-### 📏 Cálculo de posición total
+### Cálculo de posición total
 
 La posición es el área bajo la curva de velocidad:
 
 $$s(t) = \int_0^{15} v_A(t) \, dt + \int_{15}^{30} v_B(t) \, dt + \int_{30}^{100} v_m \, dt$$
 
-#### ① Integrar curva A:
+####  ntegrar curva A:
 
 $$\int_0^{15} \frac{64}{900} t^2 \, dt = \frac{64}{900} \cdot \left[ \frac{t^3}{3} \right]_0^{15} = \frac{64}{900} \cdot \frac{3375}{3} = \frac{64 \cdot 1125}{900} = \boxed{80 \, \text{cm}}$$
 
@@ -372,6 +372,7 @@ Se tienen los siguientes datos para el movimiento de los ejes:
 #### Cálculos
 
 Para el eje **X**:
+
 $$
 t_m^x = \frac{L_x}{v_m} - t_a = \frac{16\,cm}{4\,cm/s} - 0.2 = 3.8\,s
 $$
@@ -381,6 +382,7 @@ t_{\text{total}}^x = 3.8 + 2t_a = 4.2\,s
 $$
 
 Para el eje **Y**:
+
 $$
 t_m^y = \frac{L_y}{v_m} - t_a = \frac{12\,cm}{4\,cm/s} - 0.2 = 2.8\,s
 $$
