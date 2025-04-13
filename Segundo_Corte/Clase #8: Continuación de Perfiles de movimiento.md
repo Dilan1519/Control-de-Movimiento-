@@ -403,16 +403,16 @@ Para lograr que ambos ejes terminen al mismo tiempo, se toma como referencia el 
 - $$L_y = 12\,cm$$
 
 - Se conoce que el tiempo total del eje X fue:  
+
+$$
+t_m^x + 2t_a = 3.8 + 0.4 = 4.2\,s
+$$
   
-  $$
-  t_m^x + 2t_a = 3.8 + 0.4 = 4.2\,s
-  $$
-  
-  Entonces:
-    
-  $$
-  t_m = 3.8\,s
-  $$
+Entonces:
+
+$$
+t_m = 3.8\,s
+$$
 
 #### Ecuación:
 
