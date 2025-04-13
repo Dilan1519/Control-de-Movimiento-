@@ -647,6 +647,89 @@ Una menor eficiencia implica mayor inercia aparente en el eje del motor → se r
 
 </div>
 
+## 12. Inercia Total en Sistemas Mecánicos
+
+- ¿Qué es la inercia total?
+
+La inercia total $$J_{\text{total}}$$ es la suma de todas las inercias relevantes reflejadas al eje del motor. Representa el esfuerzo total que el motor debe vencer para generar movimiento.
+
+$$
+J_{\text{total}} = J_m + J_{\text{on motor shaft}} + J_{\text{ref}}
+$$
+
+- ¿Por qué es importante considerar todos estos elementos?
+
+- **Diseño de controladores**
+  
+  Es clave conocer cuánta inercia debe acelerarse para diseñar una respuesta dinámica precisa (por ejemplo, PI, PID, control óptimo...).
+
+- **Selección del motor**
+  
+  Subestimar la inercia puede causar sobrecalentamiento, inestabilidad o bajo rendimiento.
+
+- **Análisis de arranque/parada**
+  
+  Una inercia total alta implica mayor torque necesario en transitorios.
+
+- **Aplicaciones de alta masa o velocidad**
+  
+  Elementos como ruedas motrices o acoplamientos suelen tener gran inercia, impactando significativamente el diseño del sistema.
+
+💡**Ejemplo 4:** Cálculo de la Inercia Total Vista por el Motor
+
+Determinar la inercia total reflejada al eje del motor considerando todos los elementos del sistema de transmisión mostrado.
+
+ <div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%239/Ejemplo_Coupling.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 10.</b>Gif Ejempl 4</p>
+</div>
+
+- Sistema Analizado
+
+El sistema está compuesto por:
+
+- Motor con inercia $$J_m$$
+    
+- Acople (coupling) con inercia $$J_{\text{coupling}}$$
+  
+- Rueda motriz del engranaje (unida directamente al motor) con inercia $$J_{\text{mg}}$$ç
+  
+- Rueda seguidora del engranaje con inercia $$J_{\text{lg}}$$
+    
+- Carga conectada al engranaje con inercia $$J_{\text{load}}$$  
+
+Se conectan mediante:
+
+- Relación de engranaje: $$N_{GB} = \frac{r_l}{r_m}$$
+  
+- Eficiencia mecánica del sistema: $$\eta \in (0, 1]$$
+
+- Fórmulas Utilizadas
+
+- Inercia reflejada al eje del motor
+  
+Se considera que la rueda seguidora y la carga* están después del engranaje, por lo tanto:
+
+$$
+J_{\text{ref}} = \frac{1}{\eta} \cdot N_{GB}^2 \cdot \left( J_{\text{lg}} + J_{\text{load}} \right)
+$$
+
+- Inercia directa en el eje del motor
+
+$$
+J_{\text{on motor shaft}} = J_{\text{coupling}} + J_{\text{mg}}
+$$
+
+- Inercia total vista por el motor
+
+Combinando todos los elementos:
+
+$$
+J_{\text{total}} = J_m + J_{\text{coupling}} + J_{\text{mg}} + \frac{1}{\eta} \cdot N_{GB}^2 \cdot \left( J_{\text{lg}} + J_{\text{load}} \right)
+$$
+
+
+
 
 
 
