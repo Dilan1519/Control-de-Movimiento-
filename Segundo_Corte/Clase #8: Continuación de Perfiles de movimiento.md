@@ -6,7 +6,20 @@ En esta clase, se continúa con el estudio de los perfiles, enfocándonos en el 
 
 ## Índice
 
-[1. ¿En qué Consiste?](#1-en-qué-Consiste)
+## [1. Comparativa entre Perfil Trapezoidal y Perfil Curva en S](#1-comparativa-entre-perfil-trapezoidal-y-perfil-curva-en-s)  
+[1.1 Comparativa entre Perfil en S (Mixto) y Perfil de Curva en S Pura](#11-comparativa-entre-perfil-en-s-mixto-y-perfil-de-curva-en-s-pura)  
+
+## [2. Modelo Matemático de la Curva en S](#2-modelo-matemático-de-la-curva-en-s)  
+[2.1 ¿Por qué Usar un Polinomio de Segundo Orden?](#21-por-qué-usar-un-polinomio-de-segundo-orden)  
+[2.2 Determinación de los Coeficientes](#22-determinación-de-los-coeficientes)  
+[Desarrollo del Modelo Matemático para la Curva A](#desarrollo-del-modelo-matemático-para-la-curva-a)  
+[Expresiones de Velocidad](#expresiones-de-velocidad)  
+
+## [Ejercicio: Movimiento Multi-Eje](#ejercicio-movimiento-multi-eje)  
+## [Ejemplo Resuelto – Interpolated Motion](#ejemplo-resuelto--interpolated-motion)  
+## [Conclusiones](#conclusiones)  
+## [Referencias](#referencias)
+
 
 💡**Ejemplo 1:** Perfil de velocidad simétrico.
 
