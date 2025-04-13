@@ -281,16 +281,156 @@ $$s_C = 32 \cdot (100 - 30) = \boxed{2240 \, \text{cts}}$$
 
 $$s_{0C}(100) = 77.62 + 415.88 + 2240 = \boxed{2733.49 \, \text{cts}}$$
 
+## Ejercicio:
 
-CONCLUSONES 1. El perfil de velocidad trapezoidal es una herramienta fundamental en el diseño de trayectorias para sistemas de movimiento, como robots o ejes lineales. Su principal ventaja es que permite planificar el desplazamiento de manera suave y controlada, dividiéndolo en tres fases: aceleración, velocidad constante y desaceleración. Esta estructura facilita un movimiento más eficiente y menos agresivo para los componentes mecánicos, al evitar cambios bruscos de velocidad.
+```matlab
+% Parámetros
+v_max = 10;       % Velocidad máxima (in/s)
+t_acc = 4;        % Tiempo de aceleración (s)
+t = linspace(0, t_acc, 1000);  % Vector de tiempo
+
+% Perfil de velocidad con curva S pura (sigmoide suavizada)
+v = v_max ./ (1 + exp(-12*(t/t_acc - 0.5)));
+
+% Derivada numérica para obtener aceleración
+a = [0 diff(v)./diff(t)];  % Aceleración aproximada (in/s^2)
+
+% Gráfica
+figure;
+subplot(2,1,1);
+plot(t, v, 'b', 'LineWidth', 2);
+xlabel('Tiempo (s)');
+ylabel('Velocidad (in/s)');
+title('Perfil de Velocidad (Curva S Pura)');
+grid on;
+
+subplot(2,1,2);
+plot(t, a, 'r', 'LineWidth', 2);
+xlabel('Tiempo (s)');
+ylabel('Aceleración (in/s^2)');
+title('Perfil de Aceleración');
+grid on;
+```
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%238/Ejercicio_matlab_Clase_8.png" alt="Figura de prueba" width="600">
+  <p><b>Figura 4.</b>Ejercicio Matlab</p>
+</div>
+
+## Movimiento Multi-Eje
+
+El movimiento multi-eje implica la coordinación simultánea de dos o más ejes para ejecutar trayectorias complejas o perfiles de movimiento deseados. Es común en sistemas como máquinas CNC, robots y entornos automatizados.
+
+
+### Formas de Coordinación
+
+<div align="center">
+  
+| Tipo de Movimiento     | Descripción                                                  | Características Clave                          |
+|------------------------|--------------------------------------------------------------|------------------------------------------------|
+| **Movimiento secuencial** | Se mueve un eje a la vez, de forma alternada.                  | Simple, pero no eficiente para trayectorias suaves. |
+| **Slew Motion**         | Ambos ejes se mueven al mismo tiempo, sin sincronización precisa. | Más rápido, pero puede causar trayectorias irregulares. |
+| **Interpolated Motion** | Ambos ejes inician y terminan exactamente al mismo tiempo.      | Trayectorias suaves, ideal para curvas y diagonales. |
+
+</div>
+
+###  Definiciones Clave
+
+- **Interpolación**: Técnica que ajusta la velocidad y aceleración de cada eje para seguir una trayectoria específica (por ejemplo, una línea recta).
+- **Coordinación de ejes**: Control de la relación temporal y espacial entre múltiples ejes.
+- **Perfil de movimiento**: Representación del desplazamiento, velocidad o aceleración de un eje a lo largo del tiempo.
+
+
+### Ejemplo Ilustrativo
+
+Supongamos que se desea mover un cabezal de una posición $$(X_0, Y_0) a (X_f, Y_f)$$:
+
+- **Movimiento secuencial**: Primero se mueve X, luego Y (o viceversa).
+
+- **Slew Motion**: X e Y se mueven simultáneamente, pero pueden llegar en tiempos diferentes.
+
+- **Interpolación**: Se calcula una trayectoria (por ejemplo, línea recta) para que ambos ejes lleguen al punto final al mismo tiempo.
+
+💡**Ejemplo 2:** (slew motion).
+
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%238/Ejemplo (slew motion).png" alt="Figura de prueba" width="400">
+  <p><b>Figura 4.</b>Ejemplo (slew motion)</p>
+</div>
+
+Considere la máquina de la figura. Si ambos ejes se mueven a una velocidad de 4 cm/s usando un perfil de velocidad trapezoidal con $$t_a = 0.2\,s$$, ¿cuánto tiempo le tomará a cada eje completar el movimiento?
+
+Resueltado – Slew Motion
+
+Se tienen los siguientes datos para el movimiento de los ejes:
+
+- $$t_a = 0.2\,s$$
+
+- $$L_x = 16\,cm , v_x = 4\,cm/s$$
+
+- $$L_y = 12\,cm ,  v_y = 4\,cm/s$$
+
+#### Cálculos
+
+Para el eje **X**:
+$$
+t_m^x = \frac{L_x}{v_m} - t_a = \frac{16\,cm}{4\,cm/s} - 0.2 = 3.8\,s
+$$
+
+$$
+t_{\text{total}}^x = 3.8 + 2t_a = 4.2\,s
+$$
+
+Para el eje **Y**:
+$$
+t_m^y = \frac{L_y}{v_m} - t_a = \frac{12\,cm}{4\,cm/s} - 0.2 = 2.8\,s
+$$
+
+$$
+t_{\text{total}}^y = 2.8 + 2t_a = 3.2\,s
+$$
+
+
+### Ejemplo Resuelto – Interpolated Motion
+
+Para lograr que ambos ejes terminen al mismo tiempo, se toma como referencia el perfil de velocidad del eje que **toma más tiempo** (en este caso, el eje X) y se interpola el perfil de velocidad para el eje Y.
+
+#### Datos conocidos:
+
+- $$v_x = 4\,cm/s$$
+- $$t_a = 0.2\,s$$
+- $$L_y = 12\,cm$$
+
+- Se conoce que el tiempo total del eje X fue:  
+  
+  $$
+  t_m^x + 2t_a = 3.8 + 0.4 = 4.2\,s
+  $$
+  
+  Entonces:
+    
+  $$
+  t_m = 3.8\,s
+  $$
+
+#### Ecuación:
+
+$$
+t_m = \frac{L_y}{v_y} - t_a
+\Rightarrow
+v_y = \frac{L_y}{t_m + t_a} = \frac{12\,cm}{3.8 + 0.2} = 3\,cm/s
+$$
+
+
+
+## Conclusiones 
+
+1. El perfil de velocidad trapezoidal es una herramienta fundamental en el diseño de trayectorias para sistemas de movimiento, como robots o ejes lineales. Su principal ventaja es que permite planificar el desplazamiento de manera suave y controlada, dividiéndolo en tres fases: aceleración, velocidad constante y desaceleración. Esta estructura facilita un movimiento más eficiente y menos agresivo para los componentes mecánicos, al evitar cambios bruscos de velocidad.
 
 2. A través del uso de fórmulas geométricas y analíticas, se pueden calcular con precisión todos los parámetros clave del movimiento: tiempos de aceleración y desaceleración, duración del movimiento uniforme y el desplazamiento total. Estas relaciones permiten adaptar el perfil a las restricciones físicas del sistema, como la aceleración máxima o la distancia que se debe recorrer. Además, la posibilidad de calcular la posición en cada instante del tiempo es esencial para aplicaciones que requieren alta precisión.
 
 3. Tanto el enfoque geométrico como el analítico resultan válidos y complementarios. El primero ofrece una solución rápida e intuitiva mediante áreas bajo la curva de velocidad, mientras que el segundo brinda mayor exactitud y permite analizar el comportamiento del sistema en todo momento. La correcta aplicación de estos métodos garantiza trayectorias optimizadas, seguras y eficientes, fundamentales en sistemas automatizados modernos
 
-Referencia 
-
-Referencias
+## Referencias
 
 [1] J. J. Craig, Introduction to Robotics: Mechanics and Control, 3rd ed., Pearson Prentice Hall, 2005.
 
