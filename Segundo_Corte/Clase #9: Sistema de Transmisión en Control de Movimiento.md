@@ -495,6 +495,95 @@ Durante la simulación, se observó que la rueda seguidora (de menor radio) gira
 
 - Gear Ratio $$Nf/Nb$$ = 0.5
 
+## 10. Inercia Reflejada a través de Engranajes
+
+ <div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%239/Inercia_Reflejada.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 9.</b>Gif Engranajes</p>
+</div>
+
+- Concepto General
+
+Cuando una carga con inercia $$J_{\text{load}}$$ está conectada al eje de un motor mediante un sistema de engranajes, el motor no percibe directamente dicha inercia. En su lugar, experimenta una inercia reflejada $$J_{\text{ref}}$$, la cual depende de la relación de transmisión del sistema mecánico.
+
+- Casos de Acople
+
+ <div align="center">
+   
+| Tipo de Acople     | Modelo             | Expresión de Torque                            |
+|--------------------|--------------------|------------------------------------------------|
+| Directo            | Eje rígido         | $$T_m = J_{\text{load}} \, \ddot{\theta}_m$$ |
+| Con engranajes     | Transmisión mecánica | $$T_m = J_{\text{load}} \left( \frac{r_m}{r_l} \right)^2 \ddot{\theta}_m$$ |
+
+</div>
+
+- Descripción de Variables
+
+- $$T_m$$: Torque aplicado por el motor
+  
+- $$T_l$$: Torque sobre la carga
+  
+- $$\ddot{\theta}_m$$: Aceleración angular del motor
+  
+- $$\ddot{\theta}_l$$: Aceleración angular de la carga
+  
+- $$\(r_m \), \( r_l \)$$: Radios de la rueda motriz y de la carga, respectivamente
+  
+- $$\( N_{GB} = \frac{r_l}{r_m} \)$$: Relación de transmisión del engranaje
+
+- Derivación de la Inercia Reflejada
+
+Partimos de la condición de desplazamiento tangencial:
+
+$$r_l \theta_l = r_m \theta_m \Rightarrow \omega_m = \frac{r_l}{r_m} \omega_l$$
+
+- Derivación de la Inercia Reflejada
+
+Partimos de la condición de desplazamiento tangencial:
+
+$$
+r_l \theta_l = r_m \theta_m \quad \Rightarrow \quad \omega_m = \frac{r_l}{r_m} \omega_l
+$$
+
+Usando dinámica rotacional en la carga:
+
+$$
+T_l = J_{\text{load}} \, \ddot{\theta}_l
+$$
+
+Como los torques se reflejan por la relación de radios:
+
+$$
+\frac{r_l}{r_m} T_m = J_{\text{load}} \, \ddot{\theta}_l
+$$
+
+Ahora, usamos la relación de aceleraciones angulares:
+
+$$
+\ddot{\theta}_l = \frac{r_m}{r_l} \ddot{\theta}_m
+$$
+
+Sustituyendo en la expresión de torque:
+
+$$
+T_m = J_{\text{load}} \left( \frac{r_m}{r_l} \right)^2 \ddot{\theta}_m
+$$
+
+Finalmente, definimos la **inercia reflejada** como:
+
+$$
+J_{\text{ref}} = J_{\text{load}} \cdot \left( \frac{r_m}{r_l} \right)^2
+$$
+
+
+Por lo tanto, definimos la inercia reflejada:
+
+$$J_{\text{ref}} = J_{\text{load}} \cdot N_{GB}^2$$
+
+Cuando hay una reducción (es decir, el engranaje del motor es más pequeño que el de la carga), el motor siente una inercia menor.
+
+
+
 
 
 
