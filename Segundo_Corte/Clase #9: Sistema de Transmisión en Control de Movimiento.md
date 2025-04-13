@@ -681,7 +681,7 @@ Determinar la inercia total reflejada al eje del motor considerando todos los el
 
  <div align="center">
   <img src="Imágenes_Corte_2/Clase%20%239/Ejemplo_Coupling.png" alt="Figura de prueba" width="300">
-  <p><b>Figura 10.</b>Gif Ejempl 4</p>
+  <p><b>Figura 10.</b>Gif Ejempl0 4</p>
 </div>
 
 - Sistema Analizado
@@ -802,7 +802,7 @@ Esto indica que la carga representa 300% de la inercia del motor, lo cual puede 
 
  <div align="center">
   <img src="Imágenes_Corte_2/Clase%20%239/Ejemplo_6_load.png" alt="Figura de prueba" width="300">
-  <p><b>Figura 10.</b>Gif Ejempl 4</p>
+  <p><b>Figura 11.</b>Gif Ejempl0 6</p>
 </div>
 
 - Convertir Unidades
@@ -843,7 +843,10 @@ $$
 J_R = \frac{4 \times 10^{-5} + 1.5 \times 10^{-5}}{1.5 \times 10^{-5}} = \frac{5.5 \times 10^{-5}}{1.5 \times 10^{-5}} = 3.67
 $$
 
-
+<div align="center">
+  <img src="Imágenes_Corte_2/Clase%20%239/Actividad_Clase_9.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 2.</b>Actividad</p>
+</div>
 
 
 
