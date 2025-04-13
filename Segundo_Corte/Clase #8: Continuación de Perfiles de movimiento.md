@@ -420,15 +420,13 @@ t_m = \frac{L_y}{v_y} - t_a
 v_y = \frac{L_y}{t_m + t_a} = \frac{12\,cm}{3.8 + 0.2} = 3\,cm/s
 $$
 
-
-
 ## Conclusiones 
 
-1. El perfil de velocidad trapezoidal es una herramienta fundamental en el diseño de trayectorias para sistemas de movimiento, como robots o ejes lineales. Su principal ventaja es que permite planificar el desplazamiento de manera suave y controlada, dividiéndolo en tres fases: aceleración, velocidad constante y desaceleración. Esta estructura facilita un movimiento más eficiente y menos agresivo para los componentes mecánicos, al evitar cambios bruscos de velocidad.
+1. Ajustar la velocidad de uno de los ejes para que ambos terminen simultáneamente garantiza que la trayectoria entre dos puntos (por ejemplo, de A a B) sea continua y precisa, lo cual es esencial en aplicaciones como corte láser, CNC o robótica.
 
-2. A través del uso de fórmulas geométricas y analíticas, se pueden calcular con precisión todos los parámetros clave del movimiento: tiempos de aceleración y desaceleración, duración del movimiento uniforme y el desplazamiento total. Estas relaciones permiten adaptar el perfil a las restricciones físicas del sistema, como la aceleración máxima o la distancia que se debe recorrer. Además, la posibilidad de calcular la posición en cada instante del tiempo es esencial para aplicaciones que requieren alta precisión.
+2. En movimientos interpolados, se toma como referencia el eje que requiere más tiempo para recorrer su distancia, y los otros ejes ajustan su perfil de velocidad en consecuencia.
 
-3. Tanto el enfoque geométrico como el analítico resultan válidos y complementarios. El primero ofrece una solución rápida e intuitiva mediante áreas bajo la curva de velocidad, mientras que el segundo brinda mayor exactitud y permite analizar el comportamiento del sistema en todo momento. La correcta aplicación de estos métodos garantiza trayectorias optimizadas, seguras y eficientes, fundamentales en sistemas automatizados modernos
+3. Al realizar interpolación, no solo se ajusta la velocidad final del eje más rápido, sino que también debe garantizarse que el perfil (en este caso trapezoidal) mantenga su forma, respetando tiempos de aceleración y desaceleración para evitar sobreesfuerzos o movimientos no deseados.
 
 ## Referencias
 
