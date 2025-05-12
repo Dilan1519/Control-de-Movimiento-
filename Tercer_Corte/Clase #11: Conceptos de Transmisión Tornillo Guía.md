@@ -34,7 +34,7 @@ El análisis del sistema de transmisión es crucial, ya que determina cómo se t
 Garantizar que el perfil de movimiento definido se transmita correctamente desde el motor hasta la carga mediante un sistema de transmisión bien dimensionado.
 
 <div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%239/1_Diapositiva_Diseño_de_Transmición.png" alt="Figura de prueba" width="300">
+  <img src="Segundo_Corte/Imágenes_Corte_2/Clase%20%239/1_Diapositiva_Diseño_de_Transmición.png" alt="Figura de prueba" width="300">
   <p><b>Figura 1.</b>Diseño de Transmición</p>
 </div>
 
