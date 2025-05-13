@@ -105,6 +105,10 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
   <p><b>Figura 1.</b> Abrir Smnew </p>
 </div>
 
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Motor_Movimiento.gif" alt="Figura de prueba" width="400">
+  <p><b>Figura 1.</b> Abrir Smnew </p>
+</div>
 
 
 
