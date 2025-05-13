@@ -1,10 +1,8 @@
-# Sistema de Transmisión en Control de Movimiento
+# Conceptos de Transmisión Tornillo Guía
 
-En sesiones anteriores se revisaron los principales componentes de un sistema de control de movimiento, incluyendo los controladores, el esquema de control en cascada y los perfiles de movimiento. Estos últimos funcionan como señales de referencia (set points) para los controladores, definiendo cómo debe evolucionar la posición, velocidad o aceleración del sistema a lo largo del tiempo.
+Durante las sesiones anteriores del curso, se abordaron los fundamentos del comportamiento del torque y la inercia en distintos tipos de mecanismos de transmisión. El objetivo principal ha sido entender cómo reflejar adecuadamente estas variables hacia el lado del motor, lo cual es esencial para un correcto dimensionamiento del mismo. Entre los mecanismos estudiados se encuentran los engranajes y las poleas con correas, destacando aspectos clave como la relación de transmisión, la eficiencia del sistema y la relación de inercia. Se discutió cómo estas variables afectan el rendimiento y la selección del motor, y se realizaron simulaciones en Simscape para visualizar su comportamiento.
 
-A partir de esta clase se inicia el estudio de la parte mecánica del sistema, enfocándose específicamente en el sistema de transmisión. Este sistema es el encargado de acoplar el actuador, usualmente un motor, con la carga, es decir, el elemento físico que se debe mover para cumplir con una tarea específica dentro del proceso.
-
-El análisis del sistema de transmisión es crucial, ya que determina cómo se transfiere el movimiento del motor hacia la carga. En el contexto del curso, este estudio se orientará hacia el dimensionamiento del motor, es decir, la selección adecuada de su capacidad en función de los requerimientos de la carga. Un dimensionamiento correcto garantiza que el sistema pueda ejecutar su tarea sin sobrecargas ni fallos.
+Ahora, retomando la clase luego de una pausa, se introducen nuevos mecanismos comúnmente utilizados en entornos industriales. Entre ellos se encuentra el tornillo guía, también conocido como tornillo sin fin, un componente ampliamente utilizado en diversos procesos mecánicos. Este mecanismo será analizado tanto desde su funcionamiento físico como desde su modelado y simulación, con el fin de ampliar el entendimiento sobre las diferentes formas de transmisión de movimiento y fuerza en sistemas industriales.
 
 ## Índice
 
