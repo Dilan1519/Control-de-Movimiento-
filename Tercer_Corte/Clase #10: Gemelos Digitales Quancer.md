@@ -82,7 +82,7 @@ Los software de modelado estructural permiten simular esfuerzos, materiales y co
 - En la ventana de comandos de MATLAB, escribe smnew y presiona Enter. Esto abrirá un modelo base con los elementos principales de Simscape Multibody.
 
 <div align="center">
-  <img src="Imágenes/Clase%20%235/Ejemplo_Pendulo_1.jpg" alt="Figura de prueba" width="400">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_1_Quanser.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 1.</b> Abrir Smnew </p>
 </div>
 
