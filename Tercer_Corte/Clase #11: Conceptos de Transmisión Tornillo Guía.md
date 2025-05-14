@@ -52,6 +52,11 @@ Ahora, retomando la clase, se introducen nuevos mecanismos comúnmente utilizado
 
 ## 1.3 Rosca Directa (sin esferas) vs Tornillo con Recirculación de Bolas (Ball Screw)    
 
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Rosca Directa (sin esferas) y Tornillo con Recirculación de Bolas (Ball Screw).jpg" alt="Figura de prueba" width="600">
+  <p><b>Figura 3.</b>Rosca Directa (sin esferas) vs Tornillo con Recirculación de Bolas (Ball Screw)  </p>
+</div>
+
 | Característica              | Rosca Directa (sin esferas)                                  | Tornillo con Recirculación de Bolas (Ball Screw)                      |
 |----------------------------|---------------------------------------------------------------|------------------------------------------------------------------------|
 | Mecanismo de movimiento    | Contacto directo entre rosca del tornillo y tuerca            | Movimiento asistido por esferas internas que actúan como rodamientos  |
