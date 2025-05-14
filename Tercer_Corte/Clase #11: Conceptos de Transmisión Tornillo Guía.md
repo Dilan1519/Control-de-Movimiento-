@@ -340,7 +340,7 @@ Simular la conversión de movimiento rotacional a lineal mediante un tornillo gu
 # 4.2 Parámetros clave del Tornillo
 
 <div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2311/Configuración_Tonillo_Sin_Fin.png" width="600">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Configuración_Tonillo_Sin_Fin.png" width="400">
   <p><b>Figura 10.</b>Parámetros clave del Tornillo</p>
 </div>
 
@@ -355,10 +355,30 @@ Simular la conversión de movimiento rotacional a lineal mediante un tornillo gu
 
 > **Nota**: El paso del tornillo define directamente la relación entre el desplazamiento angular y el desplazamiento lineal.
 
+# 4.3 Cálculo del desplazamiento lineal
+
 <div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2311/Resultados_Tornillo_Sin_FIN.png" width="600">
-  <p><b>Figura 3.</b>Rosca Directa (sin esferas) vs Tornillo con Recirculación de Bolas (Ball Screw)  </p>
+  <img src="Imágenes_Corte_3/Clase%20%2311/Resultados_Tornillo_Sin_FIN.png" width="400">
+  <p><b>Figura 11.</b>Cálculo del desplazamiento lineal</p>
 </div>
+
+Dado:
+
+- Desplazamiento angular: 117.8 rad
+  
+- Paso del tornillo (lead): 0.015 m/rev
+
+Usamos la conversión:
+
+$$
+\text{Desplazamiento lineal} = 117.8 \, \text{rad} \times \frac{1 \, \text{rev}}{2\pi \, \text{rad}} \times 0.015 \, \text{m/rev}
+$$
+
+$$
+\approx 0.28 \, \text{m}
+$$
+
+
 
 ## Conclusiones
 
