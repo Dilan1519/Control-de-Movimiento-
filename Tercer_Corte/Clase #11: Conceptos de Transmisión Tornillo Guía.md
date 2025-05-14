@@ -533,14 +533,87 @@ $$
 \boxed{J_{\text{ref,trans}} \approx 4.79 \times 10^{-5}\ \text{kg·m}^2}
 $$
 
-
-
-
+## 7.1 Torque de Carga Reflejado al Motor – Tornillo de Potencia Inclinado
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2311/Torque_de_Carga.png" width="400">
   <p><b>Figura 13.</b>Torque de Carga</p>
 </div>
+
+Cuando un tornillo de potencia está inclinado respecto a la horizontal, se deben considerar los siguientes parámetros para calcular el **torque reflejado al motor**:
+
+  - Ángulo de inclinación: $$\( \beta \)$$
+  
+  - Peso total: $$\( W_L + W_C \)$$
+  
+  - Coeficiente de fricción: $$\( \mu \)$$
+  
+  - Eficiencia mecánica: $$\( \eta \)$$
+
+- Fuerzas Involucradas
+
+- Fuerza de fricción:
+$$
+F_f = \mu (W_L + W_C) \cos\beta
+$$
+
+### Componente del peso a lo largo del tornillo (gravedad):
+$$
+F_g = (W_L + W_C) \sin\beta
+$$
+
+### Fuerza externa total que el motor debe vencer:
+$$
+F_{\text{ext}} = F_p + (W_L + W_C)(\sin\beta + \mu \cos\beta)
+$$
+
+Si el tornillo está horizontal $$(\( \beta = 0^\circ \))$$, entonces:
+
+$$
+F_g = 0,\quad F_{\text{ext}} = F_p + \mu(W_L + W_C)
+$$
+
+## 🔁 Relación de Transmisión Lineal-Rotacional
+
+$$
+N_S = \frac{2\pi}{p}
+$$
+
+Donde $$\( p \)$$ es el paso del tornillo (en metros por revolución).
+
+
+
+## 🔩 Torque Reflejado al Motor
+
+Se igualan los trabajos:
+
+$$
+\text{Trabajo} = F_{\text{ext}} \cdot \Delta x = T_{\text{load→in}} \cdot \Delta\theta
+$$
+
+Despejando el torque reflejado:
+
+$$
+T_{\text{load→in}} = \frac{F_{\text{ext}}}{\eta N_S}
+$$
+
+
+## 🧠 Notas Importantes
+
+- Si el sistema está inclinado, **siempre descomponer las fuerzas** usando \( \sin\beta \) y \( \cos\beta \).
+- **Modelo de reflejo** sigue la estructura:
+  - Para **inercia**:
+    \[
+    J_{\text{ref}} = \frac{1}{\eta N_S^2} \cdot m
+    \]
+  - Para **torque**:
+    \[
+    T_{\text{ref}} = \frac{F_{\text{ext}}}{\eta N_S}
+    \]
+- La eficiencia \( \eta \) **siempre se aplica** tanto para torque como para inercia.
+- En muchos casos prácticos, no hay una fuerza adicional \( F_p \), y solo se consideran fricción y peso.
+
+
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2311/Simulación simscape Multibody.png" width="400">
