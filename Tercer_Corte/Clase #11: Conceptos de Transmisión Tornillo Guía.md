@@ -159,6 +159,76 @@ $$
 IR = \frac{J_{reflejada}}{J_{motor}} = \frac{0.00167}{0.002} \approx 0.835 
 $$
 
+## 2. ¿Qué es el Backlash?
+
+>🔑 *backlash:* Es el juego o pérdida de movimiento que se produce en sistemas mecánicos, especialmente en cadenas cinemáticas largas, debido a torsión o deformación elástica.
+
+## 2.1 Consecuencias:
+
+- El movimiento aplicado en el motor no se transmite completamente al efector final.
+  
+- Pérdida de precisión.
+  
+- Dificultad para cumplir protocolos exactos de pruebas.
+
+💡**Ejemplo 2:**  Proyecto con la Fuerza Aérea – Control de Movimiento para Pruebas de Biocombustibles
+
+### Objetivo del Proyecto
+
+Diseñar y desarrollar un sistema de control de movimiento para un banco de pruebas de turbinas de avión, con el fin de realizar ensayos precisos con biocombustibles, cumpliendo con protocolos internacionales de certificación.
+
+### Contexto Técnico
+
+El banco de pruebas incluye:
+
+- Una turbina real de avión.
+  
+- Una cabina de mando simulada, con palancas y controles reales como en una aeronave.
+  
+- Instrumentación para medir variables como presión, temperatura y consumo de combustible.
+
+### Problema Inicial
+
+- En la primera fase, los controles eran mecánicos: las palancas de la cabina estaban conectadas al motor mediante guayas (cables tipo *Teleflex*).
+
+- Uno de los mandos más críticos era el control de potencia, que regula el flujo de combustible a la turbina.
+
+- Debido a la longitud de las guayas y la fricción en los recodos, surgió un fenómeno severo de backlash.
+
+### Consecuencias del Backlash
+
+- Movimientos pequeños de la palanca no se transmitían correctamente al actuador del motor.
+  
+- El operador tenía que mover mucho la palanca para que se notara el efecto, generando una respuesta tardía y saltos en la entrega de combustible.
+  
+- Esto hacía imposible seguir los protocolos de prueba, ya que se requería una variación de potencia precisa, gradual y repetible.
+
+## Solución Desarrollada
+
+El equipo de Mecatrónica diseñó un sistema de control de movimiento electrónico que reemplazó el enlace mecánico:
+
+- A la palanca de mando se le instaló un encoder rotatorio, capaz de detectar micro-movimientos con alta resolución.
+  
+- En el actuador del motor se colocó un servomotor, controlado por el sistema.
+  
+- Cualquier movimiento, por pequeño que fuera, detectado por el encoder, se convertía inmediatamente en una señal para el servomotor, eliminando por completo el backlash.
+
+## Resultados
+
+- Se obtuvo una respuesta instantánea y precisa del motor al mover la palanca.
+  
+- Se logró realizar pruebas controladas y certificables, permitiendo medir el desempeño real de los biocombustibles bajo condiciones definidas.
+  
+- Se demostró la importancia del control de movimiento preciso en sistemas de prueba industrial o aeroespacial.
+
+## Lecciones del Proyecto
+
+- El backlash puede arruinar incluso un sistema que, en teoría, está bien diseñado.
+  
+- El control electrónico con retroalimentación (encoder + servomotor) es fundamental cuando se necesita precisión extrema.
+  
+- Las soluciones mecánicas deben ser cuidadosamente evaluadas si se requiere alta fidelidad en la transmisión del movimiento.
+
 
 
 
