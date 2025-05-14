@@ -427,10 +427,115 @@ $$
 - Cuanto mayor el paso $$\( p \)$$ del tornillo, menor será la inercia reflejada (respuesta más rápida).
 
 
+## 6. Inercia Reflejada Total – Sistema con Tornillo de Bola
+
+Se determinar la inercia total reflejada al eje del motor, considerando todos los componentes que afectan el esfuerzo dinámico del sistema.
+
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2311/Inercia_Reflejada_Total.png" width="400">
   <p><b>Figura 12.</b>Inercia Reflejada Total</p>
 </div>
+
+## 6.1 Componentes Considerados
+
+- Inercia del tornillo
+
+Se puede estimar como un cilindro sólido rotante:
+
+$$
+J_\text{screw} \approx \frac{1}{2} M R^2
+$$
+
+O usar el valor provisto por el **fabricante**.
+
+- Masa total de carga útil + carro $$\(m\)$$
+
+$$
+m = \frac{W_L + W_C}{g}
+$$
+
+Donde:
+
+  - $$\( W_L \)$$: peso de la carga (N)
+  
+  - $$\( W_C \)$$: peso del carro o cama (N)
+  
+  - $$\( g \)$$: aceleración gravitacional (9.81 m/s²)
+
+  - Reflejo de inercia lineal al motor (`J_\text{load→in}`)
+
+- Usando la relación de conversión rotacional-lineal del tornillo:
+
+$$
+N_S = \frac{2\pi}{p}
+$$
+
+$$
+J_{\text{load→in}} = \frac{1}{\eta N_S^2} \cdot m = \frac{1}{\eta \left( \frac{2\pi}{p} \right)^2} \cdot m
+$$
+
+Donde:
+
+  - $$\( p \)$$: paso del tornillo (m/rev)
+  
+  - $$\( \eta \)$$: eficiencia del tornillo (valor típico entre 0.8–0.95)
+
+- Ecuación completa de inercia reflejada
+
+$$
+J_{\text{ref,trans}} = J_\text{screw} + \frac{1}{\eta N_S^2} \cdot \left( \frac{W_L + W_C}{g} \right)
+$$
+
+## Ejerjcico #2: Cálculo de Inercia Reflejada – Tornillo de Bola
+
+<div align="center">
+ 
+| Parámetro              | Valor                | Descripción                           |
+|------------------------|----------------------|---------------------------------------|
+| Peso de la carga       | $$\( W_L = 150\ \text{N} \)$$   | Fuerza gravitacional sobre la carga  |
+| Peso del carro         | $$\( W_C = 100\ \text{N} \)$$   | Peso de la cama o estructura móvil   |
+| Paso del tornillo      | $$\( p = 0.005\ \text{m/rev} \)$$ | Conversión rotación → desplazamiento |
+| Eficiencia del tornillo| $$\( \eta = 0.9 \)$$             | Eficiencia mecánica                  |
+| Inercia del tornillo   | $$\( J_{\text{screw}} = 3 \times 10^{-5}\ \text{kg·m}^2 \)$$ | Propiedad del eje                   |
+| Gravedad               | $$\( g = 9.81\ \text{m/s}^2 \)$$ | Aceleración estándar                 |
+
+</div>
+
+- Paso 1: Cálculo de la Masa Total
+
+$$
+m = \frac{W_L + W_C}{g} = \frac{150 + 100}{9.81} = \frac{250}{9.81} \approx 25.48\ \text{kg}
+$$
+
+- Paso 2: Relación de Transmisión
+
+$$
+N_S = \frac{2\pi}{p} = \frac{2\pi}{0.005} \approx 1256.64\ \text{rad/m}
+$$
+
+- Paso 3: Inercia Reflejada de la Masa
+
+$$
+J_{\text{masa→in}} = \frac{1}{\eta N_S^2} \cdot m
+$$
+
+$$
+J_{\text{masa→in}} = \frac{1}{0.9 \cdot (1256.64)^2} \cdot 25.48 \approx 1.792 \times 10^{-5}\ \text{kg·m}^2
+$$
+
+- Paso 4: Inercia Total Reflejada al Motor
+
+$$
+J_{\text{ref,trans}} = J_{\text{screw}} + J_{\text{masa→in}} = 3 \times 10^{-5} + 1.792 \times 10^{-5}
+$$
+
+$$
+\boxed{J_{\text{ref,trans}} \approx 4.79 \times 10^{-5}\ \text{kg·m}^2}
+$$
+
+
+
+
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2311/Torque_de_Carga.png" width="400">
