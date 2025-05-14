@@ -378,6 +378,53 @@ $$
 \approx 0.28 \, \text{m}
 $$
 
+## 5. Inercia Reflejada en Tornillos Guía
+
+Cuando una masa lineal es movida por un motor rotacional a través de un tornillo guía, la inercia lineal puede reflejarse al eje del motor. Esto permite analizar el sistema en términos rotacionales para diseño y control.
+
+## 5.1 Derivación desde la energía cinética
+
+- Energía cinética lineal:
+
+$$
+KE = \frac{1}{2} m \dot{x}^2
+$$
+
+Donde:
+
+- $$\( m \)$$: masa lineal (kg)
+  
+- $$\( \dot{x} \)$$: velocidad lineal (m/s)
+
+- Relación entre velocidad angular y velocidad lineal:
+
+$$
+\dot{x} = \frac{p}{2\pi} \dot{\theta}
+$$
+
+Sustituyendo en $$\( KE \)$$:
+
+$$
+KE = \frac{1}{2} m \left( \frac{p}{2\pi} \dot{\theta} \right)^2 = \frac{1}{2} \left[ m \left( \frac{p}{2\pi} \right)^2 \right] \dot{\theta}^2
+$$
+
+Esto se puede reescribir como:
+
+$$
+KE = \frac{1}{2} J_\text{ref} \dot{\theta}^2
+$$
+
+Por lo tanto, la inercia reflejada es:
+
+$$
+J_\text{ref} = m \left( \frac{p}{2\pi} \right)^2
+$$
+
+- Esta inercia reflejada $$\( J_\text{ref} \)$$ actúa como si la masa estuviera directamente conectada al eje del motor.
+  
+- Permite reducir el sistema a un solo dominio rotacional, facilitando el análisis dinámico y el diseño de controladores.
+  
+- Cuanto mayor el paso $$\( p \)$$ del tornillo, menor será la inercia reflejada (respuesta más rápida).
 
 
 ## Conclusiones
