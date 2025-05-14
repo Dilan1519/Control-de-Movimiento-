@@ -312,7 +312,7 @@ Donde:
     
 - $$\(\dot{x}\)$$: Velocidad lineal de la cápsula [m/s]  
 
-# 4. Simulación de Tornillo Guía en Simscape
+##  4. Simulación de Tornillo Guía en Simscape
 
 Simular la conversión de movimiento rotacional a lineal mediante un tornillo guía (leadscrew) usando Simscape de MATLAB/Simulink.
 
@@ -321,7 +321,7 @@ Simular la conversión de movimiento rotacional a lineal mediante un tornillo gu
   <p><b>Figura 9.</b>Simulación de Tornillo Guía en Simscape</p>
 </div>
 
-# 4.1 Componentes del modelo
+## 4.1 Componentes del modelo
 
 <div align="center">
  
@@ -337,7 +337,7 @@ Simular la conversión de movimiento rotacional a lineal mediante un tornillo gu
 
 > **Nota**: Cada bloque representa un componente físico del sistema electromecánico, permitiendo evaluar su comportamiento dinámico mediante simulación.
 
-# 4.2 Parámetros clave del Tornillo
+##  4.2 Parámetros clave del Tornillo
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2311/Configuración_Tonillo_Sin_Fin.png" width="400">
@@ -355,7 +355,7 @@ Simular la conversión de movimiento rotacional a lineal mediante un tornillo gu
 
 > **Nota**: El paso del tornillo define directamente la relación entre el desplazamiento angular y el desplazamiento lineal.
 
-# 4.3 Cálculo del desplazamiento lineal
+##  4.3 Cálculo del desplazamiento lineal
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2311/Resultados_Tornillo_Sin_FIN.png" width="400">
