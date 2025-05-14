@@ -751,6 +751,48 @@ $$
 - 🔁 **Ejes de coordenadas visibles** ayudan a verificar el movimiento angular y lineal.
 
 
+# 8.2 Resultados de la Simulación
+
+### - Gráfica:
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Resultados_Tornillo_.png" width="600">
+  <p><b>Figura 17.</b>Resultados</p>
+</div>
+
+### - Articulación Rotacional (Tornillo)
+
+- Muestra el número de revoluciones del tornillo guía a lo largo del tiempo.
+
+### - Articulación Prismática (Carro)
+
+- Refleja el desplazamiento lineal del carro sobre el eje del tornillo.
+
+- Ambos valores aumentan de forma proporcional con el tiempo.
+  
+- La articulación prismática no inicia en cero, ya que se configuró una posición inicial distinta para evitar que comenzara en el mismo punto que el cabezal del tornillo.
+  
+- Desde esa posición, el desplazamiento lineal avanza correctamente, manteniendo la relación esperada por el paso del tornillo (7.5 mm/rev).
+
+### - Resultados de Velocidad
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Resultados_Tornillo_Velocidad.png" width="600">
+  <p><b>Figura 17.</b>Resultados Tornillo Velocidad</p>
+</div>
+
+### - Velocidad Rotacional (rad/s)
+
+- Corresponde al eje de rotación del tornillo.
+
+### - Velocidad Lineal (mm/s)
+
+- Se refiere al movimiento del carro desplazándose a lo largo del tornillo.
+
+- La velocidad lineal es mucho menor que la velocidad rotacional.
+  
+- Esto se debe al paso reducido del tornillo (7.5 mm/rev), característico de sistemas con tornillo sin fin o de **rosca fina**, que requieren muchas vueltas para producir un desplazamiento significativo.
+
 
 
 
