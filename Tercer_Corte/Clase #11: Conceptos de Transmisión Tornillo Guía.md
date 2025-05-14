@@ -427,6 +427,22 @@ $$
 - Cuanto mayor el paso $$\( p \)$$ del tornillo, menor será la inercia reflejada (respuesta más rápida).
 
 
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Inercia_Reflejada_Total.png" width="400">
+  <p><b>Figura 12.</b>Inercia Reflejada Total</p>
+</div>
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Torque_de_Carga.png" width="400">
+  <p><b>Figura 13.</b>Torque de Carga</p>
+</div>
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Simulación simscape Multibody.png" width="400">
+  <p><b>Figura 14.</b>Simulación simscape Multibody</p>
+</div>
+
+
 ## Conclusiones
 
 1. La relación de transmisión en sistemas polea-correa funciona igual que en engranajes: la velocidad angular y el torque se relacionan de forma inversa según los radios, pero ambas poleas giran en el mismo sentido (salvo que se indique lo contrario en simulación).
