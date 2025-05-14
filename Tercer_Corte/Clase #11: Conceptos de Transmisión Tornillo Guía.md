@@ -16,8 +16,8 @@ Ahora, retomando la clase, se introducen nuevos mecanismos comúnmente utilizado
 >🔑 *Tornillo sin fin:* Elemento mecánico que convierte movimiento rotacional en movimiento lineal, usado comúnmente en maquinaria para precisión y control de posición.
 
 <div align="center">
-  <img src="Segundo_Corte/Imágenes_Corte_2/Clase%20%2311/Tornillo_Sin_Fin.gif" alt="Figura de prueba" width="300">
-  <p><b>Figura 1.</b>Diseño de Transmición</p>
+  <img src="Imágenes_Corte_3/Clase%20%2311/Tornillo_Sin_Fin.gif" alt="Figura de prueba" width="300">
+  <p><b>Figura 1.</b>Tornillo sin Fin</p>
 </div>
 
 - Importancia de una buena selección de motor y transmisión
