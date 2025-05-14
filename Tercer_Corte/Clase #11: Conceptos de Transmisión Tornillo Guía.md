@@ -11,12 +11,12 @@ Ahora, retomando la clase luego de una pausa, se introducen nuevos mecanismos co
  [11. Bibliografía](#11-Bibliografía)
 
 
-## 1. Diseño de Transmisión en Control de Movimiento
+## 1. Tornillo sin Fin
 
-Garantizar que el perfil de movimiento definido se transmita correctamente desde el motor hasta la carga mediante un sistema de transmisión bien dimensionado.
+>🔑 *Tornillo sin fin:* Elemento mecánico que convierte movimiento rotacional en movimiento lineal, usado comúnmente en maquinaria para precisión y control de posición.
 
 <div align="center">
-  <img src="Segundo_Corte/Imágenes_Corte_2/Clase%20%239/1_Diapositiva_Diseño_de_Transmición.png" alt="Figura de prueba" width="300">
+  <img src="Segundo_Corte/Imágenes_Corte_2/Clase%20%2311/Tornillo_Sin_Fin.gif" alt="Figura de prueba" width="300">
   <p><b>Figura 1.</b>Diseño de Transmición</p>
 </div>
 
