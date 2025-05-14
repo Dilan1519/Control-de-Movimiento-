@@ -533,7 +533,7 @@ $$
 \boxed{J_{\text{ref,trans}} \approx 4.79 \times 10^{-5}\ \text{kg·m}^2}
 $$
 
-## 7.1 Torque de Carga Reflejado al Motor – Tornillo de Potencia Inclinado
+## 7. Torque de Carga Reflejado al Motor – Tornillo de Potencia Inclinado
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2311/Torque_de_Carga.png" width="400">
@@ -665,11 +665,95 @@ $$
 J_{\text{ref trans}} = J_{\text{screw}} + J_{\text{load} \rightarrow \text{in}} \approx 5.42 \times 10^{-8} + 8.10 \approx 8.10 \, \text{kg}\cdot\text{m}^2
 $$
 
+# 8. Modelo en Simscape Multibody: Tornillo Guía (Lead Screw)
 
 <div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2311/Simulación simscape Multibody.png" width="400">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Simulación simscape Multibody.png" width="600">
   <p><b>Figura 14.</b>Simulación simscape Multibody</p>
 </div>
+
+### Componentes del modelo
+
+### - Transformación rígida
+
+  - Se usa para fijar la longitud Z del sistema.
+  
+  - No permite movimiento entre las partes conectadas.
+
+### - Junta de revolución (Revolute Joint)
+
+- Permite la rotación alrededor del eje Z.
+  
+- Representa el giro del tornillo.
+
+### - Bloque de soldadura (Weld Joint)
+
+- Une el cabezal con el tornillo.
+  
+- No permite ni rotación ni traslación entre los sólidos.
+  
+- Útil para “pegar” componentes y crear un cuerpo rígido único (como si fuera un sólido más grande).
+
+### - Articulación prismática (Prismatic Joint)
+
+- Permite que el carro se desplace linealmente sobre el tornillo.
+  
+- Restringe cualquier otro tipo de movimiento.
+
+### - Bloque de tornillo guía (Lead Screw)
+- Se configura con el paso (pitch) y el sentido del avance.
+  
+- Relaciona la rotación del tornillo con el desplazamiento lineal del carro.
+  
+- Transforma la entrada rotacional (desde la junta de revolución) en un movimiento lineal equivalente.
+
+1. El motor o entrada rotacional se conecta a una junta de revolución que gira el tornillo.
+   
+3. El bloque de Lead Screw convierte este giro en movimiento lineal del carro.
+   
+5. El carro está restringido a solo moverse linealmente gracias a la junta prismática.
+   
+7. Los componentes están firmemente unidos con bloques de soldadura, simulando el ensamblaje físico real.
+
+
+## 8.1 Configuración del bloque Lead Screw en Simscape
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Simluacion_Tornillo.png" width="600">
+  <p><b>Figura 15.</b>Simulación simscape Multibody</p>
+</div>
+
+### - Dirección
+
+- En el ejemplo se seleccionó Left-Hand (rosca izquierda).
+  
+- Esto determina el **sentido del desplazamiento lineal respecto al giro** del tornillo.
+
+###  - Lead (Paso)
+
+- Valor configurado: 7.5 mm/rev
+  
+- Indica que por cada revolución completa del tornillo, el carro se desplazará 7.5 mm a lo largo del eje.
+
+### - Interpretación del modelo simulado
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Tonillo_sin_fin.gif" width="400">
+  <p><b>Figura 16.</b>Simulación simscape Multibody</p>
+</div>
+
+- 🔴 **Cubo rojo** = Carro móvil que se traslada linealmente.
+  
+- 🔵 **Cilindro azul** = Tornillo que gira para accionar el sistema.
+  
+- 🟩 **Cubo verde** = Cabezal del tornillo (agregado visualmente para facilitar la identificación del giro).
+  
+- 🔁 **Ejes de coordenadas visibles** ayudan a verificar el movimiento angular y lineal.
+
+
+
+
+
 
 
 ## Conclusiones
