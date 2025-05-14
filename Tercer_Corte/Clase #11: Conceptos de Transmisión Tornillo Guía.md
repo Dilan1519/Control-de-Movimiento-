@@ -540,7 +540,7 @@ $$
   <p><b>Figura 13.</b>Torque de Carga</p>
 </div>
 
-Cuando un tornillo de potencia está inclinado respecto a la horizontal, se deben considerar los siguientes parámetros para calcular el **torque reflejado al motor**:
+Cuando un tornillo de potencia está inclinado respecto a la horizontal, se deben considerar los siguientes parámetros para calcular el torque reflejado al motor:
 
   - Ángulo de inclinación: $$\( \beta \)$$
   
@@ -552,17 +552,14 @@ Cuando un tornillo de potencia está inclinado respecto a la horizontal, se debe
 
 - Fuerzas Involucradas
 
-- Fuerza de fricción:
-$$
-F_f = \mu (W_L + W_C) \cos\beta
-$$
+- Fuerza de fricción: $$F_f = \mu (W_L + W_C) \cos\beta$$
 
-### Componente del peso a lo largo del tornillo (gravedad):
+### - Componente del peso a lo largo del tornillo (gravedad):
 $$
 F_g = (W_L + W_C) \sin\beta
 $$
 
-### Fuerza externa total que el motor debe vencer:
+### - Fuerza externa total que el motor debe vencer:
 $$
 F_{\text{ext}} = F_p + (W_L + W_C)(\sin\beta + \mu \cos\beta)
 $$
@@ -573,7 +570,7 @@ $$
 F_g = 0,\quad F_{\text{ext}} = F_p + \mu(W_L + W_C)
 $$
 
-## 🔁 Relación de Transmisión Lineal-Rotacional
+### - Relación de Transmisión Lineal-Rotacional
 
 $$
 N_S = \frac{2\pi}{p}
@@ -581,9 +578,7 @@ $$
 
 Donde $$\( p \)$$ es el paso del tornillo (en metros por revolución).
 
-
-
-## 🔩 Torque Reflejado al Motor
+### - Torque Reflejado al Motor
 
 Se igualan los trabajos:
 
@@ -597,22 +592,78 @@ $$
 T_{\text{load→in}} = \frac{F_{\text{ext}}}{\eta N_S}
 $$
 
+- Si el sistema está inclinado, siempre descomponer las fuerzas usando $$\( \sin\beta \)$$ y $$\( \cos\beta \)$$.
+  
+- Modelo de reflejo sigue la estructura:
+  
+  - Para inercia:
 
-## 🧠 Notas Importantes
+$$J_{\text{ref}} = \frac{1}{\eta N_S^2} \cdot m$$
+    
+  - Para torque;
+    
+$$T_{\text{ref}} = \frac{F_{\text{ext}}}{\eta N_S}$$
+   
+- La eficiencia $$\( \eta \)$$ siempre se aplica tanto para torque como para inercia.
+  
+- En muchos casos prácticos, no hay una fuerza adicional $$\( F_p \)$$, y solo se consideran fricción y peso.
 
-- Si el sistema está inclinado, **siempre descomponer las fuerzas** usando \( \sin\beta \) y \( \cos\beta \).
-- **Modelo de reflejo** sigue la estructura:
-  - Para **inercia**:
-    \[
-    J_{\text{ref}} = \frac{1}{\eta N_S^2} \cdot m
-    \]
-  - Para **torque**:
-    \[
-    T_{\text{ref}} = \frac{F_{\text{ext}}}{\eta N_S}
-    \]
-- La eficiencia \( \eta \) **siempre se aplica** tanto para torque como para inercia.
-- En muchos casos prácticos, no hay una fuerza adicional \( F_p \), y solo se consideran fricción y peso.
+💡**Ejemplo 3:** 
 
+Una carga de 50 kg debe ser posicionada usando un **tornillo esferado de acero** con las siguientes características:
+
+- Densidad: $$\( \rho = 0.14 \, \text{kg/cm}^3 \)$$
+  
+- Diámetro: $$\( d = 0.182 \, \text{cm} \)$$
+  
+- Longitud: $$\( L = 36 \, \text{cm} \)$$
+  
+- Paso del tornillo: $$\( p = 0.75 \, \text{cm/rev} \)$$
+  
+- Eficiencia: $$\( \eta = 0.90 \)$$
+
+Además, el carro pesa 0.23 kg.
+
+
+### - Paso 1: Relación de Transmisión
+
+$$
+N_s = \frac{2\pi}{p} = \frac{2\pi}{0.0075} \approx 837.76 \, \text{rad/m}
+$$
+
+### - Paso 2: Momento de Inercia del Tornillo
+
+$$
+J_{\text{screw}} = \frac{\pi L \rho D^4}{32}
+$$
+
+Sustituyendo:
+
+$$
+J_{\text{screw}} = \frac{\pi \cdot 0.36 \cdot 140{,}000 \cdot (0.00182)^4}{32} \approx 5.42 \times 10^{-8} \, \text{kg}\cdot\text{m}^2
+$$
+
+### - Paso 3: Masa Total
+
+$$
+m = W_L + W_C = 50 + 0.23 = 50.23 \, \text{kg}
+$$
+
+### - Paso 4: Cálculo de Inercia Reflejada de la Masa
+
+$$
+J_{\text{load} \rightarrow \text{in}} = \frac{1}{\eta N_s^2} \cdot m
+$$
+
+$$
+J_{\text{load} \rightarrow \text{in}} = \frac{50.23}{0.9 \cdot (837.76)^2} \approx 8.10 \, \text{kg}\cdot\text{m}^2
+$$
+
+### - Paso 5: Inercia Total Reflejada
+
+$$
+J_{\text{ref trans}} = J_{\text{screw}} + J_{\text{load} \rightarrow \text{in}} \approx 5.42 \times 10^{-8} + 8.10 \approx 8.10 \, \text{kg}\cdot\text{m}^2
+$$
 
 
 <div align="center">
