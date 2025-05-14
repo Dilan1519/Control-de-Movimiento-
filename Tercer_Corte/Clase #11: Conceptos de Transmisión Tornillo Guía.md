@@ -230,6 +230,62 @@ El equipo de Mecatrónica diseñó un sistema de control de movimiento electrón
 - Las soluciones mecánicas deben ser cuidadosamente evaluadas si se requiere alta fidelidad en la transmisión del movimiento.
 
 
+## 3. Cabeceo (Pitch) vs Paso (Lead)
+
+<div align="center">
+ 
+| **Característica**        | **Cabeceo (Pitch)**                                                                 | **Paso (Lead)**                                                                 |
+|--------------------------|--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| **Definición**           | Número de vueltas necesarias para mover la cápsula 1 unidad de longitud              | Distancia que se desplaza la cápsula por cada vuelta del tornillo              |
+| **Símbolo común**        | No siempre tiene símbolo específico                                                  | `p`                                                                             |
+| **Unidad típica**        | rev/m o rev/in                                                                       | m/rev o mm/rev                                                                  |
+| **Interpretación**       | Entrada → ¿Cuántas vueltas se necesitan?                                             | Salida → ¿Cuánto se mueve por vuelta?                                          |
+| **Usado para**           | Medir esfuerzo del motor necesario para lograr un desplazamiento                    | Medir la eficiencia de la conversión angular-lineal                            |
+| **Sistema de medida**    | Métrico / imperial                                                                   | Métrico / imperial                                                              |
+| **Aplicación práctica**  | Más común en estándares ingleses (rev/in)                                            | Más usado en diseño y selección de tornillos                                   |
+| **Importancia en diseño**| Menor (referencial)                                                                  | Alta (define la relación de transmisión)                                        |
+
+</div>
+
+**Nota**: Esta es la **relación de transmisión** que caracteriza a los tornillos de potencia.  
+
+## 3.1 Relación Movimiento Angular ↔ Movimiento Lineal
+
+A partir de estos parámetros, se establece la relación entre desplazamiento angular del tornillo y desplazamiento lineal de la carga:
+
+$$
+\Delta \theta = \frac{2\pi}{p} \cdot \Delta x
+$$
+
+Donde:
+
+- $$\(\Delta \theta\)$$: Desplazamiento angular del tornillo [rad]
+  
+- $$\(\Delta x\)$$: Desplazamiento lineal de la cápsula [m]
+  
+- $$\(p\)$$: Paso del tornillo [m/rev]  
+
+## 3.2 Relación entre Velocidades
+
+Si derivamos con respecto al tiempo:
+
+$$
+\frac{d\theta}{dt} = \frac{2\pi}{p} \cdot \frac{dx}{dt} \quad \Rightarrow \quad \frac{\dot{\theta}}{\dot{x}} = \frac{2\pi}{p}
+$$
+
+Lo que implica que:
+
+$$
+\frac{\text{Velocidad del motor}}{\text{Velocidad de la carga}} = \frac{2\pi}{p}
+$$
+
+Donde:
+
+- $$\(\dot{\theta}\)$$: Velocidad angular del tornillo [rad/s]
+    
+- $$\(\dot{x}\)$$: Velocidad lineal de la cápsula [m/s]  
+
+
 
 
 
