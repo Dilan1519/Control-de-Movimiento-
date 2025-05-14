@@ -69,7 +69,6 @@ Ahora, retomando la clase, se introducen nuevos mecanismos comúnmente utilizado
 
 > **Nota:** Los tornillos con recirculación de bolas ofrecen ventajas significativas en eficiencia y precisión, siendo ideales para sistemas exigentes, aunque a un mayor costo.
 
-
 ## 1.4 Aplicaciones
 
 <div align="center">
@@ -88,11 +87,78 @@ Ahora, retomando la clase, se introducen nuevos mecanismos comúnmente utilizado
 
 > **Nota:** Todas estas aplicaciones emplean mecanismos de transmisión de movimiento lineal, fundamentales en sistemas industriales y automatizados.
 
+💡**Ejemplo 1:**  
 
+**Sistema:** Tornillo guía con recirculación de bolas y rosca trapezoidal.  
 
+**Aplicación:** Máquina CNC para cortar materiales metálicos.  
 
+**Objetivo:** Convertir el giro del motor en un desplazamiento lineal preciso del cabezal de corte.
 
-💡**Ejemplo 2:** 
+**Datos:**
+
+- Relación de transmisión: 1:5
+  
+- Eficiencia del sistema: 85%
+  
+- Torque en la carga: 10 Nm
+  
+- Inercia de la carga reflejada: 0.02 kg·m²  
+
+**Cálculos:**
+
+**1. Torque reflejado al motor:**
+
+$$
+T_{motor} = \frac{T_{carga}}{r \cdot \eta} = \frac{10}{5 \cdot 0.85} \approx 2.35 \, \text{Nm}
+$$
+
+**2. Inercia reflejada al motor:**
+
+$$
+J_{motor} = \frac{J_{carga}}{r^2} = \frac{0.02}{25} = 0.0008 \, \text{kg} \cdot \text{m}^2
+$$
+
+**3. Relación de inercia (IR):**
+
+Si la inercia del motor es $$\( J_{motor} = 0.001 \, \text{kg} \cdot \text{m}^2 \)$$:
+
+$$
+IR = \frac{J_{reflejada}}{J_{motor}} = \frac{0.0008}{0.001} = 0.8 
+$$
+
+## 1.5 Ejercicio 1
+
+**Sistema:** Impresora 3D con tornillo guía de rosca cuadrada sin esferas.  
+
+**Relación de transmisión:** 1:3  
+
+**Inercia de la carga:** 0.015 kg·m²  
+
+**Torque en la carga:** 5 Nm  
+
+**Eficiencia del sistema:** 70%
+
+**Preguntas y soluciones:**
+
+**1. ¿Cuál es el torque que debe entregar el motor?**
+
+$$
+T_{motor} = \frac{T_{carga}}{r \cdot \eta} = \frac{5}{3 \cdot 0.7} \approx \frac{5}{2.1} \approx 2.38 \, \text{Nm}
+$$
+
+**2. ¿Cuál es la inercia reflejada al motor?**
+
+$$
+J_{motor} = \frac{J_{carga}}{r^2} = \frac{0.015}{9} \approx 0.00167 \, \text{kg} \cdot \text{m}^2
+$$
+
+**3. Si la inercia del motor es 0.002 kg·m², ¿la relación de inercia es adecuada?**
+
+$$
+IR = \frac{J_{reflejada}}{J_{motor}} = \frac{0.00167}{0.002} \approx 0.835 
+$$
+
 
 
 
