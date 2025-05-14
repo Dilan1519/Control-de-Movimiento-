@@ -17,13 +17,20 @@ Ahora, retomando la clase, se introducen nuevos mecanismos comúnmente utilizado
 
 ## 1.1 Principio de Funcionamiento
 
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Tornillo_Sin_Fin.gif" alt="Figura de prueba" width="300">
+  <p><b>Figura 1.</b>Tornillo sin Fin</p>
+</div>
+
 - Al girar el tornillo, se genera un desplazamiento lineal en una tuerca o componente móvil acoplado a él.
 
 - A esta parte móvil, que se desplaza a lo largo del tornillo, se le suele conectar una cama o bandeja que cumple funciones específicas en el sistema mecánico.
   
+## 1.2 Rosca Cuadrada (Square Thread) vs Rosca Trapezoidal (Trapezoidal Thread)   
+
 <div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2311/Tornillo_Sin_Fin.gif" alt="Figura de prueba" width="300">
-  <p><b>Figura 1.</b>Tornillo sin Fin</p>
+  <img src="Imágenes_Corte_3/Clase%20%2311/Acme_Threads_Trapezoidal_Threads.png" alt="Figura de prueba" width="600">
+  <p><b>Figura 2.</b>Square Thread y Trapezoidal Thread</p>
 </div>
 
 <div align="center">
@@ -41,12 +48,26 @@ Ahora, retomando la clase, se introducen nuevos mecanismos comúnmente utilizado
 </div>
 
 > **Nota:** La elección entre rosca cuadrada y trapezoidal depende del tipo de aplicación mecánica, considerando factores como carga, eficiencia, durabilidad y costo.
-<div align="center">
+
+
+## 1.3 Rosca Directa (sin esferas) vs Tornillo con Recirculación de Bolas (Ball Screw)    
+
+| Característica              | Rosca Directa (sin esferas)                                  | Tornillo con Recirculación de Bolas (Ball Screw)                      |
+|----------------------------|---------------------------------------------------------------|------------------------------------------------------------------------|
+| Mecanismo de movimiento    | Contacto directo entre rosca del tornillo y tuerca            | Movimiento asistido por esferas internas que actúan como rodamientos  |
+| Fricción                   | Alta fricción                                                  | Muy baja fricción gracias a las esferas                               |
+| Precisión del movimiento   | Menor precisión                                                | Alta precisión y suavidad                                             |
+| Desgaste                   | Mayor desgaste debido al contacto directo                     | Menor desgaste por menor contacto directo                             |
+| Capacidad de carga         | Limitada a cargas bajas o moderadas                          | Soporta cargas elevadas por mejor distribución del esfuerzo           |
+| Costo                      | Más económico                                                 | Más costoso                                                           |
+| Aplicaciones típicas       | Sistemas simples o de bajo costo donde la precisión no es crítica | Máquinas CNC, robótica, automatización de alta precisión          |
+
+> **Nota:** Los tornillos con recirculación de bolas ofrecen ventajas significativas en eficiencia y precisión, siendo ideales para sistemas exigentes, aunque a un mayor costo.
+
+
+## 1.4 Aplicaciones
 
 <div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2311/Acme_Threads_Trapezoidal_Threads.png" alt="Figura de prueba" width="300">
-  <p><b>Figura 1.</b>Tornillo sin Fin</p>
-</div>
 
 | Aplicación                          | Descripción                                                                 |
 |------------------------------------|-----------------------------------------------------------------------------|
