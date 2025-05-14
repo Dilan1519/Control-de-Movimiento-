@@ -15,161 +15,59 @@ Ahora, retomando la clase, se introducen nuevos mecanismos comúnmente utilizado
 
 >🔑 *Tornillo sin fin:* Elemento mecánico que convierte movimiento rotacional en movimiento lineal, usado comúnmente en maquinaria para precisión y control de posición.
 
+## 1.1 Principio de Funcionamiento
+
+- Al girar el tornillo, se genera un desplazamiento lineal en una tuerca o componente móvil acoplado a él.
+
+- A esta parte móvil, que se desplaza a lo largo del tornillo, se le suele conectar una cama o bandeja que cumple funciones específicas en el sistema mecánico.
+  
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2311/Tornillo_Sin_Fin.gif" alt="Figura de prueba" width="300">
   <p><b>Figura 1.</b>Tornillo sin Fin</p>
 </div>
 
-- Importancia de una buena selección de motor y transmisión
+<div align="center">
+ 
+| Característica              | Rosca Cuadrada (Square Thread)                        | Rosca Trapezoidal (Trapezoidal Thread)                          |
+|----------------------------|--------------------------------------------------------|------------------------------------------------------------------|
+| Forma del diente           | Perfil completamente cuadrado                          | Perfil con pendiente lateral (~29° o 30°)                        |
+| Dimensiones del diente     | Todos los dientes tienen el mismo ancho y altura       | Dientes con inclinación que mejora el contacto                  |
+| Costo                      | Más económica                                           | Más costosa                                                     |
+| Uso recomendado            | Cargas ligeras o moderadas                             | Cargas altas                                                    |
+| Resistencia estructural    | Más débil, propensa al desgaste o deformación          | Mayor robustez frente a esfuerzos mecánicos                     |
+| Eficiencia de acople       | Menor eficiencia, más fricción                         | Mejor distribución de carga, acople más eficiente               |
+| Durabilidad                | Menor, debido al desgaste localizado                   | Mayor, gracias a la mejor distribución de fuerzas               |
+
+</div>
+
+> **Nota:** La elección entre rosca cuadrada y trapezoidal depende del tipo de aplicación mecánica, considerando factores como carga, eficiencia, durabilidad y costo.
+<div align="center">
 
 <div align="center">
-  
-| Caso               | Consecuencia                                                             |
-|--------------------|---------------------------------------------------------------------------|
-| Subdimensionamiento | El motor no puede cumplir con la tarea → Fallo y reemplazo costoso.      |
-| Sobredimensionamiento | Capacidad desaprovechada → Mayor costo y menor eficiencia.              |
-
+  <img src="Imágenes_Corte_3/Clase%20%2311/Acme_Threads_Trapezoidal_Threads.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 1.</b>Tornillo sin Fin</p>
 </div>
-  
-> **Nota:** La selección debe considerar variaciones futuras en el proceso, como aumento de carga o cambios en el mecanismo.
 
-- Tipos de acoplamiento
-
-<div align="center">
-  
-| Tipo de transmisión | Descripción                                                             |
-|---------------------|-------------------------------------------------------------------------|
-| Directo             | La carga se acopla directamente al eje del motor.                       |
-| Engranajes          | Modifican torque y velocidad mediante relación de transmisión.          |
-| Polea-correa        | Permite ajustar velocidad/torque, absorbe vibraciones.                  |
-| Tornillo sin fin    | Alta reducción, ideal para movimientos lentos y de alta fuerza.         |
-| Transportadoras     | Transmiten movimiento lineal para desplazar objetos.                    |
+| Aplicación                          | Descripción                                                                 |
+|------------------------------------|-----------------------------------------------------------------------------|
+| Impresoras 3D                      | Permiten el desplazamiento preciso del cabezal o la cama de impresión.     |
+| Tornos CNC                         | Guían el movimiento lineal de las herramientas para mecanizado.            |
+| Prensas mecánicas                  | Transmiten fuerza para aplicar presión en procesos como embutido o corte.  |
+| Sillas elevadoras                  | Convierten el giro del motor en desplazamiento vertical para elevar carga. |
+| Mesas de coordenadas (fresadoras) | Desplazan con precisión la pieza en ejes X/Y para mecanizado controlado.   |
+| Actuadores lineales eléctricos     | Utilizados en automatización para generar movimiento lineal controlado.    |
+| Sistemas de apertura de compuertas | Controlan la apertura/cierre de compuertas en sistemas hidráulicos o mecánicos. |
 
 </div>
 
-> **Nota:** La elección del tipo de acoplamiento impacta directamente en el rendimiento, la eficiencia y el mantenimiento del sistema. Debe seleccionarse según la aplicación y las condiciones de operación.
+> **Nota:** Todas estas aplicaciones emplean mecanismos de transmisión de movimiento lineal, fundamentales en sistemas industriales y automatizados.
 
-💡**Ejemplo 1:**
 
-Supóongamos que necesitas mover una caja de 10 kg mediante una banda transportadora. Si más adelante se aumenta la carga a 20 kg, un motor mal dimensionado podría falla
 
-<div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%239/Ejemplo_1_Clase_9.jpeg" alt="Figura de prueba" width="300">
-  <p><b>Figura 2.</b>Ejemplo 1</p>
-</div>
 
-- Solución:
-
-  - Dimensionar el motor considerando una margen de carga adicional.
-
-  - Analizar el tipo de transmisión para optimizar torque/velocidad según el requerimiento.
-
-- ¿Por qué no basta con mirar el torque de la carga?
-  
-Cuando usamos transmisiones no directas (como engranajes), el torque y la inercia de la carga no se transfieren tal cual al motor.
-
-- Se debe hacer una reflexión de parámetros:
-
-  - Convertir inercia y torque de la carga a valores equivalentes en el eje del motor.
-
-  - Considerar también la inercia del mecanismo (engranajes, poleas, etc.), no solo de la carga final.
-
-## 2. Requerimientos de Diseño en Control de Movimiento
-
-También es crucial balancear la inercia motor-carga para garantizar estabilidad y desempeño. Además, deben considerarse factores como costo, precisión, frecuencia de operación y restricciones del entorno.
-
- <div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%239/2_Diapositiva_Clase_9.gif" alt="Figura de prueba" width="300">
-  <p><b>Figura 3.</b>Inercia Motor</p>
-</div>
-
-🔑 Margen de seguridad: Factor multiplicativo aplicado al requerimiento mínimo de torque para garantizar que el motor funcione correctamente incluso en condiciones imprevistas. Generalmente se recomienda un margen entre 1.2 y 2.0, dependiendo del nivel de incertidumbre del sistema.
-
-- Factores comunes en la selección del motor
-
-<div align="center">
-   
-| Requisito                | ¿Por qué es importante?                                 | Consecuencia de ignorarlo                          |
-|--------------------------|---------------------------------------------------------|----------------------------------------------------|
-| Torque mínimo requerido  | Mover la carga sin que el motor se sobrecargue         | Subdimensionamiento, falla del sistema             |
-| Relación de inercias     | Estabilidad del sistema de control                     | Respuesta lenta o inestable                        |
-| Costos                   | Ajustarse al presupuesto del proyecto                  | Inviabilidad del diseño                            |
-| Precisión y ciclos       | Garantizar repetibilidad y rendimiento en tiempo esperado | Fallos de calidad o productividad              |
-
-</div>
-
-> **Nota:** La correcta evaluación de estos factores asegura una selección de motor equilibrada entre rendimiento, eficiencia y viabilidad económica.
 
 💡**Ejemplo 2:** 
 
-**Pregunta:**  
-
-Supongamos que nuestro sistema requiere 2.5 Nm de torque para funcionar correctamente. Si decides usar un margen de seguridad del 1.5, ¿cuál debería ser el torque mínimo nominal del motor?
-
-**Solución:**  
-
-$$T_{\text{motor}} = 2.5\, \text{Nm} \times 1.5 = 3.75\, \text{Nm}$$
-
-Deberiamos elegir un motor con un torque nominal de al menos **3.75 Nm**.
-
-## 3. Posibles Problemas de Diseño en Sistemas de Movimiento
-
-🔑 Transmisión mecánica: Sistema que adapta la velocidad y el torque entre un actuador (como un motor) y la carga. Puede incluir engranajes, bandas, poleas, tornillos sin fin, etc.
-
-En el diseño de sistemas mecatrónicos, es común enfrentarse a distintos escenarios dependiendo de los elementos que ya estén disponibles o definidos. Estos escenarios afectan directamente el enfoque del proceso de diseño.
-
-- Tipos de problemas de diseño:
-
-<div align="center">
-  
-| Tipo | Datos conocidos                            | A determinar                      | Contexto típico                                                      |
-|------|--------------------------------------------|-----------------------------------|----------------------------------------------------------------------|
-| 1    | Movimiento deseado de la carga             | Transmisión y motor               | Proyectos que inician desde cero                                     |
-| 2    | Motor y transmisión existentes             | Movimiento resultante de la carga | Análisis de reutilización o diagnóstico                              |
-| 3    | Motor existente + movimiento deseado       | Transmisión                       | Muy común en entornos industriales con recursos limitados            |
-| 4    | Movimiento deseado + transmisión existente | Motor                             | Frecuente en modernización de maquinaria                             |
-
-</div>
-
-> **Nota:** Identificar correctamente el tipo de problema permite enfocar el diseño o análisis hacia soluciones más eficientes y viables dentro del contexto del proyecto.
-
-- Comparativa internacional del tipo de problemas más comunes
-
-<div align="center">
-  
-| País        | Escenario más común  | Razón principal                                                        |
-|-------------|----------------------|------------------------------------------------------------------------|
-| 🇨🇴 Colombia   | Tipos 3 y 4           | Reutilización de equipos por limitaciones de presupuesto              |
-| 🇩🇪 Alemania   | Tipo 1               | Alto nivel de planeación y diseño desde cero                          |
-| 🇺🇸 Estados Unidos | Tipo 1 y 4        | Innovación frecuente + modernización de líneas antiguas               |
-| 🇯🇵 Japón      | Tipo 1 y 2           | Fuerte enfoque en eficiencia y análisis de ciclo de vida              |
-
-</div>
-
-> **Nota:** Las decisiones de diseño están fuertemente influenciadas por el contexto económico, cultural y tecnológico de cada país, lo que define prioridades distintas en cada escenario.
-
-## 4. Inercia y Torque Reflejado
-
-- Conceptos Clave
-
-<div align="center">
-  
-| Término                   | Definición                                                                 |
-|---------------------------|----------------------------------------------------------------------------|
-| Inercia (J)               | Propiedad física que representa la resistencia de un cuerpo a cambiar su velocidad angular. |
-| Torque (τ)                | Fuerza que produce un giro sobre un eje. Se relaciona con la inercia por leyes de Newton.   |
-| Aceleración angular (α)   | Cambio de velocidad angular por unidad de tiempo.                          |
-
-</div>
-
-> **Nota:** Estos conceptos son fundamentales para entender el comportamiento dinámico de sistemas rotacionales y seleccionar adecuadamente un motor o sistema de transmisión.
-
-- Ley de Newton para rotaciones
-
- <div align="center">
-  <img src="Imágenes_Corte_2/Clase%20%239/Ley_de_NEWTON_para_Rotaciones.png" alt="Figura de prueba" width="300">
-  <p><b>Figura 4.</b>Inercia Motor</p>
-</div>
 
 $$\sum \tau = J \cdot \alpha$$
 
