@@ -89,6 +89,11 @@ Ahora, retomando la clase, se introducen nuevos mecanismos comúnmente utilizado
 
 💡**Ejemplo 1:**  
 
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/maquinas-cnc-que-es-una-cortadora-laser-para-metal-sideco.jpg" alt="Figura de prueba" width="300">
+  <p><b>Figura 4.</b>Máquina CNC para cortar materiales metálicos</p>
+</div>
+
 **Sistema:** Tornillo guía con recirculación de bolas y rosca trapezoidal.  
 
 **Aplicación:** Máquina CNC para cortar materiales metálicos.  
@@ -129,6 +134,11 @@ $$
 
 ## 1.5 Ejercicio 1
 
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Imresora_3d.jpg" alt="Figura de prueba" width="300">
+  <p><b>Figura 5.</b>Impresora 3D con tornillo guía de rosca cuadrada sin esferas</p>
+</div>
+
 **Sistema:** Impresora 3D con tornillo guía de rosca cuadrada sin esferas.  
 
 **Relación de transmisión:** 1:3  
@@ -161,6 +171,11 @@ $$
 
 ## 2. ¿Qué es el Backlash?
 
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Backlash.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 6.</b>Backlash</p>
+</div>
+
 >🔑 *backlash:* Es el juego o pérdida de movimiento que se produce en sistemas mecánicos, especialmente en cadenas cinemáticas largas, debido a torsión o deformación elástica.
 
 ## 2.1 Consecuencias:
@@ -173,64 +188,76 @@ $$
 
 💡**Ejemplo 2:**  Proyecto con la Fuerza Aérea – Control de Movimiento para Pruebas de Biocombustibles
 
-### Objetivo del Proyecto
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Fac.avif" alt="Figura de prueba" width="300">
+  <p><b>Figura 7.</b>Proyecto con la Fuerza Aérea – Control de Movimiento para Pruebas de Biocombustibles</p>
+</div>
+
+- Objetivo del Proyecto
 
 Diseñar y desarrollar un sistema de control de movimiento para un banco de pruebas de turbinas de avión, con el fin de realizar ensayos precisos con biocombustibles, cumpliendo con protocolos internacionales de certificación.
 
-### Contexto Técnico
+- Contexto Técnico
 
 El banco de pruebas incluye:
 
-- Una turbina real de avión.
+- Relación entre Posición y Velocidad
+
+  - Una turbina real de avión.
+
+  - Una cabina de mando simulada, con palancas y controles reales como en una aeronave.
+
+  - Instrumentación para medir variables como presión, temperatura y consumo de combustible.
+
+- Problema Inicial
+
+  - En la primera fase, los controles eran mecánicos: las palancas de la cabina estaban conectadas al motor mediante guayas (cables tipo *Teleflex*).
+
+  - Uno de los mandos más críticos era el control de potencia, que regula el flujo de combustible a la turbina.
+
+  - Debido a la longitud de las guayas y la fricción en los recodos, surgió un fenómeno severo de backlash.
+
+- Consecuencias del Backlash
+
+  - Movimientos pequeños de la palanca no se transmitían correctamente al actuador del motor.
   
-- Una cabina de mando simulada, con palancas y controles reales como en una aeronave.
+  - El operador tenía que mover mucho la palanca para que se notara el efecto, generando una respuesta tardía y saltos en la entrega de combustible.
   
-- Instrumentación para medir variables como presión, temperatura y consumo de combustible.
+  - Esto hacía imposible seguir los protocolos de prueba, ya que se requería una variación de potencia precisa, gradual y repetible.
 
-### Problema Inicial
-
-- En la primera fase, los controles eran mecánicos: las palancas de la cabina estaban conectadas al motor mediante guayas (cables tipo *Teleflex*).
-
-- Uno de los mandos más críticos era el control de potencia, que regula el flujo de combustible a la turbina.
-
-- Debido a la longitud de las guayas y la fricción en los recodos, surgió un fenómeno severo de backlash.
-
-### Consecuencias del Backlash
-
-- Movimientos pequeños de la palanca no se transmitían correctamente al actuador del motor.
-  
-- El operador tenía que mover mucho la palanca para que se notara el efecto, generando una respuesta tardía y saltos en la entrega de combustible.
-  
-- Esto hacía imposible seguir los protocolos de prueba, ya que se requería una variación de potencia precisa, gradual y repetible.
-
-## Solución Desarrollada
+- Solución Desarrollada
 
 El equipo de Mecatrónica diseñó un sistema de control de movimiento electrónico que reemplazó el enlace mecánico:
 
-- A la palanca de mando se le instaló un encoder rotatorio, capaz de detectar micro-movimientos con alta resolución.
+  - A la palanca de mando se le instaló un encoder rotatorio, capaz de detectar micro-movimientos con alta resolución.
   
-- En el actuador del motor se colocó un servomotor, controlado por el sistema.
+  - En el actuador del motor se colocó un servomotor, controlado por el sistema.
   
-- Cualquier movimiento, por pequeño que fuera, detectado por el encoder, se convertía inmediatamente en una señal para el servomotor, eliminando por completo el backlash.
+  - Cualquier movimiento, por pequeño que fuera, detectado por el encoder, se convertía inmediatamente en una señal para el servomotor, eliminando por completo el backlash.
 
-## Resultados
+- Resultados
 
-- Se obtuvo una respuesta instantánea y precisa del motor al mover la palanca.
+  - Se obtuvo una respuesta instantánea y precisa del motor al mover la palanca.
   
-- Se logró realizar pruebas controladas y certificables, permitiendo medir el desempeño real de los biocombustibles bajo condiciones definidas.
+  - Se logró realizar pruebas controladas y certificables, permitiendo medir el desempeño real de los biocombustibles bajo condiciones definidas.
   
-- Se demostró la importancia del control de movimiento preciso en sistemas de prueba industrial o aeroespacial.
+  - Se demostró la importancia del control de movimiento preciso en sistemas de prueba industrial o aeroespacial.
 
-## Lecciones del Proyecto
+- Lecciones del Proyecto
 
-- El backlash puede arruinar incluso un sistema que, en teoría, está bien diseñado.
+  - El backlash puede arruinar incluso un sistema que, en teoría, está bien diseñado.
   
-- El control electrónico con retroalimentación (encoder + servomotor) es fundamental cuando se necesita precisión extrema.
+  - El control electrónico con retroalimentación (encoder + servomotor) es fundamental cuando se necesita precisión extrema.
   
-- Las soluciones mecánicas deben ser cuidadosamente evaluadas si se requiere alta fidelidad en la transmisión del movimiento.
+  - Las soluciones mecánicas deben ser cuidadosamente evaluadas si se requiere alta fidelidad en la transmisión del movimiento.
 
 
 ## 3. Cabeceo (Pitch) vs Paso (Lead)
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/lead-vs-pitch-5.png" alt="Figura de prueba" width="600">
+  <p><b>Figura 8.</b>Cabeceo (Pitch) vs Paso (Lead)</p>
+</div>
 
 <div align="center">
  
@@ -249,7 +276,7 @@ El equipo de Mecatrónica diseñó un sistema de control de movimiento electrón
 
 **Nota**: Esta es la **relación de transmisión** que caracteriza a los tornillos de potencia.  
 
-## 3.1 Relación Movimiento Angular ↔ Movimiento Lineal
+## 3.1 Relación Movimiento Angular - Movimiento Lineal
 
 A partir de estos parámetros, se establece la relación entre desplazamiento angular del tornillo y desplazamiento lineal de la carga:
 
@@ -285,9 +312,53 @@ Donde:
     
 - $$\(\dot{x}\)$$: Velocidad lineal de la cápsula [m/s]  
 
+# 4. Simulación de Tornillo Guía en Simscape
 
+Simular la conversión de movimiento rotacional a lineal mediante un tornillo guía (leadscrew) usando Simscape de MATLAB/Simulink.
 
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Simulink_Tornillo_Sin_Fn.png" alt="Figura de prueba" width="600">
+  <p><b>Figura 9.</b>Simulación de Tornillo Guía en Simscape</p>
+</div>
 
+# 4.1 Componentes del modelo
+
+<div align="center">
+ 
+| **Bloque**              | **Función**                                                                 |
+|------------------------|------------------------------------------------------------------------------|
+| **Motor (fuente de 24 V)** | Genera el movimiento rotacional.                                            |
+| **Bloque "Tornillo guía"** | Realiza la conversión rotación → traslación. Se define aquí el paso (lead). |
+| **Sensor θ(t)**         | Mide la posición angular del eje del motor.                                 |
+| **Sensor x(t)**         | Mide la posición lineal de la cápsula desplazada por el tornillo.           |
+| **Corriente i(t)**      | Monitoreo de la corriente del sistema.                                      |
+
+</div>
+
+> **Nota**: Cada bloque representa un componente físico del sistema electromecánico, permitiendo evaluar su comportamiento dinámico mediante simulación.
+
+# 4.2 Parámetros clave del Tornillo
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Configuración_Tonillo_Sin_Fin.png" width="600">
+  <p><b>Figura 10.</b>Parámetros clave del Tornillo</p>
+</div>
+
+<div align="center">
+ 
+| **Parámetro**        | **Valor**   | **Descripción**                                                                        |
+|---------------------|-------------|-----------------------------------------------------------------------------------------|
+| **Screw lead (paso)** | 0.015 m     | La cápsula se desplaza **1.5 cm por cada vuelta completa** del tornillo.               |
+| **Screw helix type** | Right-hand  | Tornillo de paso a la derecha (rotación en sentido horario produce avance lineal).     |
+
+</div>
+
+> **Nota**: El paso del tornillo define directamente la relación entre el desplazamiento angular y el desplazamiento lineal.
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Resultados_Tornillo_Sin_FIN.png" width="600">
+  <p><b>Figura 3.</b>Rosca Directa (sin esferas) vs Tornillo con Recirculación de Bolas (Ball Screw)  </p>
+</div>
 
 ## Conclusiones
 
