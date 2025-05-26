@@ -793,7 +793,7 @@ $$
   
 - Esto se debe al paso reducido del tornillo (7.5 mm/rev), característico de sistemas con tornillo sin fin o de **rosca fina**, que requieren muchas vueltas para producir un desplazamiento significativo.
 
-# 9. Sistema Piñón - Cremallera
+## 9. Sistema Piñón - Cremallera
 
 >🔑 *Sistema Piñón - Cremallera:* Convierte movimiento rotacional en movimiento lineal, siendo una alternativa eficiente frente a mecanismos como el tornillo sin fin.
 
@@ -863,7 +863,7 @@ Es un sistema directo, con muy poca pérdida de movimiento o energía mecánica.
   
 - Es sensible a holguras mecánicas.
 
-## 10. Relación de Transmisión – Piñón-Cremallera
+## 9.1 Relación de Transmisión – Piñón-Cremallera
 
 La relación de transmisión (N) en un sistema piñón-cremallera se define como:
 
@@ -887,7 +887,7 @@ $$
 N_{RP} = \frac{1}{r_{pinion}} \quad \text{(unidades: rad/m)}
 $$
 
-## 11 Ejercicio – Piñón-Cremallera
+## 9.2 Ejercicio – Piñón-Cremallera
 
 Un motor está acoplado a un piñón de radio:
 
@@ -925,7 +925,7 @@ $$
 N_{RP} = \frac{1}{r_{pinion}} = \frac{1}{0.05} = 20 \, \text{rad/m}
 $$
 
-## 12. Simscape Piñón - Cremallera
+## 9.3. Simscape Piñón - Cremallera
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2311/Simscape_Piñon_Cremallera.png" width="500">
@@ -1007,6 +1007,66 @@ x = \frac{\theta}{N_{RP}} = \frac{86.2}{10} = 8.62 \, \text{m}
 $$
 
 Coincide nuevamente con el valor observado. Esto demuestra que el modelo implementado en Simscape está correctamente configurado en cuanto a parámetros físicos y cinemáticos.
+
+## 9.4 Inercia Reflejada en Sistema Piñón-Cremallera
+
+>🔑 **La inercia reflejada** Es la inercia que el motor percibe desde el otro lado del sistema de transmisión.  
+Solo se reflejan las masas e inercias no acopladas directamente al motor.
+
+### Ecuación General
+
+$$
+J_{\text{ref\,trans}} = J_{\text{piñón}} + \frac{1}{\eta \cdot N_{\text{RP}}^2} \left( W_L + W_C \cdot g \right)
+$$
+
+
+
+### Parámetros:
+
+<div align="center">
+ 
+| Símbolo         | Significado                                |
+|-----------------|---------------------------------------------|
+|$$\( J_{\text{piñón}} \)$$     | Inercia del piñón (**NO se refleja**)       |
+| $$\( W_L \)$$         | Peso de la **carga lineal**                   |
+| $$\( W_C \)$$         | Peso del **carro**                            |
+| $$\( g \)$$           | Aceleración de la gravedad (9.81 m/s²)        |
+| $$\( N_{\text{RP}} \)$$ | Relación de transmisión (rad/m)             |
+| $\( \eta \)$$        | Eficiencia mecánica del sistema              |
+
+</div>
+
+### Consideración especial: Cremallera
+
+Aunque la cremallera está en contacto directo con el piñón, si no forma parte del conjunto rígido del motor, su inercia sí se refleja. Esto se debe a que está del otro lado del sistema de transmisión.
+
+## 9.5 Torque de Carga
+
+>🔑 **Torque de carga** Mover la carga depende de la fuerza total externa, escalada por la eficiencia y la relación de transmisión.
+
+### Fórmulas:
+
+- Fuerza total externa:
+
+$$
+F_{\text{ext}} = F_r + F_g + F_p
+$$
+
+Donde:
+
+- $$\( F_r \)$$: Fuerza por fricción.
+  
+- $$\( F_g \)$$: Fuerza gravitacional (si aplica).
+  
+- $$\( F_p \)$$: Fuerza propia del proceso (presión, contacto, etc.).
+
+- Torque reflejado al eje del motor:
+
+$$
+T_{\text{load-in}} = \frac{F_{\text{ext}}}{\eta \cdot N_{\text{RP}}}
+$$
+
+
 
 
 
