@@ -946,75 +946,68 @@ $$
 ### Parámetros del Modelo
 
 <div align="center">
+ 
 | Parámetro               | Valor      |
 |------------------------|------------|
 | Radio del piñón        | 100 mm = 0.1 m |
 | Sentido de rotación    | Positivo (convención de entrada del modelo) |
+
 </div>
 
-## 📊 Resultados Observados
+### Resultados Observados
 
-- **Desplazamiento angular del piñón**:  
-  \[
-  \theta = 86.2 \, \text{rad}
-  \]
+- Desplazamiento angular del piñón:
 
-- **Desplazamiento lineal de la cremallera**:  
-  \[
-  x = 8.6 \, \text{m}
-  \]
+$$
+\theta = 86.2 \, \text{rad}
+$$
 
----
+- Desplazamiento lineal de la cremallera:
+    
+$$
+x = 8.6 \, \text{m}
+$$
 
-## 🧮 1. Relación entre desplazamiento angular y lineal
+### Relación entre desplazamiento angular y lineal
 
 La relación entre desplazamiento angular del piñón y el desplazamiento lineal de la cremallera es:
 
-\[
+$$
 x(t) = r_{pinion} \cdot \theta_{pinion}(t)
-\]
+$$
 
 Sustituyendo los valores:
 
-\[
+$$
 x = 0.1 \, \text{m} \cdot 86.2 \, \text{rad} = 8.62 \, \text{m}
-\]
+$$
 
-✅ El resultado **coincide con el valor obtenido en la simulación (8.6 m)**, lo que valida el modelo implementado.
+El resultado coincide con el valor obtenido en la simulación (8.6 m), lo que valida el modelo implementado.
 
----
-
-## 🔁 2. Relación de Transmisión
+### Relación de Transmisión
 
 La relación de transmisión específica para sistemas piñón-cremallera es:
 
-\[
+$$
 N_{RP} = \frac{1}{r_{pinion}}
-\]
+$$
 
-\[
+$$
 N_{RP} = \frac{1}{0.1} = 10 \, \text{rad/m}
-\]
+$$
 
-📌 **Interpretación**: por cada **metro** que avanza la cremallera, el piñón debe girar **10 radianes**.
+Por cada metro que avanza la cremallera, el piñón debe girar 10 radianes.
 
----
+###  Aplicación: Verificación rápida
 
-## 🧪 3. Aplicación: Verificación rápida
+Si el piñón gira $$\( \theta = 86.2 \, \text{rad} \)$$, podemos calcular el desplazamiento lineal como:
 
-Si el piñón gira \( \theta = 86.2 \, \text{rad} \), podemos calcular el desplazamiento lineal como:
-
-\[
+$$
 x = \frac{\theta}{N_{RP}} = \frac{86.2}{10} = 8.62 \, \text{m}
-\]
+$$
 
-✅ Coincide nuevamente con el valor observado. Esto demuestra que el modelo implementado en Simscape está correctamente configurado en cuanto a parámetros físicos y cinemáticos.
+Coincide nuevamente con el valor observado. Esto demuestra que el modelo implementado en Simscape está correctamente configurado en cuanto a parámetros físicos y cinemáticos.
 
----
-
-## ✅ Conclusión
-
-La simulación en Simscape refleja correctamente el comportamiento esperado del sistema piñón-cremallera, cumpliendo con las leyes físicas de transmisión de movimiento rotacional a lineal. Además, la **verificación analítica** respalda la validez de los resultados numéricos.
 
 
 
