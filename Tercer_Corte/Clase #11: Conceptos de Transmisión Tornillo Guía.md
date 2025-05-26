@@ -863,6 +863,69 @@ Es un sistema directo, con muy poca pérdida de movimiento o energía mecánica.
   
 - Es sensible a holguras mecánicas.
 
+# 10. Relación de Transmisión – Piñón-Cremallera
+
+La relación de transmisión (N) en un sistema piñón-cremallera se define como:
+
+$$
+N = \frac{\text{Velocidad de carga}}{\text{Velocidad del motor}}
+$$
+
+En este caso, la carga se mueve linealmente (cremallera) y el motor rota (piñón).
+
+## Relación con velocidad tangencial
+
+Dado que el desplazamiento lineal de la cremallera proviene del borde del piñón, la relación entre velocidad lineal y angular es:
+
+$$
+V_{rack} = r_{pinion} \cdot \omega_{pinion}
+$$
+
+De esta forma, la relación de transmisión específica para piñón-cremallera es:
+
+$$
+N_{RP} = \frac{1}{r_{pinion}} \quad \text{(unidades: rad/m)}
+$$
+
+## 11 Ejercicio – Piñón-Cremallera
+
+Un motor está acoplado a un piñón de radio:
+
+$$
+r_{pinion} = 0.05 \, \text{m}
+$$
+
+El motor gira a una velocidad constante de:
+
+$$
+\omega_{pinion} = 10 \, \text{rad/s}
+$$
+
+Se desea conocer:
+
+- La velocidad lineal de la cremallera $$\( V_{rack} \)$$
+  
+- La relación de transmisión $$\( N_{RP} \)$$
+
+
+## Solución
+
+1. Velocidad lineal de la cremallera
+
+$$
+V_{rack} = r_{pinion} \cdot \omega_{pinion}
+$$
+
+$$
+V_{rack} = 0.05 \, \text{m} \cdot 10 \, \text{rad/s} = 0.5 \, \text{m/s}
+$$
+
+2. Relación de transmisión
+
+$$
+N_{RP} = \frac{1}{r_{pinion}} = \frac{1}{0.05} = 20 \, \text{rad/m}
+$$
+
 
 
 
