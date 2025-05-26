@@ -793,6 +793,78 @@ $$
   
 - Esto se debe al paso reducido del tornillo (7.5 mm/rev), característico de sistemas con tornillo sin fin o de **rosca fina**, que requieren muchas vueltas para producir un desplazamiento significativo.
 
+# 9. Sistema Piñón - Cremallera
+
+>🔑 *Sistema Piñón - Cremallera:* Convierte movimiento rotacional en movimiento lineal, siendo una alternativa eficiente frente a mecanismos como el tornillo sin fin.
+
+## ¿Cómo funciona?
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Piñon_Cremallea.gif" width="500">
+  <p><b>Figura 18.</b>Sistema Piñón Cremallera</p>
+</div>
+
+- El piñón es una rueda dentada conectada a un eje motriz (generalmente de un motor).
+  
+- La cremallera es una barra recta dentada que engrana con el piñón.
+  
+- Al girar el piñón, su movimiento tangencial se convierte en desplazamiento lineal de la cremallera.
+
+## Relación de velocidad
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Piñon-Cremallera.png" width="600">
+  <p><b>Figura 19.</b>Relación de Velocidad</p>
+</div>
+
+$$
+v_{rack} = \omega_{pinion} \cdot r_{pinion}
+$$
+
+Donde:
+
+- $$\( v_{rack} \)$$: Velocidad lineal de la cremallera
+  
+- $$\( \omega_{pinion} \)$$: Velocidad angular del piñón
+  
+- $$\( r_{pinion} \)$$: Radio del piñón  
+
+Es un sistema directo, con muy poca pérdida de movimiento o energía mecánica.
+
+## Aplicaciones típicas del sistema Piñón - Cremallera
+
+<div align="center">
+ 
+| **Sector**      | **Aplicación**                          | **Función del mecanismo**                                                |
+|----------------|------------------------------------------|---------------------------------------------------------------------------|
+| Automotriz      | Dirección mecánica y electroasistida     | Convierte el giro del volante en desplazamiento lineal para girar las ruedas. |
+| Industrial      | Transporte y sistemas de posicionamiento | Mueve plataformas o carros linealmente con gran precisión.                |
+| Automatización  | Puertas automáticas                      | Abre y cierra mediante desplazamiento rectilíneo.                         |
+| Robótica        | Brazos cartesianos y actuadores lineales | Posiciona herramientas o sensores de forma precisa.                       |
+| Maquinaria CNC  | Movimiento de ejes X-Y                   | Permite movimientos lineales repetibles en cabezales y herramientas.      |
+| Ferrocarriles   | Trenes cremallera                        | Transmisión de potencia en pendientes pronunciadas.                       |
+</div>
+
+> **Nota:** Aplicaciones típicas del sistemas piñón cremallera en industrias.
+
+## Ventajas
+
+- Alta precisión y repetibilidad.
+  
+- Diseño simple y directo.
+  
+- Ideal para movimientos rectilíneos largos.
+
+## Consideraciones
+
+- Requiere buena lubricación para evitar desgaste.
+  
+- Puede generar ruido si no está bien ajustado.
+  
+- Es sensible a holguras mecánicas.
+
+
+
 
 
 
@@ -806,6 +878,7 @@ $$
 
 3. La correcta configuración de los bloques (polea, correa, acoplamiento) es esencial para obtener resultados realistas, como velocidad de salida y tensiones en la correa, lo cual es útil para validación y predicción de fallos.
 
+4. El sistema piñón-cremallera es una solución efectiva, robusta y ampliamente adoptada para convertir el giro de un motor en desplazamientos lineales con control y precisión.
 
 ## Referencias
 
