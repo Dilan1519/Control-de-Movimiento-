@@ -863,7 +863,7 @@ Es un sistema directo, con muy poca pérdida de movimiento o energía mecánica.
   
 - Es sensible a holguras mecánicas.
 
-# 10. Relación de Transmisión – Piñón-Cremallera
+## 10. Relación de Transmisión – Piñón-Cremallera
 
 La relación de transmisión (N) en un sistema piñón-cremallera se define como:
 
@@ -907,7 +907,6 @@ Se desea conocer:
   
 - La relación de transmisión $$\( N_{RP} \)$$
 
-
 ## Solución
 
 1. Velocidad lineal de la cremallera
@@ -926,8 +925,96 @@ $$
 N_{RP} = \frac{1}{r_{pinion}} = \frac{1}{0.05} = 20 \, \text{rad/m}
 $$
 
+## 12. Simscape Piñón - Cremallera
 
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Simscape_Piñon_Cremallera.png" width="500">
+  <p><b>Figura 20.</b>Simscape Piñón Cremallera</p>
+</div>
 
+- Se modeló un sistema piñón-cremallera usando Simscape.
+  
+- Un motor DC impulsa el piñón, que a su vez transmite movimiento a la **cremallera**, convirtiendo el movimiento rotacional en lineal.
+  
+- Se utilizó el bloque estándar de Simscape: Rack & Pinion.
+  
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Resultados_Piñon_cremallera.png" width="500">
+  <p><b>Figura 21.</b>Resultads de Simscape Piñón Cremallera</p>
+</div>
+
+### Parámetros del Modelo
+
+<div align="center">
+| Parámetro               | Valor      |
+|------------------------|------------|
+| Radio del piñón        | 100 mm = 0.1 m |
+| Sentido de rotación    | Positivo (convención de entrada del modelo) |
+</div>
+
+## 📊 Resultados Observados
+
+- **Desplazamiento angular del piñón**:  
+  \[
+  \theta = 86.2 \, \text{rad}
+  \]
+
+- **Desplazamiento lineal de la cremallera**:  
+  \[
+  x = 8.6 \, \text{m}
+  \]
+
+---
+
+## 🧮 1. Relación entre desplazamiento angular y lineal
+
+La relación entre desplazamiento angular del piñón y el desplazamiento lineal de la cremallera es:
+
+\[
+x(t) = r_{pinion} \cdot \theta_{pinion}(t)
+\]
+
+Sustituyendo los valores:
+
+\[
+x = 0.1 \, \text{m} \cdot 86.2 \, \text{rad} = 8.62 \, \text{m}
+\]
+
+✅ El resultado **coincide con el valor obtenido en la simulación (8.6 m)**, lo que valida el modelo implementado.
+
+---
+
+## 🔁 2. Relación de Transmisión
+
+La relación de transmisión específica para sistemas piñón-cremallera es:
+
+\[
+N_{RP} = \frac{1}{r_{pinion}}
+\]
+
+\[
+N_{RP} = \frac{1}{0.1} = 10 \, \text{rad/m}
+\]
+
+📌 **Interpretación**: por cada **metro** que avanza la cremallera, el piñón debe girar **10 radianes**.
+
+---
+
+## 🧪 3. Aplicación: Verificación rápida
+
+Si el piñón gira \( \theta = 86.2 \, \text{rad} \), podemos calcular el desplazamiento lineal como:
+
+\[
+x = \frac{\theta}{N_{RP}} = \frac{86.2}{10} = 8.62 \, \text{m}
+\]
+
+✅ Coincide nuevamente con el valor observado. Esto demuestra que el modelo implementado en Simscape está correctamente configurado en cuanto a parámetros físicos y cinemáticos.
+
+---
+
+## ✅ Conclusión
+
+La simulación en Simscape refleja correctamente el comportamiento esperado del sistema piñón-cremallera, cumpliendo con las leyes físicas de transmisión de movimiento rotacional a lineal. Además, la **verificación analítica** respalda la validez de los resultados numéricos.
 
 
 
