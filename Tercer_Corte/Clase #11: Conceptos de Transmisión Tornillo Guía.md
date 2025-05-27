@@ -1103,7 +1103,7 @@ El sistema de coordenadas es clave para que los movimientos sucedan correctament
 
 En este caso, se realizó una transformación para alinear el desplazamiento de la cremallera en el eje X del modelo. También se aplicó una traslación para ubicar correctamente los cuerpos en el espacio y alinear el piñón justo sobre la cremallera.
 
-### Análisis de Velocidad
+### Análisis de Velocidad y Posición
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2311/Posicion Piñon.png" width="500">
