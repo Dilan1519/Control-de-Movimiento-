@@ -611,6 +611,60 @@ $$
 
 Ahora el sistema se comporta como un doble integrador ideal, libre de perturbaciones
 
+### Control No Lineal en NADRC: Función `fal()`
+
+### Ley de Control No Lineal
+
+Cuando se aplica NADRC no lineal, la señal de control auxiliar $$\( u_0 \)$$ no es una función lineal del error. En su lugar, se utiliza la función `fal()`:
+
+$$
+u_0 = k_1 \cdot \text{fal}(r_1 - z_1, \alpha_1, \delta) + k_2 \cdot \text{fal}(r_1 - z_2, \alpha_2, \delta)
+$$
+
+Donde:
+
+- $$\( r_1 \)$$: referencia deseada.
+  
+- $$\( z_1, z_2 \)$$: estimaciones del estado (posición y velocidad).
+  
+- $$\( k_1, k_2 \)$$: ganancias del controlador.
+  
+- `fal`: función no lineal suavizada.
+  
+- $$\( \alpha_1, \alpha_2 \in (0,1) \)$$: determinan el grado de no linealidad.
+  
+- $$\( \delta \)$$: umbral de transición entre linealidad y no linealidad.
+
+### Definición de la Función `fal`
+
+La función `fal` se define por tramos como:
+
+$$
+\text{fal}(\tilde{e}, \alpha, \delta) =
+\begin{cases}
+\frac{\tilde{e}}{\delta^{1 - \alpha}}, & \text{si } |\tilde{e}| \leq \delta \\
+|\tilde{e}|^{\alpha} \cdot \text{sign}(\tilde{e}), & \text{si } |\tilde{e}| > \delta
+\end{cases}
+$$
+
+Donde:
+
+- $$\( \tilde{e} \)$$: error (por ejemplo, $$\( r_1 - z_1 \) o \( r_1 - z_2 \))$$.
+  
+- $$\( \text{sign}(\cdot) \)$$: función signo.
+
+
+### Ventajas de Usar `fal()`
+
+- Respuesta Suavizada : Evita saltos bruscos o "chattering", típicos de funciones discontinuas como `sign()`.
+  
+- Robustez No Lineal: Mejora el comportamiento ante no linealidades estructurales y perturbaciones suaves.
+  
+- Control Fino en Errores Pequeños: El controlador actúa con mayor suavidad cuando el error es pequeño, evitando sobrecompensaciones.
+  
+- Ajuste Flexible: Los parámetros $$\( \alpha \)$$ y $$\( \delta \)$$ permiten personalizar el comportamiento del controlador.
+
+
 
 
 
