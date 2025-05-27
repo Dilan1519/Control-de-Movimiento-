@@ -4,12 +4,6 @@ Durante las sesiones anteriores del curso, se abordaron los fundamentos del comp
 
 Ahora, retomando la clase, se introducen nuevos mecanismos comúnmente utilizados en entornos industriales. Entre ellos se encuentra el tornillo guía, también conocido como tornillo sin fin, un componente ampliamente utilizado en diversos procesos mecánicos. Este mecanismo será analizado tanto desde su funcionamiento físico como desde su modelado y simulación, con el fin de ampliar el entendimiento sobre las diferentes formas de transmisión de movimiento y fuerza en sistemas industriales.
 
-## Índice
-
- [10. Conclusiones](#10-Conclusiones)
-
- [11. Bibliografía](#11-Bibliografía)
-
 
 ## 1. Tornillo sin Fin
 
@@ -1317,15 +1311,8 @@ $$
 - $$\( r_{ID} \), \( r_{BR} \)$$: Radios de los rodillos locos
 
 
-
-
 ## Conclusiones
 
-1. La relación de transmisión en sistemas polea-correa funciona igual que en engranajes: la velocidad angular y el torque se relacionan de forma inversa según los radios, pero ambas poleas giran en el mismo sentido (salvo que se indique lo contrario en simulación).
-
-2. Simulaciones en Simscape permiten representar de manera precisa un sistema mecánico, incluyendo parámetros como fricción, inercia, elasticidad de la correa, y configuración del sentido de giro.
-
-3. La correcta configuración de los bloques (polea, correa, acoplamiento) es esencial para obtener resultados realistas, como velocidad de salida y tensiones en la correa, lo cual es útil para validación y predicción de fallos.
 
 4. El sistema piñón-cremallera es una solución efectiva, robusta y ampliamente adoptada para convertir el giro de un motor en desplazamientos lineales con control y precisión.
 
