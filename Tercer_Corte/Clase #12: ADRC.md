@@ -187,3 +187,60 @@ Esto implica:
 - No necesitas acción integral adicional 
 - Solo usas ganancias proporcionales, ¡mucho más fácil de ajustar!
 
+## 3. LADRC: Control Lineal por Rechazo Activo de Perturbaciones
+
+Una versión más simple y práctica del ADRC, propuesta por Gao en 2003.
+
+### ¿Qué es LADRC?
+
+>🔑 *LADRC:* Linear Active Disturbance Rejection Control.
+
+Es una versión lineal del ADRC que:
+
+Reemplaza la parte no lineal del controlador y el observador por herramientas linealesy más simples de implementar:
+
+<div align="center">
+  
+| Componente | En ADRC | En LADRC |
+|------------|---------|----------|
+| Controlador | Función no lineal del error | Realimentación de estados |
+| Observador | Observador extendido no lineal (ESO) | Observador tipo Luenberger |
+
+</div>
+
+> 📌 *Nota: LADRC simplifica el diseño del ADRC usando solo herramientas lineales.*
+
+### ¿Pero puede controlar sistemas no lineales?
+
+LADRC también funciona con sistemas no lineales, gracias a que:
+
+- Estima y cancela perturbaciones.
+  
+- Rechaza no linealidades en tiempo real.
+
+- No se limita como el PID, que solo trabaja bien en rangos casi lineales.
+
+### Comparación 
+
+<div align="center">
+  
+| Característica | PID | LADRC |
+|----------------|-----|--------|
+| Requiere modelo preciso | Sí |  No |
+| Maneja no linealidades |  Difícil |  Sí, mediante estimación |
+| Observador incluido |  No | Sí (Luenberger) |
+| Fácil de implementar | Alta experiencia requerida |  Más accesible |
+| Rechaza perturbaciones |  Parcialmente |  Activamente |
+
+</div>
+
+> *Nota: Esta tabla destaca las ventajas prácticas de LADRC frente al PID tradicional.*
+
+
+### ¿Por qué usar LADRC?
+
+- Reduce complejidad matemática del ADRC original.
+  
+- Usa herramientas de control clásico: realimentación + observador Luenberger.
+
+- Ideal para aplicaciones reales con recursos limitados.
