@@ -1112,12 +1112,210 @@ En este caso, se realizó una transformación para alinear el desplazamiento de 
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2311/Velocidad Piño.png" width="500">
-  <p><b>Figura 25.</b>Transformaciones y Orientación</p>
+  <p><b>Figura 25.</b>Velocidad y Posición</p>
 </div>
 
 Además de la posición, también se midió la velocidad angular del piñón y la velocidad lineal de la cremallera, observándose que ambas siguen una evolución suave y coherente con el tipo de sistema.
 
 Este análisis permite validar que el movimiento generado por el piñón se está transfiriendo correctamente a la cremallera según la relación definida por el radio.
+
+## 10. Conceptos de Transmisión Banda transportadora 
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Banda.gif" width="500">
+  <p><b>Figura 26.</b>Transmisión Banda transportadora</p>
+</div>
+
+- Utilizada para convertir movimiento rotacional (producido por un motor) en movimiento lineal.
+
+- La banda conecta dos poleas de igual radio, lo que simplifica la relación de transmisión.
+
+- Es análoga a un sistema de piñón-cremallera o a polea-correa, ya que la relación de transmisión también involucra velocidades angulares y radios.
+
+
+### Principio de funcionamiento
+
+- El motor hace girar una polea (**entrada**).
+ 
+- La banda transmite ese movimiento rotacional hacia otra polea (**salida**).
+  
+- La banda en movimiento genera un **movimiento lineal** en una plataforma o carro (*carriage*) montado sobre ella.
+  
+
+### Relación de Transmisión (RT)
+
+La relación de transmisión se calcula con la siguiente fórmula:
+
+$$
+N = \frac{\text{Velocidad del motor}}{\text{Velocidad de la carga}} = \frac{\omega_m}{v}
+$$
+
+Pero dado que la velocidad lineal de la banda se relaciona con el radio de la polea y su velocidad angular:
+
+$$
+v_{\text{belt}} = r_i \cdot \omega_i
+$$
+
+Donde:
+
+- $$\( r_i \)$$ es el radio de la polea de entrada (motor).
+  
+- $$\( \omega_i \)$$ es la velocidad angular de esa polea.
+
+Entonces, al despejar, se tiene que:
+
+$$
+N_{BD} = \frac{1}{r_{in}}
+$$
+
+Esto indica que, al igual que en el piñón-cremallera, la velocidad lineal depende del radio del componente rotatorio.
+
+
+## 10.1 Inercia Reflejada y Torque de Carga en Banda Transportadora
+
+### Concepto de inercia reflejada
+
+>🔑 **La inercia reflejada** es la inercia que el motor "ve" o "siente" debido a todos los elementos que se mueven en el sistema.
+
+En un sistema con banda transportadora, la transmisión transforma movimiento rotacional en lineal, por lo tanto, es necesario transformar las masas lineales en una inercia equivalente en el eje del motor.
+
+### Expresión general de la inercia reflejada
+
+La fórmula general es:
+
+$$
+J_{\text{ref, trans}} = J_{\text{IP}} + J_{\text{load-in}} + J_{\text{carriage-in}} + J_{\text{belt-in}} + J_{\text{LP}}
+$$
+
+Donde:
+
+- $$\( J_{\text{IP}} \)$$: Inercia de la polea de entrada (motor)
+  
+- $$\( J_{\text{LP}} \)$$: Inercia de la *polea de salida
+  
+- $$\( J_{\text{load-in}} \)$$: Inercia equivalente de la carga trasladada
+  
+- $$\( J_{\text{carriage-in}} \)$$: Inercia equivalente del carro
+  
+- $$\( J_{\text{belt-in}} \)$$: Inercia equivalente de la banda
+
+Como las dos poleas tienen el mismo momento de inercia, se agrupan:
+
+$$
+J_{\text{IP}} = J_{\text{LP}} = J_P
+$$
+
+Entonces:
+
+$$
+J_{\text{ref, trans}} = 2J_P + \frac{1}{\eta N_{BD}^2} \left( \frac{W_L + W_C + W_{\text{belt}}}{g} \right)
+$$
+
+### Donde:
+
+- $$\( \eta \)$$: Eficiencia del sistema
+  
+- $$\( N_{BD} \)$$: Relación de transmisión de la banda
+  
+- $$\( W_L, W_C, W_{\text{belt}} \)$$: Pesos de la carga, del carro y de la banda
+  
+- $$\( g \)$$: Aceleración gravitacional (para convertir peso a masa)
+
+### Torque de carga reflejado
+
+La expresión para el torque reflejado es:
+
+$$
+T_{\text{load-in}} = \frac{F_{\text{ext}}}{\eta N_{BD}}
+$$
+
+Donde:
+
+- $$\( F_{\text{ext}} \):$$ Fuerza externa ejercida sobre el carro (peso, fricción, etc.)
+
+
+# 10.2 Banda Transportadora con Rodillos Locos
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Banda_Rodiilos.png" width="500">
+  <p><b>Figura 27.</b>Banda Transportadora con Rodillos Locos</p>
+</div>
+
+- En algunos sistemas, se integran uno o varios rodillos locos para guiar y soportar la banda.
+
+- Estos rodillos no aplican torque ni movimiento activo, pero añaden masa e inercia al sistema.
+
+- Al extender la banda, es común que se deban usar cargas más ligeras para no sobrecargar el motor.
+
+### Componentes mostrados
+
+- $$\( J_M \)$$: Inercia del motor
+  
+- $$\( \omega_M \)$$: Velocidad angular del motor
+  
+- $$\( J_{DR} \)$$: Inercia del rodillo motriz (Drive Roller)
+  
+- $$\( J_{ID} \)$$: Inercia del rodillo intermedio (Idle Roller)
+  
+- $$\( J_{BR} \)$$: Inercia del rodillo trasero (Back Roller)
+  
+- $$\( W_L \)$$: Peso de la carga sobre la banda
+  
+- $$\( f_{DR}, f_{ID}, f_{BR} \)$$: Puntos de fricción asociados a cada rodillo
+
+
+## Ventajas del uso de rodillos locos
+
+<div align="center">
+ 
+| **Ventaja**                           | **Explicación**                                                                 |
+|--------------------------------------|---------------------------------------------------------------------------------|
+| Reducción de carga directa sobre el motor | El motor solo impulsa un rodillo; los demás solo guían.                          |
+| Distribución del peso                | La carga se reparte mejor sobre la banda.                                       |
+| Flexibilidad en diseño               | Permite estructuras más largas sin necesidad de más motores.                   |
+</div>
+
+## 10.4 Relación de Transmisión
+
+En este sistema, la relación de transmisión se basa en el radio del rodillo motriz (Drive Roller):
+
+$$
+N_{CV} = \frac{1}{r_{DR}}
+$$
+
+Donde:
+
+- $$\( r_{DR} \)$$: Radio del rodillo motriz
+
+Esta relación indica cómo se transforma la velocidad rotacional del motor en*velocidad lineal de la banda.
+
+### Inercia Reflejada
+
+El modelo completo de inercia reflejada al eje del motor considera:
+
+$$
+J_{\text{ref, trans}} = J_{DR} + J_{\text{load-in}} + J_{\text{belt-in}} + J_{\text{ID-in}} + J_{\text{BR-in}}
+$$
+
+
+### Desarrollo detallado:
+
+$$
+J_{\text{ref, trans}} = J_{DR} + \frac{1}{\eta N_{CV}^2} \left( \frac{W_L + W_{\text{belt}}}{g} \right) + \eta \left( \frac{r_{ID}}{r_{DR}} \right)^2 J_{ID} + \eta \left( \frac{r_{BR}}{r_{DR}} \right)^2 J_{BR}
+$$
+
+### Parámetros:
+
+- $$\( \eta \)$$: Eficiencia del sistema
+  
+- $$\( W_L \)$$: Peso de la carga
+  
+- $$\( W_{\text{belt}} \)$$: Peso de la banda
+  
+- $$\( J_{ID} \), \( J_{BR} \)$$: Momentos de inercia de los **rodillos locos** intermedio y trasero
+  
+- $$\( r_{ID} \), \( r_{BR} \)$$: Radios de los rodillos locos
+
 
 
 
