@@ -1019,8 +1019,6 @@ $$
 J_{\text{ref\,trans}} = J_{\text{piñón}} + \frac{1}{\eta \cdot N_{\text{RP}}^2} \left( W_L + W_C \cdot g \right)
 $$
 
-
-
 ### Parámetros:
 
 <div align="center">
@@ -1066,10 +1064,60 @@ $$
 T_{\text{load-in}} = \frac{F_{\text{ext}}}{\eta \cdot N_{\text{RP}}}
 $$
 
+## 9.6 Simulación de Piñón y Cremallera en Simscape Multibody
 
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Multibody_Piñon_Cremallera.png" width="500">
+  <p><b>Figura 22.</b>Multibody Piñón Cremallera</p>
+</div>
 
+Para construir un sistema de piñón-cremallera en Simscape Multibody, es necesario modelar primero los sólidos involucrados. En este caso, tanto el piñón como la cremallera fueron construidos como cuerpos lisos, sin geometría de dientes. Esto se hace porque la interacción mecánica no se basa en colisión o contacto físico entre geometrías, sino en una restricción cinemática proporcionada por el bloque Rack and Pinion Constraint.
 
+### Configuración de Restricciones de Movimiento
 
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/image-removebg-preview (14).png" width="500">
+  <p><b>Figura 23.</b>Configuracion</p>
+</div>
+
+El bloque `Rack and Pinion Constraint` es el encargado de relacionar el movimiento rotacional del piñón con el movimiento lineal (prismático) de la cremallera. Este bloque establece una relación de la forma:
+
+$$
+\theta_{\text{piñón}} \cdot r = x_{\text{cremallera}}
+$$
+
+Donde 𝑟 es el radio del piñón, y debe tomarse como el radio de paso (pitch radius), es decir, el que va por el centro del diente, valor que generalmente proporcionan los fabricantes.
+
+- El piñón rota alrededor de un eje fijo.
+
+- La cremallera se traslada en línea recta.
+
+### Transformaciones y Orientación
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/3-Piñon cremallera.png" width="500">
+  <p><b>Figura 24.</b>Transformaciones y Orientación</p>
+</div>
+
+El sistema de coordenadas es clave para que los movimientos sucedan correctamente. Por defecto, la restricción prismática se define a lo largo del eje Z, pero si el sólido está orientado de forma diferente, se debe usar un bloque Rigid Transform para rotar el marco de referencia.
+
+En este caso, se realizó una transformación para alinear el desplazamiento de la cremallera en el eje X del modelo. También se aplicó una traslación para ubicar correctamente los cuerpos en el espacio y alinear el piñón justo sobre la cremallera.
+
+### Análisis de Velocidad
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Posicion Piñon.png" width="500">
+  <p><b>Figura 25.</b>Transformaciones y Orientación</p>
+</div>
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2311/Velocidad Piño.png" width="500">
+  <p><b>Figura 25.</b>Transformaciones y Orientación</p>
+</div>
+
+Además de la posición, también se midió la velocidad angular del piñón y la velocidad lineal de la cremallera, observándose que ambas siguen una evolución suave y coherente con el tipo de sistema.
+
+Este análisis permite validar que el movimiento generado por el piñón se está transfiriendo correctamente a la cremallera según la relación definida por el radio.
 
 
 
