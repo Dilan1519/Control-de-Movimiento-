@@ -208,7 +208,7 @@ Reemplaza la parte no lineal del controlador y el observador por herramientas li
 
 </div>
 
-> 📌 *Nota: LADRC simplifica el diseño del ADRC usando solo herramientas lineales.*
+> *Nota: LADRC simplifica el diseño del ADRC usando solo herramientas lineales.*
 
 ### ¿Pero puede controlar sistemas no lineales?
 
@@ -244,3 +244,79 @@ LADRC también funciona con sistemas no lineales, gracias a que:
 - Usa herramientas de control clásico: realimentación + observador Luenberger.
 
 - Ideal para aplicaciones reales con recursos limitados.
+
+## 4 Estructura del Controlador LADRC
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/Componentes ADRC.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 5.</b>Estructura del Controlador LADR</p>
+</div>
+
+### Componentes del esquema
+
+<div align="center">
+  
+| Bloque                            | Función |
+|----------------------------------|---------|
+| Generador de trayectorias | Calcula los setpoints (posición, velocidad, aceleración, etc.) según la cinemática del sistema. En este curso, solo se usará la posición como referencia. |
+| Controlador                 | Usa los valores del generador de trayectorias y las estimaciones del observador (estados z₁, z₂, ..., zₙ) para generar una acción de control **u₀**. |
+| Observador de Estados Extendido (ESO) | Estima los estados del sistema y una perturbación total (**zₙ₊₁**) que incluye: - Perturbaciones, - No linealidades, - Errores de modelo. |
+| Lazo interno de rechazo de perturbaciones | La señal **u₀** se corrige restando **zₙ₊₁**, y se divide entre la ganancia estática del sistema **b₀**. Esto genera la señal de entrada real **u** que actúa sobre la planta. |
+
+</div>
+
+> Nota: Cada bloque cumple una función precisa dentro de un esquema modular de control.*
+
+### Esquema tipo cascada (en espacio de estados)
+
+Este diagrama es análogo a un esquema PID en cascada, pero:
+
+- El controlador externo entrega la acción primaria (**u₀**).
+  
+- El lazo interno, basado en el ESO, rechaza perturbaciones.
+  
+- Todo se implementa en espacio de estados, no con bloques tipo PID.
+
+- **zₙ₊₁** representa el **estado extendido** que agrupa todas las perturbaciones y errores dinámicos.
+  
+- **b₀** (ganancia estática o crítica) se usa para **compensar** el efecto de perturbaciones estimadas.
+
+### Aplicaciones comunes
+
+Este controlador se adapta muy bien a sistemas rápidos con tiempos de respuesta cortos:
+
+- Conversores de potencia (energías alternativas)
+  
+- Control de movimiento (servomotores, inversión rápida de giro)
+
+### 💡Ejemplo 3:
+
+- Central eléctrica en China
+
+<div align="center">
+<img src="Imágenes_Corte_3/Clase%20%2312/ThreeGorgesDam-China2009.jpg" alt="Figura de prueba" width="500">
+<p><b>Figura 6.</b>Central eléctrica en China</p>
+</div>
+
+- Controladores industriales de Allen Bradley (Rockwell Automation) usan LADRC internamente
+
+<div align="center">
+<img src="Imágenes_Corte_3/Clase%20%2312/Controladores industriales de Allen Bradley (Rockwell Automation).jpeg" alt="Figura de prueba" width="500">
+<p><b>Figura 7.</bontroladores industriales de Allen Bradley (Rockwell Automation</p>
+</div>
+
+### ¿Por qué usar este esquema?
+
+<div align="center">
+  
+| Ventaja                             | Detalle |
+|-------------------------------------|---------|
+| Alta capacidad de rechazo de perturbaciones | Estimación y compensación activa |
+| Respuesta muy rápida              | Ideal para sistemas con dinámica veloz |
+| Generalizable                    | Se puede aplicar a muchos tipos de procesos |
+| Modular                          | Cada componente cumple una función clara y reutilizable |
+
+</div>
+
+> *Nota: LADRC logra un equilibrio entre simplicidad, robustez y velocidad de respuesta.*
+
