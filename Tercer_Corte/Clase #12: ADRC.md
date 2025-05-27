@@ -183,8 +183,10 @@ El sistema rechaza cualquier cosa que lo aleje del comportamiento deseado:
 
 Esto implica:
 
-- El error tiende a cero automáticamente  
-- No necesitas acción integral adicional 
+- El error tiende a cero automáticamente
+
+- No necesitas acción integral adicional
+  
 - Solo usas ganancias proporcionales, ¡mucho más fácil de ajustar!
 
 ## 3. LADRC: Control Lineal por Rechazo Activo de Perturbaciones
