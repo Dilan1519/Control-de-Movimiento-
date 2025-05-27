@@ -664,6 +664,88 @@ Donde:
   
 - Ajuste Flexible: Los parámetros $$\( \alpha \)$$ y $$\( \delta \)$$ permiten personalizar el comportamiento del controlador.
 
+## 5. L-ADRC (Control Activo de Perturbaciones Lineal)
+
+### Observador de Estados Extendido Lineal (ESO)
+
+El ESO lineal* permite estimar los estados del sistema y la perturbación total $$\( h \)$$, con la siguiente dinámica:
+
+$$
+\begin{cases}
+\dot{z}_1 = z_2 + L_1 e \\
+\dot{z}_2 = z_3 + b_0 u + L_2 e \\
+\dot{z}_3 = L_3 e \\
+e = y - z_1
+\end{cases}
+\quad \text{donde} \quad y = x_1
+$$
+
+Estimaciones:
+
+- $$\( z_1 \approx x_1 \)$$ (posición)
+  
+- $$\( z_2 \approx x_2 \)$$ (velocidad)
+  
+- $$\( z_3 \approx h \)$$ (perturbación total)
+
+### Modelo del Sistema Extendido
+
+Incluye la perturbación como una tercera variable de estado:
+
+$$
+\begin{cases}
+\dot{x}_1 = x_2 \\
+\dot{x}_2 = x_3 + b_0 u \\
+\dot{x}_3 = h \\
+y = x_1
+\end{cases}
+$$
+
+Esto convierte el sistema en un modelo lineal de orden 3 con dinámica accesible a control.
+
+### Ley de Control Lineal
+
+La señal de control auxiliar $$\( u_0 \)$$ se calcula como:
+
+$$
+u_0 = k_1 (\tilde{r} - z_1) - k_2 z_2
+$$
+
+Donde:
+
+- $$\( \tilde{r} \)$$: referencia deseada.
+  
+- $$\( z_1, z_2 \)$$: estimaciones de los estados reales.
+  
+- $$\( k_1, k_2 \)$$: ganancias de retroalimentación.
+
+### Interpretación del Controlador
+
+- $$\( \tilde{r} - z_1 \)$$: error de posición.
+  
+- $$\( z_2 \)$$ : velocidad estimada, que se usa para anticiparse a cambios.
+  
+- $$\( z_3 \)$$: perturbación total estimada, que se elimina con la ley:
+
+$$
+u = u_0 - \frac{z_3}{b_0}
+$$
+
+### Ventajas del L-ADRC
+
+<div align="center">
+  
+| Característica                 | Ventaja                                     |
+|-------------------------------|---------------------------------------------|
+| Modelo reducido             | No necesita conocer todos los parámetros    |
+| Rechazo activo de perturbaciones | Estima y cancela \( h \) en tiempo real      |
+| Control lineal              | Simple de implementar y sintonizar          |
+| Estabilidad robusta        | Frente a incertidumbre y ruido              |
+| ⚙ESO de orden 3              | Permite mayor observabilidad y compensación |
+
+</div>
+
+L-ADRC ofrece una solución efectiva y linealmente implementable para sistemas con perturbaciones desconocidas y modelos incompletos.
 
 
 
