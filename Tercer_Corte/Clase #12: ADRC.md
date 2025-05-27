@@ -404,6 +404,83 @@ $$
   
 - En modelos más complejos, esta no linealidad se absorbe en un estado adicional (como **zₙ₊₁** en LADRC), lo que permite ignorarla explícitamente al diseñar el controlador.
 
+## 4. NADRC: Nonlinear Active Disturbance Rejection Control
+
+Rechazar perturbaciones y no linealidades agrupándolas en una función desconocida $$\( f \)$$, que será estimada en tiempo real por un observador.
+
+### Modelo Inicial del Sistema
+
+Ecuación diferencial de segundo orden:
+
+$$
+\ddot{y} = -a_1 \dot{y} - a_0 y + b u
+$$
+
+Donde:
+
+- $$\( y \)$$: salida del sistema
+    
+- $$\( u \)$$: entrada de control
+   
+- $$\( a_0, a_1 \)$$: parámetros del sistema
+    
+- $$\( b \)$$: ganancia del sistema
+
+
+### Representación en Espacio de Estados
+
+Definimos los estados:
+
+$$
+x_1 = y, \quad x_2 = \dot{y}
+$$
+
+Entonces, el sistema se reescribe como:
+
+$$
+\begin{cases}
+\dot{x}_1 = x_2 \\
+\dot{x}_2 = -a_0 x_1 - a_1 x_2 + b u + w \\
+y = x_1
+\end{cases}
+$$
+
+$$\( w \)$$: representa perturbaciones externas o incertidumbre del modelo
+
+### Suposición Clave en NADRC
+
+Agrupamos todas las incertidumbres y no linealidades en una sola función:
+
+$$
+f = -a_0 x_1 - a_1 x_2 + (b - b_0)u + w
+$$
+
+Donde:
+
+- $$\( b_0 \)$$: estimación de la ganancia (puede diferir de $$\( b \))$$
+  
+- $$\( f \)$$: función que representa todo lo **desconocido** del sistema:
+  
+  - Modelo inexacto
+    
+  - Perturbaciones externas
+    
+  - Variaciones paramétricas
+    
+  - No linealidades
+
+### Ventaja del Enfoque NADRC
+
+En lugar de conocer exactamente el modelo dinámico, NADRC:
+
+1. Estima la función $$\( f \)$$ en tiempo real mediante un observador extendido.
+   
+3. Compensa activamente dicha perturbación en el lazo de control.
+
+Esto permite que el sistema se comporte como si se conociera perfectamente, incluso si el modelo real es complejo o incierto.
+
+
+
 
 
 
