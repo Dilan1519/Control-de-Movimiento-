@@ -481,6 +481,136 @@ En lugar de conocer exactamente el modelo dinámico, NADRC:
 
 Esto permite que el sistema se comporte como si se conociera perfectamente, incluso si el modelo real es complejo o incierto.
 
+##  Modelo del Sistema: Base para NADRC
+
+### Ecuación Diferencial del Sistema
+
+Se parte de una ecuación de segundo orden:
+
+$$
+\ddot{y} = -a_1 \dot{y} - a_0 y + b u
+$$
+
+Donde:
+
+- $$\( y \)$$: salida del sistema
+  
+- $$\( u \)$$: entrada (control)
+  
+- $$\( a_0, a_1 \)$$: parámetros conocidos del sistema
+  
+- $$\( b \)$$: ganancia del sistema
+
+### Modelo en Espacio de Estados
+
+Definimos los estados:
+
+$$
+x_1 = y, \quad x_2 = \dot{y}
+$$
+
+Entonces:
+
+$$
+\begin{cases}
+\dot{x}_1 = x_2 \\
+\dot{x}_2 = -a_0 x_1 - a_1 x_2 + b u + w \\
+y = x_1
+\end{cases}
+$$
+
+$$\( w \)$$: perturbación externa o incertidumbre del modelo
+
+### Agrupación de Dinámicas Desconocidas
+
+Se define:
+
+$$
+f = -a_0 x_1 - a_1 x_2 + (b - b_0)u + w
+$$
+
+Con esto, el modelo se reescribe como:
+
+$$
+\begin{cases}
+\dot{x}_1 = x_2 \\
+\dot{x}_2 = f + b_0 u \\
+y = x_1
+\end{cases}
+$$
+
+Donde:
+
+- $$\( b_0 \)$$: estimación de la ganancia del sistema
+  
+- $$\( f \)$$: representa todas las incertidumbres y perturbaciones
+
+### Modelo Extendido: Estado Adicional
+
+Como $$\( f \)$$ es desconocida, se incluye como nuevo estado:
+
+$$
+x_3 = f
+$$
+
+Entonces, el modelo completo es:
+
+$$
+\begin{cases}
+\dot{x}_1 = x_2 \\
+\dot{x}_2 = x_3 + b_0 u \\
+\dot{x}_3 = h \\
+y = x_1
+\end{cases}
+$$
+
+Este es el modelo extendido usado en NADRC. Se comporta como un sistema de orden 3.
+
+## Observador de Estados Extendido (ESO)
+
+Se diseña un observador para estimar los estados $$\( z_1, z_2, z_3 \)$$:
+
+$$
+\begin{cases}
+\dot{z}_1 = z_2 - \beta_1 \gamma_1(e) \\
+\dot{z}_2 = z_3 + b_0 u - \beta_2 \gamma_2(e) \\
+\dot{z}_3 = - \beta_3 \gamma_3(e) \\
+e = z_1 - y
+\end{cases}
+$$
+
+Donde:
+
+- $$\( \beta_i \)$$: ganancias del observador
+  
+- $$\( \gamma_i(e) \)$$: funciones no lineales del error $$\( e \)$$ (pueden ser lineales o de tipo sigmoidal, sat, etc.)
+  
+- $$\( e \)$$: error de estimación
+
+### Ley de Control NADRC
+
+La ley de control se define como:
+
+$$
+u = \frac{u_0 - z_3}{b_0}
+$$
+
+Esto compensa activamente la perturbación estimada $$\( z_3 \)$$.
+
+### Resultado: Sistema Compensado
+
+Sustituyendo en el modelo:
+
+$$
+\begin{cases}
+\dot{x}_1 = x_2 \\
+\dot{x}_2 = u_0 \\
+y = x_1
+\end{cases}
+$$
+
+Ahora el sistema se comporta como un doble integrador ideal, libre de perturbaciones
+
 
 
 
