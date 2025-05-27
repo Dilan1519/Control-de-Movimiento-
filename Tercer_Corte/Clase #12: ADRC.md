@@ -23,7 +23,7 @@ El interés por esta técnica ha crecido en el ámbito de la investigación en c
 
 </div>
 
->*Nota: Esta tabla resume los fundamentos y origen del ADRC como técnica moderna de control.*
+>**Nota:** Esta tabla resume los fundamentos y origen del ADRC como técnica moderna de control.
 
 
 ### ¿Cómo Funciona?
@@ -52,7 +52,7 @@ En vez de luchar por tener el modelo perfecto del sistema, el ADRC asume que hab
 
 </div>
 
-> *Nota: Esta tabla muestra cómo ADRC se aplica a distintos sectores industriales con alta incertidumbre.*
+> **Nota:** Esta tabla muestra cómo ADRC se aplica a distintos sectores industriales con alta incertidumbre.
 
 ### Comparación Rápida: PID vs ADRC
 
@@ -67,7 +67,7 @@ En vez de luchar por tener el modelo perfecto del sistema, el ADRC asume que hab
 
 </div>
 
-> *Nota: Esta tabla compara de forma concisa las diferencias clave entre controladores PID y ADRC.*
+> **Nota:** Esta tabla compara de forma concisa las diferencias clave entre controladores PID y ADRC.
 
 ### Componentes clave
 
@@ -82,7 +82,7 @@ El ADRC se basa en dos grandes pilares:
 
 </div>
 
-> *Nota: Esta tabla resume los elementos esenciales que forman el núcleo del control ADRC.*
+> **Nota:** Esta tabla resume los elementos esenciales que forman el núcleo del control ADRC.
 
 
 ### ¿Qué hace el ESO?
@@ -145,7 +145,7 @@ Solo necesitamos:
 
 </div>
 
-> *Nota: ADRC permite el control efectivo incluso cuando la información del sistema es limitada o inexacta.*
+> **Nota:**ADRC permite el control efectivo incluso cuando la información del sistema es limitada o inexacta.
 
 ### 2.2 Cancela perturbaciones + incertidumbre total
 
@@ -208,7 +208,7 @@ Reemplaza la parte no lineal del controlador y el observador por herramientas li
 
 </div>
 
-> *Nota: LADRC simplifica el diseño del ADRC usando solo herramientas lineales.*
+> **Nota:** LADRC simplifica el diseño del ADRC usando solo herramientas lineales.
 
 ### ¿Pero puede controlar sistemas no lineales?
 
@@ -234,7 +234,7 @@ LADRC también funciona con sistemas no lineales, gracias a que:
 
 </div>
 
-> *Nota: Esta tabla destaca las ventajas prácticas de LADRC frente al PID tradicional.*
+> **Nota:** Esta tabla destaca las ventajas prácticas de LADRC frente al PID tradicional.
 
 
 ### ¿Por qué usar LADRC?
@@ -265,7 +265,7 @@ LADRC también funciona con sistemas no lineales, gracias a que:
 
 </div>
 
-> Nota: Cada bloque cumple una función precisa dentro de un esquema modular de control.*
+> **Nota:** Cada bloque cumple una función precisa dentro de un esquema modular de control.
 
 ### Esquema tipo cascada (en espacio de estados)
 
@@ -281,28 +281,26 @@ Este diagrama es análogo a un esquema PID en cascada, pero:
   
 - **b₀** (ganancia estática o crítica) se usa para **compensar** el efecto de perturbaciones estimadas.
 
-### Aplicaciones comunes
-
-Este controlador se adapta muy bien a sistemas rápidos con tiempos de respuesta cortos:
+Este controlador se adapta muy bien a **sistemas rápidos** (con tiempos de respuesta cortos):
 
 - Conversores de potencia (energías alternativas)
   
 - Control de movimiento (servomotores, inversión rápida de giro)
 
-### 💡Ejemplo 3:
+### Ejemplos reales:
 
 - Central eléctrica en China
 
 <div align="center">
-<img src="Imágenes_Corte_3/Clase%20%2312/ThreeGorgesDam-China2009.jpg" alt="Figura de prueba" width="500">
-<p><b>Figura 6.</b>Central eléctrica en China</p>
+  <img src="Imágenes_Corte_3/Clase%20%2312/ThreeGorgesDam-China2009.jpg" alt="Figura de prueba" width="500">
+  <p><b>Figura 6.</b>Central eléctrica en China</p>
 </div>
 
 - Controladores industriales de Allen Bradley (Rockwell Automation) usan LADRC internamente
 
 <div align="center">
-<img src="Imágenes_Corte_3/Clase%20%2312/Controladores industriales de Allen Bradley (Rockwell Automation).jpeg" alt="Figura de prueba" width="500">
-<p><b>Figura 7.</bontroladores industriales de Allen Bradley (Rockwell Automation</p>
+  <img src="Imágenes_Corte_3/Clase%20%2312/Controladores industriales de Allen Bradley (Rockwell Automation).jpeg" alt="Figura de prueba" width="500">
+  <p><b>Figura 7.</b>Controladores industriales de Allen Bradley (Rockwell Automation)</p>
 </div>
 
 ### ¿Por qué usar este esquema?
@@ -311,12 +309,101 @@ Este controlador se adapta muy bien a sistemas rápidos con tiempos de respuesta
   
 | Ventaja                             | Detalle |
 |-------------------------------------|---------|
-| Alta capacidad de rechazo de perturbaciones | Estimación y compensación activa |
+|  Alta capacidad de rechazo de perturbaciones | Estimación y compensación activa |
 | Respuesta muy rápida              | Ideal para sistemas con dinámica veloz |
 | Generalizable                    | Se puede aplicar a muchos tipos de procesos |
 | Modular                          | Cada componente cumple una función clara y reutilizable |
 
 </div>
 
-> *Nota: LADRC logra un equilibrio entre simplicidad, robustez y velocidad de respuesta.*
+> **Nota:** LADRC logra un equilibrio entre simplicidad, robustez y velocidad de respuesta.
+
+💡Ejemplo 3: Modelo No Lineal: Tanque con Forma Irregular
+
+Transformar un modelo no lineal en una estructura que permita controlarlo como si fuera lineal, facilitando el diseño de controladores como LADRC.
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/Supongamos.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 6.</b>Tanque con Forma Irregular</p>
+</div>
+
+### Sistema Físico
+
+- Sistema: Tanque con forma irregular
+  
+- Entrada: `u` (flujo de entrada)
+  
+- Salida: `y = h` (altura del líquido)  
+
+### Idea 
+
+Un sistema no lineal puede separarse en dos partes:
+
+- Parte lineal (ej. `K·u`)
+  
+- Parte no lineal (ej. `a·√(2gh) / A(h)`)
+
+### Ecuaciones del Sistema
+
+### Modelo dinámico (balance de masa):
+
+$$
+\frac{d}{dt} \left( \int_0^h A(h) \, dh \right) = u - a \sqrt{2gh}
+$$
+
+Aplicando el teorema fundamental del cálculo:
+
+$$
+A(h) \cdot \dot{h} = u - a \sqrt{2gh}
+$$
+
+Despejando $$\(\dot{h}\)$$:
+
+$$
+\dot{h} = \frac{1}{A(h)}u - \frac{a \sqrt{2gh}}{A(h)}
+$$
+
+### Interpretación de la Ecuación
+
+<div align="center">
+  
+| Término | Significado |
+|--------|-------------|
+| $$\(\frac{1}{A(h)}u\)$$ | Parte que se puede considerar como ganancia variable del sistema |
+| $$\(\frac{a \sqrt{2gh}}{A(h)}\)$$ | Perturbación no lineal que depende de la forma del tanque y la altura |
+
+</div>
+
+> **Nota:** La salida no responde linealmente ante entradas constantes debido a la forma del tanque.
+
+### Aproximación Lineal
+
+Si asumimos:
+
+- $$\( A(h) = \text{constante} \)$$
+  
+- $$\( \sqrt{2gh} \approx \text{constante} \)$$
+
+Entonces, el modelo se simplifica a:
+
+$$
+\dot{h} = K \cdot u + h
+$$
+
+### Gráfico (inferido del comportamiento)
+
+- Línea azul: Entrada constante $$\(u\)$$.
+    
+- Línea negra: Comportamiento de $$\(h\)$$ (no lineal), que primero disminuye y luego aumenta → evidencia de que el sistema no responde linealmente.
+
+### Conclusiones
+
+- Es común separar modelos no lineales en partes que sí se pueden tratar como lineales.
+  
+- En este caso, la forma irregular del tanque hace que el área $$\(A(h)\)$$ sea variable, lo que complica el modelo.
+  
+- En modelos más complejos, esta no linealidad se absorbe en un estado adicional (como **zₙ₊₁** en LADRC), lo que permite ignorarla explícitamente al diseñar el controlador.
+
+
+
 
