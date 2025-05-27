@@ -1,7 +1,110 @@
-# Titulo de la clase 
-El título de cada clase, correspondiente al tema general que se trabaje en clase. Siempre después de cada título de clase, redactar una breve introducción (mínimo un párrafo) que de una mirada general al tema
-## 1. Subtítulos
-Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
+# Control por Rechazo Activo de Perturbaciones (ADRC)
+
+En esta sesión se aborda una técnica de control moderna conocida como control por rechazo activo de perturbaciones (ADRC, por sus siglas en inglés). Esta metodología se presenta como una alternativa a técnicas tradicionales como el control PID, con el objetivo de mejorar el desempeño del sistema ante incertidumbres y perturbaciones externas.
+
+A diferencia de los enfoques clásicos, el ADRC se basa en el diseño de controladores en el espacio de estados, haciendo uso de observadores, pero con un enfoque que busca minimizar la dependencia del modelo del sistema. Esto permite que el controlador sea más robusto frente a imprecisiones en la modelación, y pueda gestionar de forma activa las perturbaciones y las incertidumbres del sistema.
+
+El interés por esta técnica ha crecido en el ámbito de la investigación en control, ya que representa un paso hacia la creación de controladores que requieran la mínima información del modelo o incluso, en un futuro, lleguen a operar sin necesidad de conocer el modelo de la planta, adaptándose automáticamente a diferentes dinámicas.
+
+## 1. ¿Qué es ADRC?
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/Zhiqiang-Gao-png.png" alt="Figura de prueba" width="300">
+  <p><b>Figura 1.</b>Zhiqiang Gao</p>
+</div>
+
+<div align="center">
+  
+| Concepto | Descripción breve |
+|----------|-------------------|
+| ADRC (Active Disturbance Rejection Control) | Técnica de control que rechaza activamente perturbaciones e incertidumbres del sistema. |
+| ¿Por qué nace? | Para superar las limitaciones de los controladores PID, especialmente su fuerte dependencia del modelo. |
+| Fundador | Propuesto por Zhiqiang Gao, investigador en tecnologías avanzadas de control en EE.UU. |
+
+</div>
+
+>*Nota: Esta tabla resume los fundamentos y origen del ADRC como técnica moderna de control.*
+
+
+### ¿Cómo Funciona?
+
+A diferencia del PID, ADRC incluye dentro del controlador un mecanismo para estimar y compensar todo aquello que no se conoce del modelo (perturbaciones, no linealidades, etc.).
+
+En vez de luchar por tener el modelo perfecto del sistema, el ADRC asume que habrá errores, perturbaciones y no linealidades, y se adapta para corregirlos en tiempo real.
+
+### Ventajas de ADRC
+
+- Menor dependencia del modelo de la planta.  
+- Rechazo no solo de perturbaciones, sino también de no linealidades complejas.  
+- Controladores más robustos ante incertidumbre.  
+- Ideal cuando no tenemos un modelo preciso o completo.
+
+### Ejemplos en la Industria
+
+<div align="center">
+  
+| Sector | Ejemplo de aplicación del ADRC |
+|--------|-------------------------------|
+| Robótica | Control de brazos robóticos con alta variabilidad de carga. |
+| Automotriz | Estabilización de vehículos ante cambios de terreno o clima. |
+| Procesos industriales | Control de temperatura en hornos con fluctuaciones térmicas. |
+| Aeroespacial | Corrección de trayectorias en drones con viento impredecible. |
+
+</div>
+
+> *Nota: Esta tabla muestra cómo ADRC se aplica a distintos sectores industriales con alta incertidumbre.*
+
+### Comparación Rápida: PID vs ADRC
+
+<div align="center">
+  
+| Característica | PID | ADRC |
+|----------------|-----|------|
+| Dependencia del modelo | Alta | Baja |
+| Rechazo de perturbaciones | Limitado | Activo y predictivo |
+| No linealidades | No las maneja bien | Las rechaza automáticamente |
+| Robustez | Media | Alta ante incertidumbre y variaciones |
+
+</div>
+
+> *Nota: Esta tabla compara de forma concisa las diferencias clave entre controladores PID y ADRC.*
+
+### Componentes clave
+
+El ADRC se basa en dos grandes pilares:
+
+<div align="center">
+  
+| Componente | Descripción |
+|------------|-------------|
+| Ley de control no lineal | Calculada a partir del error del sistema mediante funciones no lineales. |
+| ESO – Observador de Estados Extendido | Un observador que va más allá de los estados típicos… ¡y predice el caos! |
+
+</div>
+
+> *Nota: Esta tabla resume los elementos esenciales que forman el núcleo del control ADRC.*
+
+
+### ¿Qué hace el ESO?
+
+El ESO es como un espía dentro del sistema que:
+
+- Estima los estados normales del sistema.
+  
+- Estima las perturbaciones que afectan al sistema.
+  
+- Detecta dinámicas desconocidas y no linealidades.
+
+Esto significa que ya no es necesario modelar matemáticamente todas las complejidades del sistema, porque el observador se encarga de descubrirlas en tiempo real.
+
+### ¿Qué lo hace tan poderoso?
+
+- No necesitas un modelo exacto.  
+
+- El controlador se adapta a sistemas complejos o mal conocidos.
+  
+- Puedes controlar plantas no lineales como si fueran lineales.
+
 
 ## 2. Definiciones
 Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
