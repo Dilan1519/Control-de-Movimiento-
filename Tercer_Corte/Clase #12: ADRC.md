@@ -1367,7 +1367,7 @@ $$
 
 ### ¿Por qué funciona esto?
 
-Este observador **inyecta el error de salida $e_1$** multiplicado por las ganancias $\lambda_i$ para forzar que las estimaciones converjan rápidamente a los valores reales del sistema.
+Este observador inyecta el error de salida $e_1$ multiplicado por las ganancias $\lambda_i$ para forzar que las estimaciones converjan rápidamente a los valores reales del sistema.
 
 ### Interpretación creativa
 
@@ -1403,4 +1403,225 @@ donde:
 - $u_0$ es el control deseado (por ejemplo, un controlador PD o de seguimiento).
   
 - $\hat{x}_3$ es la perturbación estimada, que se compensa.
+
+$$
+\dot{x}_1 = x_2
+$$
+
+$$
+\dot{x}_2 = \mathbb{K}u + \varepsilon
+$$
+
+$$
+x_3 = \varepsilon
+$$
+
+$$
+x_4 = \dot{\varepsilon}
+$$
+
+$$
+\dot{x}_1 = x_2
+$$
+
+$$
+\dot{x}_2 = \mathbb{K}u + x_3
+$$
+
+$$
+\dot{x}_3 = x_4
+$$
+
+$$
+\dot{x}_4 = \ddot{\varepsilon}
+$$
+
+Por lo cual  
+Desde el punto de vista del observador  
+se aplica la aproximación:
+
+$$
+e = x_1 - \hat{x}_1
+$$
+
+$$
+\dot{\hat{x}}_1 = x_2 + \lambda_3 e
+$$
+
+$$
+\dot{\hat{x}}_2 = \mathbb{K}u + x_3 + \lambda_2 e
+$$
+
+$$
+\dot{\hat{x}}_3 = x_4 + \lambda_1 e
+$$
+
+$$
+\dot{\hat{x}}_4 = 0 + \lambda_0 e
+$$
+
+$$
+e^{(4)} + \lambda_3 \dddot{e} + \lambda_2 \ddot{e} + \lambda_1 \dot{e} + \lambda_0 e = \varepsilon
+$$
+
+Asumiendo: K=0,5, B=0,2, M=0,5
+
+El observador implementado es:
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/Asumiendo.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 12.</b>Asumiendo Polos</p>
+</div>
+
+El observador implementado es:
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/Obsevador Implemenatdo.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 13.</b>Observador implementado</p>
+</div>
+
+Para poder cerrar el lazo se plantea la siguiente ley de control $$\( u \)$$:
+
+$$
+u = \frac{1}{k} \left( y^{(n)*} - k_1 (\dot{\hat{y}} - \dot{y}^*) - k_0 (\hat{y} - y^*) - \hat{\varepsilon} \right)
+$$
+
+El polinomio característico para el error de seguimiento $$\( e_y = y - y^* \)$$ es:
+
+$$
+P_{e_y}(s) = s^n + k_{n-1}s^{n-1} + \cdots + k_1 s + k_0
+$$
+
+Para este caso particular, con \( n = 2 \):
+
+$$
+P_{e_y}(s) = s^2 + k_1 s + k_0
+$$
+
+Para imponer la dinámica del error de seguimiento se ubican los polos en:
+
+poly([-15 -15])
+
+ans =
+
+     1    30   225
+
+Planta y el observador en lazo cerrado:
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/Lazo Cerrado.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 14.</b>Lazo Cerrado</p>
+</div>
+
+Pruebas de desempeño PID:
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/PID 1.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 15.</b>PID</p>
+</div>
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/PID 2.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 16.</b>PID</p>
+</div>
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/PID 3.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 17.</b>PID</p>
+</div>
+
+Pruebas de desempeño ADRC:
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/ADRC 1.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 18.</b>ADRC</p>
+</div>
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/ADRC 2.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 19.</b>ADRC</p>
+</div>
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/ADRC 3.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 20.</b>ADRC</p>
+</div>
+
+A partir de las seis imágenes anteriores, se puede concluir que el control ADRC (Active Disturbance Rejection Control) ofrece un desempeño significativamente superior al de un controlador PID. En particular, su capacidad de respuesta ante perturbaciones es mucho más rápida y eficaz, lo que se traduce en una mayor robustez y estabilidad del sistema.
+
+💡Ejemplo 6: 
+
+- Modelo del Sistema
+
+$$
+\dot{x} = 
+\begin{bmatrix}
+x_2 \\
+-0.25x_1 + 0.70x_2 + (4.75 - 4.50x_1)u
+\end{bmatrix}
+$$
+
+$$
+y = x_1
+$$
+
+$$
+x = 
+\begin{bmatrix}
+x_1 & x_2
+\end{bmatrix}^T
+$$
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/MODELO.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 21.</b>Modelo</p>
+</div>
+
+Respuesta en lazo abierto:
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/MODELO 2.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 22.</b>Modelo</p>
+</div>
+
+- Planteamiento de cotrolador.
+
+- Obtuvimos una función de segundo orden.
+
+- La ganancia estatica es una función .
+
+$$
+\dot{y} = \dot{x}_1
+$$
+
+$$
+\ddot{y} = \dot{x}_2 = \ddot{x}_1
+$$
+
+$$
+\ddot{y} = (4.75 - 4.50y)u + 0.70\dot{y} - 0.25y
+$$
+
+- Como el sistema es de orden 2:
+
+$$
+y^{(2)} = \mathbb{K}u + \mathcal{E}(t)
+$$
+
+$$
+\mathbb{K} = 4.75 - 4.50y
+$$
+
+$$
+\mathcal{E} = 0.70\dot{y} - 0.25y
+$$
+
+Perturbaciones:
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/PERTURBACIONES.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 23.</b>Perturbaciones</p>
+</div>
+
+Control robusto basado en técnicas ADRC de dos estados extendidos:
 
