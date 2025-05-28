@@ -1120,3 +1120,288 @@ Donde:
   
 - $K$: constante del resorte
 
+## Paso a paso hacia el modelo ADRC
+
+Partimos de la ecuación diferencial ya obtenida:
+
+$$
+u(t) - Ky(t) - B\dot{y}(t) = M\ddot{y}(t)
+$$
+
+### Paso 1: Despejar la derivada de mayor orden
+
+Queremos expresar la ecuación en función de la aceleración $\ddot{y}(t)$, porque ADRC requiere tener esa derivada máxima aislada:
+
+$$
+\ddot{y}(t) = \frac{1}{M} \left[ u(t) - Ky(t) - B\dot{y}(t) \right]
+$$
+
+### aso 2: Definir las variables de estado
+
+Vamos a convertir este sistema de segundo orden en un sistema de primer orden (forma de espacio de estados), usando:
+
+- $x_1 = y$  (la posición)  
+- $x_2 = \dot{y}$  (la velocidad)
+
+Entonces:
+
+$$
+\dot{x}_1 = \dot{y} = x_2
+$$
+
+$$
+\dot{x}_2 = \ddot{y} = \frac{1}{M} \left( u(t) - Kx_1 - Bx_2 \right)
+$$
+
+### Resultado: Modelo en espacio de estados
+
+El sistema queda expresado así:
+
+$$
+\begin{cases}
+\dot{x}_1 = x_2 \\\\
+\dot{x}_2 = \frac{1}{M} \left( u(t) - Kx_1 - Bx_2 \right)
+\end{cases}
+$$
+
+## Modelo en Espacio de Estados
+
+Ya definimos las variables de estado:
+
+- $x_1 = y$ (posición)  
+- $x_2 = \dot{y}$ (velocidad)
+
+### Ecuaciones de estado
+
+Las ecuaciones quedan:
+
+$$
+\begin{aligned}
+\dot{x}_1 &= x_2 \\\\
+\dot{x}_2 &= \frac{1}{M} u(t) - \frac{K}{M} x_1 - \frac{B}{M} x_2
+\end{aligned}
+$$
+
+### Forma matricial
+
+$$
+\dot{X}(t) = A X(t) + B u(t)
+$$
+
+donde:
+
+$$
+X(t) = \begin{bmatrix} x_1 \\\\ x_2 \end{bmatrix}
+$$
+
+Las matrices del sistema son:
+
+$$
+A = \begin{bmatrix}
+0 & 1 \\\\
+-\frac{K}{M} & -\frac{B}{M}
+\end{bmatrix},
+\quad
+B = \begin{bmatrix}
+0 \\\\
+\frac{1}{M}
+\end{bmatrix}
+$$
+
+### Ecuación de salida
+
+Dado que $y(t) = x_1$, tenemos:
+
+$$
+y(t) = C X(t) + D u(t)
+$$
+
+Con:
+
+$$
+C = \begin{bmatrix} 1 & 0 \end{bmatrix}, \quad D = \begin{bmatrix} 0 \end{bmatrix}
+$$
+
+### Sistema completo
+
+$$
+\begin{aligned}
+\dot{X}(t) &= A X(t) + B u(t) \\\\
+y(t) &= C X(t)
+\end{aligned}
+$$
+
+### Forma estándar para ADRC
+
+Partimos de:
+
+$$
+\ddot{y}(t) = \frac{1}{M} u(t) - \frac{K}{M} y(t) - \frac{B}{M} \dot{y}(t)
+$$
+
+La idea de ADRC es llevar esta ecuación a una forma genérica como:
+
+$$
+y^{(n)} = K u + \varepsilon(t)
+$$
+
+donde:
+
+- $K = \frac{1}{M}$  
+- $\varepsilon(t) = -\frac{K}{M} y(t) - \frac{B}{M} \dot{y}(t)$  
+- $\varepsilon(t)$ es la **perturbación total generalizada** (todo lo que no es el control directo).
+
+
+### Observador de Estado Extendido (ESO)
+
+Para controlar este sistema, se diseña un observador que estima:
+
+- El estado físico: $y$, $\dot{y}$
+- La perturbación total: $\varepsilon(t)$
+
+Este observador se llama **ESO (Extended State Observer)**.
+
+
+### Modelo extendido (orden 3):
+
+Variables extendidas:
+
+- $x_1 = y$
+- $x_2 = \dot{y}$
+- $x_3 \approx \varepsilon(t)$
+
+Ecuaciones del ESO:
+
+$$
+\begin{aligned}
+\dot{x}_1 &= x_2 \\\\
+\dot{x}_2 &= K u + x_3 \\\\
+\dot{x}_3 &= 0
+\end{aligned}
+$$
+
+También se puede extender a orden 4, si se quiere modelar el cambio de la perturbación:
+
+$$
+\dot{x}_3 = x_4 \quad \text{y} \quad \dot{x}_4 = 0
+$$
+
+Pero normalmente se asume que $\dot{\varepsilon}(t) \approx 0$, y se simplifica con $\dot{x}_3 = 0$.
+
+
+### Uso del ESO en el control
+
+Una vez que tienes la estimación $\hat{x}_3 \approx \varepsilon(t)$, puedes compensarla en el control con:
+
+$$
+u(t) = \frac{1}{K} \left( u_0(t) - \hat{x}_3 \right)
+$$
+
+donde:
+
+- $u_0(t)$ es una señal de control convencional (PID, seguimiento de referencia, etc.).
+
+<div align="center">
+  
+| Variable | Significado                         |
+|----------|-------------------------------------|
+| $x_1$    | Posición $y$                        |
+| $x_2$    | Velocidad $\dot{y}$                 |
+| $x_3$    | Perturbación generalizada $\varepsilon(t)$ |
+| $x_4$    | Derivada de la perturbación (opcional)     |
+
+</div>
+
+### Modelo extendido del sistema (orden 4)
+
+Definimos las variables de estado extendidas:
+
+- $x_1 = y$ (posición)
+- $x_2 = \dot{y}$ (velocidad)
+- $x_3 \approx \varepsilon(t)$ (perturbación total)
+- $x_4 = \dot{\varepsilon}(t)$ (derivada de la perturbación)
+
+Ecuaciones del sistema extendido:
+
+$$
+\begin{aligned}
+\dot{x}_1 &= x_2 \quad \text{(posición)} \\\\
+\dot{x}_2 &= K u + x_3 \quad \text{(aceleración con perturbación)} \\\\
+\dot{x}_3 &= x_4 \quad \text{(evolución de la perturbación)} \\\\
+\dot{x}_4 &= \ddot{\varepsilon} \approx 0 \quad \text{(se suele asumir constante)}
+\end{aligned}
+$$
+
+## Desde el punto de vista del observador (ESO)
+
+Vamos a estimar:
+
+$$
+\begin{aligned}
+\hat{x}_1 &\approx x_1 \quad \text{(posición)} \\\\
+\hat{x}_2 &\approx x_2 \quad \text{(velocidad)} \\\\
+\hat{x}_3 &\approx \varepsilon(t) \quad \text{(perturbación)} \\\\
+\hat{x}_4 &\approx \dot{\varepsilon}(t) \quad \text{(derivada de la perturbación)}
+\end{aligned}
+$$
+
+
+## ⚙️ Estructura del ESO con realimentación de error
+
+Se define el error de estimación como:
+
+$$
+e_1 = y - \hat{x}_1
+$$
+
+Ecuaciones del observador extendido:
+
+$$
+\begin{aligned}
+\dot{\hat{x}}_1 &= \hat{x}_2 + \lambda_3 e_1 \\\\
+\dot{\hat{x}}_2 &= K u + \hat{x}_3 + \lambda_2 e_1 \\\\
+\dot{\hat{x}}_3 &= \hat{x}_4 + \lambda_1 e_1 \\\\
+\dot{\hat{x}}_4 &= 0 + \lambda_0 e_1
+\end{aligned}
+$$
+
+
+### ¿Por qué funciona esto?
+
+Este observador **inyecta el error de salida $e_1$** multiplicado por las ganancias $\lambda_i$ para forzar que las estimaciones converjan rápidamente a los valores reales del sistema.
+
+### Interpretación creativa
+
+Imagina que el sistema es un auto y el observador es un copiloto que:
+
+- Estima la velocidad ($\hat{x}_2$).
+  
+- Adivina la fuerza del viento ($\hat{x}_3$).
+  
+- Intuye si la pendiente está cambiando ($\hat{x}_4$).
+
+Y lo hace **solo mirando la posición** ($x_1 = y$) y **corrigiendo sus predicciones con el error**.
+
+## Estimación de la perturbación
+
+La perturbación estimada también puede representarse con:
+
+$$
+\varepsilon \approx e^{(4)} + \lambda_3 e^{(3)} + \lambda_2 \ddot{e} + \lambda_1 \dot{e} + \lambda_0 e
+$$
+
+
+## ¿Y luego? Control con compensación de perturbación
+
+Con el ESO estimando $\hat{x}_3 \approx \varepsilon(t)$, el control se define como:
+
+$$
+u = \frac{1}{K} \left(u_0 - \hat{x}_3 \right)
+$$
+
+donde:
+
+- $u_0$ es el control deseado (por ejemplo, un controlador PD o de seguimiento).
+  
+- $\hat{x}_3$ es la perturbación estimada, que se compensa.
+
