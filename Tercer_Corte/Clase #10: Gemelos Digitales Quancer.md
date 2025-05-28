@@ -373,7 +373,7 @@ En la ventana emergente:
   <p><b>Figura 27.</b>  Encoder </p>
 </div>
 
-- Pásalo a Selected channels usando la flecha  (→).
+- Pásalo a Selected channels usando la flecha (→).
 
 - Haz clic en OK para guardar los cambios.
 
@@ -412,14 +412,78 @@ Conecta la salida de Posición a ambos bloques:
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Encoder_5.png" alt="Figura de prueba" width="600">
-  <p><b>Figura 30.</b>  Señal de Corriente en Amperios </p>
+  <p><b>Figura 30.</b>  Señal de Posición en Amperios </p>
 </div>
 
+## Lectura de la velocidad angular del motor
 
+La velocidad angular indica qué tan rápido cambia la posición del motor, generalmente medida en grados por segundo (°/s) o radianes por segundo (rad/s).
 
-## 5. Conclusiones
+Aunque no todos los sistemas entregan esta variable directamente, el Qube-Servo 2 sí lo permite a través del encoder, si está correctamente configurado.
+
+- Configuración del bloque HIL Read Encoder Timebase para velocidad
+
+- Haz doble clic en el bloque `HIL Read Encoder Timebase`.
+
+- En la pestaña Main, busca la sección Other Channels.
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Tacometro_2.png" alt="Figura de prueba" width="600">
+  <p><b>Figura 31.</b> Tacometro </p>
+</div>
+
+- Haz clic en los tres puntos `(...)` a la derecha para abrir el selector de canales.
+
+ En la lista de Available channels, selecciona:
+
+```plaintext
+Tachometer 0
+```
+
+Pásalo a Selected channels usando la flecha (→) y haz clic en OK.
+
+Como el tacometro esta de Cuentas/S , lo pasamos con la misma ganancia anterior:
+
+Velocidad (°/s) = Cuentas/segundo × (360 / 2048)
+                ≈ Cuentas/segundo × 0.17578
+
+- Conecta la salida del canal de velocidad al bloque Gain.
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Tacometro_3.png" alt="Figura de prueba" width="600">
+  <p><b>Figura 31.</b> Tacometro </p>
+</div>
+
+- Añade los siguientes bloques de visualización:
+
+- Scope: Para ver cómo varía la velocidad angular en el tiempo.
+
+- Display: Para visualizar el valor numérico en tiempo real.
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Tacometro_4.png" alt="Figura de prueba" width="600">
+  <p><b>Figura 31.</b> Señal Velcodiad Angular </p>
+</div>
+
+## Conclusiones
+
+- La conexión entre Simulink y Quanser requiere una configuración inicial específica, incluyendo la instalación del complemento de Quanser y la ejecución de comandos como QLabs.setup y QLabs.launch. Esto permite trabajar con gemelos digitales sin necesidad de tener la planta física siempre disponible.
+
+- El bloque HIL Initialize es esencial para establecer la comunicación con la planta (física o virtual). Su correcta configuración garantiza que los demás bloques de adquisición y control funcionen adecuadamente durante la simulación.
+
+- Es posible adquirir variables clave del sistema, como corriente, posición y velocidad angular, mediante los bloques de lectura (HIL Read Encoder Timebase). Estas señales deben procesarse con conversiones apropiadas (por ejemplo, cuentas a grados) para obtener valores interpretables.
+
+- La visualización de las señales en tiempo real a través de Scope y Display es fundamental para el análisis del comportamiento del sistema. Esto permite verificar de forma intuitiva si el sistema está operando dentro de parámetros normales.
+
+- Este entorno ofrece una plataforma sólida para implementar y probar estrategias de control como PID, y observar su impacto en variables del sistema como posición y velocidad, todo dentro de un entorno seguro y flexible que replica el comportamiento de la planta real.
 
 
 ## 6. Bibliografía
 
-[1] MathWorks, "Simscape Multibody," [En línea]. Disponible: https://la.mathworks.com/products/simscape.html. [Accedido: 06-Mar-2025].
+[1] J. E. Cote B., Control de movimiento con Quanser y Simulink, explicación oral, 9° semestre, Universidad ECCI, 2025.
+
+[2] Quanser, QUBE-Servo 2 Virtual Plant Manual, disponible en: https://www.quanser.com/resource-type/virtual-resources/?_products=1590
+
+[3] Quanser, Quanser QUBE-Servo 2 Documentation & Files, disponible en: https://quanserinc.app.box.com/s/5x59eq0l1ygebs6uyexnmcshwxxqish6
+
+[4] Quanser, QUBE-Servo 2 User Manual (PDF), disponible en: https://wwwlehre.dhbw-stuttgart.de/~flaemig/MATLAB/Quanser_CubeServo/QUBE-Servo%20User%20Manual.pdf
