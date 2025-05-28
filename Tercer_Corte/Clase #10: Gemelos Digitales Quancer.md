@@ -37,45 +37,70 @@ Para trabajar con el Qube-Servo 2 desde Simulink, es necesario configurar correc
 
 ### Instalar el complemento para gemelos digitales
 
-1. Abrir MATLAB.
+- Abrir MATLAB.
    
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso 0.png" alt="Figura de prueba" width="400">
   <p><b>Figura 1.</b> Abrir Matlab </p>
 </div>
 
-3. Ir a la pestaña **“Add-Ons”** y seleccionar **“Get Add-Ons”**.
+- Ir a la pestaña Add-Ons y seleccionar Get Add-Ons.
 
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_03.png" alt="Figura de prueba" width="800">
+  <p><b>Figura 2.</b> Add-Ons & Add-Ons </p>
+</div>
 
+- Buscar Quanser QLabs.
 
-5. Buscar **"Quanser QLabs"** o **"Quanser Virtual Qube-Servo 2"**.
-6. Instalar el complemento correspondiente.
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_2_Quanser.jpg" alt="Figura de prueba" width="800">
+  <p><b>Figura 3.</b> Quanser QLabs </p>
+</div>
 
-  
-
+- Instalar el complemento correspondiente.
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_1_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
+  <p><b>Figura 4.</b>Instalar el complemento</p>
 </div>
 
-<div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_2_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
-</div>
+## Registro en la plataforma QLabs
 
-<div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_3_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
-</div>
+Antes de usar la plataforma, debes registrarte en el sguiente enlace:  https://portal.quanser.com/Accounts/Login?returnUrl=/.
+
+Usa exclusivamente tu correo institucional, ya que es el que será habilitado para acceder a la plataforma.
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_4_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
+  <p><b>Figura 5.</b> Inico de Sesión </p>
 </div>
 
+## Configuración del entorno para el gemelo digital
+
+Después de instalar el complemento para QLabs, es necesario ejecutar algunos comandos desde la ventana de comandos de MATLAB (_Command Window_) para habilitar la conexión con el entorno virtual.
+
+- Ejecutar el siguiente comando en la ventana de comandos:
+
+   ```matlab
+   QLabs.setup
+
+Este comando configura automáticamente los recursos necesarios para usar el gemelo digital. Internamente ejecuta procesos como sl_customization y otros necesarios para que todo quede listo.
+
+- Luego, ejecutar el segundo comando:
+
+   ```matlab
+   QLabs.launch
+
 <div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_5_Quanser.jpg" alt="Figura de prueba" width="400">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_3_Quanser.jpg" alt="Figura de prueba" width="800">
+  <p><b>Figura 6.</b>Comandos QLabs.setup & QLabs.launch</p>
+</div>
+
+Esto abrirá una ventana emergente con la opción de seleccionar una de las 3 plantas disponibles (entre ellas, el Qube-Servo 2).
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_5_Quanser.jpg" alt="Figura de prueba" width="600">
   <p><b>Figura 1.</b> Abrir Smnew </p>
 </div>
 
