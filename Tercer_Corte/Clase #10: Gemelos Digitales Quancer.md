@@ -195,18 +195,66 @@ Arrastra el bloque HIL Initialize al lienzo del modelo.
   <p><b>Figura 14.</b> bloque HIL Initialize </p>
 </div>
 
+## Configuración del bloque HIL Initialize
 
+Una vez agregado el bloque HIL Initialize, es necesario configurarlo correctamente para establecer la comunicación con el Qube-Servo 2 virtual. Sigue estos pasos:
 
+- Haz doble clic sobre el bloque HIL Initialize para abrir su configuración.
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_12_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
+  <p><b>Figura 15.</b> Configuración Bloque HIL Initialize </p>
 </div>
+
+- En la pestaña Main, configura lo siguiente:
+
+   - Board type:
+
+     ```plaintext
+     qube_servo2_usb
+     ```
+
+  - Haz clic en el botón Defaults para cargar los parámetros por defecto del sistema.
+
+   - Board identifier:
+
+     ```plaintext
+     0@tcpip://localhost:18920
+     ```
+
+- Este identificador establece la conexión con el disco del Qube-Servo 2 virtual.
+
+   - Marca la casilla:
+
+     ```
+     Active during normal simulation
+     ```
+
+- Haz clic en OK para cerrar la ventana y aplicar la configuración.
+
+- Verificación y ejecución
+
+- Asegúrate de que el disco del Qube-Servo 2 esté abierto en Quanser Interactive Labs (desde la ventana que aparece al ejecutar `QLabs.launch`).
+
+- Luego, en Simulink, haz clic en el botónn Run (pestaña *Simulation*) para ejecutar el modelo usando QUARC.
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_13_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
+  <p><b>Figura 16.</b> Run </p>
 </div>
+
+Si todo está configurado correctamente, la tira LED del Qube-Servo 2 se pondrá verde, indicando que hay una conexión activa entre el modelo de Simulink y el gemelo digital.
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_14_Quanser.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 14.</b> Conexión activa </p>
+</div>
+
+
+
+
+
+
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_14_Quanser.jpg" alt="Figura de prueba" width="400">
