@@ -101,7 +101,7 @@ Esto abrirá una ventana emergente con la opción de seleccionar una de las 3 pl
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_5_Quanser.jpg" alt="Figura de prueba" width="600">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
+  <p><b>Figura 7.</b> Ventana Emergente de las 3 plantas </p>
 </div>
 
 <div align="center">
@@ -118,7 +118,7 @@ Esto abrirá una ventana emergente con la opción de seleccionar una de las 3 pl
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Manuales.png" alt="Figura de prueba" width="600">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
+  <p><b>Figura 8.</b> Recursos </p>
 </div>
 
 A continuación, se presentan enlaces clave para profundizar en el estudio y uso del Qube-Servo 2, tanto en su versión física como virtual. Estos materiales incluyen documentación técnica, guías prácticas y simulaciones listas para usar en Simulink.
@@ -135,15 +135,29 @@ A continuación, se presentan enlaces clave para profundizar en el estudio y uso
 
 > **Nota**: En los siguientes enlaces se pueden encontrar manuales importantes del Qube-Servo 2, incluyendo simulaciones listas para usar como controladores **PID**, entre otras herramientas clave para el aprendizaje práctico:
 
+## Creación del esquema básico en Simulink para el Qube-Servo 2
+
+Para comenzar a trabajar con la planta virtual o física del Qube-Servo 2, es necesario construir un modelo en Simulink que permita la comunicación con el hardware (real o virtual). A continuación, se detalla el procedimiento paso a paso:
+
+- Abrir Simulink
+
+En la ventana de comandos de MATLAB, escribe:
+
+   ```matlab
+   QLabs.launch
+   ```
+Presiona Enter.
+
+En la ventana de Simulink, selecciona Blank Model para iniciar con un archivo vacío.
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Blank Model.png" alt="Figura de prueba" width="600">
+  <p><b>Figura 10.</b> Blank Model </p>
+</div>
 
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_6_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
-</div>
-
-<div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_7_Quanser.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 1.</b> Abrir Smnew </p>
 </div>
 
