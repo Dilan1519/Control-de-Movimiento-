@@ -974,4 +974,149 @@ $$
 \end{bmatrix}
 $$
 
+## 10. ADRC - Control Activo de Rechazo de Perturbaciones
+
+La dinámica del sistema se expresa así:
+
+$$
+y^{(n)}(t) = u(t) + \xi(t)
+$$
+
+Llevado a forma de espacio de estados:
+
+$$
+\dot{x} = A x + B (u(t) + \xi(t)) \\
+y = C x
+$$
+
+<div align="center">
+  
+| Matriz | Significado               | Forma                                           |
+|--------|---------------------------|-------------------------------------------------|
+| A      | Matriz del sistema        | Matriz de cambio de estados (tipo cadena)      |
+| B      | Entrada + perturbación    | Última fila es 1                                |
+| C      | Salida                    | Solo mide la primera variable                   |
+
+</div>
+
+### Observador de Luenberger Extendiendo ADRC
+
+Se construye un observador para estimar el estado y la perturbación al mismo tiempo.
+
+Error de estimación:
+
+$$
+\tilde{e}_y = y - \hat{y}
+$$
+
+Forma extendida del observador:
+
+$$
+\dot{\hat{x}}_\xi = A_\xi \hat{x}_\xi + B_\xi u + \lambda_\xi \tilde{e}_y
+$$
+
+<div align="center">
+  
+| Elemento   | ¿Qué es?              | ¿Qué hace?                                                |
+|------------|------------------------|------------------------------------------------------------|
+| $$\( A_\xi \)$$ | Matriz extendida       | Considera variables + perturbación                         |
+| $$\( B_\xi \)$$ | Entrada extendida      | Acomoda el mismo \( u \) para más estados                 |
+| $$\( \lambda_\xi \)$$ | Ganancias del observador | Ajustan la velocidad y precisión de la estimación |
+</div>
+
+Recoemdacione
+
+- Con 2 estados es suficiente para motores.
+  
+- Lo importante es saber calcular los $$\( \lambda \) (o \( K_f \))$$.
+
+
+### Dinámica del Error y Polinomio de Hurwitz
+
+Restando las ecuaciones, se obtiene la dinámica del error:
+
+$$
+\tilde{e}_y^{(n+m)} + \lambda_{n+m-1} \tilde{e}_y^{(n+m-1)} + \cdots + \lambda_1 \dot{\tilde{e}}_y + \lambda_0 \tilde{e}_y = \xi^{(m)}(t)
+$$
+
+Este comportamiento se describe con el polinomio característico:
+
+$$
+p(s) = s^{n+m} + \lambda_{n+m-1} s^{n+m-1} + \cdots + \lambda_1 s + \lambda_0
+$$
+
+
+$$
+\dot{\hat{x}}_{\xi} = A_{\xi} \hat{x}_{\xi} + B_{\xi} u + \lambda_{\xi} \tilde{e}_y
+$$
+
+💡Ejemplo 5: Masa-Resorte-Amortiguador
+
+Controlar el desplazamiento de la masa.
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/Ejemplo.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 11.</b>Ejemplo</p>
+</div>
+
+### Sistema físico:
+
+- Una masa unida a un resorte y un amortiguador.
+- 
+- Aplicamos una fuerza externa $u(t)$ para mover la masa.
+
+### Diagrama y leyes aplicadas
+
+Aplicamos la Segunda Ley de Newton:
+
+$$
+\sum F = ma
+$$
+
+- Fuerzas que actúan:
+
+<div align="center">
+  
+| Fuerza               | Expresión       | Descripción                        |
+|----------------------|------------------|------------------------------------|
+| Fuerza externa       | $u(t)$           | Actúa sobre la masa                |
+| Fuerza del resorte   | $F_k = kx$       | Ley de Hooke                       |
+| Fuerza del amortiguador | $F_b = B\dot{x}$ | Proporcional a la velocidad       |
+
+</div>
+
+### Ecuación diferencial
+
+Usando la Segunda Ley de Newton:
+
+$$
+u(t) - F_k - F_b = M\ddot{x}(t)
+$$
+
+Sustituyendo las expresiones de fuerza:
+
+$$
+u(t) - kx(t) - B\dot{x}(t) = M\ddot{x}(t)
+$$
+
+
+$$
+M\ddot{y}(t) + B\dot{y}(t) + Ky(t) = u(t)
+$$
+
+O también:
+
+$$
+u(t) = M\ddot{y}(t) + B\dot{y}(t) + Ky(t)
+$$
+
+Donde:
+
+- $y(t)$: posición de la masa
+  
+- $M$: masa
+  
+- $B$: coeficiente de amortiguamiento
+  
+- $K$: constante del resorte
 
