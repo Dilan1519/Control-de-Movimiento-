@@ -247,7 +247,7 @@ Si todo está configurado correctamente, la tira LED del Qube-Servo 2 se pondrá
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_14_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 14.</b> Conexión activa </p>
+  <p><b>Figura 17.</b> Conexión activa </p>
 </div>
 
 ## Agregar el bloque HIL Read Encoder Timebase
@@ -258,7 +258,7 @@ QUARC Targets → Data Acquisition → Generic → Timebases
   
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_15_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 15.</b> Bloque HIL Read Encoder Timebase</p>
+  <p><b>Figura 18.</b> Bloque HIL Read Encoder Timebase</p>
 </div>
 
 - Haz doble clic sobre el bloque y configura:
@@ -269,14 +269,14 @@ Marca la opción Active during normal simulation
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_16_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 16.</b> Active during </p>
+  <p><b>Figura 19.</b> Active during </p>
 </div>
 
 - Conecta un bloque Constant al bloque HIL Write Analog, para enviar un valor de voltaje fijo al motor (puedes comenzar con un valor bajo, por ejemplo, 1 o 0.5).
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Write Analog.png" alt="Figura de prueba" width="500">
-  <p><b>Figura 17.</b> Conexiones </p>
+  <p><b>Figura 20.</b> Conexiones </p>
 </div>
 
 - Observación del comportamiento
@@ -291,7 +291,7 @@ Al ejecutar el modelo con esta configuración:
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Motor_Movimiento.gif" alt="Figura de prueba" width="400">
-  <p><b>Figura 19.</b> Preuba </p>
+  <p><b>Figura 21.</b> Preuba </p>
 </div>
 
 ## Configuración en el bloque HIL Read Encoder Timebase (Lectura de corriente)
@@ -304,7 +304,7 @@ Aunque el bloque originalmente se usa para leer encoders, también permite confi
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Corriente_1.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 20.</b>  Analog channel </p>
+  <p><b>Figura 22.</b>  Analog channel </p>
 </div>
 
 - Haz clic en los tres puntos (...) a la derecha de esa opción para abrir el editor de canales.
@@ -319,13 +319,34 @@ Motor current sense A
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Corriente_2.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 20.</b>  Analog channel </p>
+  <p><b>Figura 23.</b>  Analog channel </p>
 </div>
 
 - Haz clic en OK para cerrar el editor de canales y aplicar la selección.
 
-## Configuración en el bloque HIL Read Encoder Timebase (Lectura de corriente)
+- Esquema para visualizar la señal de corriente
+- 
+Una vez configurado el bloque HIL Read Encoder Timebase para incluir la lectura de la corriente, podemos visualizar esa señal en tiempo real usando los bloques estándar de Simulink.
 
+- Identifica la salida del bloque HIL Read Encoder Timebase correspondiente a la corriente (usualmente la segunda salida si el encoder es la primera).
+
+Añade al modelo los siguientes bloques desde la librería de Simulink:
+
+Simulink → Sinks → Scope
+
+Simulink → Sinks → Display
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Corriente_4.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 24.</b>  Bloques </p>
+</div>
+
+Conecta la salida de corriente a ambos bloques:
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Corriente_5.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 24.</b>  Bloques </p>
+</div>
 
 
 
