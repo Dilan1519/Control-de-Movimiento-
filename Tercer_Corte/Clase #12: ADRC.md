@@ -1700,3 +1700,21 @@ Control robusto basado en técnicas ADRC de dos estados extendidos:
 | Sinusoidal / Orden 2                     | 0.0001111          | 0.0001076            | 9.959 × 10⁻⁵      | 0.00047          |
 
 </div>
+
+## Conclusiones
+
+1. Mayor robustez ante perturbaciones:
+   
+El ADRC rechaza eficazmente perturbaciones internas y externas gracias a su observador de estados extendido, superando al PID en entornos inciertos o variables.
+
+2. Mejor desempeño dinámico:
+   
+El ADRC presenta una respuesta más rápida y precisa ante cambios en la referencia o perturbaciones, logrando estabilización más veloz sin sacrificar estabilidad.
+
+3. Diseño más flexible y adaptable:
+   
+A diferencia del PID, el ADRC permite separar el diseño del controlador y del observador, lo que facilita la sintonización y adaptación a distintos tipos de sistemas (lineales y no lineales).
+
+## Referencias
+
+[1] J. E. Cote B., Perfiles de Movimiento, diapositivas de clase, 9° semestre, Universidad ECCI, 2025.
