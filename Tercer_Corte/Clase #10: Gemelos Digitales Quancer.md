@@ -148,23 +148,31 @@ En la ventana de comandos de MATLAB, escribe:
    ```
 Presiona Enter.
 
-En la ventana de Simulink, selecciona Blank Model para iniciar con un archivo vacío.
+- En la ventana de Simulink, selecciona Blank Model para iniciar con un archivo vacío.
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Blank Model.png" alt="Figura de prueba" width="600">
   <p><b>Figura 10.</b> Blank Model </p>
 </div>
 
+- Crear un nuevo archivo
+  
+En la ventana de Simulink, selecciona "Blank Model" para iniciar con un archivo vacío.
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_8_Quanser.jpg" alt="Figura de prueba" width="400">
+  <p><b>Figura 1.</b> Abrir Smnew </p>
+</div>
+
+- Abrir el Library Browser
+
+Haz clic en el ícono de librerías en la parte superior izquierda o usa el atajo Ctrl + Shift + L.
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_6_Quanser.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 1.</b> Abrir Smnew </p>
 </div>
 
-<div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_8_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
-</div>
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_9_Quanser.jpg" alt="Figura de prueba" width="400">
