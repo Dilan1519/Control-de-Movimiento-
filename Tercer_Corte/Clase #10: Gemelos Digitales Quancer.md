@@ -105,6 +105,39 @@ Esto abrirá una ventana emergente con la opción de seleccionar una de las 3 pl
 </div>
 
 <div align="center">
+  
+| Producto         | Sensores principales                                                                 | Actuadores        | Características clave                                                                                   | Tipo de sistema               |
+|------------------|----------------------------------------------------------------------------------------|-------------------|-----------------------------------------------------------------------------------------------------------|-------------------------------|
+| **Qube-Servo 2** (DC Motor) | - Encoder rotativo  <br> - Sensor de corriente                                 | Motor DC          | - Sistema de control de posición y velocidad <br> - Ideal para control PID, LQR y observadores           | Rotacional simple             |
+| **Aero**         | - Encoders rotativos (ejes de *pitch* y *yaw*) <br> - Sensor de corriente              | Motores *brushless* | - Sistema aéreo con 2 grados de libertad <br> - Simula el control de una aeronave                        | Rotacional 2D (aeronáutico)   |
+| **Ball and Beam**| - Potenciómetro (ángulo del brazo) <br> - Sensor óptico (posición de la bola)         | Motor DC          | - Sistema no lineal y sub-actuado <br> - Ideal para control avanzado (estado, realimentación)           | Traslacional con oscilación   |
+
+</div>
+
+- Recursos clave para el Qube-Servo 2
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Manuales.png" alt="Figura de prueba" width="600">
+  <p><b>Figura 1.</b> Abrir Smnew </p>
+</div>
+
+A continuación, se presentan enlaces clave para profundizar en el estudio y uso del Qube-Servo 2, tanto en su versión física como virtual. Estos materiales incluyen documentación técnica, guías prácticas y simulaciones listas para usar en Simulink.
+
+<div align="center">
+  
+| Recurso                                                                                                      | Descripción                                                                                                                                         |
+|-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| 🔗 [Repositorio de recursos virtuales de Quanser](https://www.quanser.com/resource-type/virtual-resources/?_products=1590) | Página oficial con materiales interactivos, simulaciones y manuales orientados a la enseñanza y uso del gemelo digital del Qube-Servo 2.           |
+| 🔗 [Carpeta Box con laboratorios y archivos de simulación](https://quanserinc.app.box.com/s/5x59eq0l1ygebs6uyexnmcshwxxqish6) | Contiene modelos en Simulink, ejercicios prácticos, controladores PID y experimentos de control más avanzados. Ideal para estudiantes.             |
+| 🔗 [Manual de usuario del Qube-Servo 2 (PDF)](https://wwwlehre.dhbw-stuttgart.de/~flaemig/MATLAB/Quanser_CubeServo/QUBE-Servo%20User%20Manual.pdf) | Documento técnico detallado con especificaciones, conexiones, sensores, actuadores y recomendaciones para el uso correcto de la planta física.     |
+
+</div>
+
+> **Nota**: En los siguientes enlaces se pueden encontrar manuales importantes del Qube-Servo 2, incluyendo simulaciones listas para usar como controladores **PID**, entre otras herramientas clave para el aprendizaje práctico:
+
+
+
+<div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_6_Quanser.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 1.</b> Abrir Smnew </p>
 </div>
