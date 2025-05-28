@@ -1345,8 +1345,7 @@ $$
 \end{aligned}
 $$
 
-
-## ⚙️ Estructura del ESO con realimentación de error
+### Estructura del ESO con realimentación de error
 
 Se define el error de estimación como:
 
@@ -1382,7 +1381,7 @@ Imagina que el sistema es un auto y el observador es un copiloto que:
 
 Y lo hace **solo mirando la posición** ($x_1 = y$) y **corrigiendo sus predicciones con el error**.
 
-## Estimación de la perturbación
+### Estimación de la perturbación
 
 La perturbación estimada también puede representarse con:
 
