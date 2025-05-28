@@ -1310,18 +1310,26 @@ $$
   
 - $$\( r_{ID} \), \( r_{BR} \)$$: Radios de los rodillos locos
 
-
 ## Conclusiones
 
+1. La **relación de transmisión** en un sistema piñón-cremallera depende exclusivamente del **radio del piñón**. Esta relación es directa y se expresa como:
 
+  $$
+  N_{RP} = \frac{1}{r_{\text{piñón}}}
+  $$
+
+  lo cual permite convertir velocidad angular (rad/s) en velocidad lineal (m/s) de forma precisa.
+
+2. La inercia reflejada en el motor incluye las masas desacopladas del eje (carro, carga, cremallera), ajustadas por el cuadrado de la relación de transmisión y la eficiencia del sistema. El piñón no se refleja porque está directamente acoplado al eje del motor.
+
+3. El torque requerido en el motor*se determina dividiendo la fuerza neta sobre la carga por la eficiencia y la relación de transmisión:
+
+  $$
+  \tau_{\text{motor}} = \frac{F_{\text{carga}}}{\eta \cdot N_{RP}}
+  $$
+  
 4. El sistema piñón-cremallera es una solución efectiva, robusta y ampliamente adoptada para convertir el giro de un motor en desplazamientos lineales con control y precisión.
 
 ## Referencias
 
-[1] S. Niku, Introduction to Robotics: Analysis, Control, Applications, 4th ed., Wiley, 2023.
-
-[2] R. Kelly, D. Santibáñez, and L. F. Reyes, Control of Robot Manipulators in Joint Space, 2nd ed., Springer, 2021.
-
-[3] M. Spong, S. Hutchinson, and M. Vidyasagar, Robot Modeling and Control, 2nd ed., Wiley, 2020.
-
-[4] J. E. Cote B., Perfiles de Movimiento, diapositivas de clase, 9° semestre, Universidad ECCI, 2025.
+[1] J. E. Cote B., Perfiles de Movimiento, diapositivas de clase, 9° semestre, Universidad ECCI, 2025.
