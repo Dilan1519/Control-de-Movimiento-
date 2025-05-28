@@ -255,12 +255,20 @@ Si todo está configurado correctamente, la tira LED del Qube-Servo 2 se pondrá
 QUARC Targets → Data Acquisition → Generic → Timebases
 
 - Arrastra el bloque HIL Read Encoder Timebase al modelo.
+- 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_15_Quanser.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 15.</b> Bloque HIL Read Encoder Timebase</p>
 </div>
 
-- 
+- Haz doble clic sobre el bloque y configura:
+
+En la pestaña Main:
+
+Marca la opción Active during normal simulation
+
+- Conecta un bloque Constant al bloque HIL Write Analog, para enviar un valor de voltaje fijo al motor (puedes comenzar con un valor bajo, por ejemplo, 1 o 0.5).
+
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_16_Quanser.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 1.</b> Abrir Smnew </p>
