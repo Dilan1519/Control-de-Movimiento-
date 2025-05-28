@@ -256,10 +256,7 @@ Si todo está configurado correctamente, la tira LED del Qube-Servo 2 se pondrá
 
 
 
-<div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_14_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
-</div>
+
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_15_Quanser.jpg" alt="Figura de prueba" width="400">
