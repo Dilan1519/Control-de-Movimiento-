@@ -144,7 +144,7 @@ Para comenzar a trabajar con la planta virtual o física del Qube-Servo 2, es ne
 En la ventana de comandos de MATLAB, escribe:
 
    ```matlab
-   QLabs.launch
+   Simulink
    ```
 Presiona Enter.
 
