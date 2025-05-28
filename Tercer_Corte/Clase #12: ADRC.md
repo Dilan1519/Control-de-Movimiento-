@@ -1658,3 +1658,45 @@ Control robusto basado en técnicas ADRC de dos estados extendidos:
   <p><b>Figura 28.</b>Perturbaciones</p>
 </div>
 
+- Vareación de Párametros
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/Variacion de parametros.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 29.</b>Vareación</p>
+</div>
+
+### Variación de parámetros
+
+- Controlador robusto basado en técnicas ADRC de dos estados extendidos.
+  
+- Variación del parámetro que acompaña a 𝜀
+
+<div align="center">
+  
+| Señal de entrada / Señal de Perturbación | ISE - Nominal        | ISE - Variación Paramétrica |
+|------------------------------------------|----------------------|-----------------------------|
+| Pasos / Rampa                            | 4.514 × 10⁻⁶         | 4.516 × 10⁻⁶                |
+| Rampa / Paso                             | 1.058 × 10⁻⁷         | 1.058 × 10⁻⁷                |
+| Orden 2 acotada / Sinusoidal             | 2.672 × 10⁻⁶         | 2.681 × 10⁻⁶                |
+| Sinusoidal / Orden 2                     | 0.0001076            | 0.0001076                   |
+
+</div>
+
+### Variación de parámetros
+
+- Controlador robusto basado en técnicas ADRC de dos estados extendidos.
+  
+- Variación del parámetro que acompaña al control
+
+### ISE para distintas combinaciones de señales y valores de \( K \)
+
+<div align="center">
+  
+| Señal de entrada / Señal de Perturbación | K = 0.5K           | K = 1K (Nominal)     | K = 4K            | K = 7K           |
+|------------------------------------------|--------------------|----------------------|-------------------|------------------|
+| Pasos / Rampa                            | 5.469 × 10⁻⁶       | 4.515 × 10⁻⁶         | 3.663 × 10⁻⁶      | 0.001678         |
+| Rampa / Paso                             | 1.159 × 10⁻⁷       | 1.058 × 10⁻⁷         | 1.104 × 10⁻⁷      | 1.862 × 10⁻⁷     |
+| Orden 2 acotada / Sinusoidal             | 2.717 × 10⁻⁶       | 2.68 × 10⁻⁶          | 2.277 × 10⁻⁶      | 1.558 × 10⁻⁵     |
+| Sinusoidal / Orden 2                     | 0.0001111          | 0.0001076            | 9.959 × 10⁻⁵      | 0.00047          |
+
+</div>
