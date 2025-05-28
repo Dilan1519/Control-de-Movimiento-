@@ -155,39 +155,48 @@ Presiona Enter.
   <p><b>Figura 10.</b> Blank Model </p>
 </div>
 
-- Crear un nuevo archivo
-  
-En la ventana de Simulink, selecciona "Blank Model" para iniciar con un archivo vacío.
-
-<div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_8_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
-</div>
-
 - Abrir el Library Browser
 
 Haz clic en el ícono de librerías en la parte superior izquierda o usa el atajo Ctrl + Shift + L.
 
 <div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_6_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
+  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_8_Quanser.jpg" alt="Figura de prueba" width="800">
+  <p><b>Figura 11.</b> Library Browser </p>
 </div>
 
+- Verificar instalación de QUARC
 
-<div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_9_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
-</div>
+Si el complemento está instalado correctamente, deberías ver una sección llamada:
 
-<div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_10_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
-</div>
+QUARC Targets
 
 <div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_11_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
+  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_9_Quanser.jpg" alt="Figura de prueba" width="300">
+  <p><b>Figura 12.</b> QUARC Targets </p>
 </div>
+
+- Navegar por las bibliotecas
+
+Ir a:
+
+QUARC Targets → Data Acquisition → Generic → Configuration
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_10_Quanser.jpg" alt="Figura de prueba" width="300">
+  <p><b>Figura 13.</b> QUARC Targets </p>
+</div>
+
+- Agregar el bloque HIL Initialize
+
+Arrastra el bloque HIL Initialize al lienzo del modelo.
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_11_Quanser.jpg" alt="Figura de prueba" width="300">
+  <p><b>Figura 14.</b> bloque HIL Initialize </p>
+</div>
+
+
+
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_12_Quanser.jpg" alt="Figura de prueba" width="400">
