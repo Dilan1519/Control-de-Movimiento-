@@ -325,7 +325,7 @@ Motor current sense A
 - Haz clic en OK para cerrar el editor de canales y aplicar la selección.
 
 - Esquema para visualizar la señal de corriente
-- 
+  
 Una vez configurado el bloque HIL Read Encoder Timebase para incluir la lectura de la corriente, podemos visualizar esa señal en tiempo real usando los bloques estándar de Simulink.
 
 - Identifica la salida del bloque HIL Read Encoder Timebase correspondiente a la corriente (usualmente la segunda salida si el encoder es la primera).
@@ -344,10 +344,76 @@ Simulink → Sinks → Display
 Conecta la salida de corriente a ambos bloques:
 
 <div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2310/Corriente_3.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 24.</b>  Bloques </p>
+  <img src="Imágenes_Corte_3/Clase%20%2310/Corriente_3.png" alt="Figura de prueba" width="600">
+  <p><b>Figura 25.</b>  Señal de Corriente en Amperios </p>
 </div>
 
+ 
+## Configuración del bloque HIL Read Encoder Timebase (Encoder- Posición)
+
+Ya tenemos este bloque en el modelo, y ahora debemos asegurarnos de que lea también la posición.
+
+- Haz doble clic sobre el bloque HIL Read Encoder Timebase.
+
+- En la pestaña Main, localiza la opción Encoder channels.
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Encoder_1.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 26.</b>  Encoder </p>
+</div>
+
+- Haz clic en los tres puntos (...) a la derecha para abrir el editor de canales.
+
+En la ventana emergente:
+
+- Busca en Available channels el canal:
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Encoder_2.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 27.</b>  Encoder </p>
+</div>
+
+- Pásalo a Selected channels usando la flecha  (→).
+
+- Haz clic en OK para guardar los cambios.
+
+## Conversión de cuentas a grados
+
+El encoder del Qube-Servo 2 mide la posición en cuentas. Para interpretar esta medición de forma más comprensible, debemos convertirla a grados.
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Encoder_4.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 28.</b>  Encoder </p>
+</div>
+
+- Relación de conversión
+
+```plaintext
+1 vuelta = 2048 cuentas = 360°
+```
+
+Grados = Cuentas × (360 / 2048)
+       ≈ Cuentas × 0.1758
+
+Ganancia ≈ 0.17578
+
+- Añade al modelo los siguientes bloques desde la librería de Simulink:
+
+Simulink → Sinks → Scope
+
+Simulink → Sinks → Display
+
+<div align="center">
+    <img src="Imágenes_Corte_3/Clase%20%2310/Encoder_3.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 29.</b>  Bloques </p>
+</div>
+
+Conecta la salida de Posición a ambos bloques:
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Encoder_5.png" alt="Figura de prueba" width="600">
+  <p><b>Figura 30.</b>  Señal de Corriente en Amperios </p>
+</div>
 
 
 
