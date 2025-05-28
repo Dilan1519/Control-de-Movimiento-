@@ -269,30 +269,39 @@ Marca la opción Active during normal simulation
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_16_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 16.</b> AActive during </p>
+  <p><b>Figura 16.</b> Active during </p>
 </div>
 
 - Conecta un bloque Constant al bloque HIL Write Analog, para enviar un valor de voltaje fijo al motor (puedes comenzar con un valor bajo, por ejemplo, 1 o 0.5).
-- 
-<div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_17_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
-</div>
 
 <div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_18_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
+  <img src="Imágenes_Corte_3/Clase%20%2310/Write Analog.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 17.</b> Conexiones </p>
 </div>
+
+- Observación del comportamiento
+
+Al ejecutar el modelo con esta configuración:
+
+- El motor comienza a girar de forma continua en una dirección.
+
+- No presenta problemas de arranque ni vibraciones anormales.
+
+- La respuesta es estable y proporcional al valor enviado.
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Motor_Movimiento.gif" alt="Figura de prueba" width="400">
+  <p><b>Figura 19.</b> Preuba </p>
+</div>
+
+
 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_19_Quanser.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 1.</b> Abrir Smnew </p>
 </div>
 
-<div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2310/Motor_Movimiento.gif" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
-</div>
+
 
 
 
