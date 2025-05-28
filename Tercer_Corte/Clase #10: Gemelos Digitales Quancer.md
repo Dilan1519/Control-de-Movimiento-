@@ -46,10 +46,7 @@ Para trabajar con el Qube-Servo 2 desde Simulink, es necesario configurar correc
 
 3. Ir a la pestaña **“Add-Ons”** y seleccionar **“Get Add-Ons”**.
 
-<div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_01.png" alt="Figura de prueba" width="400">
-  <p><b>Figura 2.</b> Add-Ons & Get Add-Ons </p>
-</div>
+
 
 5. Buscar **"Quanser QLabs"** o **"Quanser Virtual Qube-Servo 2"**.
 6. Instalar el complemento correspondiente.
