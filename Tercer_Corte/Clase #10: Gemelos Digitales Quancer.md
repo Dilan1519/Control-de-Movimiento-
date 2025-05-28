@@ -404,7 +404,7 @@ Simulink → Sinks → Scope
 Simulink → Sinks → Display
 
 <div align="center">
-    <img src="Imágenes_Corte_3/Clase%20%2310/Encoder_3.png" alt="Figura de prueba" width="400">
+    <img src="Imágenes_Corte_3/Clase%20%2310/Enocoder_3.png" alt="Figura de prueba" width="400">
   <p><b>Figura 29.</b>  Bloques </p>
 </div>
 
