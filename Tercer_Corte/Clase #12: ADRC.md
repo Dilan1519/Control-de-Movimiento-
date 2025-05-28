@@ -1390,7 +1390,7 @@ $$
 $$
 
 
-## ¿Y luego? Control con compensación de perturbación
+### ¿Y luego? Control con compensación de perturbación
 
 Con el ESO estimando $\hat{x}_3 \approx \varepsilon(t)$, el control se define como:
 
