@@ -344,7 +344,7 @@ Simulink → Sinks → Display
 Conecta la salida de corriente a ambos bloques:
 
 <div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2310/Corriente_5.png" alt="Figura de prueba" width="400">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Corriente_3.png" alt="Figura de prueba" width="400">
   <p><b>Figura 24.</b>  Bloques </p>
 </div>
 
