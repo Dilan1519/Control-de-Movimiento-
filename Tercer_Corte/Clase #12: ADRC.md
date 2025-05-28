@@ -1625,3 +1625,36 @@ Perturbaciones:
 
 Control robusto basado en técnicas ADRC de dos estados extendidos:
 
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/CONTROL ROBUSTO.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 24.</b>Perturbaciones</p>
+</div>
+
+- Señal de entrada: adición de dos señales paso; Perturbación: tipo Rampa
+  
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/CONTROL ROBUSTO 2.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 25.</b>Perturbaciones</p>
+</div>
+
+- Señal de entrada: Rampa; Perturbación: tipo Paso
+  
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/CONTROL ROBUSTO 3.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 26.</b>Perturbaciones</p>
+</div>
+
+- Señal de entrada: Señal de orden 2; Perturbación: Sinusoidal
+  
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/CONTROL ROBUSTO 4.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 27.</b>Perturbaciones</p>
+</div>
+
+- Señal de entrada: Sinusoidal; Perturbación: Señal de orden 2
+  
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/CONTROL ROBUSTO 5.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 28.</b>Perturbaciones</p>
+</div>
+
