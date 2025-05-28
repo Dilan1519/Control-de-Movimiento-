@@ -250,19 +250,17 @@ Si todo está configurado correctamente, la tira LED del Qube-Servo 2 se pondrá
   <p><b>Figura 14.</b> Conexión activa </p>
 </div>
 
+## Agregar el bloque HIL Read Encoder Timebase
 
+QUARC Targets → Data Acquisition → Generic → Timebases
 
-
-
-
-
-
-
+- Arrastra el bloque HIL Read Encoder Timebase al modelo.
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_15_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
+  <p><b>Figura 15.</b> Bloque HIL Read Encoder Timebase</p>
 </div>
 
+- 
 <div align="center">
   <img src="Imágenes_Corte_3/Clase%20%2310/Paso_16_Quanser.jpg" alt="Figura de prueba" width="400">
   <p><b>Figura 1.</b> Abrir Smnew </p>
