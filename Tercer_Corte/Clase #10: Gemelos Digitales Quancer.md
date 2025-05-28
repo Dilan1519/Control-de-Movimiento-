@@ -294,12 +294,37 @@ Al ejecutar el modelo con esta configuración:
   <p><b>Figura 19.</b> Preuba </p>
 </div>
 
+## Configuración en el bloque HIL Read Encoder Timebase (Lectura de corriente)
 
+Aunque el bloque originalmente se usa para leer encoders, también permite configurar la lectura de otras entradas, como señales analógicas.
+
+- Haz doble clic en el bloque HIL Read Encoder Timebase.
+
+- En la pestaña Main, localiza la opción Analog channels.
 
 <div align="center">
-  <img src="Imágenes_Corte_3/Clase%20%2310/Paso_19_Quanser.jpg" alt="Figura de prueba" width="400">
-  <p><b>Figura 1.</b> Abrir Smnew </p>
+  <img src="Imágenes_Corte_3/Clase%20%2310/Corriente_1.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 20.</b>  Analog channel </p>
 </div>
+
+- Haz clic en los tres puntos (...) a la derecha de esa opción para abrir el editor de canales.
+
+- En la ventana emergente:
+
+Busca en la sección Available channels el canal llamado:
+
+Motor current sense A
+
+- Selecciónalo y haz clic en la flecha hacia la derecha (→) para moverlo a la sección Selected channels.
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2310/Corriente_2.png" alt="Figura de prueba" width="400">
+  <p><b>Figura 20.</b>  Analog channel </p>
+</div>
+
+- Haz clic en OK para cerrar el editor de canales y aplicar la selección.
+
+## Configuración en el bloque HIL Read Encoder Timebase (Lectura de corriente)
 
 
 
