@@ -1717,4 +1717,4 @@ A diferencia del PID, el ADRC permite separar el diseño del controlador y del o
 
 ## Referencias
 
-[1] J. E. Cote B., Perfiles de Movimiento, diapositivas de clase, 9° semestre, Universidad ECCI, 2025.
+[1] J. E. Cote B., ADRC, diapositivas de clase, 9° semestre, Universidad ECCI, 2025.
