@@ -772,7 +772,6 @@ Donde:
 | $$\( \kappa(x) \)$$  | Función de ganancia (en L-ADRC se aproxima por una constante \( b_0 \))    |
 | $$\( u(t) \)$$       | Entrada de control                                                         |
 | $$\( \xi(t) \)$$     | Perturbación total generalizada (dinámicas no modeladas, ruido, etc.)      |
-
 </div>
 
 ### ¿Qué representa $$\( \xi(t) \)$$?
@@ -823,7 +822,7 @@ $$
 
 ### Ecuaciones Clave
 
-div align="center">
+<div align="center">
 
 | Concepto         | Ecuación                                               | Descripción                                           |
 |------------------|--------------------------------------------------------|-------------------------------------------------------|
@@ -841,7 +840,7 @@ div align="center">
 
 ### Parámetros del Observador
 
-div align="center">
+<div align="center">
 
 | Parámetro | Fórmula                      | Significado                                       |
 |-----------|------------------------------|--------------------------------------------------|
@@ -859,7 +858,6 @@ div align="center">
   <p><b>Figura 9.</b>vehículos autónomos</p>
 </div>
 
-
 En vehículos autónomos, algunas variables internas como la fuerza de fricción entre neumáticos y carretera no pueden medirse directamente.
 
 Sin embargo, mediante un observador:
@@ -872,205 +870,108 @@ Sin embargo, mediante un observador:
 
 Así, el vehículo puede adaptarse al terreno sin necesidad de sensores adicionales, mejorando su capacidad de control en tiempo real.
 
+## 7. ADRC: Estimación de Perturbaciones
 
+### Modelo del sistema discreto con perturbación
 
-# 🧠 ADRC - Observador Extendido para Estimación de Perturbaciones
+Sistema original:
 
-## 🎯 Objetivo
-
-Diseñar un **observador extendido** capaz de estimar tanto el estado del sistema \( \hat{x}_k \) como la perturbación \( \hat{d}_k \), incluso cuando esta última no se mide directamente.
-
----
-
-## 📘 Modelo del sistema discreto con perturbación
-
-\[
+$$
 \begin{cases}
-x_{k+1} = A x_k + B u_k + F d_k \\
-y_k = C x_k
+x_{k+1} = A \cdot x_k + B \cdot u_k + F \cdot d_k \\
+y_k = C \cdot x_k
 \end{cases}
-\]
+$$
 
-**Variables:**
-- \( x_k \): estado
-- \( u_k \): entrada
-- \( d_k \): perturbación (no conocida)
-- \( y_k \): salida medida
+Donde:
 
----
+- $$\( x_k \)$$: estado del sistema
+  
+- $$\( u_k \)$$: entrada de control
+  
+- $$\( d_k \)$$: perturbación desconocida
+  
+- $$\( y_k \)$$: salida medida
 
-## 🧩 Extensión del sistema
+Si la perturbación es constante:
 
-Asumimos que la perturbación es **constante**:
-\[
+$$
 d_{k+1} = d_k
-\]
+$$
 
-Definimos el **estado ampliado**:
-\[
-x_a(k) = \begin{bmatrix} x_k \\ d_k \end{bmatrix}
-\]
+Podemos redefinir el estado extendido como:
 
-Sistema extendido:
+$$
+x_a(k) = \begin{bmatrix} x(k) \\ d(k) \end{bmatrix}
+$$
 
-\[
-x_a(k+1) =
-\underbrace{
-\begin{bmatrix} A & F \\ 0 & I \end{bmatrix}
-}_{A_a}
+Y el sistema ampliado se convierte en:
+
+$$
+x_a(k+1) = A_a \cdot x_a(k) + B_a \cdot u(k)
+$$
+
+Donde:
+
+$$
+A_a = \begin{bmatrix} A & F \\ 0 & I \end{bmatrix}, \quad
+B_a = \begin{bmatrix} B \\ 0 \end{bmatrix}
+$$
+
+La salida se define como:
+
+$$
+y(k) = \begin{bmatrix} C & 0 \end{bmatrix} \cdot x_a(k)
+$$
+
+## 8. ADRC – Observador Extendiendo al Estimador de Perturbaciones
+
+<div align="center">
+  <img src="Imágenes_Corte_3/Clase%20%2312/Estimacion de perturbaciones 1.png" alt="Figura de prueba" width="500">
+  <p><b>Figura 10.</b>Estimacion de perturbaciones</p>
+</div>
+
+$$
+\begin{cases}
+x_{k+1} = A \cdot x_k + B \cdot u_k + F \cdot d_k \\
+y_k = C \cdot x_k
+\end{cases}
+$$
+
+Estimar no solo $$\( \hat{x}_k \)$$ (estado), sino también $$\( \hat{d}_k \)$$ (perturbación).
+
+## Ampliando el sistema: agregamos la perturbación como estado
+
+$$
+x_a(k+1) = \begin{bmatrix} x(k+1) \\ d(k+1) \end{bmatrix} =
+\begin{bmatrix}
+A & F \\
+0 & I
+\end{bmatrix}
 x_a(k) +
-\underbrace{
-\begin{bmatrix} B \\ 0 \end{bmatrix}
-}_{B_a}
+\begin{bmatrix}
+B \\
+0
+\end{bmatrix}
 u(k)
-\]
+$$
 
-\[
-y(k) =
-\underbrace{
-\begin{bmatrix} C & 0 \end{bmatrix}
-}_{C_a}
-x_a(k)
-\]
+$$
+y(k) = \begin{bmatrix} C & 0 \end{bmatrix} x_a(k)
+$$
 
----
+## Observador extendido: Estimando estado + perturbación
 
-## 🛠 Observador Extendido (ADRC)
+El diseño es igual al clásico observador de estados, pero con una dimensión extra por la perturbación.
 
-\[
-\hat{x}_a(k+1) = A_a \hat{x}_a(k) + B_a u(k) + L \big(y(k) - C_a \hat{x}_a(k)\big)
-\]
+Estima el vector ampliado:
 
-\[
+$$
 \hat{x}_a(k) =
 \begin{bmatrix}
 \hat{x}_k \\
 \hat{d}_k
 \end{bmatrix}
-\]
-
-Donde:
-
-- \( L \): ganancia del observador (puede diseñarse con LQR o ubicación de polos)
-- \( \hat{x}_k \): estimación del estado
-- \( \hat{d}_k \): estimación de la perturbación
-
----
-
-## 📌 Resumen de matrices ampliadas
-
-| Matriz | Forma Original | Forma Extendida | Comentario |
-|--------|----------------|-----------------|------------|
-| \( A \) | \( A \) | \( \begin{bmatrix} A & F \\ 0 & I \end{bmatrix} \) | Añade dinámica de perturbación |
-| \( B \) | \( B \) | \( \begin{bmatrix} B \\ 0 \end{bmatrix} \) | Perturbación no depende de la entrada |
-| \( C \) | \( C \) | \( \begin{bmatrix} C & 0 \end{bmatrix} \) | La perturbación no se mide |
-
----
-
-## ✅ Ventajas
-
-- Estimación en tiempo real de perturbaciones externas.
-- No requiere conocer la dinámica de la perturbación.
-- Base del enfoque de Control Activo de Rechazo de Perturbaciones (ADRC).
-
----
-
-## 📎 Referencias
-
-- Han, J., "Active disturbance rejection control technique: the technique and its application." (2009)
-- Diseño de observadores de Luenberger para sistemas discretos.
-# 🧠 ADRC - Observador Extendido para Estimación de Perturbaciones
-
-## 🎯 Objetivo
-
-Diseñar un **observador extendido** capaz de estimar tanto el estado del sistema \( \hat{x}_k \) como la perturbación \( \hat{d}_k \), incluso cuando esta última no se mide directamente.
-
----
-
-## 📘 Modelo del sistema discreto con perturbación
-
-\[
-\begin{cases}
-x_{k+1} = A x_k + B u_k + F d_k \\
-y_k = C x_k
-\end{cases}
-\]
-
-**Variables:**
-- \( x_k \): estado
-- \( u_k \): entrada
-- \( d_k \): perturbación (no conocida)
-- \( y_k \): salida medida
-
----
-
-## 🧩 Extensión del sistema
-
-Asumimos que la perturbación es **constante**:
-\[
-d_{k+1} = d_k
-\]
-
-Definimos el **estado ampliado**:
-\[
-x_a(k) = \begin{bmatrix} x_k \\ d_k \end{bmatrix}
-\]
-
-Sistema extendido:
-
-\[
-x_a(k+1) =
-\underbrace{
-\begin{bmatrix} A & F \\ 0 & I \end{bmatrix}
-}_{A_a}
-x_a(k) +
-\underbrace{
-\begin{bmatrix} B \\ 0 \end{bmatrix}
-}_{B_a}
-u(k)
-\]
-
-\[
-y(k) =
-\underbrace{
-\begin{bmatrix} C & 0 \end{bmatrix}
-}_{C_a}
-x_a(k)
-\]
-
----
-
-## 🛠 Observador Extendido (ADRC)
-
-\[
-\hat{x}_a(k+1) = A_a \hat{x}_a(k) + B_a u(k) + L \big(y(k) - C_a \hat{x}_a(k)\big)
-\]
-
-\[
-\hat{x}_a(k) =
-\begin{bmatrix}
-\hat{x}_k \\
-\hat{d}_k
-\end{bmatrix}
-\]
-
-Donde:
-
-- \( L \): ganancia del observador (puede diseñarse con LQR o ubicación de polos)
-- \( \hat{x}_k \): estimación del estado
-- \( \hat{d}_k \): estimación de la perturbación
-
----
-
-## 📌 Resumen de matrices ampliadas
-
-| Matriz | Forma Original | Forma Extendida | Comentario |
-|--------|----------------|-----------------|------------|
-| \( A \) | \( A \) | \( \begin{bmatrix} A & F \\ 0 & I \end{bmatrix} \) | Añade dinámica de perturbación |
-| \( B \) | \( B \) | \( \begin{bmatrix} B \\ 0 \end{bmatrix} \) | Perturbación no depende de la entrada |
-| \( C \) | \( C \) | \( \begin{bmatrix} C & 0 \end{bmatrix} \) | La perturbación no se mide |
-
----
-
+$$
 
 
